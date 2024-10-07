@@ -5,6 +5,12 @@
   box-sizing: border-box;
   font-family: "Syne", sans-serif !important;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 .nav-container {
   height: 10vh;
   width: 100vw;
@@ -80,4 +86,30 @@
   height: 20vh;
   align-items: center;
   justify-content: center;
+}
+
+.newsletter-container {
+  display: flex;
+  height: 75px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: grey;
+  color: white;
+  border: 1px solid black;
+}
+
+.newsletter-container > input {
+  width: 250px;
+  height: 35px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.newsletter-container > button {
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  padding: 5px;
 }

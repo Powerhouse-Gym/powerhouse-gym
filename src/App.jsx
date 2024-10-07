@@ -7,12 +7,14 @@ import Training from './components/Training';
 import Crossfit from './components/Crossfit';
 import AfterSchool from './components/AfterSchool';
 import Team from './components/Team';
+import NewsLetter from './components/NewsLetter';
 
 
 function App() {
   return (
-    <div>
+    <div className = "app">
       <Navbar />
+      <NewsLetter />
       <Routes>
         <Route path="/" element={<Home/> } />
         <Route path="/youth" element={<Youth /> } />
