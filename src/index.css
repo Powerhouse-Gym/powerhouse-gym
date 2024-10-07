@@ -31,5 +31,29 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+}
+
+.banner-logos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#facebook, #instagram {
+  width: 7%;
+}
+
+.banner{
+   border: 1px solid black;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }

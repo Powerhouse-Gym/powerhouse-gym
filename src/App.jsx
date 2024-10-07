@@ -11,7 +11,7 @@ import Team from './components/Team';
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/> } />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/team" element={<Team /> } />
       </Routes>
 
-    </>
+    </div>
   );
 }
 
