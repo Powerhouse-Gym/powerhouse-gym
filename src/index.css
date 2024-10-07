@@ -23,6 +23,7 @@
 
 #logo {
   width: 20%;
+  background-color: ;
 }
 
 .contact-banner {
@@ -50,7 +51,7 @@
    border: 1px solid black;
    display: flex;
    justify-content: space-between;
-   background-image: url('/src/assets/background-1.png');
+   background-image: url('/src/assets/background-2.png');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
