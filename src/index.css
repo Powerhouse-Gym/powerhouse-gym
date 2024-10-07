@@ -20,3 +20,16 @@
 .Mui-selected {
   color: var(--primary) !important;
 }
+
+#logo {
+  width: 20%;
+}
+
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  outline: 1px solid red;
+}
