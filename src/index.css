@@ -1,0 +1,22 @@
+:root {--primary: #ed1c26}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-container {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.MuiTabs-indicator {
+  background-color: var(--primary) !important;
+}
+
+.Mui-selected {
+  color: var(--primary) !important;
+}
