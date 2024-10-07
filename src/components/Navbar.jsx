@@ -20,8 +20,10 @@ function Navbar(props) {
     return (
         <div className='navbar'>
             <div className='banner'>
-                <img src={logo} id="logo" />
-                <div className="contact-banner">
+            </div>
+            <div className='secondary-banner'>
+                <img src={logo} id="logo" /> 
+                 <div className="contact-banner">
                     <p>501-247-1517</p>
                     <div className='banner-logos'>
                         <img src={facebook} id="facebook" />

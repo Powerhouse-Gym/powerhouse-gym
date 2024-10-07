@@ -3,6 +3,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Syne", sans-serif;
 }
 .nav-container {
   height: 10vh;
@@ -19,11 +20,13 @@
 
 .Mui-selected {
   color: var(--primary) !important;
+  font-family: "Rock Salt", cursive !important;
 }
 
 #logo {
-  width: 20%;
-  background-color: ;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+  border-radius: 100%;
 }
 
 .contact-banner {
@@ -33,7 +36,11 @@
   align-items: center;
   gap: 15px;
   /* outline: 1px solid red; */
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+  border-radius: 50%;
+  width: 20%;
 }
+
 
 .banner-logos {
   display: flex;
@@ -41,6 +48,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 #facebook, #instagram {
@@ -55,10 +63,19 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   width: 100vw;
+   height: 30vh;
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
   width: 100vw;
+}
+
+.secondary-banner{
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
 }
