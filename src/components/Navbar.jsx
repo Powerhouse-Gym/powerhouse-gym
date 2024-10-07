@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import logo from "../assets/logo-white.webp"
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
+import crossfit from "../assets/crossfit-white.jpg"
 
 function Navbar(props) {
 
@@ -22,7 +23,7 @@ function Navbar(props) {
             <div className='banner'>
             </div>
             <div className='secondary-banner'>
-                <img src={logo} id="logo" /> 
+                <img src={logo} className="logo" /> 
                  <div className="contact-banner">
                     <p>501-247-1517</p>
                     <div className='banner-logos'>
@@ -30,6 +31,7 @@ function Navbar(props) {
                         <img src={instagram} id="instagram" />
                     </div>
                 </div>
+                <img className = "logo crossfit" src = {crossfit} />
             </div>
             <Box className="nav-container">
                 <Tabs value={window.location.pathname} >

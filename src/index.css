@@ -23,10 +23,14 @@
   font-family: "Rock Salt", cursive !important;
 }
 
-#logo {
+.logo {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
   border-radius: 100%;
+}
+
+.crossfit{
+  height:80%;
 }
 
 .contact-banner {
