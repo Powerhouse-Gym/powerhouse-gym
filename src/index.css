@@ -3,7 +3,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Syne", sans-serif;
+  font-family: "Syne", sans-serif !important;
 }
 .nav-container {
   height: 10vh;
@@ -25,8 +25,6 @@
 
 .logo {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
-  border-radius: 100%;
 }
 
 .crossfit{
@@ -39,9 +37,6 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  /* outline: 1px solid red; */
-  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
-  border-radius: 50%;
   width: 20%;
 }
 
