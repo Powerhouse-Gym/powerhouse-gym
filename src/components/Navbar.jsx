@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import logo from "../assets/logo-white.webp"
+import logo from "../assets/logo-white-2.jpg"
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import crossfit from "../assets/crossfit-white.jpg"
@@ -25,21 +25,21 @@ function Navbar(props) {
             <div className='secondary-banner'>
                 <img src={logo} className="logo" /> 
                  <div className="contact-banner">
-                    <p>501-247-1517</p>
+                    <h2>501-247-1517</h2>
                     <div className='banner-logos'>
                         <img src={facebook} id="facebook" />
                         <img src={instagram} id="instagram" />
                     </div>
                 </div>
-                <img className = "logo crossfit" src = {crossfit} />
+                <img className = "crossfit" src = {crossfit} />
             </div>
             <Box className="nav-container">
                 <Tabs value={window.location.pathname} >
-                    <Tab className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
-                    <Tab label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
-                    <Tab label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
-                    <Tab label="Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
-                    <Tab label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
+                    <Tab sx={{fontSize: '1.3rem'}} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
+                    <Tab sx={{fontSize: '1.3rem'}} label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
+                    <Tab sx={{fontSize: '1.3rem'}} label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
+                    <Tab sx={{fontSize: '1.3rem'}} label="Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
+                    <Tab sx={{fontSize: '1.3rem'}} label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
                 </Tabs>
             </Box>
         </div>
