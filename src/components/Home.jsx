@@ -9,7 +9,7 @@ const marker = {lat:34.9749, lng: -92.0163}
             <h1>Come see us!</h1>
             <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
                 <Map
-                    style={{ width: '75vw', height: '75vh' }}
+                    style={{ width: '55vw', height: '55vh', border: "4px solid black" }}
                     defaultCenter= {{lat: 34.94580, lng: -92.00977}}
                     defaultZoom={17}
                     gestureHandling={'greedy'}
