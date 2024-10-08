@@ -11,7 +11,7 @@ const footerStyle = {
   padding: '10px',
   left: '0',
   bottom: '0',
-  width: '100vw',
+  masxWidth: '100vw',
   fontSize: "12px",
   height: "10vh",
   display: "flex",
