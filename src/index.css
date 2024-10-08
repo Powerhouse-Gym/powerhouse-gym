@@ -1,4 +1,6 @@
-:root {--primary: #ed1c26}
+:root {
+  --primary: #ed1c26
+}
 
 * {
   margin: 0;
@@ -12,6 +14,7 @@
   flex-direction: column;
   gap: 25px;
 }
+
 .nav-container {
   height: 10vh;
   width: 100vw;
@@ -37,8 +40,8 @@
   width: 10%;
 }
 
-.crossfit{
-  height:80%;
+.crossfit {
+  height: 80%;
   /* border: solid black 1px; */
 }
 
@@ -60,41 +63,42 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  
+
 }
 
-#facebook, #instagram {
+#facebook,
+#instagram {
   width: 7%;
 }
 
-.banner{
-   border: 1px solid black;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-image: url('/src/assets/brick-wall-blank.png');
-   background-repeat: no-repeat;
-   background-size: 100%;
-   background-position: center;
-   width: 100vw;
-   height: 30vh;
+.banner {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/src/assets/brick-wall-blank.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 100vw;
+  height: 30vh;
 }
 
-.banner > img {
+.banner>img {
   width: 70vw;
   height: 650px;
   position: relative;
   top: 25px;
   z-index: 0;
 }
- 
+
 .navbar {
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
 
-.secondary-banner{
+.secondary-banner {
   display: flex;
   height: 20vh;
   align-items: center;
@@ -113,14 +117,14 @@
   border: 1px solid black;
 }
 
-.newsletter-container > input {
+.newsletter-container>input {
   width: 300px;
   height: 35px;
   border-radius: 8px;
   padding: 5px;
 }
 
-.newsletter-container > button {
+.newsletter-container>button {
   height: 35px;
   width: 100px;
   border-radius: 8px;
@@ -148,7 +152,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-right: 20px; /* Move list to the left by adding margin */
+  margin-right: 20px;
+  /* Move list to the left by adding margin */
 }
 
 .trainer-item {
@@ -172,6 +177,7 @@
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .trainer-details {
@@ -192,6 +198,7 @@
   position: absolute;
   right: 0;
   margin-right: 10px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .coach-name {
@@ -209,11 +216,11 @@
 
 
 
-.career-section > ul {
+.career-section>ul {
   padding-left: 20px;
 }
 
-.select-coach-txt{
+.select-coach-txt {
   text-align: center;
   font-size: 1.5rem;
 }
@@ -223,7 +230,53 @@
   width: 5%;
 }
 
-.selected{
+.selected {
   background-color: #f4f4f4;
   outline: solid black 1px;
+}
+
+/* Coaches */
+
+.crossfit-coaches-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.crossfit-coaches {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 5vw;
+  margin-top: 3vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.coach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.crossfit-coach-img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4%;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Team */
+
+.team-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
