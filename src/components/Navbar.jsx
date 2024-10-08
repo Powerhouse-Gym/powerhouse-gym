@@ -23,6 +23,15 @@ function Navbar(props) {
 
     return (
         <div className='navbar'>
+            <Box className="nav-container">
+                <Tabs value={window.location.pathname} >
+                    <Tab sx={{fontSize: '1.3rem'}} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
+                    <Tab sx={{fontSize: '1.3rem'}} className="nav-item"label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
+                    <Tab sx={{fontSize: '1.3rem'}}className="nav-item"label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
+                    <Tab sx={{fontSize: '1.3rem'}} className="nav-item"label="Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
+                    <Tab sx={{fontSize: '1.3rem'}} className="nav-item"label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
+                </Tabs>
+            </Box>
             <div className='banner'>
                 <img src = {powerhouse} />
             </div>
@@ -38,15 +47,6 @@ function Navbar(props) {
                 <img className = "crossfit" src = {crossfit} />
             </div>
             <NewsLetter />
-            <Box className="nav-container">
-                <Tabs value={window.location.pathname} >
-                    <Tab sx={{fontSize: '1.3rem'}} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
-                    <Tab sx={{fontSize: '1.3rem'}} label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
-                    <Tab sx={{fontSize: '1.3rem'}} label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
-                    <Tab sx={{fontSize: '1.3rem'}} label="Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
-                    <Tab sx={{fontSize: '1.3rem'}} label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
-                </Tabs>
-            </Box>
         </div>
     );
 }
