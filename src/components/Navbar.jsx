@@ -8,6 +8,7 @@ import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import crossfit from "../assets/crossfit-white.jpg"
 import NewsLetter from './NewsLetter';
+import powerhouse from "../assets/powerhouse-grafiti.png"
 
 function Navbar(props) {
 
@@ -22,6 +23,7 @@ function Navbar(props) {
     return (
         <div className='navbar'>
             <div className='banner'>
+                <img src = {powerhouse} />
             </div>
             <div className='secondary-banner'>
                 <img src={logo} className="logo" /> 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Aden from '../assets/training-coaches/Aden.webp'
 import Bri from '../assets/training-coaches/Bri.webp'
 import Brooke from '../assets/training-coaches/Brooke.webp'
@@ -9,6 +9,8 @@ import Tyler from '../assets/training-coaches/Tyler.webp'
 
 
 const TrainingCoaches = () => {
+
+    const [selectedCoach, setSelectedCoach] = useState(null);
 
     const coaches = [
         {
@@ -87,110 +89,72 @@ const TrainingCoaches = () => {
         }
     ];
 
+    const handleCoachClick = (coach) => {
+        setSelectedCoach(coach);
+    };
+
 
     return (
-        <div className="coaches-container">
-            <h1 className="rock-salt">Meet Our Trainers</h1>
-            <div className="grid-container">
-                {coaches.map((coach, index) => (
-                    <div className="grid-item" key={index}>
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="grid-content">
-                                    {/* Coach Image */}
-                                    <div className="image-container">
-                                        <img src={coach.image} alt={coach.name} className="coach-image" />
-                                    </div>
-
-                                    {/* Coach Information */}
-                                    <div className="info-container">
-                                        {/* Coach Name */}
-                                        <h2 className="coach-name">{coach.name}</h2>
-
-                                        {/* Bio */}
-                                        {coach.bio && (
-                                            <p className="bio">{coach.bio}</p>
-                                        )}
-
-                                        {/* High School Career */}
-                                        {coach.highSchoolCareer && (
-                                            <div className="career-section">
-                                                <h3>High School Career</h3>
-                                                <ul>
-                                                    {coach.highSchoolCareer.map((achievement, i) => (
-                                                        <li key={i}>{achievement}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-
-                                        {/* College Career */}
-                                        {coach.collegeCareer && (
-                                            <div className="career-section">
-                                                <h3>College Career</h3>
-                                                {Array.isArray(coach.collegeCareer) ? (
-                                                    <ul>
-                                                        {coach.collegeCareer.map((achievement, i) => (
-                                                            <li key={i}>{achievement}</li>
-                                                        ))}
-                                                    </ul>
-                                                ) : (
-                                                    <p>{coach.collegeCareer}</p>
-                                                )}
-                                            </div>
-                                        )}
-
-                                        {/* Baseball Career */}
-                                        {coach.baseballCareer && (
-                                            <div className="career-section">
-                                                <h3>Baseball Career</h3>
-                                                <ul>
-                                                    {coach.baseballCareer.map((achievement, i) => (
-                                                        <li key={i}>{achievement}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-
-                                        {/* Gymnastics Career */}
-                                        {coach.gymnasticsCareer && (
-                                            <div className="career-section">
-                                                <h3>Gymnastics Career</h3>
-                                                <ul>
-                                                    {coach.gymnasticsCareer.map((achievement, i) => (
-                                                        <li key={i}>{achievement}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-
-                                        {/* Other Career */}
-                                        {coach.career && (
-                                            <div className="career-section">
-                                                <h3>Career</h3>
-                                                <ul>
-                                                    {coach.career.map((achievement, i) => (
-                                                        <li key={i}>{achievement}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-
-                                        {/* Favorite Quote */}
-                                        {coach.favoriteQuote && (
-                                            <p className="quote">
-                                                <strong>Favorite Quote:</strong> <em>{coach.favoriteQuote}</em>
-                                            </p>
-                                        )}
-                                    </div>
-                                </div>
+            <div className="coaches-container">
+                <h1 className="rock-salt">Meet Our Trainers</h1>
+                <div className="trainer-layout">
+                    {/* Left Side: List of Trainers */}
+                    <div className="trainer-list">
+                        {coaches.map((coach, index) => (
+                            <div className="trainer-item" key={index} onClick={() => handleCoachClick(coach)}>
+                                <img src={coach.image} alt={coach.name} className="trainer-thumbnail" />
+                                <h3>{coach.name}</h3>
                             </div>
-                        </div>
+                        ))}
                     </div>
-                ))}
+    
+                    {/* Right Side: Trainer Details */}
+                    <div className="trainer-details">
+                        {selectedCoach ? (
+                            <>
+                                <div className="image-container">
+                                    <img src={selectedCoach.image} alt={selectedCoach.name} className="coach-image" />
+                                </div>
+                                <h2 className="coach-name">{selectedCoach.name}</h2>
+                                <p className="bio">{selectedCoach.bio}</p>
+                                {selectedCoach.highSchoolCareer && (
+                                    <div className="career-section">
+                                        <h3>High School Career</h3>
+                                        <ul>
+                                            {selectedCoach.highSchoolCareer.map((achievement, i) => (
+                                                <li key={i}>{achievement}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                                {selectedCoach.collegeCareer && (
+                                    <div className="career-section">
+                                        <h3>College Career</h3>
+                                        {Array.isArray(selectedCoach.collegeCareer) ? (
+                                            <ul>
+                                                {selectedCoach.collegeCareer.map((achievement, i) => (
+                                                    <li key={i}>{achievement}</li>
+                                                ))}
+                                            </ul>
+                                        ) : (
+                                            <p>{selectedCoach.collegeCareer}</p>
+                                        )}
+                                    </div>
+                                )}
+                                {selectedCoach.favoriteQuote && (
+                                    <p className="quote">
+                                        <strong>Favorite Quote:</strong> <em>{selectedCoach.favoriteQuote}</em>
+                                    </p>
+                                )}
+                            </>
+                        ) : (
+                            <p>Please select a trainer to see their details.</p>
+                        )}
+                    </div>
+                </div>
             </div>
-        </div>
     );
 };
+
 
 export default TrainingCoaches;
