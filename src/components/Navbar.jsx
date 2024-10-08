@@ -10,6 +10,7 @@ import crossfit from "../assets/crossfit-white.jpg"
 import NewsLetter from './NewsLetter';
 import powerhouse from "../assets/powerhouse-grafiti.png"
 
+
 function Navbar(props) {
 
     const navigate = useNavigate()

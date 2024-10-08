@@ -68,13 +68,19 @@
 .banner{
    border: 1px solid black;
    display: flex;
-   justify-content: space-between;
-   background-image: url('/src/assets/background-2.png');
+   justify-content: center;
+   align-items: center;
+   background-image: url('/src/assets/brick-wall-blank.png');
    background-repeat: no-repeat;
    background-size: 100%;
    background-position: center;
    width: 100vw;
    height: 30vh;
+}
+
+.banner > img {
+  height: 750px;
+  width: 75vw;
 }
  
 .navbar {
