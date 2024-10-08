@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { APIProvider, Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps';
-import athlete from "../assets/athlete.png"
+import background1 from "../assets/background-1.png"
 
 
 function Home() {
     
 
     return (
-        <div id="home">
+        <div id="home" >
             <h1>Come see us!</h1>
             <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
                 <Map
@@ -22,7 +22,7 @@ function Home() {
                     <Pin background={'#ed1c26'} glyphColor={'#000'} borderColor={'#000'} scale={2.0} glyph={"PH"} />
                 </AdvancedMarker>
             </APIProvider>
-            <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Freepik - Flaticon</a>
+            {/* <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Freepik - Flaticon</a> */}
         </div>
     );
 }

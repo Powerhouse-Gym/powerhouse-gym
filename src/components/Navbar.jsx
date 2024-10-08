@@ -7,6 +7,7 @@ import logo from "../assets/logo-white-2.jpg"
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import crossfit from "../assets/crossfit-white.jpg"
+import NewsLetter from './NewsLetter';
 
 function Navbar(props) {
 
@@ -33,6 +34,7 @@ function Navbar(props) {
                 </div>
                 <img className = "crossfit" src = {crossfit} />
             </div>
+            <NewsLetter />
             <Box className="nav-container">
                 <Tabs value={window.location.pathname} >
                     <Tab sx={{fontSize: '1.3rem'}} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />

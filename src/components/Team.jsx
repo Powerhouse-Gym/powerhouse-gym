@@ -5,7 +5,6 @@ import TrainingCoaches from './TrainingCoaches';
 function Team() {
     return ( 
         <>
-        Team
         <TrainingCoaches />
         </>
      );
