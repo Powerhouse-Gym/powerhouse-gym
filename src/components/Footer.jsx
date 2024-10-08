@@ -1,5 +1,5 @@
-import { adaptV4Theme } from '@mui/material';
 import React from 'react';
+import logo from "../assets/powerhouse-grafiti.png"
 
 const Footer = () => {
 
@@ -24,6 +24,7 @@ const footerStyle = {
     <div style={footerStyle}>
       <p>PowerHouse Crossfit and Training Complex</p>
       <p>1804 S. Pine Street, Cabot AR 72023</p>
+    <img className = "footer-logo" src= {logo} alt="powerhouse logo" />
       <p>501.247.1517</p>
       <p>Powerhouse Training Complex, LLC</p>
     </div>
