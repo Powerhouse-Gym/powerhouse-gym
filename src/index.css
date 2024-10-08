@@ -184,8 +184,8 @@
 }
 
 .coach-image {
-  width: 250px;
-  height: 250px;
+  width: 30%;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
@@ -221,4 +221,9 @@
 .footer-logo {
   height: 100%;
   width: 5%;
+}
+
+.selected{
+  background-color: #f4f4f4;
+  outline: solid black 1px;
 }

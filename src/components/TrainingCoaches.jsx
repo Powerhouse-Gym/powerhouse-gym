@@ -8,7 +8,25 @@ import Tyler from '../assets/training-coaches/Tyler.webp'
 
 const TrainingCoaches = () => {
 
-    const [selectedCoach, setSelectedCoach] = useState(null);
+    const [selectedCoach, setSelectedCoach] = useState({
+        name: "Bri Guiste",
+        image: Bri,
+        bio: "My name is Bri, and I have been playing softball since I was 4 years old. I had a successful career throughout high school and college.  I took a break from softball to get married and start a family, but felt like I was missing a part of me when I stepped away from the game.  I have always had a passion to help the younger generations learn to play this sport, and I am excited to pass on my knowledge.",
+        highSchoolCareer: [
+            "2010 Idaho 5A State Champion",
+            "3 time First Team All-Conference",
+            "3 time team Defensive player of the year",
+            "4 years on Varsity as the leadoff hitter and starting 2nd baseman"
+        ],
+        collegeCareer: [
+            "DI scholarship to Bradley University in Peoria, IL",
+            "2014 Missouri Valley Conference (MVC) Champion",
+            "2014 MVC All-Tournament team",
+            "Finished career as one of three players to rank in Bradley’s career top 10 in hits, runs and stolen bases",
+            "2 years as leadoff hitter and led team in hits as a junior and senior"
+        ],
+        favoriteQuote: "Hard work beats talent when talent doesn't work hard. — Tim Notke"
+    });
 
     const coaches = [
         {
@@ -99,7 +117,7 @@ const TrainingCoaches = () => {
                 {/* Left Side: List of Trainers */}
                 <div className="trainer-list">
                     {coaches.map((coach, index) => (
-                        <div className="trainer-item" key={index} onClick={() => handleCoachClick(coach)}>
+                        <div className={coach.name === selectedCoach.name ? `trainer-item selected` : `trainer-item`} key={index} onClick={() => handleCoachClick(coach)}>
                             <img src={coach.image} alt={coach.name} className="trainer-thumbnail" />
                             <h3>{coach.name}</h3>
                         </div>
