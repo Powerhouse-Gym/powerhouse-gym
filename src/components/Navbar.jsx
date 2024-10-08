@@ -24,7 +24,7 @@ function Navbar(props) {
     return (
         <div className='navbar'>
             <Box className="nav-container">
-                <Tabs value={window.location.pathname} >
+                <Tabs className='nav-links' value={window.location.pathname} >
                     <Tab sx={{fontSize: '1.3rem'}} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
                     <Tab sx={{fontSize: '1.3rem'}} className="nav-item"label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
                     <Tab sx={{fontSize: '1.3rem'}} className="nav-item"label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
