@@ -74,6 +74,10 @@
 
 }
 
+#home{
+  max-width: 100%;
+}
+
 #facebook,
 #instagram {
   width: 19%;
