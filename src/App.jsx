@@ -7,6 +7,7 @@ import Training from './components/Training';
 import Crossfit from './components/Crossfit';
 import AfterSchool from './components/AfterSchool';
 import Team from './components/Team';
+import Footer from './components/Footer';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/afterschool" element={<AfterSchool /> } />
         <Route path="/team" element={<Team /> } />
       </Routes>
+      <Footer />
 
     </div>
   );
