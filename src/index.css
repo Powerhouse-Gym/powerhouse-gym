@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Syne", sans-serif !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .app {
@@ -149,12 +150,13 @@
 .trainer-item {
   cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
   transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .trainer-item:hover {
@@ -162,8 +164,8 @@
 }
 
 .trainer-thumbnail {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -173,14 +175,19 @@
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .coach-image {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 
 .coach-name {
@@ -193,8 +200,16 @@
 .career-section,
 .quote {
   margin-bottom: 20px;
+  width: 65%;
 }
 
-ul {
+
+
+.career-section > ul {
   padding-left: 20px;
+}
+
+.select-coach-txt{
+  text-align: center;
+  font-size: 1.5rem;
 }

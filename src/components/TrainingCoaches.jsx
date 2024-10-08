@@ -6,8 +6,6 @@ import Holly from '../assets/training-coaches/Holly.webp'
 import Tyler from '../assets/training-coaches/Tyler.webp'
 
 
-
-
 const TrainingCoaches = () => {
 
     const [selectedCoach, setSelectedCoach] = useState(null);
@@ -95,66 +93,96 @@ const TrainingCoaches = () => {
 
 
     return (
-            <div className="coaches-container">
-                <h1 className="rock-salt">Meet Our Trainers</h1>
-                <div className="trainer-layout">
-                    {/* Left Side: List of Trainers */}
-                    <div className="trainer-list">
-                        {coaches.map((coach, index) => (
-                            <div className="trainer-item" key={index} onClick={() => handleCoachClick(coach)}>
-                                <img src={coach.image} alt={coach.name} className="trainer-thumbnail" />
-                                <h3>{coach.name}</h3>
+        <div className="coaches-container">
+            <h1 className="rock-salt">Meet Our Trainers</h1>
+            <div className="trainer-layout">
+                {/* Left Side: List of Trainers */}
+                <div className="trainer-list">
+                    {coaches.map((coach, index) => (
+                        <div className="trainer-item" key={index} onClick={() => handleCoachClick(coach)}>
+                            <img src={coach.image} alt={coach.name} className="trainer-thumbnail" />
+                            <h3>{coach.name}</h3>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Right Side: Trainer Details */}
+                <div className="trainer-details">
+                    {selectedCoach ? (
+                        <>
+                            <div className="image-container">
+                                <img src={selectedCoach.image} alt={selectedCoach.name} className="coach-image" />
                             </div>
-                        ))}
-                    </div>
-    
-                    {/* Right Side: Trainer Details */}
-                    <div className="trainer-details">
-                        {selectedCoach ? (
-                            <>
-                                <div className="image-container">
-                                    <img src={selectedCoach.image} alt={selectedCoach.name} className="coach-image" />
+
+                            <h2 className="coach-name">{selectedCoach.name}</h2>
+                            <p className="bio">{selectedCoach.bio}</p>
+                            {selectedCoach.highSchoolCareer && (
+                                <div className="career-section">
+                                    <h3>High School Career</h3>
+                                    <ul>
+                                        {selectedCoach.highSchoolCareer.map((achievement, i) => (
+                                            <li key={i}>{achievement}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                                <h2 className="coach-name">{selectedCoach.name}</h2>
-                                <p className="bio">{selectedCoach.bio}</p>
-                                {selectedCoach.highSchoolCareer && (
-                                    <div className="career-section">
-                                        <h3>High School Career</h3>
+                            )}
+                            {selectedCoach.collegeCareer && (
+                                <div className="career-section">
+                                    <h3>College Career</h3>
+                                    {Array.isArray(selectedCoach.collegeCareer) ? (
                                         <ul>
-                                            {selectedCoach.highSchoolCareer.map((achievement, i) => (
+                                            {selectedCoach.collegeCareer.map((achievement, i) => (
                                                 <li key={i}>{achievement}</li>
                                             ))}
                                         </ul>
-                                    </div>
-                                )}
-                                {selectedCoach.collegeCareer && (
-                                    <div className="career-section">
-                                        <h3>College Career</h3>
-                                        {Array.isArray(selectedCoach.collegeCareer) ? (
-                                            <ul>
-                                                {selectedCoach.collegeCareer.map((achievement, i) => (
-                                                    <li key={i}>{achievement}</li>
-                                                ))}
-                                            </ul>
-                                        ) : (
-                                            <p>{selectedCoach.collegeCareer}</p>
-                                        )}
-                                    </div>
-                                )}
-                                {selectedCoach.favoriteQuote && (
-                                    <p className="quote">
-                                        <strong>Favorite Quote:</strong> <em>{selectedCoach.favoriteQuote}</em>
-                                    </p>
-                                )}
-                            </>
-                        ) : (
-                            <p>Please select a trainer to see their details.</p>
-                        )}
-                    </div>
+                                    ) : (
+                                        <p>{selectedCoach.collegeCareer}</p>
+                                    )}
+                                </div>
+                            )}
+                            {selectedCoach.baseballCareer && (
+                                <div className="career-section">
+                                    <h3>Baseball Career</h3>
+                                    <ul>
+                                        {selectedCoach.baseballCareer.map((achievement, i) => (
+                                            <li key={i}>{achievement}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            {selectedCoach.gymnasticsCareer && (
+                                <div className="career-section">
+                                    <h3>Gymnastics Career</h3>
+                                    <ul>
+                                        {selectedCoach.gymnasticsCareer.map((achievement, i) => (
+                                            <li key={i}>{achievement}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            {selectedCoach.career && (
+                                <div className="career-section">
+                                    <h3>Career</h3>
+                                    <ul>
+                                        {selectedCoach.career.map((achievement, i) => (
+                                            <li key={i}>{achievement}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            {selectedCoach.favoriteQuote && (
+                                <p className="quote">
+                                    <strong>Favorite Quote:</strong> <em>{selectedCoach.favoriteQuote}</em>
+                                </p>
+                            )}
+                        </>
+                    ) : (
+                        <p className='select-coach-txt'>Please select a trainer to see their details.</p>
+                    )}
                 </div>
             </div>
+        </div>
     );
 };
-
 
 export default TrainingCoaches;
