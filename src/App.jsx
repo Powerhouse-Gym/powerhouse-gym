@@ -25,7 +25,6 @@ function App() {
         <Route path="/afterschool" element={<AfterSchool /> } />
         <Route path="/team" element={<Team /> } />
       </Routes>
-      <Footer />
 
     </div>
   );
