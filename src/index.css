@@ -16,7 +16,7 @@
   gap: 25px;
 }
 
-.nav-links{
+.nav-links {
   max-width: 100vw !important;
 }
 
@@ -74,7 +74,7 @@
 
 }
 
-#home{
+#home {
   max-width: 100%;
 }
 
@@ -288,7 +288,7 @@
 
 /* Team */
 
-.team-container{
+.team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,12 +307,12 @@
   gap: 25px;
 }
 
-.directions-text > h2{
+.directions-text>h2 {
   padding: 25px;
 }
 
 
-.service-banner{
+.service-banner {
   height: 65vh;
   width: 100vw;
   display: flex;
@@ -332,20 +332,20 @@
 
 .one {
   gap: 5px;
-  padding : 20px;
+  padding: 20px;
   text-align: center;
 }
 
-.one > img {
+.one>img {
   height: 40%;
   width: 80%;
 }
 
-.one > h3 {
+.one>h3 {
   padding: 10px;
 }
 
-.one > button {
+.one>button {
   height: 25px;
   width: 150px;
 }
@@ -354,18 +354,19 @@
   gap: 15px;
 }
 
-.two > img {
+.two>img {
   height: 55%;
   width: 55%;
   border-radius: 14px;
 }
 
-.two > p {
+.two>p {
   font-size: smaller;
   width: 75%;
 }
 
-.two > h3, h4 {
+.two>h3,
+h4 {
   border-bottom: 1px solid white;
   font-size: smaller;
 }
@@ -374,21 +375,22 @@
   gap: 15px;
 }
 
-.three > img {
-  height : 55%;
+.three>img {
+  height: 55%;
   width: 55%;
   border-radius: 14px;
 }
 
-.three > p {
+.three>p {
   font-size: smaller;
   width: 75%;
 }
 
-.three > h3, h4 {
-    font-size: smaller;
-    border-bottom: 1px solid white;
-  
+.three>h3,
+h4 {
+  font-size: smaller;
+  border-bottom: 1px solid white;
+
 }
 
 .training-container {
@@ -397,10 +399,30 @@
   justify-content: center;
 }
 
-.training-item{
-  width: 30%;
+.training-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5vh;
+}
+
+/* First 3 items in the first row */
+.training-item:nth-child(-n+3) {
+  width: 30%;
+  /* 3 items per row */
+  height: 67vh;
+}
+
+/* Next 2 items in the second row */
+.training-item:nth-child(n+4):nth-child(-n+5) {
+  width: 35%;
+  /* 2 items per row */
+  height: 75vh;
+}
+
+/* Next 2 items in the third row */
+.training-item:nth-child(n+6):nth-child(-n+7) {
+  width: 35%;
+  /* 2 items per row */
+  height: 90vh;
 }
