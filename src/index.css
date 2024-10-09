@@ -125,9 +125,8 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: grey;
+  background-color: #C0C0C0;
   color: white;
-  border: 1px solid black;
 }
 
 .newsletter-container>input {
@@ -298,6 +297,9 @@
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  background-color: #C0C0C0;
+  color: white;
+  padding: 10px;
 }
 
 .directions-text {
@@ -313,11 +315,11 @@
 
 
 .service-banner {
-  height: 65vh;
+  height: 75vh;
   width: 100vw;
   display: flex;
   padding: 10px;
-  background-color: rgb(189, 186, 186);
+  background-color: #C0C0C0;
   color: white;
 }
 
@@ -327,7 +329,6 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  text-align: center;
 }
 
 .one {
@@ -337,17 +338,23 @@
 }
 
 .one>img {
-  height: 40%;
+  height: 60%;
   width: 80%;
+  position: relative;
+bottom: 80px;
 }
 
 .one>h3 {
   padding: 10px;
+  position: relative;
+  bottom:120px;
 }
 
 .one>button {
   height: 25px;
   width: 150px;
+  position: relative;
+  bottom: 110px;
 }
 
 .two {
@@ -355,8 +362,8 @@
 }
 
 .two>img {
-  height: 55%;
-  width: 55%;
+  height: 35%;
+  width: 75%;
   border-radius: 14px;
 }
 
@@ -377,7 +384,7 @@ h4 {
 
 .three>img {
   height: 55%;
-  width: 55%;
+  width: 80%;
   border-radius: 14px;
 }
 
