@@ -9,6 +9,20 @@ import hittingLessons from '/src/assets/training/hitting-lessons.webp'
 import pitchingLessons from '/src/assets/training/pitching-lessons.webp'
 import fieldingLessons from '/src/assets/training/fielding-lessons.webp'
 import catchingLessons from '/src/assets/training/catching-lessons.webp'
+import softballCatchingLessons from '/src/assets/training/softball-catching-lessons.webp'
+import softballHittingLessons from '/src/assets/training/softball-hitting-lessons.webp'
+import softballPitchingLessons from '/src/assets/training/softball-pitching-lessons.webp'
+import softballFieldingLessons from '/src/assets/training/softball-fielding-lessons.webp'
+import soccerTraining from '/src/assets/training/soccer-training.webp'
+import soccerTeamRental from '/src/assets/training/soccer-team-rental.webp'
+import soccerTeam from '/src/assets/training/soccer-team.webp'
+import volleyballLessons from '/src/assets/training/volleyball-lessons.webp'
+import volleyballTeamTraining from '/src/assets/training/volleyball-team-training.webp'
+import volleyballTeamDiscount from '/src/assets/training/volleyball-team-discount.webp'
+import footballLessons from '/src/assets/training/football-lessons.webp'
+import wrestlingLessons from '/src/assets/training/wrestling-lessons.webp'
+import strengthConditioning from '/src/assets/training/strength-conditioning.webp'
+import gymnastics from '/src/assets/training/gymnastics.webp'
 
 const cageAndFieldRentals = [
     {
@@ -87,25 +101,25 @@ const softball = [
         title: "Private Hitting Lessons",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 hitting lessons with one of our qualified trainers",
-        img: ""
+        img: softballHittingLessons
     },
     {
         title: "Private Pitching Lessons",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 pitching lessons with one of our qualified trainers.",
-        img: ""
+        img: softballPitchingLessons
     },
     {
         title: "Fielding",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 glove work and fielding technique with a qualified trainer.",
-        img: ""
+        img: softballFieldingLessons
     },
     {
         title: "Catching",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 catching techniques with a qualified trainer.",
-        img: ""
+        img: softballCatchingLessons
     }
 ];
 
@@ -113,14 +127,20 @@ const soccer = [
     {
         title: "Soccer Training w/Sarah",
         price: "",
-        description: "Indoor Soccer Team Rentals available",
-        img: ""
+        description: "",
+        img: soccerTraining
+    },
+    {
+        title: 'Indoor Soccer Team Rentals available',
+        price: "",
+        description: "",
+        img: soccerTeam
     },
     {
         title: "Indoor or Outdoor Monthly Soccer Team Rental Discount",
         price: "",
         description: "",
-        img: ""
+        img: soccerTeamRental
     }
 ];
 
@@ -129,19 +149,19 @@ const volleyball = [
         title: "Volleyball Lessons",
         price: "",
         description: "Schedule today!",
-        img: ""
+        img: volleyballLessons
     },
     {
         title: "Volleyball Team Trainings",
         price: "",
         description: "Contact us regarding Team Trainings",
-        img: ""
+        img: volleyballTeamTraining
     },
     {
         title: "Indoor or Outdoor Monthly Volleyball Team Rental Discount",
         price: "",
         description: "",
-        img: ""
+        img: volleyballTeamDiscount
     }
 ];
 
@@ -150,25 +170,25 @@ const otherSportsAndTrainings = [
         title: "Football Lessons",
         price: "$70 an hour",
         description: "Football training by a highly qualified trainer. Private or team trainings available.",
-        img: ""
+        img: footballLessons
     },
     {
         title: "Wrestling",
         price: "$100 a month",
         description: "Seasonal! Contact us for more information.",
-        img: ""
+        img: wrestlingLessons
     },
     {
         title: "Strength & Conditioning",
         price: "$10/athlete minimum of 10",
         description: "Seasonal! Contact us for more information.",
-        img: ""
+        img: strengthConditioning
     },
     {
         title: "Gymnastics, Tumbling, Cheer",
         price: "$70/hour",
         description: "",
-        img: ""
+        img: gymnastics
     }
 ];
 
