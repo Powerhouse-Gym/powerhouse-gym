@@ -3,6 +3,7 @@ import { APIProvider, Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps
 import background1 from "../assets/background-1.png"
 import Carousel from './CarouselCard';
 import '../home.css'
+import ServiceBanner from './ServiceBanner';
 
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
     return (
         <div id="home" >
             <Carousel />
+            <ServiceBanner />
             <div className="directions-container">
                 <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
                     Map commented out during testing
