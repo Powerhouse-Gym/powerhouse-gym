@@ -393,6 +393,7 @@ h4 {
 
 }
 
+
 .training-container {
   display: flex;
   flex-wrap: wrap;
@@ -426,3 +427,4 @@ h4 {
   /* 2 items per row */
   height: 90vh;
 }
+
