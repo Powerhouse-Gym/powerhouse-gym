@@ -4,7 +4,6 @@ import background1 from "../assets/background-1.png";
 import Carousel from './CarouselCard';
 import '../home.css';
 import ServiceBanner from './ServiceBanner';
-import Reviews from './Reviews';
 
 function Home() {
   useEffect(() => {
@@ -25,13 +24,13 @@ function Home() {
           {/* This is where the Trustmary widget script will load */}
         </div>
       <div className="directions-container">
-        <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
+        {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
           Map commented out during testing
-        </div>
+        </div> */}
         {/* Google Maps code commented out to save API hits */}
-        {/* <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+        <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
-            style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}
+            style={{ width: '55vw', height: '55vh', borderRadius: "8px" }}
             defaultCenter={{ lat: 34.94580, lng: -92.00977 }}
             defaultZoom={17}
             gestureHandling={'greedy'}
@@ -41,7 +40,7 @@ function Home() {
           <AdvancedMarker position={{ lat: 34.94580, lng: -92.00977 }} title="PowerHouse Crossfit and Training">
             <Pin background={'#ed1c26'} glyphColor={'#000'} borderColor={'#000'} scale={2.0} glyph={"PH"} />
           </AdvancedMarker>
-        </APIProvider> */}
+        </APIProvider>
         <div className='directions-text'>
           <h2>Need Directions?!</h2>
           <p>PowerHouse Crossfit and Training Complex</p>
