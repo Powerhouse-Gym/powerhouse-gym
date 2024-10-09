@@ -5,6 +5,10 @@ import turfArea from '/src/assets/training/turf-area.webp'
 import cageRental from '/src/assets/training/cage-rental.webp'
 import teamRental from '/src/assets/training/team-rental.webp'
 import unlimitedMembership from '/src/assets/training/unlimited-membership.webp'
+import hittingLessons from '/src/assets/training/hitting-lessons.webp'
+import pitchingLessons from '/src/assets/training/pitching-lessons.webp'
+import fieldingLessons from '/src/assets/training/fielding-lessons.webp'
+import catchingLessons from '/src/assets/training/catching-lessons.webp'
 
 const cageAndFieldRentals = [
     {
@@ -56,25 +60,25 @@ const baseball = [
         title: "Private Hitting Lessons",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 hitting lessons with one of our qualified trainers",
-        img: ""
+        img: hittingLessons
     },
     {
         title: "Private Pitching Lessons",
         price: "$50 half hour",
         description: "1 on 1 pitching lessons with one of our qualified trainers.",
-        img: ""
+        img: pitchingLessons
     },
     {
         title: "Fielding",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 glove work and fielding technique with a qualified trainer.",
-        img: ""
+        img: fieldingLessons
     },
     {
         title: "Catching",
         price: "$50 half hour $85 1 hour",
         description: "1 on 1 catching technique with a qualified trainer.",
-        img: ""
+        img: catchingLessons
     }
 ];
 
