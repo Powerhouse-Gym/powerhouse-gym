@@ -84,7 +84,6 @@
 }
 
 .banner {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +92,7 @@
   background-size: 100vw;
   background-position: center;
   max-width: 100vw;
-  height: 30vh;
+  height: 40vh;
 }
 
 .banner>img {
