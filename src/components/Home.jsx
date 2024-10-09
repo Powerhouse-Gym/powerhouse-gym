@@ -4,7 +4,10 @@ import background1 from "../assets/background-1.png";
 import Carousel from './CarouselCard';
 import '../home.css';
 import ServiceBanner from './ServiceBanner';
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/zak
 
 function Home() {
   useEffect(() => {
