@@ -1,0 +1,12 @@
+#carousel{
+    height: 55vh;
+    width: 55vw;
+    background-color: #f4f4f4;
+}
+
+.carousel-img > img {
+    height: 55vh;
+    width: 55vw;
+    border-radius: 10px;
+}
+

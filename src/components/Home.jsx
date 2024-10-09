@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { APIProvider, Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps';
 import background1 from "../assets/background-1.png"
-import Carousel from './Carousel';
+import Carousel from './CarouselCard';
 import '../home.css'
 
 
