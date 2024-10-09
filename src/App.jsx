@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 
 
 
+
 function App() {
   return (
     <div className = "app">
@@ -25,6 +26,9 @@ function App() {
         <Route path="/afterschool" element={<AfterSchool /> } />
         <Route path="/team" element={<Team /> } />
       </Routes>
+
+   <Footer />
+
 
     </div>
   );

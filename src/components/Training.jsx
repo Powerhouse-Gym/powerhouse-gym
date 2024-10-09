@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import TrainingItem from './TrainingItem';
+import { cageAndFieldRentals, baseball, softball, soccer, volleyball, otherSportsAndTrainings } from '../training-data';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,7 +43,7 @@ export default function Training() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="sports tabs">
           <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
@@ -52,23 +54,29 @@ export default function Training() {
           <Tab label="Other Sports and Training" {...a11yProps(5)} />
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
-        Cage & Field Rentals content here.
+      <CustomTabPanel value={value} index={0} >
+        <h1>Cage & Field Rentals</h1>
+        <TrainingItem arr={cageAndFieldRentals} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Baseball content here.
+        <h1>Baseball</h1>
+        <TrainingItem arr={baseball} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Softball content here.
+        <h1>Softball</h1>
+        <TrainingItem arr={softball} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        Soccer content here.
+        <h1>Soccer</h1>
+        <TrainingItem arr={soccer} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-        Volleyball content here.
+        <h1>Volleyball</h1>
+        <TrainingItem arr={volleyball} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={5}>
-        Other Sports and Training content here.
+        <h1>Other Sports and Training</h1>
+        <TrainingItem arr={otherSportsAndTrainings} />
       </CustomTabPanel>
     </Box>
   );
