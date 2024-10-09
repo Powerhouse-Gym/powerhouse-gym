@@ -13,7 +13,7 @@ function ServiceBanner() {
                 <img src={logo} alt="logo" />
                 <h3>Uniting nutrition, fitness and community through physical activities!</h3>
                 <h3>Together we are STRONGER</h3>
-                <button>Visiting Athlete</button>
+                <button>Visiting Athlete?</button>
             </div>
             <div className='column two'>
                 <img src={crossfit} alt="pullupgirl" />
