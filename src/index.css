@@ -143,6 +143,10 @@
   padding: 5px;
 }
 
+button {
+  padding: 15px;
+  border-radius: 8px;
+}
 
 /* Trainers */
 
@@ -315,7 +319,7 @@
 
 
 .service-banner {
-  height: 75vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   padding: 10px;
@@ -351,8 +355,6 @@ bottom: 80px;
 }
 
 .one>button {
-  height: 25px;
-  width: 150px;
   position: relative;
   bottom: 110px;
 }
@@ -367,9 +369,9 @@ bottom: 80px;
   border-radius: 14px;
 }
 
-.two>p {
-  font-size: smaller;
-  width: 75%;
+.two> ul {
+  font-size: larger;
+  
 }
 
 .two>h3,
@@ -388,9 +390,8 @@ h4 {
   border-radius: 14px;
 }
 
-.three>p {
-  font-size: smaller;
-  width: 75%;
+.three> ul {
+  font-size: larger;
 }
 
 .three>h3,

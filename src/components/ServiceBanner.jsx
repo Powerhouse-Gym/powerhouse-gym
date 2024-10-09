@@ -13,7 +13,7 @@ function ServiceBanner() {
                 <img src={logo} alt="logo" />
                 <h3>Uniting nutrition, fitness and community through physical activities!</h3>
                 <h3>Together we are STRONGER</h3>
-                <button>Visiting Athlete</button>
+                <button>VISITING ATHLETE</button>
             </div>
             <div className='column two'>
                 <img src={crossfit} alt="pullupgirl" />
@@ -37,8 +37,8 @@ function ServiceBanner() {
     <li>Encourage strength in unity over individual efforts</li>
 </ul>
 
-                <button>CONTACT FOR INFO!</button>
                 <img src={highfive} alt='glove' />
+                <button>CONTACT FOR INFO!</button>
             </div>
         </div>
     );
