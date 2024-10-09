@@ -8,14 +8,13 @@ import Reviews from './Reviews';
 
 function Home() {
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "https://widget.trustmary.com/fpDyQf-wk";
-    script.async = true;
-    document.getElementById("test").appendChild(script);
-
-    return () => {
-      document.getElementById("test").removeChild(script); // Cleanup to remove the script when component unmounts
-    };
+    // Check if the script is already added
+    if (!document.querySelector("script[src='https://widget.trustmary.com/fpDyQf-wk']")) {
+      const script = document.createElement('script');
+      script.src = "https://widget.trustmary.com/fpDyQf-wk";
+      script.async = true;
+      document.getElementById("test").appendChild(script);
+    }
   }, []); // Empty dependency array ensures the effect runs only once
 
   return (
@@ -23,7 +22,7 @@ function Home() {
       <Carousel />
       <ServiceBanner />
         <div id='test'>
-
+          {/* This is where the Trustmary widget script will load */}
         </div>
       <div className="directions-container">
         <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
