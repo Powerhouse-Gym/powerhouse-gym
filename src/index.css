@@ -365,7 +365,7 @@
 }
 
 .two > h3, h4 {
-  text-decoration: underline;
+  border-bottom: 1px solid white;
   font-size: smaller;
 }
 
@@ -386,7 +386,7 @@
 
 .three > h3, h4 {
     font-size: smaller;
-    text-decoration: underline;
+    border-bottom: 1px solid white;
   
 }
 
