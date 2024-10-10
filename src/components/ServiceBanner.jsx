@@ -4,6 +4,7 @@ import highfive from "../assets/traininghighfive.jpg"
 import crossfit from "../assets/crossfit.jpg"
 import ballglove from "../assets/baseballglove.jpg"
 import logo from "../assets/logo-white.webp"
+import powerhousegrafiti from "../assets/powerhouse-grafiti.png"
 
 
 
@@ -16,6 +17,7 @@ function ServiceBanner() {
                 <h3>Uniting nutrition, fitness and community through physical activities!</h3>
                 <h3>Together we are STRONGER</h3>
                 <button>VISITING ATHLETE</button>
+                <img id = "service-logo"src={powerhousegrafiti} alt="logo" />
 
 
             </div>
