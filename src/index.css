@@ -350,19 +350,19 @@ button {
   height: 60%;
   width: 80%;
   position: relative;
-  bottom: 25px;
+  bottom: 100px;
 }
 
 .one>h3 {
   padding: 10px;
   position: relative;
-  bottom:120px;
+  bottom: 175px;
 
 }
 
 .one>button {
   position: relative;
-  bottom: 110px;
+  bottom: 150px;
 }
 
 .two {
