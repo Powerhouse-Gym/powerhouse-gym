@@ -44,17 +44,31 @@ export default function Training() {
 
   return (
     <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="sports tabs">
-          <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
-          <Tab label="Baseball" {...a11yProps(1)} />
-          <Tab label="Softball" {...a11yProps(2)} />
-          <Tab label="Soccer" {...a11yProps(3)} />
-          <Tab label="Volleyball" {...a11yProps(4)} />
-          <Tab label="Other Sports and Training" {...a11yProps(5)} />
-        </Tabs>
+      <Box
+        sx={{
+          width: '100%', 
+          display: 'flex',
+          justifyContent: 'center', // Centering the tabs horizontally
+          position: 'sticky',
+          top: '9vh', // Adjusted for navbar height
+          zIndex: 1000, // Keeps it above other content
+          backgroundColor: 'white',
+          borderBottom: 1,
+          borderColor: 'divider'
+        }}
+      >
+        <Box sx={{ maxWidth: 960, width: '100%' }}> {/* Optional: Adjust maxWidth to control centering and width */}
+          <Tabs value={value} onChange={handleChange} aria-label="sports tabs" centered>
+            <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
+            <Tab label="Baseball" {...a11yProps(1)} />
+            <Tab label="Softball" {...a11yProps(2)} />
+            <Tab label="Soccer" {...a11yProps(3)} />
+            <Tab label="Volleyball" {...a11yProps(4)} />
+            <Tab label="Other Sports and Training" {...a11yProps(5)} />
+          </Tabs>
+        </Box>
       </Box>
-      <CustomTabPanel value={value} index={0} >
+      <CustomTabPanel value={value} index={0}>
         <h1>Cage & Field Rentals</h1>
         <TrainingItem arr={cageAndFieldRentals} />
       </CustomTabPanel>

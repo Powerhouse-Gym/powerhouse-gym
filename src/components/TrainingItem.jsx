@@ -39,7 +39,7 @@ const TrainingItem = ({ arr }) => {
                         backgroundRepeat: 'no-repeat', // Prevents the background image from repeating
                         alignSelf: 'flex-start',
                         width: '100%', // Ensures the background image covers the entire CardContent
-                        height: '25%',
+                        minHeight: 'fit-content',
                         backgroundColor: 'black',
                         color: 'white'
 

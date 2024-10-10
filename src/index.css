@@ -486,10 +486,11 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .crossfit-img-div>img{
-  width: 50%;
+  width: 40%;
 }
 
 .crossfit-page{
@@ -522,4 +523,15 @@ h4 {
 
 .crossfit-journal-text> *{
   margin-bottom: 2vh;
+}
+
+.crossfit-journal-img{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crossfit-journal-img>img{
+  width: 70%;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import crossfit from "../assets/crossfit-white.jpg"
 import bannerImg from "../assets/new-crossfit-banner.png"
 import crossfitJournal from "../assets/crossfit-journal.webp"
+import CrossfitCoaches from './CrossfitCoaches';
 
 function Crossfit() {
     return (
@@ -31,6 +32,7 @@ function Crossfit() {
                     <img src={crossfitJournal} alt='Crossfit Journal' />
                 </div>
             </div>
+            <CrossfitCoaches />
         </div>
     );
 }
