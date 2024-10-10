@@ -24,7 +24,7 @@ function ServiceBanner() {
                     <li>USAW & Powerlifting Coach.</li>
                     <li>Burgener Strength Weightlifting L1 Coach.</li>
                 </ul>
-                <button className="button-42">VISITING ATHLETE</button>
+                <button className="button-17">VISITING ATHLETE</button>
 
 
             </div>
@@ -43,7 +43,7 @@ function ServiceBanner() {
                     <li>Nutritional awareness for healing and recovery.</li>
                     <li>Stronger together!</li>
                 </ul>
-                <button className='button-42'>START YOUR FREE TRIAL!</button>
+                <button className='button-17'>START YOUR FREE TRIAL!</button>
             </div>
             <div className='column three'>
                 <h1>SPORTS TRAINING</h1>
@@ -57,7 +57,7 @@ function ServiceBanner() {
                     <li>Customizable cages for hitting, pitching, throwing, and catching drills</li>
                 </ul>
 
-                <button className="button button-42">CONTACT FOR INFO!</button>
+                <button className="button button-17">CONTACT FOR INFO!</button>
 
             </div>
         </div>
