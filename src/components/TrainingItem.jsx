@@ -45,20 +45,22 @@ const TrainingItem = ({ arr }) => {
 
                     }}
                 >
-                    <Typography variant="h5" component="div" sx={{width: '70%'}}>
+                    <Typography variant="h5" component="div" sx={{ width: '70%' }}>
                         {elem.title}
                     </Typography>
-                    <Typography variant="h6" sx={{width: '70%'}}>
+                    <Typography variant="h6" sx={{ width: '70%' }}>
                         {elem.price}
                     </Typography>
-                    <Typography variant="body2" sx={{width: '70%'}}>
+                    <Typography variant="body2" sx={{ width: '70%' }}>
                         {elem.description}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" variant='outlined' color="dark">
-                        Book Now
-                    </Button>
+                    <a style={{color: 'black'}} href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events" target="_blank" rel="noopener noreferrer">
+                        <Button size="small" variant='outlined' color="dark">
+                            Book Now
+                        </Button>
+                    </a>
                 </CardActions>
             </Card>
         )
