@@ -5,6 +5,7 @@ import crossfit from "../assets/crossfit.jpg"
 import ballglove from "../assets/baseballglove.jpg"
 import logo from "../assets/logo-white.webp"
 import powerhousegrafiti from "../assets/powerhouse-grafiti.png"
+import swingaway from "../assets/swingaway.png"
 
 
 
@@ -13,11 +14,17 @@ function ServiceBanner() {
     return (
         <div className="service-banner">
             <div className='column one'>
-                <img src={logo} alt="logo" />
-                <h3>Uniting nutrition, fitness and community through physical activities!</h3>
-                <h3>Together we are STRONGER</h3>
+                <h2>PERSONAL TRAINING</h2>
+                <ul>
+                    <li>Coaches ready to help, whether for sports or fitness.</li>
+                    <li>Years of experience and multiple certifications.</li>
+                    <li>CF-L2 Programmer.</li>
+                    <li>Three CF-L1 Trainers.</li>
+                    <li>USAW & Powerlifting Coach.</li>
+                    <li>Burgener Strength Weightlifting L1 Coach.</li>
+                </ul>
                 <button>VISITING ATHLETE</button>
-                <img id = "service-logo"src={powerhousegrafiti} alt="logo" />
+                <img src={highfive} alt='highfive' />
 
 
             </div>
@@ -46,7 +53,7 @@ function ServiceBanner() {
                 </ul>
 
                 <button className="button">CONTACT FOR INFO!</button>
-                <img src={highfive} alt='glove' />
+                <img src={swingaway} alt="swingaway" />
 
             </div>
         </div>
