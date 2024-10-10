@@ -357,16 +357,14 @@ button {
 }
 
 .one {
-  gap: 5px;
+  gap: 15px;
   padding: 20px;
-  text-align: center;
 }
 
 .one>img {
-  height: 60%;
-  width: 80%;
-  position: relative;
-  bottom: 50px;
+  height: 40%;
+  width: 90%;
+  border-radius: 14px;
 }
 
 #service-logo{
@@ -381,10 +379,6 @@ button {
 
 }
 
-.one>button {
-  position: relative;
-  bottom: 50px;
-}
 
 .two {
   gap: 15px;
@@ -415,8 +409,8 @@ h4 {
 
 
 .three > img {
-  height : 55%;
-  width: 85%;
+  height : 45%;
+  width: 90%;
   border-radius: 14px;
 }
 
