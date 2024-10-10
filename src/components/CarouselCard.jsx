@@ -6,7 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import logoWhite from "../assets/logo-white.webp"
 import turfpic from "../assets/turfpic.webp"
 import crossfitWhite from "../assets/crossfit-white.jpg"
-
+import crossfit2 from "../assets/crossfit/crossfit2.jpg"
+import crossfit3 from "../assets/crossfit/crossfit3.jpg"
+import crossfit4 from "../assets/crossfit/crossfit4.jpg"
+import crossfit5 from "../assets/crossfit/crossfit5.jpg"
 
 function CarouselCard() {
   var settings = {
@@ -14,25 +17,29 @@ function CarouselCard() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    swipeToSlide: true,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 3000,
+    speed: 4000,
+    autoplaySpeed: 2000,
     cssEase: "ease-in-out",
     cssTransition: "3s",
-    cssBackdropFilter: "blur(10px)",
-    pauseOnHover: true
+    pauseOnHover: true,
+    fade: true
   };
   return (
     <div style={{ backgroundColor: " #f4f4f4", height: "65vh", width: "100vw", display: "flex", alignItems: "center", justifyContent: "center" }}>
       <Slider {...settings} style={{ height: "55vh", width: "55vw", borderRadius: "10px" }}>
         <div className="carousel-img" >
-          <img src={logoWhite} alt={"logo-white"} />
+          <img src={crossfit2} alt={"crossfit"} />
         </div>
         <div className="carousel-img" >
-          <img src={turfpic} alt={"turf-pic"} />
+          <img src={crossfit3} alt={"crossfit pic"} />
         </div>
         <div className="carousel-img" >
-          <img src={crossfitWhite} alt={"crossfit-white"} />
+          <img src={crossfit4} alt={"crossfit picture"} />
+        </div>
+        <div className="carousel-img" >
+          <img src={crossfit5} alt={"crossfit picture"} />
         </div>
       </Slider>
     </div>
