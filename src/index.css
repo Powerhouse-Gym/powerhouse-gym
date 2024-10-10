@@ -154,10 +154,7 @@
 }
 
 .newsletter-container>button {
-  height: 35px;
-  width: 100px;
-  border-radius: 8px;
-  padding: 5px;
+width: 10%;
 }
 
 button {
@@ -356,15 +353,56 @@ button {
   padding: 10px; 
 }
 
+.column > h2 {
+  border-bottom: 2px solid;
+}
 .one {
   gap: 15px;
   padding: 20px;
 }
 
+
+
+/* CSS */
+.button-42 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 2;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.button-42:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
 .one>img {
   height: 40%;
   width: 90%;
   border-radius: 14px;
+}
+
+.one > ul {
+  font-size: larger;
 }
 
 #service-logo{
@@ -377,6 +415,11 @@ button {
   position: relative;
   bottom: 85px;
 
+}
+
+.one > button {
+  width: 60%;
+  font-size: larger;
 }
 
 
@@ -402,6 +445,11 @@ h4 {
   font-size: smaller;
 }
 
+.two> button {
+  width: 60%;
+  font-size: larger;
+}
+
 .three {
   gap: 15px;
 }
@@ -423,6 +471,11 @@ h4 {
   font-size: smaller;
   border-bottom: 1px solid white;
 
+}
+
+.three > button {
+  width: 60%;
+  font-size: larger;
 }
 
 
