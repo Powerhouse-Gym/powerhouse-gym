@@ -21,160 +21,63 @@ import Fade from '@mui/material/Fade';
 function ServiceBanner() {
     const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpansion = () => {
-    setExpanded((prevExpanded) => !prevExpanded);
-  };
+    const handleExpansion = () => {
+        setExpanded((prevExpanded) => !prevExpanded);
+    };
+
+    const personalTrainingElements =
+
+        <ul className = "dropdown">
+            <li>Coaches ready to help, whether for sports or fitness.</li>
+            <li>Years of experience and multiple certifications.</li>
+            <li>CF-L2 Programmer.</li>
+            <li>Three CF-L1 Trainers.</li>
+            <li>USAW & Powerlifting Coach.</li>
+            <li>Burgener Strength Weightlifting L1 Coach.</li>
+        </ul>
+    const sportsTrainingElements =
+
+        <ul className = "dropdown">
+            <li>Variety of services for team and individual sports goals</li>
+            <li>Indoor practice field for soccer, volleyball, and more</li>
+            <li>Enclosed cages with or without machines</li>
+            <li>Customizable cages for hitting, pitching, throwing, and catching drills</li>
+        </ul>
+
+    const crossfitElements =
+        <ul className='dropdown'>
+            <li>Promoting healthier lifestyles for all.</li>
+            <li>Family-based atmosphere with like-minded people.</li>
+            <li>Physical fitness, nutrition, and positive interactions.</li>
+            <li>Working together to achieve common goals and build friendships.</li>
+            <li>Fitness for strong minds and bodies.</li>
+            <li>Nutritional awareness for healing and recovery.</li>
+            <li>Stronger together!</li>
+        </ul>
+
+
     return (
         <div className="service-banner">
             <div className='column one'>
                 <h1>PERSONAL TRAINING</h1>
                 <img src={highfive} alt='highfive' />
-                <Accordion expanded={expanded}
-        onChange={handleExpansion}
-        slots={{ transition: Fade }}
-        slotProps={{ transition: { timeout: 400 } }}
-        sx={[
-          expanded
-            ? {
-                '& .MuiAccordion-region': {
-                  height: 'auto',
-                },
-                '& .MuiAccordionDetails-root': {
-                  display: 'block',
-                },
-              }
-            : {
-                '& .MuiAccordion-region': {
-                  height: 0,
-                },
-                '& .MuiAccordionDetails-root': {
-                  display: 'none',
-                },
-              },
-        ]}>
-                    <AccordionSummary
-                          expandIcon={<ArrowDownwardIcon />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
-                    >
-                        Learn More
-                    </AccordionSummary>
-                    <AccordionDetails>
-                    <ul>
-                    <li>Coaches ready to help, whether for sports or fitness.</li>
-                    <li>Years of experience and multiple certifications.</li>
-                    <li>CF-L2 Programmer.</li>
-                    <li>Three CF-L1 Trainers.</li>
-                    <li>USAW & Powerlifting Coach.</li>
-                    <li>Burgener Strength Weightlifting L1 Coach.</li>
-                </ul>
-                    </AccordionDetails>
-                </Accordion>
-
-              
-
-
+                <AccordionComponent text={personalTrainingElements} />
             </div>
             <div className='column two'>
-
-
-
                 <h1>CROSSFIT</h1>
                 <img src={crossfit} alt="crossfit" />
-                <Accordion expanded={expanded}
-        onChange={handleExpansion}
-        slots={{ transition: Fade }}
-        slotProps={{ transition: { timeout: 400 } }}
-        sx={[
-          expanded
-            ? {
-                '& .MuiAccordion-region': {
-                  height: 'auto',
-                },
-                '& .MuiAccordionDetails-root': {
-                  display: 'block',
-                },
-              }
-            : {
-                '& .MuiAccordion-region': {
-                  height: 0,
-                },
-                '& .MuiAccordionDetails-root': {
-                  display: 'none',
-                },
-              },
-        ]}>
-                    <AccordionSummary
-                          expandIcon={<ArrowDownwardIcon />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
-                    >
-                       Learn More
-                    </AccordionSummary>
-                    <AccordionDetails>
-                <ul>
-                    <li>Promoting healthier lifestyles for all.</li>
-                    <li>Family-based atmosphere with like-minded people.</li>
-                    <li>Physical fitness, nutrition, and positive interactions.</li>
-                    <li>Working together to achieve common goals and build friendships.</li>
-                    <li>Fitness for strong minds and bodies.</li>
-                    <li>Nutritional awareness for healing and recovery.</li>
-                    <li>Stronger together!</li>
-                </ul>
-               
-                    </AccordionDetails>
-                </Accordion>
-                {/* <button className='button-17'>START YOUR FREE TRIAL!</button> */}
+                <AccordionComponent text={crossfitElements} />
             </div>
             <div className='column three'>
                 <h1>SPORTS TRAINING</h1>
                 <img src={swingaway} alt="swingaway" />
-                <Accordion expanded={expanded}
-        onChange={handleExpansion}
-        slots={{ transition: Fade }}
-        slotProps={{ transition: { timeout: 400 } }}
-        sx={[
-          expanded
-            ? {
-                '& .MuiAccordion-region': {
-                  height: 'auto',
-                },
-                '& .MuiAccordionDetails-root': {
-                  display: 'block',
-                },
-              }
-            : {
-                '& .MuiAccordion-region': {
-                  height: 0,
-                },
-                '& .MuiAccordionDetails-root': {
-                  display: 'none',
-                },
-              },
-        ]}>
-                    <AccordionSummary
-                          expandIcon={<ArrowDownwardIcon />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
-                    >
-                        Learn More
-                    </AccordionSummary>
-                    <AccordionDetails>
-                <ul>
-                    <li>Variety of services for team and individual sports goals</li>
-                    <li>Indoor practice field for soccer, volleyball, and more</li>
-                    <li>Enclosed cages with or without machines</li>
-                    <li>Customizable cages for hitting, pitching, throwing, and catching drills</li>
-                </ul>
-                  
-                    </AccordionDetails>
-                </Accordion>
+               <AccordionComponent text = {sportsTrainingElements}/>
 
 
-                {/* <button className="button button-17">CONTACT FOR INFO!</button> */}
+
 
             </div>
-
+       
         </div>
     );
 }
