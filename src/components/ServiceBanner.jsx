@@ -14,7 +14,8 @@ function ServiceBanner() {
     return (
         <div className="service-banner">
             <div className='column one'>
-                <h2>PERSONAL TRAINING</h2>
+                <h1>PERSONAL TRAINING</h1>
+                <img src={highfive} alt='highfive' />
                 <ul>
                     <li>Coaches ready to help, whether for sports or fitness.</li>
                     <li>Years of experience and multiple certifications.</li>
@@ -23,26 +24,30 @@ function ServiceBanner() {
                     <li>USAW & Powerlifting Coach.</li>
                     <li>Burgener Strength Weightlifting L1 Coach.</li>
                 </ul>
-                <button className = "button-42">VISITING ATHLETE</button>
-                <img src={highfive} alt='highfive' />
+                <button className="button-42">VISITING ATHLETE</button>
 
 
             </div>
             <div className='column two'>
-                <img src={crossfit} alt="pullupgirl" />
-                <h2>CROSSFIT</h2>
+
+
+
+                <h1>CROSSFIT</h1>
+                <img src={crossfit} alt="crossfit" />
                 <ul>
-                    <li>Variety of services for team and individual sports goals</li>
-                    <li>Indoor practice field for soccer, volleyball, and more</li>
-                    <li>Enclosed cages with or without machines</li>
-                    <li>Customizable cages for hitting, pitching, throwing, and catching drills</li>
-
+                    <li>Promoting healthier lifestyles for all.</li>
+                    <li>Family-based atmosphere with like-minded people.</li>
+                    <li>Physical fitness, nutrition, and positive interactions.</li>
+                    <li>Working together to achieve common goals and build friendships.</li>
+                    <li>Fitness for strong minds and bodies.</li>
+                    <li>Nutritional awareness for healing and recovery.</li>
+                    <li>Stronger together!</li>
                 </ul>
-
                 <button className='button-42'>START YOUR FREE TRIAL!</button>
             </div>
             <div className='column three'>
-                <h2>SPORTS TRAINING</h2>
+                <h1>SPORTS TRAINING</h1>
+                <img src={swingaway} alt="swingaway" />
 
 
                 <ul>
@@ -53,7 +58,6 @@ function ServiceBanner() {
                 </ul>
 
                 <button className="button button-42">CONTACT FOR INFO!</button>
-                <img src={swingaway} alt="swingaway" />
 
             </div>
         </div>
