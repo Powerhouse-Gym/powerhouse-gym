@@ -529,3 +529,9 @@ h4 {
 .crossfit-journal-img>img{
   width: 70%;
 }
+
+.youth-page{
+  display: flex;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
