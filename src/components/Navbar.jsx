@@ -28,7 +28,7 @@ function Navbar(props) {
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
-                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
+                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Summer Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
                 </Tabs>
             </Box>

@@ -4,7 +4,7 @@ import youthMemberships from '../assets/youth-memberships.webp';
 function Youth() {
     return (
         <div className='youth-page'>
-            <div >
+            <div className='youth-info'>
                 <h1>POWERHOUSE YOUTH MEMBERSHIPS</h1>
                 <h3>Our Mission</h3>
                 <p>
@@ -19,7 +19,7 @@ function Youth() {
                     <li>Coach Justin</li>
                 </ul>
             </div>
-            <div>
+            <div  className='youth-img'>
                 <img src={youthMemberships} alt="Youth Memberships" />
             </div>
         </div>
