@@ -435,3 +435,60 @@ h4 {
   height: 100vh;
 }
 
+.crossfit-container{
+  display: flex;
+  margin: 5vw;
+}
+
+.crossfit-info{
+  width: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.crossfit-info> *{
+  margin-bottom: 2vh;
+}
+
+.crossfit-img-div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crossfit-img-div>img{
+  width: 50%;
+}
+
+.crossfit-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 15vw; */
+}
+
+.crossfit-banner{
+  width: 60vw;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.crossfit-journal{
+  display: flex;
+  width: 100vw;
+  background-color: #C0C0C0;
+  padding: 2vw;
+}
+
+.crossfit-journal-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+.crossfit-journal-text> *{
+  margin-bottom: 2vh;
+}
