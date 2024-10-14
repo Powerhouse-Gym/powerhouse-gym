@@ -59,19 +59,19 @@ function ServiceBanner() {
     return (
         <div className="service-banner">
             <div className='column one'>
-                <h1>PERSONAL TRAINING</h1>
-                <img src={highfive} alt='highfive' />
+                <h2>PERSONAL TRAINING</h2>
                 <AccordionComponent text={personalTrainingElements} />
+                <img src={highfive} alt='highfive' />
             </div>
             <div className='column two'>
-                <h1>CROSSFIT</h1>
-                <img src={crossfit} alt="crossfit" />
+                <h2>CROSSFIT</h2>
                 <AccordionComponent text={crossfitElements} />
+                <img src={crossfit} alt="crossfit" />
             </div>
             <div className='column three'>
-                <h1>SPORTS TRAINING</h1>
-                <img src={swingaway} alt="swingaway" />
+                <h2>SPORTS TRAINING</h2>
                <AccordionComponent text = {sportsTrainingElements}/>
+                <img src={swingaway} alt="swingaway" />
 
 
 
