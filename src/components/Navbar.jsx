@@ -10,6 +10,7 @@ import crossfit from "../assets/crossfit-white.jpg"
 import NewsLetter from './NewsLetter';
 import powerhouse from "../assets/powerhouse-grafiti.png"
 import skulls from "../assets/skulls.png"
+import zIndex from '@mui/material/styles/zIndex';
 
 function Navbar(props) {
 
@@ -32,10 +33,11 @@ function Navbar(props) {
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
                 </Tabs>
             </Box>
+            <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${skulls})` ,zIndex: "15", position: "absolute", top: "10vh"}}></div>
             <div className='banner'>
                 <img src={powerhouse} />
             </div>
-            <div className = "skull-div" style = {{height: "5vh",width: "100vw", backgroundImage: `url(${skulls})`}}>
+            <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${skulls})`}}>
       </div>
             <div className='secondary-banner'>
                 <img src={logo} className="logo" />

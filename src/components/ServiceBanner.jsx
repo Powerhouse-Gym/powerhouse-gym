@@ -52,25 +52,24 @@ function ServiceBanner() {
             <li>Working together to achieve common goals and build friendships.</li>
             <li>Fitness for strong minds and bodies.</li>
             <li>Nutritional awareness for healing and recovery.</li>
-            <li>Stronger together!</li>
         </ul>
 
 
     return (
         <div className="service-banner">
             <div className='column one'>
-                <h2>PERSONAL TRAINING</h2>
-                <AccordionComponent text={personalTrainingElements} />
+                {/* <h2>PERSONAL TRAINING</h2> */}
+                <AccordionComponent title = "PERSONAL TRAINING"text={personalTrainingElements} />
                 <img src={highfive} alt='highfive' />
             </div>
             <div className='column two'>
-                <h2>CROSSFIT</h2>
-                <AccordionComponent text={crossfitElements} />
+                {/* <h2>CROSSFIT</h2> */}
+                <AccordionComponent title = {"CROSSFIT"}text={crossfitElements} />
                 <img src={crossfit} alt="crossfit" />
             </div>
             <div className='column three'>
-                <h2>SPORTS TRAINING</h2>
-               <AccordionComponent text = {sportsTrainingElements}/>
+                {/* <h2>SPORTS TRAINING</h2> */}
+               <AccordionComponent title = {"SPORTS TRAINING"}text = {sportsTrainingElements}/>
                 <img src={swingaway} alt="swingaway" />
 
 

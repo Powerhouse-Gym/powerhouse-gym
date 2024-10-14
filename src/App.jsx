@@ -27,9 +27,8 @@ function App() {
         <Route path="/afterschool" element={<AfterSchool /> } />
         <Route path="/team" element={<Team /> } />
       </Routes>
+
    <Footer />
-      <div className = "skull-div" style = {{height: "5vh",width: "100vw", backgroundImage: `url(${skulls})`}}>
-      </div>
 
 
     </div>

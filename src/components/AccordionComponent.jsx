@@ -20,7 +20,7 @@ export default function AccordionUsage(props) {
         slots={{ transition: Fade }}
         slotProps={{ transition: { timeout: 400 } }}
         sx={
-          [{ fontSize: "larger", position: "relative", zIndex: "1", backgroundColor: "lightgray"},
+          [{ fontSize: "larger", position: "relative", zIndex: "1"},
           expanded
             ? {
                 '& .MuiAccordion-region': {
@@ -44,7 +44,7 @@ export default function AccordionUsage(props) {
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
-                        Learn More
+                        {props.title}
                     </AccordionSummary>
                     <AccordionDetails>
              {props.text}

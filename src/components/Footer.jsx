@@ -20,7 +20,8 @@ backgroundImage: `url(${brickwall})`,
   alignItems: "center",
   justifyContent: "center",
   gap: "25px",
-  position: "relative"
+  position: "relative",
+  zIndex: "0"
 };
 
   return (
