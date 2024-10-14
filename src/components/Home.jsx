@@ -23,6 +23,7 @@ function Home() {
 
   return (
     <div id="home">
+      
       <Carousel />
       <ServiceBanner />
         <div id='test'>
