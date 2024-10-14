@@ -9,7 +9,7 @@ import instagram from '../assets/instagram.svg'
 import crossfit from "../assets/crossfit-white.jpg"
 import NewsLetter from './NewsLetter';
 import powerhouse from "../assets/powerhouse-grafiti.png"
-
+import skulls from "../assets/skulls.png"
 
 function Navbar(props) {
 
@@ -35,6 +35,8 @@ function Navbar(props) {
             <div className='banner'>
                 <img src={powerhouse} />
             </div>
+            <div className = "skull-div" style = {{height: "5vh",width: "100vw", backgroundImage: `url(${skulls})`}}>
+      </div>
             <div className='secondary-banner'>
                 <img src={logo} className="logo" />
                 <div className="contact-banner">

@@ -1,28 +1,30 @@
 import React from 'react';
 import logo from "../assets/powerhouse-grafiti.png"
 import logoActual from "../assets/logo-white.webp"
+import brickwall from "../assets/brick-wall-blank.png"
 
 const Footer = () => {
 
 
 const footerStyle = {
-  backgroundColor: '#333',
+backgroundImage: `url(${brickwall})`,
   color: '#fff',
   padding: '10px',
   left: '0',
   bottom: '0',
   masxWidth: '100vw',
   fontSize: "12px",
-  height: "10vh",
+  height: "5vh",
   display: "flex",
   flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "center",
-  gap: "25px"
+  gap: "25px",
+  position: "relative"
 };
 
   return (
-    <div style={footerStyle}>
+    <div style={footerStyle} className = "footer-div">
     <img className = "footer-logo" src= {logoActual} alt="powerhouse logo"/>
       <p>PowerHouse Crossfit and Training Complex</p>
       <p>1804 S. Pine Street, Cabot AR 72023</p>

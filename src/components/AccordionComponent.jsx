@@ -20,7 +20,7 @@ export default function AccordionUsage(props) {
         slots={{ transition: Fade }}
         slotProps={{ transition: { timeout: 400 } }}
         sx={
-          [{ fontSize: "larger", width: "400px"},
+          [{ fontSize: "larger", position: "relative", zIndex: "1", backgroundColor: "lightgray"},
           expanded
             ? {
                 '& .MuiAccordion-region': {

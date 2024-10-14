@@ -8,6 +8,7 @@ import Crossfit from './components/Crossfit';
 import AfterSchool from './components/AfterSchool';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import skulls from "./assets/skulls.png"
 
 
 
@@ -26,8 +27,9 @@ function App() {
         <Route path="/afterschool" element={<AfterSchool /> } />
         <Route path="/team" element={<Team /> } />
       </Routes>
-
    <Footer />
+      <div className = "skull-div" style = {{height: "5vh",width: "100vw", backgroundImage: `url(${skulls})`}}>
+      </div>
 
 
     </div>

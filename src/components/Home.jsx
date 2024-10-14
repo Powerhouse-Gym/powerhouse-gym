@@ -4,7 +4,7 @@ import background1 from "../assets/background-1.png";
 import Carousel from './CarouselCard';
 import '../home.css';
 import ServiceBanner from './ServiceBanner';
-import skulls from "../assets/skulls.png"
+
 
 function Home() {
   // use effect is turned off during development to save views on REVIEWS
@@ -25,15 +25,13 @@ function Home() {
     <div id="home">
       <Carousel />
       <ServiceBanner />
-      <div className = "skull-div" style = {{height: "15vh",width: "100vw", backgroundImage: `url(${skulls})`}}>
-      </div>
         <div id='test'>
           {/* This is where the Trustmary widget script will load */}
         </div>
       <div className="directions-container">
         {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
           Map commented out during testing
-        </div> */}
+          </div> */}
         {/* Google Maps code commented out to save API hits */}
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
@@ -55,6 +53,7 @@ function Home() {
           <p>501.247.1517</p>
           <p>Powerhouse Training Complex, LLC</p>
           <button className = "button-17">CONTACT US</button>
+         
         </div>
       </div>
     </div>
