@@ -27,6 +27,7 @@ function Home() {
   return (
     <div id="home">
          <div className='banner'>
+          <h1>Welcome To</h1>
                 <img src={powerhouse} />
             </div>
             <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
