@@ -8,20 +8,7 @@ const Footer = () => {
 
 const footerStyle = {
 backgroundImage: `url(${brickwall})`,
-  color: '#fff',
-  padding: '10px',
-  left: '0',
-  bottom: '0',
-  masxWidth: '100vw',
-  fontSize: "12px",
-  height: "5vh",
-  display: "flex",
-  flexWrap: "wrap",
-  alignItems: "center",
-  justifyContent: "center",
-  gap: "25px",
-  position: "relative",
-  zIndex: "0"
+ 
 };
 
   return (

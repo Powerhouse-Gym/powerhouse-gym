@@ -30,7 +30,7 @@ function Home() {
           <h1>Welcome To</h1>
                 <img src={powerhouse} />
             </div>
-            <div className = "skull-div" style = {{height: "2vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
+            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}>
       </div>
       <SecondaryBanner />
       <NewsLetter />
@@ -46,7 +46,7 @@ function Home() {
         {/* Google Maps code commented out to save API hits */}
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
-            style={{ width: '55vw', height: '55vh', borderRadius: "8px" }}
+          className = "mapstyles"
             defaultCenter={{ lat: 34.94580, lng: -92.00977 }}
             defaultZoom={17}
             gestureHandling={'greedy'}
@@ -67,7 +67,7 @@ function Home() {
          
         </div>
       </div>
-      <div className = "skull-div" style = {{height: "2vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
+      <div className = "skull-div" style = {{ backgroundImage: `url(${chainlink})`}}>
       </div>
     </div>
   );
