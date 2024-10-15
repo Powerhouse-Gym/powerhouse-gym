@@ -4,7 +4,8 @@ import background1 from "../assets/background-1.png";
 import Carousel from './CarouselCard';
 import '../home.css';
 import ServiceBanner from './ServiceBanner';
-
+import powerhouse from "../assets/powerhouse-grafiti.png"
+import chainlink from "../assets/chainlink.png"
 
 function Home() {
   // use effect is turned off during development to save views on REVIEWS
@@ -23,7 +24,11 @@ function Home() {
 
   return (
     <div id="home">
-      
+         <div className='banner'>
+                <img src={powerhouse} />
+            </div>
+            <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
+      </div>
       <Carousel />
       <ServiceBanner />
         <div id='test'>

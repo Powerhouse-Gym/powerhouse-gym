@@ -35,11 +35,7 @@ function Navbar(props) {
                 </Tabs>
             </Box>
             {/* <div className = "skull-div" style = {{height: "2.5vh",width: "100vw", backgroundImage: `url(${chainlink})` ,zIndex: "15", position: "absolute", top: "10vh"}}></div> */}
-            <div className='banner'>
-                <img src={powerhouse} />
-            </div>
-            <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
-      </div>
+         
             <div className='secondary-banner'>
                 <img src={logo} className="logo" />
                 <div className="contact-banner">

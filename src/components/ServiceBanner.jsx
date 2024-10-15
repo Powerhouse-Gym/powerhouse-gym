@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useNavigate} from "react-router-dom"
 import pullupgirl from "../assets/pullupgirl.png"
 import highfive from "../assets/traininghighfive.jpg"
 import crossfit from "../assets/crossfit.jpg"
@@ -86,9 +87,19 @@ function ServiceBanner() {
             }
     }
 
-   
+   const navigate = useNavigate()
 
-   
+   const handleLearnMore = (title) => {
+        if (title === "Powerhouse Crossfit"){
+            navigate("/crossfit")
+        }
+        else if (title === "Powerhouse Sports Training"){
+            navigate("/training")
+        }
+        else if (title === "Personal Training"){
+            navigate("/")
+        }
+   }
     
   
 
@@ -111,6 +122,7 @@ function ServiceBanner() {
                 })}
                 {/* <img src={activeService.imgUrl} alt="crossfit" />  */}
                <img src = {activeService.logo} alt ="logo" />
+                <button onClick = {() => handleLearnMore(activeService.title)}>LEARN MORE</button>
             </div>
           
        
