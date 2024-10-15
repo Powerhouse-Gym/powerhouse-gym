@@ -88,6 +88,7 @@
 
 .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url('/src/assets/brick-wall-blank.png');
@@ -98,6 +99,24 @@
   height: 70vh;
   margin-top: 50px;
   position: relative;
+}
+
+.banner > h1 {
+  color: white;
+  font-family: "Rock Salt", cursive !important;
+  position: relative;
+  top: 125px;
+  z-index: 1;
+  font-size: 48px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Make it visible */
+  }
 }
 .banner::before {
   content: "";
@@ -113,7 +132,7 @@
 
 .banner>img {
 height: 105%;
-width: 110%;
+width: 100%;
 z-index: 15;
 position: relative;
 right: 20px;
