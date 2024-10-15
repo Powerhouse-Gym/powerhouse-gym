@@ -94,7 +94,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 100vw;
+  width: 100vw;
   height: 70vh;
   margin-top: 50px;
   position: relative;
@@ -112,9 +112,11 @@
 
 
 .banner>img {
-  width: 110%;
-  height:110%;
-  z-index: 15;
+height: 105%;
+width: 110%;
+z-index: 15;
+position: relative;
+right: 20px;
   
 }
 .banner img {
@@ -474,6 +476,7 @@ button {
 
 
 
+
 /* CSS */
 .button-42 {
   background-color: initial;
@@ -529,35 +532,43 @@ button {
   padding: 10px;
   position: relative;
   bottom: 85px;
-} */
-
-.one > button {
-  width: 60%;
-  font-size: larger;
-}
-
-
-.two {
-  width: 60%;
-  border: 1px solid black;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #eee;
-  position: relative;
-}
-
-.two > img {
-  height:50%;
-  width: 40%;
-  border-radius: 50%;
-  position: absolute;
-  top: 75px;
-  right: 15px;
-}
-
+  } */
+  
+  .one > button {
+    width: 60%;
+    font-size: larger;
+  }
+  
+  
+  
+  
+  .two {
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #eee;
+    position: relative;
+  }
+  
+  .two > img {
+    height:50%;
+    width: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    right: 15px;
+  }
+  
+  .two > button {
+    position: absolute;
+    right: 90px;
+    bottom: 70px;
+    cursor: pointer;
+  }
 .two >h1 {
   margin-bottom: 20px;
   border-bottom: 2px solid;
@@ -566,6 +577,7 @@ button {
 .two>h3 {
 height: 100%;
 width: 55%;
+
 }
 
 
