@@ -109,8 +109,8 @@
   z-index: 1;
   font-size: 48px;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 3s;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 @keyframes fadeIn {
@@ -142,18 +142,23 @@ right: 20px;
   /* width: 100%;
   height: auto; */
   position: relative;
+  opacity: 0;
   animation: moveAndZoom 3s ease-in-out forwards;
+  animation-delay: 2.5s;
 }
 
 @keyframes moveAndZoom {
   0% {
-      transform: scale(.25) rotate(0deg); /* Start at 0 degrees rotation */
+    opacity: 0;
+      transform: scale(.25); /* Start at 0 degrees rotation */
   }
   50% {
-      transform: scale(1.25) rotate(180deg); /* Zoom in and rotate to 180 degrees */
+    opacity: 0.5;
+      transform: scale(1.25); /* Zoom in and rotate to 180 degrees */
   }
   100% {
-      transform: scale(1) rotate(-360deg); /* Zoom out and complete a full 360-degree rotation */
+    opacity: 1;
+      transform: scale(1); /* Zoom out and complete a full 360-degree rotation */
   }
 }
 
