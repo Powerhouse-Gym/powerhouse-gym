@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import TrainingItem from './TrainingItem';
 import { cageAndFieldRentals, baseball, softball, soccer, volleyball, otherSportsAndTrainings } from '../training-data';
+import NewsLetter from './NewsLetter';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,6 +44,8 @@ export default function Training() {
   };
 
   return (
+    <>
+      <NewsLetter />
     <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Box
         sx={{
@@ -56,7 +59,7 @@ export default function Training() {
           borderBottom: 1,
           borderColor: 'divider'
         }}
-      >
+        >
         <Box sx={{ maxWidth: 960, width: '100%' }}> {/* Optional: Adjust maxWidth to control centering and width */}
           <Tabs value={value} onChange={handleChange} aria-label="sports tabs" centered>
             <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
@@ -93,5 +96,6 @@ export default function Training() {
         <TrainingItem arr={otherSportsAndTrainings} />
       </CustomTabPanel>
     </Box>
+        </>
   );
 }

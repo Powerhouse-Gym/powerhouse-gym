@@ -1,9 +1,11 @@
 import React from 'react';
 import youthMemberships from '../assets/youth-memberships.webp';
+import NewsLetter from './NewsLetter';
 
 function Youth() {
     return (
         <div className='youth-page'>
+            <NewsLetter />
             <div className='youth-info'>
                 <h1>POWERHOUSE YOUTH MEMBERSHIPS</h1>
                 <h3>Our Mission</h3>

@@ -3,10 +3,12 @@ import crossfit from "../assets/crossfit-white.jpg"
 import bannerImg from "../assets/new-crossfit-banner.png"
 import crossfitJournal from "../assets/crossfit-journal.webp"
 import CrossfitCoaches from './CrossfitCoaches';
+import NewsLetter from './NewsLetter';
 
 function Crossfit() {
     return (
         <div className='crossfit-page'>
+            <NewsLetter />
             <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' />
             <div className='crossfit-container'>
                 <div className='crossfit-info'>
