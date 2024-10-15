@@ -30,7 +30,7 @@ function Home() {
           <h1>Welcome To</h1>
                 <img src={powerhouse} />
             </div>
-            <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
+            <div className = "skull-div" style = {{height: "2vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
       </div>
       <SecondaryBanner />
       <NewsLetter />
@@ -66,6 +66,8 @@ function Home() {
           <button className = "button-17">CONTACT US</button>
          
         </div>
+      </div>
+      <div className = "skull-div" style = {{height: "2vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
       </div>
     </div>
   );

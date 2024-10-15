@@ -27,8 +27,8 @@ function CarouselCard() {
     fade: true
   };
   return (
-    <div style={{ backgroundColor: " #f4f4f4", height: "65vh", width: "100vw", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <Slider {...settings} style={{ height: "55vh", width: "75vw", borderRadius: "10px" }}>
+    <div className = "carousel-div" >
+      <Slider {...settings}className = "carousel-slider" >
         <div className="carousel-img" >
           <img src={crossfit2} alt={"crossfit"} />
         </div>
