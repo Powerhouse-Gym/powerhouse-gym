@@ -148,21 +148,25 @@ right: 20px;
 .secondary-banner {
   display: flex;
   height: 20vh;
+  width: 100vw;
   align-items: center;
   justify-content: center;
   z-index: 2;
+  margin-top: 7vh;
 }
 
 .newsletter-container {
   display: flex;
   height: 75px;
-  max-width: 100vw;
+  width: 100vw;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   background-color:   #d0160f;
   color: white;
 }
+
+
 
 /* CSS */
 .button-17 {
@@ -235,7 +239,7 @@ right: 20px;
 }
 
 .newsletter-container>input {
-  width: 300px;
+  width: 500px;
   height: 35px;
   border-radius: 8px;
   padding: 5px;
@@ -568,6 +572,13 @@ button {
     right: 90px;
     bottom: 70px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .two > button:hover {
+    transform: scale(1.25);
+    color: white;
+    background-color: #333; /* Scale the button on hover */
   }
 .two >h1 {
   margin-bottom: 20px;

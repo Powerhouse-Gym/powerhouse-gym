@@ -6,6 +6,8 @@ import '../home.css';
 import ServiceBanner from './ServiceBanner';
 import powerhouse from "../assets/powerhouse-grafiti.png"
 import chainlink from "../assets/chainlink.png"
+import SecondaryBanner from './SecondaryBanner';
+import NewsLetter from './NewsLetter';
 
 function Home() {
   // use effect is turned off during development to save views on REVIEWS
@@ -29,6 +31,8 @@ function Home() {
             </div>
             <div className = "skull-div" style = {{height: "3vh",width: "100vw", backgroundImage: `url(${chainlink})`}}>
       </div>
+      <SecondaryBanner />
+      <NewsLetter />
       <Carousel />
       <ServiceBanner />
         <div id='test'>

@@ -72,7 +72,6 @@ function ServiceBanner() {
         ]
         
     }
-   
     ]
 
     const handleServiceClick = (title) => {

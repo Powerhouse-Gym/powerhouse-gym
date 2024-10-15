@@ -36,21 +36,7 @@ function Navbar(props) {
             </Box>
             {/* <div className = "skull-div" style = {{height: "2.5vh",width: "100vw", backgroundImage: `url(${chainlink})` ,zIndex: "15", position: "absolute", top: "10vh"}}></div> */}
          
-            <div className='secondary-banner'>
-                <img src={logo} className="logo" />
-                <div className="contact-banner">
-                    <h2>501-247-1517</h2>
-                    <div className='banner-logos'>
-                        <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                            <img src={facebook} alt="Facebook" />
-                        </a>
-                        <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                            <img src={instagram} alt='Instagram' />
-                        </a>
-                    </div>
-                </div>
-                <img className="crossfit" src={crossfit} />
-            </div>
+            
             <NewsLetter />
         </div>
     );
