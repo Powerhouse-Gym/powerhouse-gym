@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import pullupgirl from "../assets/pullupgirl.png"
 import highfive from "../assets/traininghighfive.jpg"
 import crossfit from "../assets/crossfit.jpg"
+import crossfitLogo from "../assets/crossfit-white.jpg"
 import ballglove from "../assets/baseballglove.jpg"
 import logo from "../assets/logo-white.webp"
 import powerhousegrafiti from "../assets/powerhouse-grafiti.png"
@@ -19,63 +20,99 @@ import Fade from '@mui/material/Fade';
 
 
 function ServiceBanner() {
-    const [expanded, setExpanded] = React.useState(false);
 
-    const handleExpansion = () => {
-        setExpanded((prevExpanded) => !prevExpanded);
-    };
+    const [activeService, setActiveService] = useState({
+        title: "Powerhouse Crossfit",
+        imgUrl: crossfit,
+        logo: crossfitLogo,
+        listItems: [
+            "Promoting healthier lifestyles for all.",
+            "Family-based atmosphere with like-minded people.",
+            "Physical fitness, nutrition, and positive interactions.",
+            "Working together to achieve common goals and build friendships.",
+            "Fitness for strong minds and bodies.",
+            "Nutritional awareness for healing and recovery."
+          ]
+    })
 
-    const personalTrainingElements =
+    const allServices = [
+        {
+        title: "Powerhouse Crossfit",
+        imgUrl: crossfit,
+        logo: crossfitLogo,
+        listItems: [
+            "Promoting healthier lifestyles for all.",
+            "Family-based atmosphere with like-minded people.",
+            "Physical fitness, nutrition, and positive interactions.",
+            "Working together to achieve common goals and build friendships.",
+            "Fitness for strong minds and bodies.",
+            "Nutritional awareness for healing and recovery."
+          ]
+    },
+    { 
+        title: "Powerhouse Sports Training",
+        logo: logo,
+        listItems: [ "Variety of services for team and individual sports goals",
+            "Indoor practice field for soccer, volleyball, and more",
+            "Enclosed cages with or without machines",
+            "Customizable cages for hitting, pitching, throwing, and catching drills"]
 
-        <ul className = "dropdown">
-            <li>Coaches ready to help, whether for sports or fitness.</li>
-            <li>Years of experience and multiple certifications.</li>
-            <li>CF-L2 Programmer.</li>
-            <li>Three CF-L1 Trainers.</li>
-            <li>USAW & Powerlifting Coach.</li>
-            <li>Burgener Strength Weightlifting L1 Coach.</li>
-        </ul>
-    const sportsTrainingElements =
+    }, {
+        title: "Personal Training",
+        logo: powerhousegrafiti,
+        listItems: 
+        [
+            "Coaches ready to help, whether for sports or fitness.",
+            "Years of experience and multiple certifications.",
+            "CF-L2 Programmer.",
+            "Three CF-L1 Trainers.",
+            "USAW & Powerlifting Coach.",
+            "Burgener Strength Weightlifting L1 Coach."
+        ]
+        
+    }
+   
+    ]
 
-        <ul className = "dropdown">
-            <li>Variety of services for team and individual sports goals</li>
-            <li>Indoor practice field for soccer, volleyball, and more</li>
-            <li>Enclosed cages with or without machines</li>
-            <li>Customizable cages for hitting, pitching, throwing, and catching drills</li>
-        </ul>
+    const handleServiceClick = (title) => {
+            if (title === "Powerhouse Crossfit"){
+                setActiveService(allServices[0])
+            }
+            else if (title === "Powerhouse Sports Training"){
+                setActiveService(allServices[1])
+            }
+            else if (title === "Personal Training"){
+                setActiveService(allServices[2])
+            }
+    }
 
-    const crossfitElements =
-        <ul className='dropdown'>
-            <li>Promoting healthier lifestyles for all.</li>
-            <li>Family-based atmosphere with like-minded people.</li>
-            <li>Physical fitness, nutrition, and positive interactions.</li>
-            <li>Working together to achieve common goals and build friendships.</li>
-            <li>Fitness for strong minds and bodies.</li>
-            <li>Nutritional awareness for healing and recovery.</li>
-        </ul>
+   
+
+   
+    
+  
 
 
     return (
         <div className="service-banner">
             <div className='column one'>
-                {/* <h2>PERSONAL TRAINING</h2> */}
-                <AccordionComponent title = "PERSONAL TRAINING"text={personalTrainingElements} />
-                <img src={highfive} alt='highfive' />
+                <h2 onClick = {()=>handleServiceClick("Powerhouse Crossfit")}>CROSSFIT</h2>
+                <h2 onClick = {() => handleServiceClick("Powerhouse Sports Training")}>SPORTS TRAINING</h2>
+                <h2 onClick = {()=> handleServiceClick("Personal Training")}>PERSONAL TRAINING</h2>
             </div>
             <div className='column two'>
-                {/* <h2>CROSSFIT</h2> */}
-                <AccordionComponent title = {"CROSSFIT"}text={crossfitElements} />
-                <img src={crossfit} alt="crossfit" />
+                <h1>{activeService.title}</h1>
+                {activeService.listItems.map(item => {
+                    return (
+                        <>
+                        <h3>{item}</h3>
+                        </>
+                    )
+                })}
+                {/* <img src={activeService.imgUrl} alt="crossfit" />  */}
+               <img src = {activeService.logo} alt ="logo" />
             </div>
-            <div className='column three'>
-                {/* <h2>SPORTS TRAINING</h2> */}
-               <AccordionComponent title = {"SPORTS TRAINING"}text = {sportsTrainingElements}/>
-                <img src={swingaway} alt="swingaway" />
-
-
-
-
-            </div>
+          
        
         </div>
     );
