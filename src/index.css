@@ -133,19 +133,14 @@
 .banner>img {
 height: 105%;
 width: 100%;
+max-width: 1000px;
 z-index: 15;
-position: relative;
-right: 20px;
-  
-}
-.banner img {
-  /* width: 100%;
-  height: auto; */
   position: relative;
   opacity: 0;
   animation: moveAndZoom 3s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 2s;  
 }
+
 
 @keyframes moveAndZoom {
   0% {
@@ -433,9 +428,23 @@ button {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  background-color: #333;
+  background-image: url("/src/assets/brick-wall-blank.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 10px;
+  position: relative;
+}
+
+.directions-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 for the level of darkness */
+  z-index: 0; 
 }
 
 .directions-text {
@@ -444,6 +453,7 @@ button {
   align-items: center;
   gap: 25px;
   font-size: larger;
+  z-index: 1;
 }
 
 .directions-text>h2 {
@@ -825,5 +835,90 @@ h4 {
 
 .footer > p {
   z-index: 0;
+}
+.carousel-div {
+  background-color: #f4f4f4;
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slider {
+  height: 55vh;
+  width: 75vw;
+  border-radius: 10px;
+}
+
+/* Mobile devices (smallest screens like phones, portrait mode) */
+@media only screen and (max-width: 600px) {
+  .banner {
+    margin-top: 0; /* Remove margin for mobile screens */
+    height: 60vh; /* Adjust height if needed */
+  }
+
+  .secondary-banner {
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .secondary-banner > .logo {
+    height: 70%;
+    width: 50%
+  }
+
+  .secondary-banner > .crossfit {
+    height: 50%;
+    width: 50%
+  }
+
+  .contact-banner > h2 {
+    font-size: 18px;
+    width: 125px;
+  }
+
+  .newsletter-container {
+    height: 5vh;
+    font-size: 8px;
+   gap: 15px;
+   padding: 5px;
+  }
+
+  .newsletter-container >input {
+    width: 40%;
+    height: 80%;
+  }
+
+  .newsletter-container > h1 {
+    width: 20%;
+    margin: 10px;
+  }
+
+  .newsletter-container > button {
+    height: 90%;
+    font-size: 12px;
+    width: 75px;
+    padding: 2px;
+  }
+   .carousel-img > img {
+    height: 35vh;
+   }
+
+   .carousel-slider {
+    height: 35vh;
+   }
+
+   .carousel-div {
+    height: 45vh;
+   }
+
+
+  
+
+  
+
+
+
 }
 
