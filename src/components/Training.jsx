@@ -46,21 +46,84 @@ export default function Training() {
   return (
     <div className="training-div">
       <NewsLetter />
-      <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Box sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'row', md: 'column' }, alignItems: 'center' }}>
+        
+        {/* Vertical Tabs for Mobile */}
         <Box
           sx={{
             width: '100%',
-            display: 'flex',
-            justifyContent: 'center', // Centering the tabs horizontally
+            display: { xs: 'flex', md: 'none' }, // Show vertical tabs on mobile screens
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start', // Align tabs to the top
+            height: '100vh', // Full screen height for mobile
             position: 'sticky',
-            top: '9vh', // Adjusted for navbar height
-            zIndex: 1000, // Keeps it above other content
+            top: '15vh', // Adjust for navbar height
+            zIndex: 1000,
             backgroundColor: 'white',
-            borderBottom: 1,
-            borderColor: 'divider'
+            borderBottom: { xs: 0, md: 1 }, // No border on mobile
+            borderRight: { xs: 1, md: 0 }, // Border on the right for vertical tabs
+            borderColor: 'divider',
+            flexDirection: 'column', // Make tabs stack vertically
+            paddingTop: '10vh', // Ensure the tabs are positioned below the navbar
           }}
         >
-          <Box sx={{ maxWidth: 960, width: '100%' }}> {/* Optional: Adjust maxWidth to control centering and width */}
+          <Tabs
+            orientation="vertical"
+            value={value}
+            onChange={handleChange}
+            aria-label="sports tabs"
+            sx={{
+              width: '100%',
+            }}
+          >
+            <Tab label="Cage & Field Rentals" {...a11yProps(0)} sx={{
+              fontSize: {
+                xs: 9
+              }
+            }} />
+            <Tab label="Baseball" {...a11yProps(1)} sx={{
+              fontSize: {
+                xs: 9
+              }
+            }}/>
+            <Tab label="Softball" {...a11yProps(2)} sx={{
+              fontSize: {
+                xs: 9
+              }
+            }}/>
+            <Tab label="Soccer" {...a11yProps(3)} sx={{
+              fontSize: {
+                xs: 9
+              }
+            }}/>
+            <Tab label="Volleyball" {...a11yProps(4)} sx={{
+              fontSize: {
+                xs: 9
+              }
+            }}/>
+            <Tab label="Other Sports and Training" {...a11yProps(5)}sx={{
+              fontSize: {
+                xs: 9
+              }
+            }} />
+          </Tabs>
+        </Box>
+
+        {/* Horizontal Tabs for Desktop */}
+        <Box
+          sx={{
+            width: '100%',
+            display: { xs: 'none', md: 'flex' }, // Show horizontal tabs on larger screens
+            justifyContent: 'center',
+            position: 'sticky',
+            top: '9vh', // Adjust for navbar height
+            zIndex: 1000,
+            backgroundColor: 'white',
+            borderBottom: 1,
+            borderColor: 'divider',
+          }}
+        >
+          <Box sx={{ maxWidth: 960, width: '100%' }}>
             <Tabs value={value} onChange={handleChange} aria-label="sports tabs" centered>
               <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
               <Tab label="Baseball" {...a11yProps(1)} />
@@ -71,6 +134,8 @@ export default function Training() {
             </Tabs>
           </Box>
         </Box>
+
+        {/* Content Panels */}
         <CustomTabPanel value={value} index={0}>
           <h1>Cage & Field Rentals</h1>
           <TrainingItem arr={cageAndFieldRentals} />

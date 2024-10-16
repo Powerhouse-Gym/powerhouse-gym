@@ -76,6 +76,7 @@ const TrainingItem = ({ arr }) => {
 
                 {trainingElements}
 
+
                 {/* Bottom Chain */}
                 <div
                     style={{
