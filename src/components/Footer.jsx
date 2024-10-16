@@ -3,10 +3,6 @@ import React from 'react';
 const Footer = () => {
 
 
-// const footerStyle = {
-// backgroundImage: `url(${brickwall})`,
- 
-// };
 
   return (
     <div  className = "footer-div">
