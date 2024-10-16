@@ -100,8 +100,6 @@ function Navbar(props) {
             >
                 {drawer}
             </Drawer>
-            
-            <NewsLetter />
         </div>
     );
 }
