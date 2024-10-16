@@ -105,6 +105,7 @@ function ServiceBanner() {
             </div>
             <div className='column two'>
                 <h1>{activeService.title}</h1>
+                <div className = "service-img" style = {{backgroundImage: `url(${activeService.imgUrl})`}}></div>
                 {activeService.listItems.map((item, i) => {
                     return (
                         <h3 key = {i}>{item}</h3>
@@ -112,7 +113,6 @@ function ServiceBanner() {
                 })}
                 {/* <img src={activeService.imgUrl} alt="crossfit" />  */}
                {/* <img src = {activeService.logo} alt ="logo" /> */}
-               <div className = "service-img" style = {{backgroundImage: `url(${activeService.imgUrl})`}}></div>
                 <button onClick = {() => handleLearnMore(activeService.title)}>LEARN MORE</button>
             </div>
           
