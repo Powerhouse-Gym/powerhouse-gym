@@ -1,16 +1,8 @@
 import React, { useState } from 'react';
 import { Box, Tabs, Tab, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link, useNavigate } from "react-router-dom"
-import logo from "../assets/logo-white-2.jpg"
-import facebook from '../assets/facebook.svg'
-import instagram from '../assets/instagram.svg'
-import crossfit from "../assets/crossfit-white.jpg"
-import NewsLetter from './NewsLetter';
-import powerhouse from "../assets/powerhouse-grafiti.png"
-import skulls from "../assets/skulls.png"
-import zIndex from '@mui/material/styles/zIndex';
-import chainlink from "../assets/chainlink.png"
+import { useNavigate } from "react-router-dom"
+
 import CloseIcon from '@mui/icons-material/Close';
 
 function Navbar(props) {
@@ -85,7 +77,7 @@ function Navbar(props) {
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
-                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Summer Youth Training" value="/youth" onClick={() => handleNavigate("/youth")} />
+                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Personal Training" value="/youth" onClick={() => handleNavigate("/youth")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
                 </Tabs>
             </Box>
