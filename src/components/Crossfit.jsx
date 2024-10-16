@@ -9,6 +9,11 @@ function Crossfit() {
     return (
         <div className='crossfit-page'>
             <NewsLetter />
+            <div className = "crossfit-header-div"><div className = "crossfit-header">
+                <h1 className = "header-one">Together We Are</h1>
+                <h2>Stronger</h2>
+                </div></div>
+            
             <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' />
             <div className='crossfit-container'>
                 <div className='crossfit-info'>

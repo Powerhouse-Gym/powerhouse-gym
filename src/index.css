@@ -52,6 +52,49 @@
   height: 80%;
   /* border: solid black 1px; */
 }
+.crossfit-header-div{
+  position: relative;
+}
+
+.crossfit-header> h2 {
+  font-family: "Rock Salt", cursive !important;
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-size: 104px;
+}
+.crossfit-header {
+  background-image: url("./assets/crossfit/crossfitChalk.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.header-one {
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.crossfit-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+  /* Adjust the 0.5 for the level of darkness */
+  z-index: 0;
+}
 
 .contact-banner {
   display: flex;
@@ -208,7 +251,7 @@
   background-color: #d0160f;
   color: white;
   margin-top: 15px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   z-index: 2;
 }
 
@@ -767,6 +810,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   /* padding: 15vw; */
 }
 
@@ -1119,7 +1163,7 @@ h4 {
   }
 
   .crossfit-page>.newsletter-container {
-    margin-top: 10vh;
+
   }
 
   .training-div>.newsletter-container {
@@ -1145,7 +1189,17 @@ h4 {
   }
 
   
-  
+  .header-one {
+    font-size: 24px;
+  }
+
+  .crossfit-header > h2 {
+    font-size: 54px;
+  }
+
+  .crossfit-header {
+    background-position: center center;
+  }
 
 
 }
