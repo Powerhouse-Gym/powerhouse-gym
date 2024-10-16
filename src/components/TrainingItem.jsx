@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
-import sugarSkull from '../assets/sugar-skull-2.jpg'
+import chainLink from '../assets/chainlink.png'
 
 const TrainingItem = ({ arr }) => {
 
@@ -13,64 +13,85 @@ const TrainingItem = ({ arr }) => {
                 className="training-item"
                 key={i}
                 sx={{
-                    margin: '1rem',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    height: '100%' // Ensures cards have uniform height
                 }}
             >
-                <CardMedia
-                    component="img"
-                    image={elem.img}
-                    alt={elem.title}
-                    sx={{
-                        height: '70%', // Adjust the height as needed
-                        objectFit: 'contain', // Ensures the image covers the entire CardMedia
-                        backgroundColor: 'black'
-                    }}
-                />
+                <CardMedia className="image-container">
+                    <img src={elem.img} alt={elem.title} />
+                </CardMedia>
                 <CardContent
                     sx={{
                         flexGrow: 1,
-                        backgroundImage: ` url(${sugarSkull})`, // Add your background image here
-                        backgroundSize: 'contain', // Ensures the image covers the entire CardContent
-                        backgroundPosition: 'right', // Centers the background image
-                        backgroundRepeat: 'no-repeat', // Prevents the background image from repeating
                         alignSelf: 'flex-start',
-                        width: '100%', // Ensures the background image covers the entire CardContent
-                        minHeight: 'fit-content',
+                        width: '100%',
                         backgroundColor: 'black',
                         color: 'white'
-
                     }}
                 >
-                    <Typography variant="h5" component="div" sx={{ width: '70%' }}>
+                    <Typography variant="h5" component="div" >
                         {elem.title}
                     </Typography>
-                    <Typography variant="h6" sx={{ width: '70%' }}>
+                    <Typography variant="h6" >
                         {elem.price}
                     </Typography>
-                    <Typography variant="body2" sx={{ width: '70%' }}>
+                    <Typography variant="body2" >
                         {elem.description}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <a style={{color: 'black'}} href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events" target="_blank" rel="noopener noreferrer">
+                    <a style={{ color: 'black' }} href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events" target="_blank" rel="noopener noreferrer">
                         <Button size="small" variant='outlined' color="dark">
                             Book Now
                         </Button>
                     </a>
                 </CardActions>
             </Card>
-        )
-    })
+        );
+    });
 
     return (
-        <div className="training-container">
-            {trainingElements}
-        </div>
+        <>
+            <div
+                className="training-container"
+                style={{
+                    position: 'relative',
+                    paddingTop: '10px',
+                    paddingBottom: '10px',
+                }}
+            >
+                {/* Top Chain */}
+                <div
+                    style={{
+                        width: '100%',
+                        height: '10px',
+                        backgroundImage: `url(${chainLink})`,
+                        backgroundRepeat: 'repeat-x',
+                        backgroundSize: 'auto 10px',
+                        position: 'absolute',
+                        top: 0,
+                    }}
+                />
+
+                {trainingElements}
+
+                {/* Bottom Chain */}
+                <div
+                    style={{
+                        width: '100%',
+                        height: '10px',
+                        backgroundImage: `url(${chainLink})`,
+                        backgroundRepeat: 'repeat-x',
+                        backgroundSize: 'auto 10px',
+                        position: 'absolute',
+                        bottom: 0,
+                    }}
+                />
+            </div>
+        </>
     );
-}
+};
+
 
 export default TrainingItem;
