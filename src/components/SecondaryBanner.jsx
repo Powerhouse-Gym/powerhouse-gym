@@ -1,13 +1,9 @@
 import React from 'react';
-import powerhouse from "../assets/powerhouse-grafiti.png"
 import logo from "../assets/logo-white-2.jpg"
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import crossfit from "../assets/crossfit-white.jpg"
-import NewsLetter from './NewsLetter';
-import skulls from "../assets/skulls.png"
-import zIndex from '@mui/material/styles/zIndex';
-import chainlink from "../assets/chainlink.png"
+
 
 
 function SecondaryBanner() {
@@ -27,7 +23,7 @@ function SecondaryBanner() {
                         </a>
                     </div>
                 </div>
-                <img className="crossfit" src={crossfit} />
+                <img className="crossfit" src={crossfit} alt ="crossfit lady" />
             </div>    
         
         

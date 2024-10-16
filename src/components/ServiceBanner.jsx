@@ -1,21 +1,12 @@
 import React, {useState} from 'react';
 import {useNavigate} from "react-router-dom"
-import pullupgirl from "../assets/pullupgirl.png"
 import highfive from "../assets/traininghighfive.jpg"
 import crossfit from "../assets/crossfit.jpg"
 import crossfitLogo from "../assets/crossfit-white.jpg"
-import ballglove from "../assets/baseballglove.jpg"
 import logo from "../assets/logo-white.webp"
 import powerhousegrafiti from "../assets/powerhouse-grafiti.png"
 import swingaway from "../assets/swingaway.png"
-import AccordionComponent from "./AccordionComponent"
-import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import Fade from '@mui/material/Fade';
+
 
 
 
@@ -53,7 +44,7 @@ function ServiceBanner() {
     { 
         title: "Powerhouse Sports Training",
         logo: logo,
-        imgUrl: ballglove,
+        imgUrl: swingaway,
         listItems: [ "Variety of services for team and individual sports goals",
             "Indoor practice field for soccer, volleyball, and more",
             "Enclosed cages with or without machines",
@@ -114,11 +105,9 @@ function ServiceBanner() {
             </div>
             <div className='column two'>
                 <h1>{activeService.title}</h1>
-                {activeService.listItems.map(item => {
+                {activeService.listItems.map((item, i) => {
                     return (
-                        <>
-                        <h3>{item}</h3>
-                        </>
+                        <h3 key = {i}>{item}</h3>
                     )
                 })}
                 {/* <img src={activeService.imgUrl} alt="crossfit" />  */}

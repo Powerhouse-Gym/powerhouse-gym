@@ -187,6 +187,17 @@
   margin-top: 7vh;
 }
 
+.secondary-banner > .logo {
+  height: 150%;
+  width: 20%;
+  z-index: 0;
+}
+
+.secondary-banner > .crossfit {
+  height: 100%;
+  width: 20%;
+}
+
 .newsletter-container {
   display: flex;
   height: 75px;
@@ -198,6 +209,7 @@
   color: white;
   margin-top: 15px;
   margin-bottom: 15px;
+  z-index: 2;
 }
 
 
@@ -853,6 +865,13 @@ h4 {
 }
 
 
+
+.carousel-img> .pullupgirl {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 .skull-div {
   background-size: contain;
   /* Ensure the image covers the entire div */
@@ -864,12 +883,10 @@ h4 {
   margin: 10px;
   height: 2vh;
   width: 100vw;
-  /* border-bottom: 3px solid #d0160f;
-  border-top: 3px solid #d0160f; */
 }
 
 .footer-div {
-  background-color: #333;
+ background-color: #d0160f;
   color: #fff;
   padding: 10px;
   left: 0;
@@ -886,17 +903,7 @@ h4 {
   z-index: 0
 }
 
-.footer-div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Adjust the 0.5 for the level of darkness */
-  z-index: -1;
-}
+
 
 .footer>img {
   position: relative;
@@ -927,6 +934,12 @@ h4 {
   height: 55vh;
   border-radius: 8px;
 }
+
+.crossfit-page ,.training-div, .youth-page, .team-container >.newsletter-container {
+  margin-top: 10vh;
+}
+
+
 
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
