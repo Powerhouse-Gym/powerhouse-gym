@@ -35,7 +35,7 @@ function Navbar(props) {
         >
              {/* Close Button */}
         <IconButton
-          onClick={() => toggleDrawer(false)}
+          onClick={() => handleDrawerToggle(false)}
           sx={{ marginBottom: '20px', display: 'flex', justifyContent: 'flex-end' }}
         >
           <CloseIcon />
