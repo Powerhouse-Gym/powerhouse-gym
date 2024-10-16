@@ -53,6 +53,7 @@ function ServiceBanner() {
     { 
         title: "Powerhouse Sports Training",
         logo: logo,
+        imgUrl: ballglove,
         listItems: [ "Variety of services for team and individual sports goals",
             "Indoor practice field for soccer, volleyball, and more",
             "Enclosed cages with or without machines",
@@ -61,6 +62,7 @@ function ServiceBanner() {
     }, {
         title: "Personal Training",
         logo: powerhousegrafiti,
+        imgUrl: highfive,
         listItems: 
         [
             "Coaches ready to help, whether for sports or fitness.",
@@ -120,7 +122,8 @@ function ServiceBanner() {
                     )
                 })}
                 {/* <img src={activeService.imgUrl} alt="crossfit" />  */}
-               <img src = {activeService.logo} alt ="logo" />
+               {/* <img src = {activeService.logo} alt ="logo" /> */}
+               <div className = "service-img" style = {{backgroundImage: `url(${activeService.imgUrl})`}}></div>
                 <button onClick = {() => handleLearnMore(activeService.title)}>LEARN MORE</button>
             </div>
           

@@ -12,7 +12,7 @@ backgroundImage: `url(${brickwall})`,
 };
 
   return (
-    <div style={footerStyle} className = "footer-div">
+    <div  className = "footer-div">
     <img className = "footer-logo" src= {logoActual} alt="powerhouse logo"/>
       <p>PowerHouse Crossfit and Training Complex</p>
       <p>1804 S. Pine Street, Cabot AR 72023</p>
