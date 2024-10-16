@@ -64,13 +64,16 @@ const TrainingItem = ({ arr }) => {
                 {/* Top Chain */}
                 <div
                     style={{
-                        width: '100%',
+                        width: '75vw',
                         height: '10px',
                         backgroundImage: `url(${chainLink})`,
                         backgroundRepeat: 'repeat-x',
                         backgroundSize: 'auto 10px',
                         position: 'absolute',
                         top: 0,
+                        left: '50%', // Centering the chain
+                        transform: 'translateX(-50%)', // Centering the chain
+                        zIndex: 0, // Send it behind other content
                     }}
                 />
 
@@ -80,13 +83,16 @@ const TrainingItem = ({ arr }) => {
                 {/* Bottom Chain */}
                 <div
                     style={{
-                        width: '100%',
+                        width: '75vw',
                         height: '10px',
                         backgroundImage: `url(${chainLink})`,
                         backgroundRepeat: 'repeat-x',
                         backgroundSize: 'auto 10px',
                         position: 'absolute',
                         bottom: 0,
+                        left: '50%', // Centering the chain
+                        transform: 'translateX(-50%)', // Centering the chain
+                        zIndex: 0, // Send it behind other content
                     }}
                 />
             </div>
