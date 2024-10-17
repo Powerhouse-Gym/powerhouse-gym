@@ -4,17 +4,23 @@ import bannerImg from "../assets/new-crossfit-banner.png"
 import crossfitJournal from "../assets/crossfit-journal.webp"
 import CrossfitCoaches from './CrossfitCoaches';
 import NewsLetter from './NewsLetter';
+import chainlink from "../assets/chainlink.png"
+import WhyCrossfit from './WhyCrossfit';
 
 function Crossfit() {
     return (
         <div className='crossfit-page'>
-            <NewsLetter />
             <div className = "crossfit-header-div"><div className = "crossfit-header">
                 <h1 className = "header-one">Together We Are</h1>
-                <h2>Stronger</h2>
+                <h2>Stronger !</h2>
                 </div></div>
+            <NewsLetter />
+            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+<WhyCrossfit />
+<div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+
             
-            <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' />
+            {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             <div className='crossfit-container'>
                 <div className='crossfit-info'>
                     <h1>Powerhouse CrossFit</h1>

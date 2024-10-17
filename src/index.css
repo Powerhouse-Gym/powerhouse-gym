@@ -54,7 +54,7 @@
   /* border: solid black 1px; */
 }
 
-.crossfit-header-div {
+.crossfit-header {
   position: relative;
 }
 
@@ -62,30 +62,37 @@
   font-family: "Rock Salt", cursive !important;
   color: white;
   z-index: 1;
+  font-size: 114px;
   position: relative;
-  font-size: 104px;
+  transform: rotate(-8deg);
+  top: 20px;
+}
+
+.crossfit-page > .newsletter-container {
+  margin-top: 0;
 }
 
 .crossfit-header {
   background-image: url("./assets/crossfit/crossfitChalk.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  background-position: center center;
+  height: 65vh;
   width: 100vw;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
 }
 
 .header-one {
   color: white;
   z-index: 1;
   position: relative;
-  font-size: 42px;
+  font-size: 32px;
   text-transform: uppercase;
+  top: 50px;
 }
 
 .crossfit-header::before {
@@ -100,6 +107,69 @@
   z-index: 0;
 }
 
+.whycrossfit-container {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whycrossfit-container > img {
+  height: 40vh;
+  width: 30vw;
+  /* position: relative;
+  bottom: 12%; */
+}
+
+.whycrossfit-container > h1 {
+  top: 50%;
+  position: relative;
+  color: #ed1c26;
+  font-family: "Rock Salt", cursive !important;
+  font-size: 38px;
+}
+
+.why-icon-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap:50px;
+ 
+}
+
+.left {
+  right: 20%; 
+  top: 47.5%;
+}
+
+.right {
+  left: 20%;
+  bottom: 64%;
+}
+
+.icon-description-div {
+  height:36vh;
+  width: 20vw;
+  position: absolute;
+  top: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon-title > h3 {
+  color: var(--primary);
+}
+.right-icon-div{
+  right: 5%;
+  margin-top: 10px;
+}
+.left-icon-div{
+  left: 5%;
+  align-items: flex-start;
+}
 .contact-banner {
   display: flex;
   flex-direction: column;
@@ -156,7 +226,7 @@
   color: white;
   font-family: "Rock Salt", cursive !important;
   position: relative;
-  top: 125px;
+  top: 185px;
   z-index: 1;
   font-size: 48px;
   opacity: 0;
@@ -998,7 +1068,7 @@ h4 {
   border-radius: 8px;
 }
 
-.crossfit-page,
+
 .training-div,
 .youth-page,
 .team-container>.newsletter-container {
