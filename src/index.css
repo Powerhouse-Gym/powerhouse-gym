@@ -119,36 +119,66 @@
 .whycrossfit-container > img {
   height: 40vh;
   width: 30vw;
-  /* position: relative;
-  bottom: 12%; */
+  position: absolute;
+  top: 33%; 
 }
 
 .whycrossfit-container > h1 {
-  top: 40%;
-  position: relative;
+  top: 30%;
+  position: absolute;
   color: #ed1c26;
   font-family: "Rock Salt", cursive !important;
   font-size: 38px;
+  
 }
 
 .why-icon-div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 40vh;
+  width: 45vw;
+  position: absolute;
+}
+
+.why-icon-descriptions{
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
-  gap:50px;
- 
+  top: 75px;
+}
+ .left {
+  padding-left: 100px;
+  height: 25vh;
+  gap: 115px;
+  display: flex;
+  flex-direction: column;
+ }
+ .right{
+  padding-right: 100px;
+  height: 25vh;
+  gap: 115px;
+  display: flex;
+  flex-direction: column;
+
+ }
+.icon-left{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
 }
 
-.left {
-  right: 20%; 
-  top: 47.5%;
+.icon-right{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+  align-self: flex-end;
+  
 }
-
-.right {
-  left: 20%;
-  bottom: 64%;
-}
-
 .icon-description-div {
   height:36vh;
   width: 20vw;
@@ -158,6 +188,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.icon-title > p {
+  max-width: 250px;
 }
 .icon-title > h3 {
   color: var(--primary);

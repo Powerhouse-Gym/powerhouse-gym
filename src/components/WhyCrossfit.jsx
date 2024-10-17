@@ -10,7 +10,7 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 import { EmojiObjects } from '@mui/icons-material';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 import ScaleIcon from '@mui/icons-material/Scale';
-
+import CategoryIcon from '@mui/icons-material/Category';
 
 function WhyCrossfit() {
 
@@ -20,19 +20,22 @@ function WhyCrossfit() {
     return (
         <div className="whycrossfit-container">
             <h1>Why Crossfit?</h1>
-            <div className="why-icon-div left">
+            <div className="why-icon-div">
+                <div className = "icon-left">  
                 <Diversity3Icon sx={emojiStyles} />
                 <FavoriteIcon sx={emojiStyles} />               
                 <DinnerDiningIcon sx={emojiStyles} />
-            </div>
-            <img src={crossfit} alt='Crossfit Logo' />
-            <div className='why-icon-div right'>
+                </div>
+                <div className = "icon-right">
                 <ScaleIcon sx={emojiStyles} />
                 <FitnessCenterIcon sx={emojiStyles} />
-                 <PeopleIcon sx={emojiStyles} />
+                 <CategoryIcon sx={emojiStyles} />
+                </div>
             </div>
-            {/* icon descriptions */}
-            <div className='icon-description-div left-icon-div'>
+            <img src={crossfit} alt='Crossfit Logo' />
+            <div className='why-icon-descriptions'>
+                <div className = "left">
+
                 <div className = "icon-title">
                     <h3>Community</h3>
                     <p>Find family and friends in fitness.</p>
@@ -46,8 +49,9 @@ function WhyCrossfit() {
                     <h3>Nutrition Support</h3>
                     <p>Maintain healthy eating habits and connect with those who support your nutritional goals.</p>
                 </div>
-            </div >
-            <div className='icon-description-div right-icon-div'>
+                </div>
+                <div className = "right">
+
                 <div className = "icon-title">
                     <h3>Scalable</h3>
                     <p>Workouts tailored to suit any fitness level.</p>
@@ -61,7 +65,10 @@ function WhyCrossfit() {
                     <h3>Variety</h3>
                     <p>Wide range of workouts that constantly change.</p>
                 </div>
+                </div>
+
             </div>
+            {/* icon descriptions */}
         </div>
     );
 
