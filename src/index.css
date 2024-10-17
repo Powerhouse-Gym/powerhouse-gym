@@ -640,8 +640,8 @@ button {
 }
 
 .service-img {
-  height: 200px;
-  width: 225px;
+  height: 55%;
+  width: 35%;
   position: absolute;
   right: 0;
   top: 0;
@@ -689,19 +689,19 @@ button {
   position: relative;
 }
 
-.two>img {
+/* .two>img {
   height: 50%;
   width: 40%;
   border-radius: 50%;
   position: absolute;
   top: 20px;
   right: 15px;
-}
+} */
 
 .two>button {
   position: absolute;
-  right: 65px;
-  bottom: 40px;
+  right: 11%;
+  bottom: 20%;
   cursor: pointer;
   transition: transform 0.3s ease;
   font-weight: 700;
@@ -1180,7 +1180,9 @@ h4 {
     display: none;
   }
 
-  .crossfit-page>.newsletter-container {}
+  .crossfit-page>.newsletter-container {
+    margin-top: 0;
+  }
 
   .training-div>.newsletter-container {
     margin-top: 10vh;
@@ -1201,7 +1203,6 @@ h4 {
     margin: 0;
     position: initial;
     margin-bottom: 10px;
-    border-radius: 28px;
   }
 
 
