@@ -36,7 +36,6 @@ function ServiceBanner() {
             "Promoting healthier lifestyles for all.",
             "Family-based atmosphere with like-minded people.",
             "Physical fitness, nutrition, and positive interactions.",
-            "Working together to achieve common goals and build friendships.",
             "Fitness for strong minds and bodies.",
             "Nutritional awareness for healing and recovery."
           ]
