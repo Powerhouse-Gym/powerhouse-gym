@@ -300,6 +300,11 @@
   animation-delay: 2s;
 }
 
+.personal-training-container{
+  margin-top: 10vh;
+  min-height: 85vh;
+}
+
 
 @keyframes moveAndZoom {
   0% {
@@ -971,12 +976,13 @@ h4 {
 
 .youth-page {
   display: flex;
-  flex-direction: column;
+  margin-top: 0 !important;
 }
 
 .youth-info {
   width: 50%;
   padding-left: 5vw;
+
 }
 
 .youth-info>* {
@@ -1007,7 +1013,7 @@ h4 {
 }
 
 .youth-img>img {
-  width: 70%;
+  width: 50%;
 }
 
 .dropdown {
@@ -1353,4 +1359,36 @@ h4 {
     margin: 0;
   }
   
+  .youth-page{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .youth-info{
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .youth-info > h1{
+    font-size: 1.5rem;
+  }
+
+  .youth-info > h3{
+    font-size: 1rem;
+  }
+
+  .youth-info > p{
+    font-size: .8rem;
+  }
+
+  .youth-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .youth-img > img{
+    width: 90%;
+  }
 }
