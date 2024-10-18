@@ -1077,7 +1077,7 @@ h4 {
 }
 
 .footer-div {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to left, #791f1fe4, #ec1906);
   color: #fff;
   padding: 10px;
   left: 0;
