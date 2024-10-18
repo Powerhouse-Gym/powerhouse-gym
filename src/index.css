@@ -1405,7 +1405,7 @@ h4 {
   }
 
   .crossfit-header>h2 {
-    font-size: 54px;
+    font-size: 46px;
   }
 
   .crossfit-header {
@@ -1564,6 +1564,7 @@ h4 {
   .middle-grid > h1 {
     position: relative;
     bottom: 625px;
+    font-size: 30px;
   }
 
   .whycrossfit-container {
