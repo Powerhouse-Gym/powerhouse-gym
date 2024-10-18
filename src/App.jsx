@@ -8,7 +8,8 @@ import Crossfit from './components/Crossfit';
 import AfterSchool from './components/AfterSchool';
 import Team from './components/Team';
 import Footer from './components/Footer';
-import skulls from "./assets/skulls.png"
+
+
 
 
 
@@ -16,9 +17,7 @@ import skulls from "./assets/skulls.png"
 function App() {
   return (
     <div className = "app">
-      <Navbar />
-    
-
+      <Navbar />  
       <Routes>
         <Route path="/" element={<Home/> } />
         <Route path="/youth" element={<Youth /> } />
