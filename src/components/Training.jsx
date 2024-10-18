@@ -167,7 +167,7 @@ export default function Training() {
           <h1>Other Sports and Training</h1>
           <TrainingItem arr={otherSportsAndTrainings} />
         </CustomTabPanel>
-        <CustomTabPanel>
+        <CustomTabPanel value={value} index={6}>
           <Youth />
         </CustomTabPanel>
       </Box>
