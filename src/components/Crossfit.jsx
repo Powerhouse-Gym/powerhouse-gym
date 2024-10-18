@@ -1,4 +1,5 @@
 import React from 'react';
+
 import crossfit from "../assets/crossfit-white.jpg"
 import bannerImg from "../assets/new-crossfit-banner.png"
 import crossfitJournal from "../assets/crossfit-journal.webp"
@@ -8,6 +9,7 @@ import chainlink from "../assets/chainlink.png"
 import WhyCrossfit from './WhyCrossfit';
 
 function Crossfit() {
+
     return (
         <div className='crossfit-page'>
             <div className = "crossfit-header-div"><div className = "crossfit-header">

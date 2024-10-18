@@ -19,59 +19,67 @@ function WhyCrossfit() {
     }
     return (
         <div className="whycrossfit-container">
+            <div className='grid-container'>
+
+            <div className='left-grid'>
+            <Diversity3Icon sx={emojiStyles} />
+
+            </div>
+
+            <div className = "middle-grid">
             <h1>Why Crossfit?</h1>
-            <div className="why-icon-div">
-                <div className = "icon-left">  
-                <Diversity3Icon sx={emojiStyles} />
-                <FavoriteIcon sx={emojiStyles} />               
-                <DinnerDiningIcon sx={emojiStyles} />
-                </div>
-                <div className = "icon-right">
+            <img src={crossfit} alt='Crossfit Logo' />
+            </div>
+
+            <div className = "right-grid">
+
+            </div>
+            </div>
+            {/* <FavoriteIcon sx={emojiStyles} />
+            <DinnerDiningIcon sx={emojiStyles} />
+
+        
                 <ScaleIcon sx={emojiStyles} />
                 <FitnessCenterIcon sx={emojiStyles} />
-                 <CategoryIcon sx={emojiStyles} />
-                </div>
-            </div>
-            <img src={crossfit} alt='Crossfit Logo' />
-            <div className='why-icon-descriptions'>
-                <div className = "left">
+                <CategoryIcon sx={emojiStyles} /> */}
 
-                <div className = "icon-title">
+
+
+                {/* <div className="icon-title">
                     <h3>Community</h3>
                     <p>Find family and friends in fitness.</p>
                 </div>
-                <div className = "icon-title">
+                <div className="icon-title">
                     <h3>Healthier Lifestyle</h3>
                     <p>Adopt good habits and stay close to those who encourage them.</p>
                 </div>
 
-                <div className = "icon-title">
+                <div className="icon-title">
                     <h3>Nutrition Support</h3>
                     <p>Maintain healthy eating habits and connect with those who support your nutritional goals.</p>
-                </div>
-                </div>
-                <div className = "right">
+                </div> */}
 
-                <div className = "icon-title">
+{/* 
+
+                <div className="icon-title">
                     <h3>Scalable</h3>
                     <p>Workouts tailored to suit any fitness level.</p>
                 </div>
-                <div className = "icon-title">
+                <div className="icon-title">
                     <h3>Strength Training</h3>
                     <p>Movements like lifting, squatting, pulling and pushing.</p>
                 </div>
 
-                <div className = "icon-title">
+                <div className="icon-title">
                     <h3>Variety</h3>
                     <p>Wide range of workouts that constantly change.</p>
-                </div>
-                </div>
+                </div> */}
+
+
 
             </div>
-            {/* icon descriptions */}
-        </div>
-    );
+            );
 
 
 }
-export default WhyCrossfit;
+            export default WhyCrossfit;
