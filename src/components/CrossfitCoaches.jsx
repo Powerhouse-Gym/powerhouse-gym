@@ -30,7 +30,7 @@ const CrossfitCoaches = () => {
 
     return (
         <div className='crossfit-coaches-container'>
-            <h1 className="rock-salt">Meet Our Coaches</h1>
+            <h1>Meet Our Coaches</h1>
             <div className='crossfit-coaches'>
                 {coachElements}
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import TrainingCoaches from './TrainingCoaches';
 import CrossfitCoaches from './CrossfitCoaches';
 import NewsLetter from './NewsLetter';
+import MobileTrainingCoaches from './MobileTrainingCoaches';
 
 
 function Team() {
@@ -9,6 +10,7 @@ function Team() {
         <div className='team-container'>
             <NewsLetter />
             <TrainingCoaches />
+            <MobileTrainingCoaches />
             <CrossfitCoaches />
         </div>
     );
