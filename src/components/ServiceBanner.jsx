@@ -109,8 +109,6 @@ function ServiceBanner() {
                         <h3 key = {i}>{item}</h3>
                     )
                 })}
-                {/* <img src={activeService.imgUrl} alt="crossfit" />  */}
-               {/* <img src = {activeService.logo} alt ="logo" /> */}
                 <button onClick = {() => handleLearnMore(activeService.title)}>LEARN MORE</button>
             </div>
           
