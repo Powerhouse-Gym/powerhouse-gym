@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import TrainingItem from './TrainingItem';
 import { cageAndFieldRentals, baseball, softball, soccer, volleyball, otherSportsAndTrainings } from '../training-data';
 import NewsLetter from './NewsLetter';
+import Youth from './Youth';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -106,13 +107,18 @@ export default function Training() {
                 xs: 9
               }
             }} />
+            <Tab label="Summer Youth Training" {...a11yProps(6)}sx={{
+              fontSize: {
+                xs: 9
+              }
+            }}/>
           </Tabs>
         </Box>
 
         {/* Horizontal Tabs for Desktop */}
         <Box
           sx={{
-            width: '100%',
+            width: '90vw',
             display: { xs: 'none', md: 'flex' }, // Show horizontal tabs on larger screens
             justifyContent: 'center',
             position: 'sticky',
@@ -123,7 +129,7 @@ export default function Training() {
             borderColor: 'divider',
           }}
         >
-          <Box sx={{ maxWidth: 960, width: '100%' }}>
+          <Box sx={{ maxWidth: '90vw', width: '100%' }}>
             <Tabs value={value} onChange={handleChange} aria-label="sports tabs" centered>
               <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
               <Tab label="Baseball" {...a11yProps(1)} />
@@ -131,6 +137,7 @@ export default function Training() {
               <Tab label="Soccer" {...a11yProps(3)} />
               <Tab label="Volleyball" {...a11yProps(4)} />
               <Tab label="Other Sports and Training" {...a11yProps(5)} />
+              <Tab label="Summer Youth Training" {...a11yProps(6)}/>
             </Tabs>
           </Box>
         </Box>
@@ -159,6 +166,9 @@ export default function Training() {
         <CustomTabPanel value={value} index={5}>
           <h1>Other Sports and Training</h1>
           <TrainingItem arr={otherSportsAndTrainings} />
+        </CustomTabPanel>
+        <CustomTabPanel>
+          <Youth />
         </CustomTabPanel>
       </Box>
     </div>
