@@ -67,6 +67,8 @@ function Home() {
          
         </div>
       </div>
+      <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+
     </div>
   );
 }
