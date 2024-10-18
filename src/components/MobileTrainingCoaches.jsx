@@ -1,32 +1,16 @@
-import React, { useState } from 'react';
-import Aden from '../assets/training-coaches/Aden.webp'
-import Bri from '../assets/training-coaches/Bri.webp'
-import Brooke from '../assets/training-coaches/Brooke.webp'
-import Holly from '../assets/training-coaches/Holly.webp'
-import Tyler from '../assets/training-coaches/Tyler.webp'
+import { useState } from "react";
+import Aden from '../assets/training-coaches/Aden.webp';
+import Bri from '../assets/training-coaches/Bri.webp';
+import Brooke from '../assets/training-coaches/Brooke.webp';
+import Holly from '../assets/training-coaches/Holly.webp';
+import Tyler from '../assets/training-coaches/Tyler.webp';
+import chevronUp from '../assets/chevron-up.svg';
+import chevronDown from '../assets/chevron-down.svg';
 
 
-const TrainingCoaches = () => {
+const MobileTrainingCoaches = () => {
 
-    const [selectedCoach, setSelectedCoach] = useState({
-        name: "Bri Guiste",
-        image: Bri,
-        bio: "My name is Bri, and I have been playing softball since I was 4 years old. I had a successful career throughout high school and college.  I took a break from softball to get married and start a family, but felt like I was missing a part of me when I stepped away from the game.  I have always had a passion to help the younger generations learn to play this sport, and I am excited to pass on my knowledge.",
-        highSchoolCareer: [
-            "2010 Idaho 5A State Champion",
-            "3 time First Team All-Conference",
-            "3 time team Defensive player of the year",
-            "4 years on Varsity as the leadoff hitter and starting 2nd baseman"
-        ],
-        collegeCareer: [
-            "DI scholarship to Bradley University in Peoria, IL",
-            "2014 Missouri Valley Conference (MVC) Champion",
-            "2014 MVC All-Tournament team",
-            "Finished career as one of three players to rank in Bradley’s career top 10 in hits, runs and stolen bases",
-            "2 years as leadoff hitter and led team in hits as a junior and senior"
-        ],
-        favoriteQuote: "Hard work beats talent when talent doesn't work hard. — Tim Notke"
-    });
+    const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
     const coaches = [
         {
@@ -105,102 +89,64 @@ const TrainingCoaches = () => {
         }
     ];
 
-    const handleCoachClick = (coach) => {
-        setSelectedCoach(coach);
+    const toggleCoachDetails = (index) => {
+        setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
     };
 
-
     return (
-        <div className="coaches-container">
+        <div className="mobile-coaches-container">
             <h1>Meet Our Trainers</h1>
-            <div className="trainer-layout">
-                {/* Left Side: List of Trainers */}
-                <div className="trainer-list">
-                    {coaches.map((coach, index) => (
-                        <div className={coach.name === selectedCoach.name ? `trainer-item selected` : `trainer-item`} key={index} onClick={() => handleCoachClick(coach)}>
-                            <img src={coach.image} alt={coach.name} className="trainer-thumbnail" />
+            <div className="mobile-trainer-list">
+                {coaches.map((coach, index) => (
+                    <div className="mobile-trainer-item" key={index}>
+                        <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(index)}>
+                            <img src={coach.image} alt={coach.name} className="mobile-trainer-thumbnail" />
                             <h3>{coach.name}</h3>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Right Side: Trainer Details */}
-                <div className="trainer-details">
-                    {selectedCoach ? (
-                        <>
-                            <div className="image-container">
-                                <img src={selectedCoach.image} alt={selectedCoach.name} className="coach-image" />
-                            </div>
-
-                            <h2 className="coach-name">{selectedCoach.name}</h2>
-                            <p className="bio">{selectedCoach.bio}</p>
-                            {selectedCoach.highSchoolCareer && (
-                                <div className="career-section">
-                                    <h3>High School Career</h3>
-                                    <ul>
-                                        {selectedCoach.highSchoolCareer.map((achievement, i) => (
-                                            <li key={i}>{achievement}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                            {expandedCoachIndex === index ? (
+                                <img src={chevronUp} alt="Chevron Up" className="chevron" />
+                            ) : (
+                                <img src={chevronDown} alt="Chevron Down" className="chevron" />
                             )}
-                            {selectedCoach.collegeCareer && (
-                                <div className="career-section">
-                                    <h3>College Career</h3>
-                                    {Array.isArray(selectedCoach.collegeCareer) ? (
+                        </div>
+                        {expandedCoachIndex === index && (
+                            <div className="mobile-trainer-details">
+                                <p>{coach.bio}</p>
+                                {coach.highSchoolCareer && (
+                                    <div className="career-section">
+                                        <h4>High School Career</h4>
                                         <ul>
-                                            {selectedCoach.collegeCareer.map((achievement, i) => (
+                                            {coach.highSchoolCareer.map((achievement, i) => (
                                                 <li key={i}>{achievement}</li>
                                             ))}
                                         </ul>
-                                    ) : (
-                                        <p>{selectedCoach.collegeCareer}</p>
-                                    )}
-                                </div>
-                            )}
-                            {selectedCoach.baseballCareer && (
-                                <div className="career-section">
-                                    <h3>Baseball Career</h3>
-                                    <ul>
-                                        {selectedCoach.baseballCareer.map((achievement, i) => (
-                                            <li key={i}>{achievement}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
-                            {selectedCoach.gymnasticsCareer && (
-                                <div className="career-section">
-                                    <h3>Gymnastics Career</h3>
-                                    <ul>
-                                        {selectedCoach.gymnasticsCareer.map((achievement, i) => (
-                                            <li key={i}>{achievement}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
-                            {selectedCoach.career && (
-                                <div className="career-section">
-                                    <h3>Career</h3>
-                                    <ul>
-                                        {selectedCoach.career.map((achievement, i) => (
-                                            <li key={i}>{achievement}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
-                            {selectedCoach.favoriteQuote && (
-                                <p className="quote">
-                                    <strong>Favorite Quote:</strong> <em>{selectedCoach.favoriteQuote}</em>
-                                </p>
-                            )}
-                        </>
-                    ) : (
-                        <p className='select-coach-txt'>Please select a trainer to see their details.</p>
-                    )}
-                </div>
+                                    </div>
+                                )}
+                                {coach.collegeCareer && (
+                                    <div className="career-section">
+                                        <h4>College Career</h4>
+                                        {Array.isArray(coach.collegeCareer) ? (
+                                            <ul>
+                                                {coach.collegeCareer.map((achievement, i) => (
+                                                    <li key={i}>{achievement}</li>
+                                                ))}
+                                            </ul>
+                                        ) : (
+                                            <p>{coach.collegeCareer}</p>
+                                        )}
+                                    </div>
+                                )}
+                                {coach.favoriteQuote && (
+                                    <p className="quote">
+                                        <strong>Favorite Quote:</strong> <em>{coach.favoriteQuote}</em>
+                                    </p>
+                                )}
+                            </div>
+                        )}
+                    </div>
+                ))}
             </div>
         </div>
     );
-};
+}
 
-export default TrainingCoaches;
+export default MobileTrainingCoaches;
