@@ -23,7 +23,7 @@ function Crossfit() {
 
             
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
-            <div className='crossfit-container'>
+            {/* <div className='crossfit-container'>
                 <div className='crossfit-info'>
                     <h1>Powerhouse CrossFit</h1>
                     <p>At Powerhouse CrossFit our mission is to promote healthier lifestyles within our community and for all walks of life.  We focus on bringing like-minded people into our family based atmosphere and assist them in adopting positive changes through physical fitness, nutrition and daily interactions with one another.  This environment is a social unit, in which we all work together to achieve common goals and in doing so create the strongest of bonds and friendships.  Through physical fitness we forge strong minds and bodies in order to develop our athletic abilities.  With nutritional awareness we fuel our bodies with what it needs to heal, recover and meet our daily demands.  Together we will become stronger than doing it alone! </p>
@@ -35,19 +35,24 @@ function Crossfit() {
                 <div className='crossfit-img-div'>
                     <img src={crossfit} alt='Crossfit Logo' />
                 </div>
-            </div>
+            </div>*/}
+            <CrossfitCoaches />
+            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+
             <div className='crossfit-journal'>
                 <div className='crossfit-journal-text'>
                     <h1>The Crossfit Journal</h1>
+                <div className='crossfit-journal-img'>
+                    <img src={crossfitJournal} alt='Crossfit Journal' />
+                </div>
                     <a href="https://journal.crossfit.com/" target="_blank" rel="noopener noreferrer">
                         <button>Find out more</button>
                     </a>
                 </div>
-                <div className='crossfit-journal-img'>
-                    <img src={crossfitJournal} alt='Crossfit Journal' />
-                </div>
-            </div>
-            <CrossfitCoaches />
+                
+            </div> 
+            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+
         </div>
     );
 }
