@@ -504,7 +504,7 @@ gap: 50px;
 }
 
 .newsletter-container>input {
-  min-width: 200px;
+  min-width: 150px;
   max-width: 800px;
   width: 100%;
   height: 60px;
@@ -1227,6 +1227,7 @@ h4 {
 .service-title {
   text-align: center;
   color: white;
+  padding: 25px;
 }
 
 .mobile-learn-btn {
@@ -1273,22 +1274,23 @@ font-size: 24px;
   }
 
   .newsletter-container {
-    height: 5vh;
+    height: 100%;
     font-size: 8px;
-    gap: 15px;
+    gap: 5px;
     padding: 5px;
+    padding-bottom: 20px;
   }
 
   .newsletter-container>input {
-    width: 40%;
-    height: 80%;
-    font-size: 12px;
+    width: 80%;
+    height: 40px;
+    font-size: 14px;
   }
 
   .newsletter-container>h1 {
-    width: 20%;
+    width: 60%;
     margin: 10px;
-    font-size: 12px;
+    font-size: 22px;
   }
 
   .banner>h1 {
@@ -1297,10 +1299,10 @@ font-size: 24px;
   }
 
   .newsletter-container>button {
-    height: 85%;
-    font-size: 8px;
+    height: 25px;
+    font-size: 10px;
     width: 75px;
-    border-radius: 12px;
+    border-radius: 8px;
   }
 
   .carousel-img>img {
@@ -1699,6 +1701,11 @@ justify-content: center;
 .directions-text {
   display: none;
 }
+
+.newsletter-mobile {
+  flex-direction: column;
+}
+
 
  
 }

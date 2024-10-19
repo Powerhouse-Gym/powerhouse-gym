@@ -98,7 +98,7 @@ const MobileServiceBanner = () => {
     return (
         <div className="mobile-coaches-container mobile-service-container">
             <div className="mobile-trainer-list">
-            <h2 className="service-title rock-salt">SERVICES</h2>
+            <h1 className="service-title">SERVICES</h1>
                 {allServices.map((service, index) => (
                     <div className="mobile-trainer-item" key={index}>
                         <div className="mobile-trainer-header" style = {{backgroundColor: "#f4f4f4"}} onClick={() => toggleCoachDetails(service.title, index)}>
