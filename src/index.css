@@ -68,7 +68,7 @@
   top: 50px;
 }
 
-.crossfit-page > .newsletter-container {
+.crossfit-page>.newsletter-container {
   margin-top: 0;
 }
 
@@ -108,7 +108,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.50);
   /* Adjust the 0.5 for the level of darkness */
-  z-index: 0;
+  z-index: 1;
 }
 
 .whycrossfit-container {
@@ -162,41 +162,41 @@
 
 
 .right-grid {
-grid-column: 3/4;
+  grid-column: 3/4;
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
 }
 
-.middle-grid > h1 {
+.middle-grid>h1 {
   color: #ed1c26;
   font-family: "Rock Salt", cursive !important;
   font-size: 36px;
 }
 
-.middle-grid > img {
+.middle-grid>img {
   height: 70%;
   width: 90%;
   grid-column: 1/2;
   grid-row: 0/4;
 }
 
-.left-title > h3{
+.left-title>h3 {
   font-size: 24px;
   color: var(--primary);
 }
 
-.section-container-right  > p{
+.section-container-right>p {
   text-align: right;
   padding-right: 10%;
 }
 
-.section-container > p{
+.section-container>p {
   font-size: 14px;
   padding-left: 10%;
-  
+
 }
 
 .why-icon-div {
@@ -209,7 +209,7 @@ gap: 50px;
   position: absolute;
 }
 
-.why-icon-descriptions{
+.why-icon-descriptions {
   display: flex;
   height: 50vh;
   width: 100vw;
@@ -218,36 +218,40 @@ gap: 50px;
   position: relative;
   top: 75px;
 }
- .left {
+
+.left {
   padding-left: 100px;
   height: 25vh;
   gap: 115px;
   display: flex;
   flex-direction: column;
- }
- .right{
+}
+
+.right {
   padding-right: 100px;
   height: 25vh;
   gap: 115px;
   display: flex;
   flex-direction: column;
 
- }
-.icon-left{
-  display: flex;
-  flex-direction: column;
-  gap:100px;
 }
 
-.icon-right{
+.icon-left {
   display: flex;
   flex-direction: column;
-  gap:100px;
-  align-self: flex-end;
-  
+  gap: 100px;
 }
+
+.icon-right {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-self: flex-end;
+
+}
+
 .icon-description-div {
-  height:36vh;
+  height: 36vh;
   width: 20vw;
   position: absolute;
   top: 31%;
@@ -257,20 +261,24 @@ gap: 50px;
   justify-content: space-around;
 }
 
-.icon-title > p {
+.icon-title>p {
   max-width: 250px;
 }
-.icon-title > h3 {
+
+.icon-title>h3 {
   color: var(--primary);
 }
-.right-icon-div{
+
+.right-icon-div {
   right: 5%;
   margin-top: 10px;
 }
-.left-icon-div{
+
+.left-icon-div {
   left: 5%;
   align-items: flex-start;
 }
+
 .contact-banner {
   display: flex;
   flex-direction: column;
@@ -367,7 +375,7 @@ gap: 50px;
   animation-delay: 1s;
 }
 
-.personal-training-container{
+.personal-training-container {
   margin-top: 10vh;
   min-height: 85vh;
 }
@@ -516,7 +524,8 @@ gap: 50px;
   padding: 15px;
   font-size: 28px;
 }
-.newsletter-container >h1 {
+
+.newsletter-container>h1 {
   font-size: 42px;
 }
 
@@ -648,7 +657,7 @@ button {
   padding-bottom: 25px;
 }
 
-.crossfit-coaches-container > h1 {
+.crossfit-coaches-container>h1 {
   color: var(--primary) !important;
   font-family: "Rock Salt", cursive !important;
 
@@ -682,7 +691,7 @@ button {
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.coach > h3 {
+.coach>h3 {
   width: 250px;
   text-align: center;
 }
@@ -738,6 +747,7 @@ button {
   position: relative;
   z-index: 1;
 }
+
 .service-layout {
   display: flex;
   height: 90%;
@@ -783,7 +793,7 @@ button {
   background-color: #f4f4f4;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 20px;
-  
+
 }
 
 .one>h2:hover {
@@ -1214,15 +1224,16 @@ h4 {
   margin-top: 10vh;
 }
 
-.mobile-coaches-container{
+.mobile-coaches-container {
   display: none;
 }
-.mobile-service-container{
+
+.mobile-service-container {
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
   display: none;
 }
 
-.mobile-service-details{
+.mobile-service-details {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1236,15 +1247,16 @@ h4 {
 
 .mobile-learn-btn {
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
-color: white;
-font-size: 24px;
+  color: white;
+  font-size: 24px;
 }
 
 .mobile-service-item {
   height: 100px;
   max-height: 150px;
 }
-.chevron{
+
+.chevron {
   width: 20%;
 }
 
@@ -1332,6 +1344,7 @@ font-size: 24px;
     justify-content: center;
     width: 95vw;
   }
+
   .service-banner {
     padding: 5px;
   }
@@ -1344,7 +1357,7 @@ font-size: 24px;
     width: 100px;
     height: 45px;
     padding: 5px;
-    margin:10px;
+    margin: 10px;
   }
 
   .one>h2:hover {
@@ -1395,7 +1408,7 @@ font-size: 24px;
   }
 
   .directions-container {
-    height:30vh;
+    height: 30vh;
   }
 
   .mapstyles {
@@ -1462,13 +1475,12 @@ font-size: 24px;
 
   .header-one {
     font-size: 18px;
-    margin-bottom: 10px;
-    top: 100px;
+    top: 55px;
   }
 
   .crossfit-header>h2 {
     font-size: 46px;
-    top: 270px;
+    top: 55px;
   }
 
   .crossfit-header {
@@ -1503,40 +1515,40 @@ font-size: 24px;
     padding: 0 !important;
   }
 
-  .training-div{
+  .training-div {
     margin: 0;
   }
-  
-  .youth-page{
+
+  .youth-page {
     flex-direction: column-reverse;
     width: 100%;
   }
 
-  .youth-info{
+  .youth-info {
     width: 100%;
     padding-right: 0;
   }
 
-  .youth-info > h1{
+  .youth-info>h1 {
     font-size: 1.5rem;
   }
 
-  .youth-info > h3{
+  .youth-info>h3 {
     font-size: 1rem;
   }
 
-  .youth-info > p{
+  .youth-info>p {
     font-size: .8rem;
   }
 
-  .youth-img{
+  .youth-img {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .youth-img > img{
+  .youth-img>img {
     width: 90%;
   }
 
@@ -1544,13 +1556,13 @@ font-size: 24px;
     width: 25%;
   }
 
-  .trainer-item{
+  .trainer-item {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .trainer-thumbnail{
+  .trainer-thumbnail {
     width: 90%;
     border-radius: 35%;
   }
@@ -1563,19 +1575,19 @@ font-size: 24px;
     padding: 1rem;
     display: block;
   }
-  
+
   .mobile-trainer-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .mobile-trainer-item {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
   }
-  
+
   .mobile-trainer-header {
     display: flex;
     align-items: center;
@@ -1584,28 +1596,28 @@ font-size: 24px;
     padding: 1rem;
   }
 
-  .mobile-trainer-header > h3{
+  .mobile-trainer-header>h3 {
     width: 50%;
   }
-  
+
   .mobile-trainer-thumbnail {
     width: 25%;
     border-radius: 50%;
     margin-right: 1rem;
     background-position: center center;
   }
-  
+
   .mobile-trainer-details {
     padding: 0.5rem;
     background-color: #f9f9f9;
   }
 
-  .career-section{
+  .career-section {
     width: 100%;
     margin-top: .5rem;
   }
 
-  .quote{
+  .quote {
     width: 100%;
   }
 
@@ -1622,10 +1634,11 @@ font-size: 24px;
     bottom: 25px;
   }
 
-  .middle-grid > img {
+  .middle-grid>img {
     display: none;
   }
-  .middle-grid > h1 {
+
+  .middle-grid>h1 {
     position: relative;
     bottom: 625px;
     font-size: 30px;
@@ -1636,7 +1649,8 @@ font-size: 24px;
     padding-bottom: 50px;
   }
 
-  .section-container, .section-container-right {
+  .section-container,
+  .section-container-right {
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -1646,7 +1660,7 @@ font-size: 24px;
     padding-top: 2vh;
   }
 
-  .crossfit-coaches-container > h1 {
+  .crossfit-coaches-container>h1 {
     font-size: 28px;
   }
 
@@ -1660,7 +1674,7 @@ font-size: 24px;
     width: 90%;
   }
 
-  .crossfit-journal-text > h1 {
+  .crossfit-journal-text>h1 {
     font-size: 22px;
   }
 
@@ -1669,7 +1683,7 @@ font-size: 24px;
     width: 85%;
   }
 
-  .crossfit-journal-img > img {
+  .crossfit-journal-img>img {
     height: 100%;
     width: 100%;
   }
@@ -1694,34 +1708,37 @@ font-size: 24px;
   }
 
   .service-banner {
- display: none;
+    display: none;
   }
 
-.mobile-service-container {
-  width: 100vw;
-  padding-bottom: 25px;
-}
+  .mobile-service-container {
+    width: 100vw;
+    padding-bottom: 25px;
+  }
 
-.directions-container {
-justify-content: center;
-}
-.directions-text {
-  display: none;
-}
+  .directions-container {
+    justify-content: center;
+  }
 
-.newsletter-mobile {
-  flex-direction: column;
-}
+  .directions-text {
+    display: none;
+  }
 
-.crossfit-header-logo {
-  display: block;
-  height: 250px;
-  width: 250px;
-  background-image: url("./src/assets/crossfit-white-remove-background.com.png");
-  background-size: cover;
-  position: relative;
-  bottom: 40px;
-}
+  .newsletter-mobile {
+    flex-direction: column;
+  }
 
- 
+  .crossfit-header-logo {
+    display: block;
+    height: 125px;
+    width: 125px;
+    background-image: url("./src/assets/crossfit-white-remove-background.com.png");
+    background-size: cover;
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    z-index: 2;
+  }
+
+
 }
