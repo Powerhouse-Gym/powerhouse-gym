@@ -279,7 +279,7 @@ gap: 50px;
 }
 
 .contact-banner>h2 {
-  font-size: 32px;
+  font-size: 62px;
 }
 
 .rock-salt {
@@ -419,7 +419,7 @@ gap: 50px;
 
 .newsletter-container {
   display: flex;
-  height: 150px;
+  height: 20vh;
   width: 100vw;
   align-items: center;
   justify-content: center;
@@ -504,16 +504,23 @@ gap: 50px;
 }
 
 .newsletter-container>input {
-  width: 500px;
-  height: 45px;
+  min-width: 400px;
+  max-width: 800px;
+  width: 100%;
+  height: 60px;
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px;
+  font-size: 28px;
+}
+.newsletter-container >h1 {
+  font-size: 42px;
 }
 
 .newsletter-container>button {
-  width: 100px;
+  width: 200px;
   padding: 0;
-  height: 45px;
+  height: 60px;
+  font-size: 28px;
 }
 
 button {
@@ -715,17 +722,23 @@ button {
 }
 
 
-
 .service-banner {
   height: 55vh;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 25px;
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
   color: white;
   position: relative;
   z-index: 1;
+}
+.service-layout {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* .service-banner::before {
@@ -743,29 +756,34 @@ button {
   width: 33%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 25px;
+  margin-right: 20px;
+  gap: 20px;
   z-index: 0;
-  position: relative;
   color: black;
 
 }
 
+
+
 .one>h2 {
   cursor: pointer;
-  background-color: #eee;
-  padding: 25px;
-  width: 300px;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 14px;
-  font-size: 18px;
-  transition: transform 0.3s ease;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  background-color: #f4f4f4;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 20px;
+  
 }
 
 .one>h2:hover {
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   background-color: #333;
 }
@@ -853,15 +871,12 @@ button {
 
 
 .two {
-  width: 70%;
-  border: 1px solid black;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #eee;
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* .two>img {
@@ -893,6 +908,9 @@ button {
   margin-bottom: 20px;
   border-bottom: 2px solid;
   font-size: 24px;
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 15px;
 }
 
 .two>h3 {
@@ -1120,6 +1138,7 @@ h4 {
   object-position: top;
 }
 
+
 .skull-div {
   background-size: contain;
   /* Ensure the image covers the entire div */
@@ -1174,6 +1193,7 @@ h4 {
 .carousel-slider {
   height: 55vh;
   width: 75vw;
+  max-width: 1300px;
   border-radius: 10px;
 }
 
@@ -1193,7 +1213,27 @@ h4 {
 .mobile-coaches-container{
   display: none;
 }
+.mobile-service-container{
+  background-image: linear-gradient(to right, #791f1fe4, #ec1906);
+  display: none;
+}
 
+.mobile-service-details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-learn-btn {
+  background-image: linear-gradient(to right, #791f1fe4, #ec1906);
+color: white;
+font-size: 24px;
+}
+
+.mobile-service-item {
+  height: 100px;
+  max-height: 150px;
+}
 .chevron{
   width: 20%;
 }
@@ -1541,6 +1581,7 @@ h4 {
     width: 25%;
     border-radius: 50%;
     margin-right: 1rem;
+    background-position: center center;
   }
   
   .mobile-trainer-details {
@@ -1642,8 +1683,8 @@ h4 {
   }
 
   .service-banner {
-    height: 75vh;
-    flex-direction: column;
-    justify-content: center;
+ display: none;
   }
+
+ 
 }
