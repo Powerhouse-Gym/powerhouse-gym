@@ -504,7 +504,7 @@ gap: 50px;
 }
 
 .newsletter-container>input {
-  min-width: 400px;
+  min-width: 200px;
   max-width: 800px;
   width: 100%;
   height: 60px;
@@ -1224,6 +1224,11 @@ h4 {
   gap: 20px;
 }
 
+.service-title {
+  text-align: center;
+  color: white;
+}
+
 .mobile-learn-btn {
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
 color: white;
@@ -1382,18 +1387,14 @@ font-size: 24px;
   }
 
   .directions-container {
-    height: 28vh;
+    height:30vh;
   }
 
   .mapstyles {
-    height: 25vh;
-    width: 40vw;
+    height: 100%;
+    width: 90vw;
   }
 
-  .directions-text {
-    gap: 15px;
-    padding-top: 25px;
-  }
 
   .directions-text>h2 {
     font-size: 14px;
@@ -1688,6 +1689,14 @@ font-size: 24px;
 
 .mobile-service-container {
   width: 100vw;
+  padding-bottom: 25px;
+}
+
+.directions-container {
+justify-content: center;
+}
+.directions-text {
+  display: none;
 }
 
  
