@@ -1686,5 +1686,9 @@ font-size: 24px;
  display: none;
   }
 
+.mobile-service-container {
+  width: 100vw;
+}
+
  
 }
