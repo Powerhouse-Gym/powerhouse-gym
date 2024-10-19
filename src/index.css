@@ -65,7 +65,7 @@
   font-size: 11em;
   position: relative;
   transform: rotate(-8deg);
-  top: 20px;
+  top: 50px;
 }
 
 .crossfit-page > .newsletter-container {
@@ -92,7 +92,11 @@
   position: relative;
   font-size: 48px;
   text-transform: uppercase;
-  top: 50px;
+  top: 75px;
+}
+
+.crossfit-header-logo {
+  display: none;
 }
 
 .crossfit-header::before {
@@ -1459,10 +1463,12 @@ font-size: 24px;
   .header-one {
     font-size: 18px;
     margin-bottom: 10px;
+    top: 100px;
   }
 
   .crossfit-header>h2 {
     font-size: 46px;
+    top: 270px;
   }
 
   .crossfit-header {
@@ -1707,6 +1713,15 @@ justify-content: center;
   flex-direction: column;
 }
 
+.crossfit-header-logo {
+  display: block;
+  height: 250px;
+  width: 250px;
+  background-image: url("./src/assets/crossfit-white-remove-background.com.png");
+  background-size: cover;
+  position: relative;
+  bottom: 40px;
+}
 
  
 }
