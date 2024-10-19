@@ -4,9 +4,14 @@
     background-color: #f4f4f4;
 }
 
+.carousel-img {
+    max-width: 1300px;
+}
+
 .carousel-img > img {
     height: 55vh;
     width: 75vw;
+    max-width: 1300px;
     border-radius: 10px;
 }
 
