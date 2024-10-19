@@ -1276,7 +1276,7 @@ font-size: 24px;
   .newsletter-container {
     height: 100%;
     font-size: 8px;
-    gap: 5px;
+    gap: 10px;
     padding: 5px;
     padding-bottom: 20px;
   }
@@ -1288,7 +1288,7 @@ font-size: 24px;
   }
 
   .newsletter-container>h1 {
-    width: 60%;
+    width: 80%;
     margin: 10px;
     font-size: 22px;
   }
