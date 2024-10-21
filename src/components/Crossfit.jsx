@@ -17,16 +17,16 @@ function Crossfit() {
                 <h1 className="header-one">Together We Are</h1>
                 <h2>Stronger !</h2>
 
-                <div className='crossfit-header-logo'></div>
+                {/* <div className='crossfit-header-logo'></div> */}
                 </div></div>
 
             <NewsLetter />
+            <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' />
             <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
             <WhyCrossfit />
             <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
 
 
-            {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             {/* <div className='crossfit-container'>
                 <div className='crossfit-info'>
                     <h1>Powerhouse CrossFit</h1>

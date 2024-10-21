@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import IconButton from '@mui/material/IconButton';
 import { DarkMode, LightMode } from '@mui/icons-material';
 import Switch from '@mui/material/Switch';
 import { Box } from '@mui/material';
+import { DarkModeContext } from '../context/DarkModeProvider';
 
 export default function DarkModeToggle() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const  {isDarkMode, handleToggle} = useContext(DarkModeContext)
 
     const theme = createTheme({
         palette: {
@@ -15,20 +17,7 @@ export default function DarkModeToggle() {
         },
     });
 
-    // Update the body class when the theme changes
-    useEffect(() => {
-        if (isDarkMode) {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
-        } else {
-            document.body.classList.add('light-mode');
-            document.body.classList.remove('dark-mode');
-        }
-    }, [isDarkMode]);
 
-    const handleToggle = () => {
-        setIsDarkMode(!isDarkMode);
-    };
 
     return (
         <ThemeProvider theme={theme}>

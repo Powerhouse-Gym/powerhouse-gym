@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Aden from '../assets/training-coaches/Aden.webp';
 import Bri from '../assets/training-coaches/Bri.webp';
 import Brooke from '../assets/training-coaches/Brooke.webp';
@@ -6,9 +6,13 @@ import Holly from '../assets/training-coaches/Holly.webp';
 import Tyler from '../assets/training-coaches/Tyler.webp';
 import chevronUp from '../assets/chevron-up.svg';
 import chevronDown from '../assets/chevron-down.svg';
-
+import darkmodeChevronUp from '../assets/darkmode-chevron-up.svg';
+import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
+import { DarkModeContext } from "../context/DarkModeProvider";
 
 const MobileTrainingCoaches = () => {
+
+    const {isDarkMode} = useContext(DarkModeContext)
 
     const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
@@ -103,9 +107,9 @@ const MobileTrainingCoaches = () => {
                             <img src={coach.image} alt={coach.name} className="mobile-trainer-thumbnail" />
                             <h3>{coach.name}</h3>
                             {expandedCoachIndex === index ? (
-                                <img src={chevronUp} alt="Chevron Up" className="chevron" />
+                                <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
                             ) : (
-                                <img src={chevronDown} alt="Chevron Down" className="chevron" />
+                                <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
                             )}
                         </div>
                         {expandedCoachIndex === index && (
