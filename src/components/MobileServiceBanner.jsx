@@ -1,5 +1,8 @@
-import React, {useState} from 'react';
+import { useState } from "react";
 import {useNavigate} from "react-router-dom"
+
+import chevronUp from '../assets/chevron-up.svg';
+import chevronDown from '../assets/chevron-down.svg';
 import highfive from "../assets/traininghighfive.jpg"
 import crossfit from "../assets/crossfit.jpg"
 import crossfitLogo from "../assets/crossfit-white.jpg"
@@ -8,10 +11,9 @@ import powerhousegrafiti from "../assets/powerhouse-grafiti.png"
 import swingaway from "../assets/swingaway.png"
 
 
+const MobileServiceBanner = () => {
 
-
-
-function ServiceBanner() {
+    const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
     const [activeService, setActiveService] = useState({
         title: "Powerhouse Crossfit",
@@ -40,7 +42,7 @@ function ServiceBanner() {
           ]
     },
     { 
-        title: "Powerhouse Sports Training",
+        title: "Sports Training",
         logo: logo,
         imgUrl: swingaway,
         listItems: [ "Variety of services for team and individual sports goals",
@@ -65,21 +67,22 @@ function ServiceBanner() {
     }
     ]
 
-    const handleServiceClick = (title) => {
-            if (title === "Powerhouse Crossfit"){
-                setActiveService(allServices[0])
-            }
-            else if (title === "Powerhouse Sports Training"){
-                setActiveService(allServices[1])
-            }
-            else if (title === "Personal Training"){
-                setActiveService(allServices[2])
-            }
-    }
+    const navigate = useNavigate()
 
-   const navigate = useNavigate()
+    const toggleCoachDetails = (title, index) => {
+        setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
+        if (title === "Powerhouse Crossfit"){
+            setActiveService(allServices[0])
+        }
+        else if (title === "Sports Training"){
+            setActiveService(allServices[1])
+        }
+        else if (title === "Personal Training"){
+            setActiveService(allServices[2])
+        }
+    };
 
-   const handleLearnMore = (title) => {
+    const handleLearnMore = (title) => {
         if (title === "Powerhouse Crossfit"){
             navigate("/crossfit")
         }
@@ -91,33 +94,39 @@ function ServiceBanner() {
         }
    }
     
-  
-
 
     return (
-        <div className="service-banner">
-            <div className='service-layout'>
-
-            <div className='column one'>
-                <h2 onClick = {()=>handleServiceClick("Powerhouse Crossfit")}>CROSSFIT</h2>
-                <h2 onClick = {() => handleServiceClick("Powerhouse Sports Training")}>SPORTS TRAINING</h2>
-                <h2 onClick = {()=> handleServiceClick("Personal Training")}>PERSONAL TRAINING</h2>
-            </div>
-            <div className='column two'>
-                <h1>{activeService.title}</h1>
-                <div className = "service-img" style = {{backgroundImage: `url(${activeService.imgUrl})`}}></div>
-                {activeService.listItems.map((item, i) => {
+        <div className="mobile-coaches-container mobile-service-container">
+            <div className="mobile-trainer-list">
+            <h1 className="service-title">SERVICES</h1>
+                {allServices.map((service, index) => (
+                    <div className="mobile-trainer-item" key={index}>
+                        <div className="mobile-trainer-header" style = {{backgroundColor: "#f4f4f4"}} onClick={() => toggleCoachDetails(service.title, index)}>
+                            {/* <img src={service.imgUrl} alt={service.title} className="mobile-trainer-thumbnail" /> */}
+                            <h3 style = {{width: "70%", fontWeight: "700"}}>{service.title}</h3>
+                            {expandedCoachIndex === index ? (
+                                <img src={chevronUp} alt="Chevron Up" className="chevron" />
+                            ) : (
+                                <img src={chevronDown} alt="Chevron Down" className="chevron" />
+                            )}
+                        </div>
+                        {expandedCoachIndex === index && (
+                            <div className="mobile-trainer-details mobile-service-details">
+                                 {activeService.listItems.map((item, i) => {
                     return (
                         <h3 key = {i}>{item}</h3>
                     )
                 })}
-                <button onClick = {() => handleLearnMore(activeService.title)}>LEARN MORE</button>
+            
+                <button className = "mobile-learn-btn"onClick = {() => handleLearnMore(activeService.title)}>LEARN MORE</button>
+                            </div>
+
+                        )}
+                    </div>
+                ))}
             </div>
-                </div>
-          
-       
         </div>
     );
 }
 
-export default ServiceBanner;
+export default MobileServiceBanner;

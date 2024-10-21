@@ -1,7 +1,6 @@
 import eric from '../assets/crossfit-coaches/eric.webp'
 import nicole from '../assets/crossfit-coaches/nicole.webp'
 import rebecca from '../assets/crossfit-coaches/rebecca.webp'
-
 const CrossfitCoaches = () => {
 
     const coaches = [

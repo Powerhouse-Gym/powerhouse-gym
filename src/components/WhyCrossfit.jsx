@@ -19,57 +19,63 @@ function WhyCrossfit() {
     }
     return (
         <div className="whycrossfit-container">
-            <h1>Why Crossfit?</h1>
-            <div className="why-icon-div">
-                <div className = "icon-left">  
-                <Diversity3Icon sx={emojiStyles} />
-                <FavoriteIcon sx={emojiStyles} />               
-                <DinnerDiningIcon sx={emojiStyles} />
-                </div>
-                <div className = "icon-right">
-                <ScaleIcon sx={emojiStyles} />
-                <FitnessCenterIcon sx={emojiStyles} />
-                 <CategoryIcon sx={emojiStyles} />
-                </div>
-            </div>
-            <img src={crossfit} alt='Crossfit Logo' />
-            <div className='why-icon-descriptions'>
-                <div className = "left">
+    <div className='grid-container'>
 
-                <div className = "icon-title">
+        <div className='left-grid'>
+            <div className="section-container">
+                <div className='left-title'>
                     <h3>Community</h3>
-                    <p>Find family and friends in fitness.</p>
+                    <Diversity3Icon sx={emojiStyles} />
                 </div>
-                <div className = "icon-title">
-                    <h3>Healthier Lifestyle</h3>
-                    <p>Adopt good habits and stay close to those who encourage them.</p>
-                </div>
-
-                <div className = "icon-title">
-                    <h3>Nutrition Support</h3>
-                    <p>Maintain healthy eating habits and connect with those who support your nutritional goals.</p>
-                </div>
-                </div>
-                <div className = "right">
-
-                <div className = "icon-title">
-                    <h3>Scalable</h3>
-                    <p>Workouts tailored to suit any fitness level.</p>
-                </div>
-                <div className = "icon-title">
-                    <h3>Strength Training</h3>
-                    <p>Movements like lifting, squatting, pulling and pushing.</p>
-                </div>
-
-                <div className = "icon-title">
-                    <h3>Variety</h3>
-                    <p>Wide range of workouts that constantly change.</p>
-                </div>
-                </div>
-
+                <p>Strength and support through community.</p>
             </div>
-            {/* icon descriptions */}
+            <div className='section-container'>
+                <div className='left-title'>
+                    <h3>Healthier Lifestyle</h3>
+                    <FavoriteIcon sx={emojiStyles} />
+                </div>
+                <p>Join like-minded individuals on a health journey.</p>
+            </div>
+            <div className='section-container'>
+                <div className='left-title'>
+                    <h3>Nutrition Support</h3>
+                    <DinnerDiningIcon sx={emojiStyles} />
+                </div>
+                <p>Community-driven nutrition guidance for success.</p>
+            </div>
         </div>
+
+        <div className="middle-grid">
+            <h1>Why Crossfit?</h1>
+            <img src={crossfit} alt='Crossfit Logo' />
+        </div>
+
+        <div className="right-grid">
+            <div className='section-container-right'>
+                <div className='left-title'>
+                    <ScaleIcon sx={emojiStyles} />
+                    <h3>Scaleable</h3>
+                </div>
+                <p>Workouts adapted for every fitness level.</p>
+            </div>
+            <div className='section-container-right'>
+                <div className='left-title'>
+                    <FitnessCenterIcon sx={emojiStyles} />
+                    <h3>Strength</h3>
+                </div>
+                <p>Discover the benefits of strength training.</p>
+            </div>
+            <div className='section-container-right'>
+                <div className='left-title'>
+                    <CategoryIcon sx={emojiStyles} />
+                    <h3>Variety</h3>
+                </div>
+                <p>Engaging workouts that yield great results.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     );
 
 

@@ -12,10 +12,14 @@ import PersonalTraining from './components/PersonalTraining';
 
 
 
+
 function App() {
   return (
-    <div className="app">
-      <Navbar />
+
+    <div className = "app">
+      <Navbar />  
+
+ 
 
       <Routes>
         <Route path="/" element={<Home />} />

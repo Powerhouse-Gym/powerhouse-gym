@@ -8,6 +8,7 @@ import powerhouse from "../assets/powerhouse-grafiti.png"
 import chainlink from "../assets/chainlink.png"
 import SecondaryBanner from './SecondaryBanner';
 import NewsLetter from './NewsLetter';
+import MobileServiceBanner from './MobileServiceBanner';
 
 function Home() {
   // use effect is turned off during development to save views on REVIEWS
@@ -28,7 +29,7 @@ function Home() {
     <div id="home">
          <div className='banner'>
           <h1>Welcome To</h1>
-                <img src={powerhouse} />
+                <img src={powerhouse} alt = "powerhouse"/>
             </div>
             <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}>
       </div>
@@ -36,6 +37,7 @@ function Home() {
       <NewsLetter />
       <Carousel />
       <ServiceBanner />
+      <MobileServiceBanner />
         <div id='test'>
           {/* This is where the Trustmary widget script will load */}
         </div>
@@ -67,8 +69,8 @@ function Home() {
          
         </div>
       </div>
-      <div className = "skull-div" style = {{ backgroundImage: `url(${chainlink})`}}>
-      </div>
+      <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+
     </div>
   );
 }
