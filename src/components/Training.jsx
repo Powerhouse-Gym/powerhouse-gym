@@ -51,6 +51,7 @@ export default function Training() {
         
         {/* Vertical Tabs for Mobile */}
         <Box
+        className='training-tabs'
           sx={{
             width: '100%',
             display: { xs: 'flex', md: 'none' }, // Show vertical tabs on mobile screens
@@ -59,8 +60,7 @@ export default function Training() {
             height: '100vh', // Full screen height for mobile
             position: 'sticky',
             top: '15vh', // Adjust for navbar height
-            zIndex: 1000,
-            backgroundColor: 'white',
+            zIndex: 1,
             borderBottom: { xs: 0, md: 1 }, // No border on mobile
             borderRight: { xs: 1, md: 0 }, // Border on the right for vertical tabs
             borderColor: 'divider',
@@ -117,14 +117,14 @@ export default function Training() {
 
         {/* Horizontal Tabs for Desktop */}
         <Box
+          className='training-tabs'
           sx={{
-            width: '90vw',
+            width: '100vw',
             display: { xs: 'none', md: 'flex' }, // Show horizontal tabs on larger screens
             justifyContent: 'center',
             position: 'sticky',
             top: '9vh', // Adjust for navbar height
             zIndex: 1000,
-            backgroundColor: 'white',
             borderBottom: 1,
             borderColor: 'divider',
           }}

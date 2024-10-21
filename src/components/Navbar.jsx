@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Box, Tabs, Tab, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom"
-
 import CloseIcon from '@mui/icons-material/Close';
+import DarkModeToggle from './DarkModeToggle';
+
 
 function Navbar(props) {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -80,6 +81,7 @@ function Navbar(props) {
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Personal Training" value="/personal-training" onClick={() => handleNavigate("/personal-training")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
                 </Tabs>
+                <DarkModeToggle />
             </Box>
             {/* <div className = "skull-div" style = {{height: "2.5vh",width: "100vw", backgroundImage: `url(${chainlink})` ,zIndex: "15", position: "absolute", top: "10vh"}}></div> */}
          
