@@ -101,7 +101,7 @@ const MobileServiceBanner = () => {
             <h1 className="service-title">SERVICES</h1>
                 {allServices.map((service, index) => (
                     <div className="mobile-trainer-item" key={index}>
-                        <div className="mobile-trainer-header" style = {{backgroundColor: "#f4f4f4"}} onClick={() => toggleCoachDetails(service.title, index)}>
+                        <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(service.title, index)}>
                             {/* <img src={service.imgUrl} alt={service.title} className="mobile-trainer-thumbnail" /> */}
                             <h3 style = {{width: "70%", fontWeight: "700"}}>{service.title}</h3>
                             {expandedCoachIndex === index ? (
