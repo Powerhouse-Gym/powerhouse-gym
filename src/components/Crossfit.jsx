@@ -13,17 +13,19 @@ function Crossfit() {
 
     return (
         <div className='crossfit-page'>
-            <div className = "crossfit-header-div"><div className = "crossfit-header">
-                <h1 className = "header-one">Together We Are</h1>
+            <div className="crossfit-header-div"><div className="crossfit-header">
+                <h1 className="header-one">Together We Are</h1>
                 <h2>Stronger !</h2>
+
                 <div className='crossfit-header-logo'></div>
                 </div></div>
-            <NewsLetter />
-            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
-<WhyCrossfit />
-<div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
 
-            
+            <NewsLetter />
+            <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
+            <WhyCrossfit />
+            <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
+
+
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             {/* <div className='crossfit-container'>
                 <div className='crossfit-info'>

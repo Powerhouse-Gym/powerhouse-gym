@@ -1,12 +1,25 @@
 :root {
-  --primary: #ed1c26;
+  --background-color: white;
+  --secondary-background-color: #f4f4f4;
+  --text-color: black;
+  --powerhouse-red: #ed1c26;
+  --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --secondary-background-color: #333;
+  --text-color: white;
+  --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
+  --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Syne", sans-serif !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: var(--text-shadow)
 }
 
 
@@ -31,15 +44,19 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: var(--background-color);
+}
+
+.MuiTab-textColorPrimary {
+  color: var(--text-color) !important;
 }
 
 .MuiTabs-indicator {
-  background-color: var(--primary) !important;
+  background-color: var(--powerhouse-red) !important;
 }
 
 .Mui-selected {
-  color: var(--primary) !important;
+  color: var(--powerhouse-red) !important;
   font-family: "Rock Salt", cursive !important;
 }
 
@@ -265,8 +282,8 @@
   max-width: 250px;
 }
 
-.icon-title>h3 {
-  color: var(--primary);
+.icon-title > h3 {
+  color: var(--powerhouse-red);
 }
 
 .right-icon-div {
@@ -438,7 +455,6 @@
   gap: 50px;
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
   color: white;
-  margin-top: 15px;
   /* margin-bottom: 15px; */
   z-index: 2;
 }
@@ -574,11 +590,11 @@ button {
   border: 1px solid #ddd;
   border-radius: 10px;
   transition: background-color 0.3s ease;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
 }
 
 .trainer-item:hover {
-  background-color: #eee;
+  background-color: var(--secondary-background-color);
 }
 
 .trainer-thumbnail {
@@ -591,11 +607,11 @@ button {
 
 .trainer-details {
   flex: 2;
-  background-color: #f4f4f4;
+  background-color: var(--secondary-background-color);
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
 }
 
 .coach-image {
@@ -640,7 +656,7 @@ button {
 }
 
 .selected {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-background-color);
   outline: solid black 1px;
 }
 
@@ -660,7 +676,6 @@ button {
 .crossfit-coaches-container>h1 {
   color: var(--primary) !important;
   font-family: "Rock Salt", cursive !important;
-
 }
 
 .crossfit-coaches {
@@ -668,10 +683,10 @@ button {
   /* flex-wrap: wrap; */
   gap: 5vw;
   margin-top: 3vh;
-  background-color: #f4f4f4;
+  background-color: var(--secondary-background-color);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   width: 100%;
   max-width: 1200px;
 }
@@ -986,7 +1001,7 @@ h4 {
   /* Adjust this for your desired aspect ratio (height/width)*100 */
   overflow: hidden;
   /* Hide anything that exceeds the bounds */
-  background-color: black;
+  background-color: var(--secondary-background-color);
 }
 
 .image-container img {
@@ -1196,7 +1211,7 @@ h4 {
 }
 
 .carousel-div {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-background-color);
   height: 65vh;
   width: 100vw;
   display: flex;
@@ -1217,6 +1232,9 @@ h4 {
   border-radius: 8px;
 }
 
+.training-tabs{
+  background-color: var(--secondary-background-color);
+}
 
 .training-div,
 .youth-page,
@@ -1267,6 +1285,10 @@ h4 {
     /* Remove margin for mobile screens */
     height: 60vh;
     /* Adjust height if needed */
+  }
+
+  .training-tabs{
+    background-color: var(--background-color);
   }
 
   .secondary-banner {
@@ -1517,6 +1539,7 @@ h4 {
 
   .training-div {
     margin: 0;
+    padding: 0;
   }
 
   .youth-page {
