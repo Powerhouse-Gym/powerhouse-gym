@@ -198,8 +198,8 @@ body.dark-mode {
 }
 
 .middle-grid>img {
-  height: 70%;
-  width: 90%;
+  height: 80%;
+  width: auto;
   grid-column: 1/2;
   grid-row: 0/4;
 }
@@ -675,7 +675,7 @@ button {
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
   padding-top: 25px;
   padding-bottom: 25px;
 }
