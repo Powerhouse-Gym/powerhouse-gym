@@ -16,6 +16,7 @@ function Navbar(props) {
 
     const handleNavigate = (path) => {
         navigate(path)
+        window.scrollTo(0, 0)
         setMobileOpen(false)
     }
 
