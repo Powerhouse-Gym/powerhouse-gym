@@ -112,7 +112,7 @@ const TrainingCoaches = () => {
 
     return (
         <div className="coaches-container">
-            <h1>Meet Our Trainers</h1>
+            <h1>Sports Coaches</h1>
             <div className="trainer-layout">
                 {/* Left Side: List of Trainers */}
                 <div className="trainer-list">
