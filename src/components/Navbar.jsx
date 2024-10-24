@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Box, Tabs, Tab, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close';
 import DarkModeToggle from './DarkModeToggle';
+import { DarkModeContext } from '../context/DarkModeProvider';
+
 
 
 function Navbar(props) {
     const [mobileOpen, setMobileOpen] = useState(false);
+
+    const {isDarkMode} = useContext(DarkModeContext)
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -30,7 +34,13 @@ function Navbar(props) {
     }
     const drawer = (
         <Box
-            sx={{ width: 250, backgroundColor: 'white', height: '100%' }}
+            sx={{  width: 250,
+                backgroundColor: isDarkMode ? '#1a1a1a' : 'white',
+                height: '100%',
+                color: isDarkMode ? 'white' : 'black', // This changes the font color
+                '& *': {
+                  color: isDarkMode ? 'white' : 'black' // Ensures all child elements inherit the color
+                } }}
             role="presentation"
             onClick={handleDrawerToggle}
             onKeyDown={handleDrawerToggle}
