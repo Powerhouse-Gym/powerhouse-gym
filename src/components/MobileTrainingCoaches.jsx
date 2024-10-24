@@ -99,7 +99,7 @@ const MobileTrainingCoaches = () => {
 
     return (
         <div className="mobile-coaches-container">
-            <h1>Meet Our Trainers</h1>
+            <h1>Sports Coaches</h1>
             <div className="mobile-trainer-list">
                 {coaches.map((coach, index) => (
                     <div className="mobile-trainer-item" key={index}>

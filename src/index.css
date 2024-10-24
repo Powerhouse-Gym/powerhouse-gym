@@ -1316,7 +1316,9 @@ h4 {
     top: 50px;
   }
 
-
+  .chevron{
+    margin-right: 10px;
+  }
   .training-tabs{
     background-color: var(--background-color);
   }
