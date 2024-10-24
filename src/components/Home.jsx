@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useContext, useEffect } from 'react';
 import { APIProvider, Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps';
 import background1 from "../assets/background-1.png";
 import Carousel from './CarouselCard';
@@ -9,11 +9,19 @@ import chainlink from "../assets/chainlink.png"
 import SecondaryBanner from './SecondaryBanner';
 import NewsLetter from './NewsLetter';
 import MobileServiceBanner from './MobileServiceBanner';
+import {DarkModeContext} from '../context/DarkModeProvider';
+import facebook from '../assets/facebook.svg'
+import instagram from '../assets/instagram.svg'
+import darkmodeFacebook from '../assets/darkmode-facebook.svg'
+import darkmodeInstagram from '../assets/darkmode-instagram.svg'
+
+
 
 function Home() {
   // use effect is turned off during development to save views on REVIEWS
   // upgrade will be needed to run efficiently at 100$ year
 
+  const {isDarkMode} = useContext(DarkModeContext)
   
   useEffect(() => {
     // Check if the script is already added
@@ -30,6 +38,7 @@ function Home() {
          <div className='banner'>
           <h1>Welcome To</h1>
                 <img src={powerhouse} alt = "powerhouse"/>
+                
             </div>
             <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}>
       </div>
@@ -66,7 +75,15 @@ function Home() {
           <p>501.247.1517</p>
           <p>Powerhouse Training Complex, LLC</p>
           <button className = "button-17">CONTACT US</button>
-         
+          <div className='directions-social-media'>
+          <a id="instagram-directions" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                        <img src={darkmodeInstagram} alt='Instagram' />
+                    </a>
+                    <a id="facebook-directions" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                        <img src={darkmodeFacebook} alt="Facebook" />
+                    </a>
+
+          </div>
         </div>
       </div>
       <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>

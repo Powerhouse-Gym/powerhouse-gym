@@ -16,8 +16,9 @@ function SecondaryBanner() {
         <div className='secondary-banner'>
             <img src={logo} className="logo" alt="logo" />
             <div className="contact-banner">
-                <h2>501-247-1517</h2>
+                {/* <h2>501-247-1517</h2> */}
                 <a href="tel:+15012471517" className="phone-link">501-247-1517</a>
+            <h4>1804 S. Pine Street, Cabot, AR 72023</h4>
                 <div className='banner-logos'>
                     <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
                         <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />

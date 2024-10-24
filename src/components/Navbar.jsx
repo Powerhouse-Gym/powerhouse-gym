@@ -58,6 +58,9 @@ function Navbar(props) {
                 <ListItem button onClick={() => handleNavigate("/team")}>
                     <ListItemText primary="Meet the Team" />
                 </ListItem>
+                <ListItem button onClick={() => handleNavigate("/contact")}>
+                    <ListItemText primary="CONTACT US" />
+                </ListItem>
             </List>
         </Box>
     );
