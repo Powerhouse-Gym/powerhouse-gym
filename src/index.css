@@ -1313,8 +1313,9 @@ h4 {
     /* Adjust height if needed */
   }
   .banner > img {
-    top: 100px;
+    top: 50px;
   }
+
 
   .training-tabs{
     background-color: var(--background-color);
@@ -1337,6 +1338,11 @@ h4 {
     border-radius: 50%;
   }
 
+  .contact-banner > h4 {
+    font-size:12px;
+    text-align: center;
+  }
+
   /* .contact-banner > h2{
     display: none;
   } */
@@ -1348,7 +1354,7 @@ h4 {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
     width: 100%;
   }
 
@@ -1375,7 +1381,7 @@ h4 {
 
   .banner>h1 {
     font-size: 32px;
-    top: 200px;
+    top: 150px;
   }
 
  
