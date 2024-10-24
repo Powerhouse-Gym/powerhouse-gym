@@ -30,6 +30,11 @@ function Team() {
         },
     ]
 
+    const [selectedCoach, setSelectedCoach] = useState({
+        name: "Nicole Ruiz",
+        img: nicole
+    });
+
     
     const {isDarkMode} = useContext(DarkModeContext)
 
@@ -50,33 +55,76 @@ function Team() {
         setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
     };
 
+
+
+    const handleCoachClick = (coach) => {
+        setSelectedCoach(coach);
+    };
+
+
     return (
         <div className='team-container'>
             <NewsLetter />
             <TrainingCoaches />
             <MobileTrainingCoaches />
-            <h1>Crossfit Coaches</h1>
-        <div className="mobile-trainer-list">
-            {coaches.map((coach, index) => (
-                <div className="mobile-trainer-item" key={index}>
-                    <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(index)}>
-                        {expandedCoachIndex === index ? (
-                            <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
-                        ) : (
-                            <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
-                        )}
-                        <h3>{coach.name}</h3>
-                        <img src={coach.img} alt={coach.name} className="mobile-trainer-thumbnail" />
-                    </div>
-                    {expandedCoachIndex === index && (
-                        <div className="mobile-trainer-details">
-                            <p>Under Construction</p>
-                            <p>Future Bio</p>
+            <div className="mobile-coaches-container">
+                <h1>Crossfit Coaches</h1>
+
+                {/* mobile */}
+                <div className="mobile-trainer-list">
+                    {coaches.map((coach, index) => (
+                        <div className="mobile-trainer-item" key={index}>
+                            <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(index)}>
+                                <img src={coach.img} alt={coach.name} className="mobile-trainer-thumbnail" />
+                                <h3>{coach.name}</h3>
+                                {expandedCoachIndex === index ? (
+                                    <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
+                                ) : (
+                                    <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
+                                )}
+                            </div>
+                            {expandedCoachIndex === index && (
+                                <div className="mobile-trainer-details">
+                                    <p>Under Construction</p>
+                                    <p>Future Bio</p>
+                                </div>
+                            )}
                         </div>
-                    )}
+                    ))}
                 </div>
-            ))}
-        </div>
+            </div>
+            <div className="full-coaches-container coaches-container">
+                <h1 style={{ margin: "25px" }}>Crossfit Coaches</h1>
+                <div className="trainer-layout">
+                    {/* Left Side: List of Trainers */}
+                    <div className="trainer-list">
+                        {coaches.map((coach, index) => (
+                            <div className={coach.name === selectedCoach.name ? `trainer-item selected` : `trainer-item`} key={index} onClick={() => handleCoachClick(coach)}>
+                                <img src={coach.img} alt={coach.name} className="trainer-thumbnail" />
+                                <h3>{coach.name}</h3>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Right Side: Trainer Details */}
+                    <div className="trainer-details">
+                        {selectedCoach ? (
+                            <>
+                                <div className="image-container">
+                                    <img src={selectedCoach.img} alt={selectedCoach.name} className="coach-image" />
+                                </div>
+
+                                <h2 className="coach-name">{selectedCoach.name}</h2>
+                                <p>Bio under construction!</p>
+                            </>
+                        ) : (
+                            <p className='select-coach-txt'>Please select a trainer to see their details.</p>
+                        )}
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     );
 }

@@ -74,7 +74,7 @@ function Home() {
           <p>1804 S. Pine Street, Cabot AR 72023</p>
           <p>501.247.1517</p>
           <p>Powerhouse Training Complex, LLC</p>
-          <button className = "button-17">CONTACT US</button>
+          {/* <button className = "button-17">CONTACT US</button> */}
           <div className='directions-social-media'>
           <a id="instagram-directions" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
                         <img src={darkmodeInstagram} alt='Instagram' />

@@ -10,6 +10,7 @@ import WhyCrossfit from './WhyCrossfit';
 import crossfitlogo from "../assets/crossfit-white-remove-background.com.png"
 
 function Crossfit() {
+    
 
     return (
         <div className='crossfit-page'>

@@ -750,7 +750,8 @@ button {
   align-items: center;
   justify-content: space-between;
   margin: 10px;
-  gap: 30px;
+  gap: 50px;
+  margin-top: 50px;
 }
 #instagram-directions, #facebook-directions {
   width: 90%;
@@ -1271,7 +1272,10 @@ h4 {
 .mobile-coaches-container {
   display: none;
 }
-
+.full-coaches-container {
+  display: flex;
+  width: 80vw;
+}
 .mobile-service-container {
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
   display: none;
@@ -1343,6 +1347,9 @@ h4 {
   .contact-banner > h4 {
     font-size:12px;
     text-align: center;
+  }
+  .full-coaches-container {
+    display: none;
   }
 
   /* .contact-banner > h2{
