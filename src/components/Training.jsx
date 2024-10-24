@@ -44,6 +44,12 @@ export default function Training() {
     setValue(newValue);
   };
 
+  const h1Styles = 
+   { textAlign: "center",
+    margin: "15px"
+   }
+  
+
   return (
     <div className="training-div">
       <NewsLetter />
@@ -129,7 +135,7 @@ export default function Training() {
             borderColor: 'divider',
           }}
         >
-          <Box sx={{ maxWidth: '90vw', width: '100%' }}>
+          <Box sx={{ maxWidth: '90vw', width: '100%'}}>
             <Tabs value={value} onChange={handleChange} aria-label="sports tabs" centered>
               <Tab label="Cage & Field Rentals" {...a11yProps(0)} />
               <Tab label="Baseball" {...a11yProps(1)} />
@@ -144,27 +150,27 @@ export default function Training() {
 
         {/* Content Panels */}
         <CustomTabPanel value={value} index={0}>
-          <h1>Cage & Field Rentals</h1>
+          <h1 style = {h1Styles}>Cage & Field Rentals</h1>
           <TrainingItem arr={cageAndFieldRentals} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <h1>Baseball</h1>
+          <h1 style = {h1Styles}>Baseball</h1>
           <TrainingItem arr={baseball} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-          <h1>Softball</h1>
+          <h1 style = {h1Styles}>Softball</h1>
           <TrainingItem arr={softball} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={3}>
-          <h1>Soccer</h1>
+          <h1 style = {h1Styles}>Soccer</h1>
           <TrainingItem arr={soccer} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={4}>
-          <h1>Volleyball</h1>
+          <h1 style = {h1Styles}>Volleyball</h1>
           <TrainingItem arr={volleyball} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={5}>
-          <h1>Other Sports and Training</h1>
+          <h1 style = {h1Styles}>Other Sports and Training</h1>
           <TrainingItem arr={otherSportsAndTrainings} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={6}>
