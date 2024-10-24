@@ -306,7 +306,6 @@ body.dark-mode {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  /* z-index: 1; */
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -315,8 +314,15 @@ body.dark-mode {
   font-size: 62px;
 }
 .phone-link{
-  display: none;
-}
+  /* display: none; */
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 3rem !important;
+  width: 100%;
+  }
 
 .rock-salt {
   font-family: "Rock Salt", cursive !important;
@@ -388,6 +394,7 @@ body.dark-mode {
 }
 
 
+
 .banner>img {
   height: 105%;
   width: 100%;
@@ -439,7 +446,6 @@ body.dark-mode {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  margin-top: 7vh;
 }
 
 .secondary-banner>.logo {
@@ -737,13 +743,26 @@ button {
   position: relative;
 }
 
+.directions-social-media {
+  height: 15vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  gap: 30px;
+}
+#instagram-directions, #facebook-directions {
+  width: 90%;
+}
+
 
 .directions-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  font-size: larger;
+  font-size: 24px;
   z-index: 1;
 }
 
@@ -1293,6 +1312,9 @@ h4 {
     height: 60vh;
     /* Adjust height if needed */
   }
+  .banner > img {
+    top: 100px;
+  }
 
   .training-tabs{
     background-color: var(--background-color);
@@ -1315,9 +1337,10 @@ h4 {
     border-radius: 50%;
   }
 
-  .contact-banner > h2{
+  /* .contact-banner > h2{
     display: none;
-  }
+  } */
+
 
   .phone-link{
     display: block;
@@ -1325,7 +1348,7 @@ h4 {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    font-size: .8rem !important;
+    font-size: 1.5rem !important;
     width: 100%;
   }
 
@@ -1352,8 +1375,10 @@ h4 {
 
   .banner>h1 {
     font-size: 32px;
-    top: 130px;
+    top: 200px;
   }
+
+ 
 
   .newsletter-container>button {
     height: 25px;
