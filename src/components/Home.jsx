@@ -23,15 +23,15 @@ function Home() {
 
   const {isDarkMode} = useContext(DarkModeContext)
   
-  useEffect(() => {
-    // Check if the script is already added
-    if (!document.querySelector("script[src='https://widget.trustmary.com/fpDyQf-wk']")) {
-      const script = document.createElement('script');
-      script.src = "https://widget.trustmary.com/fpDyQf-wk";
-      script.async = true;
-      document.getElementById("test").appendChild(script);
-    }
-  }, []); // Empty dependency array ensures the effect runs only once
+  // useEffect(() => {
+  //   // Check if the script is already added
+  //   if (!document.querySelector("script[src='https://widget.trustmary.com/fpDyQf-wk']")) {
+  //     const script = document.createElement('script');
+  //     script.src = "https://widget.trustmary.com/fpDyQf-wk";
+  //     script.async = true;
+  //     document.getElementById("test").appendChild(script);
+  //   }
+  // }, []); // Empty dependency array ensures the effect runs only once
 
   return (
     <div id="home">

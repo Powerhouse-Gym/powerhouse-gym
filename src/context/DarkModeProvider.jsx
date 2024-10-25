@@ -8,16 +8,24 @@ export const DarkModeContext = createContext()
 
 const DarkModeProvider = ({ children }) => {
 
-    const [isDarkMode, setIsDarkMode] = useState(
-        localStorage.getItem('darkMode')
-    );
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
+    console.log('darkmode: ', isDarkMode)
+
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+        setIsDarkMode(savedDarkMode);
+    }, []);
+
+    
     // Update the body class when the theme changes
     useEffect(() => {
         if (isDarkMode) {
+           
             document.body.classList.add('dark-mode');
             document.body.classList.remove('light-mode');
         } else {
+            
             document.body.classList.add('light-mode');
             document.body.classList.remove('dark-mode');
         }
