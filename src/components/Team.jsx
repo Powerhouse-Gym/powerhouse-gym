@@ -75,13 +75,13 @@ function Team() {
                     {coaches.map((coach, index) => (
                         <div className="mobile-trainer-item" key={index}>
                             <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(index)}>
-                                <img src={coach.img} alt={coach.name} className="mobile-trainer-thumbnail" />
-                                <h3>{coach.name}</h3>
                                 {expandedCoachIndex === index ? (
                                     <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
                                 ) : (
                                     <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
                                 )}
+                                <h3>{coach.name}</h3>
+                                <img src={coach.img} alt={coach.name} className="mobile-trainer-thumbnail" />
                             </div>
                             {expandedCoachIndex === index && (
                                 <div className="mobile-trainer-details">

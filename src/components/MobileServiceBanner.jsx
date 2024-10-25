@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {useNavigate} from "react-router-dom"
-
 import chevronUp from '../assets/chevron-up.svg';
 import chevronDown from '../assets/chevron-down.svg';
 import highfive from "../assets/traininghighfive.jpg"
@@ -9,11 +8,16 @@ import crossfitLogo from "../assets/crossfit-white.jpg"
 import logo from "../assets/logo-white.webp"
 import powerhousegrafiti from "../assets/powerhouse-grafiti.png"
 import swingaway from "../assets/swingaway.png"
-
+import darkmodeChevronUp from '../assets/darkmode-chevron-up.svg';
+import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
+import { DarkModeContext } from "../context/DarkModeProvider";
+import { DrawTwoTone } from "@mui/icons-material";
 
 const MobileServiceBanner = () => {
 
     const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
+
+    const {isDarkMode} = useContext(DarkModeContext)
 
     const [activeService, setActiveService] = useState({
         title: "Powerhouse Crossfit",
@@ -105,10 +109,10 @@ const MobileServiceBanner = () => {
                             {/* <img src={service.imgUrl} alt={service.title} className="mobile-trainer-thumbnail" /> */}
                             <h3 style = {{width: "70%", fontWeight: "700"}}>{service.title}</h3>
                             {expandedCoachIndex === index ? (
-                                <img src={chevronUp} alt="Chevron Up" className="chevron" />
-                            ) : (
-                                <img src={chevronDown} alt="Chevron Down" className="chevron" />
-                            )}
+                                    <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
+                                ) : (
+                                    <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
+                                )}
                         </div>
                         {expandedCoachIndex === index && (
                             <div className="mobile-trainer-details mobile-service-details">
