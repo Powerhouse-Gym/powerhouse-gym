@@ -8,7 +8,9 @@ export const DarkModeContext = createContext()
 
 const DarkModeProvider = ({ children }) => {
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(
+        localStorage.getItem('darkMode')
+    );
 
     // Update the body class when the theme changes
     useEffect(() => {
