@@ -195,6 +195,7 @@ body.dark-mode {
   color: #ed1c26;
   font-family: "Rock Salt", cursive !important;
   font-size: 36px;
+  padding-bottom: 25px;
 }
 
 .middle-grid>img {
@@ -202,6 +203,7 @@ body.dark-mode {
   width: auto;
   grid-column: 1/2;
   grid-row: 0/4;
+  border-radius: 50%;
 }
 
 .left-title>h3 {
@@ -464,8 +466,7 @@ body.dark-mode {
   height: 20vh;
   width: 100%;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
   background-image: linear-gradient(to right, #791f1fe4, #ec1906);
   color: white;
   /* margin-bottom: 15px; */
@@ -555,14 +556,14 @@ body.dark-mode {
 }
 
 .newsletter-container>h1 {
-  font-size: 240%;
+  font-size: 220%;
 }
 
 .newsletter-container>button {
   width: 10%;
   padding: 0;
   height: 30%;
-  font-size: 160%;
+  font-size: 120%;
 }
 
 button {
@@ -1731,6 +1732,7 @@ button {
     position: relative;
     bottom: 625px;
     font-size: 30px;
+
   }
 
   .whycrossfit-container {

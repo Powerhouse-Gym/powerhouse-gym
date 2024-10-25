@@ -85,37 +85,37 @@ export default function Training() {
           >
             <Tab label="Cage & Field Rentals" {...a11yProps(0)} sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }} />
             <Tab label="Baseball" {...a11yProps(1)} sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }}/>
             <Tab label="Softball" {...a11yProps(2)} sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }}/>
             <Tab label="Soccer" {...a11yProps(3)} sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }}/>
             <Tab label="Volleyball" {...a11yProps(4)} sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }}/>
             <Tab label="Other Sports and Training" {...a11yProps(5)}sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }} />
             <Tab label="Summer Youth Training" {...a11yProps(6)}sx={{
               fontSize: {
-                xs: 9
+                xs: 12
               }
             }}/>
           </Tabs>
