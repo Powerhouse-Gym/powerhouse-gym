@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import IconButton from '@mui/material/IconButton';
@@ -10,6 +10,8 @@ import { DarkModeContext } from '../context/DarkModeProvider';
 export default function DarkModeToggle() {
 
     const  {isDarkMode, handleToggle} = useContext(DarkModeContext)
+
+
 
     const theme = createTheme({
         palette: {
