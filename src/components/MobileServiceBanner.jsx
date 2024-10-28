@@ -89,12 +89,15 @@ const MobileServiceBanner = () => {
     const handleLearnMore = (title) => {
         if (title === "Powerhouse Crossfit"){
             navigate("/crossfit")
+            window.scrollTo(0, 0)
         }
         else if (title === "Powerhouse Sports Training"){
             navigate("/training")
+            window.scrollTo(0, 0)
         }
         else if (title === "Personal Training"){
-            navigate("/")
+            navigate("/person-training")
+            window.scrollTo(0, 0)
         }
    }
     
