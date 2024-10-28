@@ -1958,4 +1958,48 @@ button {
     height: auto !important;
   }
 
+
+  .adaptive-inclusive{
+    background-image: linear-gradient(to left, #791f1fe4, #ec1906);
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    color: white;
+    width: 100vw;
+  }
+  
+  .adaptive-inclusive > h1{
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .adaptive-inclusive > ul{
+    font-size: 1rem;
+  }
+  
+  .adaptive-inclusive > ul > li{
+    margin-top: .5vh;
+  }
+  
+  .adaptive-inclusive > button{
+    border-radius: 20px;
+    font-size: .8rem;
+    border: none;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .adaptive-inclusive > button:hover{
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .adaptive-inclusive > * {
+    margin-top: .5vh;
+  }
+
 }
