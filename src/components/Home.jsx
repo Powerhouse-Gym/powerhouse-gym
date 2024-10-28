@@ -15,7 +15,8 @@ import instagram from '../assets/instagram.svg'
 import darkmodeFacebook from '../assets/darkmode-facebook.svg'
 import darkmodeInstagram from '../assets/darkmode-instagram.svg'
 import CrossfitCoaches from './CrossfitCoaches';
-import { useNavigate } from 'react-router-dom';
+import AdaptiveInclusive from './AdaptiveInclusive';
+
 
 
 
@@ -37,10 +38,7 @@ function Home() {
   //   }
   // }, []); // Empty dependency array ensures the effect runs only once
 
-  const navigate = useNavigate();
-  const handleClick = (tag) => {
-    navigate(`/crossfit#${tag}`);
-  };
+  
 
   return (
     <div id="home">
@@ -52,11 +50,8 @@ function Home() {
       <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}>
       </div>
       <SecondaryBanner />
-      <div>
-        <button className='inclusive-nav' onClick={() => handleClick('inclusive')}>Click Me</button>
-        <button className='inclusive-nav-mobile' onClick={() => handleClick('inclusive-mobile')}>Click Me</button>
-      </div>
       <NewsLetter />
+      <AdaptiveInclusive />
       <Carousel />
       <ServiceBanner />
       <MobileServiceBanner />
