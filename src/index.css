@@ -1370,6 +1370,33 @@ button {
   display: none;
 }
 
+.adaptive-inclusive{
+  background-image: linear-gradient(to left, #791f1fe4, #ec1906);
+  padding: 2vw;
+  text-align: center;
+  margin-top: 5vh;
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.adaptive-inclusive > h1{
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.adaptive-inclusive > p{
+  font-size: 1.2rem;
+}
+
+.adaptive-inclusive > button{
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.adaptive-inclusive > * {
+  margin-top: 1vh;
+}
+
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
   .banner {
