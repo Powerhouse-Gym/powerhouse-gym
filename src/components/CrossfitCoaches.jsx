@@ -83,7 +83,8 @@ const CrossfitCoaches = ({ targetRef }) => {
 
 
 
-    const toggleCoachDetails = (index) => {
+    const toggleCoachDetails = (coach,index) => {
+        setSelectedCoach(coach)
         setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
     };
 
@@ -102,7 +103,7 @@ const CrossfitCoaches = ({ targetRef }) => {
                 <div id="inclusive-mobile" className="mobile-trainer-list">
                     {coaches.map((coach, index) => (
                         <div className="mobile-trainer-item" key={index}>
-                            <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(index)}>
+                            <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(coach, index)}>
                                 <img src={coach.img} alt={coach.name} className="mobile-trainer-thumbnail" />
                                 <h3>{coach.name}</h3>
                                 {expandedCoachIndex === index ? (
