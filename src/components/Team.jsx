@@ -6,6 +6,7 @@ import MobileTrainingCoaches from './MobileTrainingCoaches';
 import eric from '../assets/crossfit-coaches/eric.webp'
 import nicole from '../assets/crossfit-coaches/nicole.webp'
 import rebecca from '../assets/crossfit-coaches/rebecca.webp'
+import rebecca_2 from '../assets/rebecca_2.jpg'
 import { DarkModeContext } from "../context/DarkModeProvider"
 import chevronUp from '../assets/chevron-up.svg';
 import chevronDown from '../assets/chevron-down.svg';
@@ -36,7 +37,7 @@ function Team() {
         },
         {
             name: 'Rebecca Ward',
-            img: rebecca,
+            img: rebecca_2,
             title: "CrossFit Level 1 Coach | CrossFit Kids Coach | Competitive CrossFit Athlete | Firefighter",
             description1: "With over a decade of experience in CrossFit, both as a coach and competitive athlete, Rebecca Ward brings a wealth of knowledge, passion, and dedication to every training session. As a certified CrossFit Level 1 Coach and CrossFit Kids Coach, she is deeply committed to helping individuals of all ages and fitness levels achieve their goals. Rebecca’s background as a firefighter also enhances her focus on functional, real-world fitness that translates to improved strength, resilience, and overall well-being.",
             description2: "Rebecca’s coaching approach is structured and results-driven, catering to individuals eager to make meaningful improvements in their health and fitness. Her mission is to provide detailed, personalized coaching to inspire and support each client on their fitness journey.",
