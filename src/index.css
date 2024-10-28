@@ -626,6 +626,9 @@ button {
   border-radius: 10px;
   position: relative;
   box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .coach-image {
