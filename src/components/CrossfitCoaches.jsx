@@ -11,7 +11,7 @@ import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
 import { useLocation } from "react-router-dom"
 
 
-const CrossfitCoaches = ({targetRef}) => {
+const CrossfitCoaches = ({ targetRef }) => {
 
 
     const { isDarkMode } = useContext(DarkModeContext)
@@ -113,8 +113,16 @@ const CrossfitCoaches = ({targetRef}) => {
                             </div>
                             {expandedCoachIndex === index && (
                                 <div className="mobile-trainer-details">
-                                    <p>Under Construction</p>
-                                    <p>Future Bio</p>
+                                    <p>{selectedCoach.title}</p>
+                                    <p>{selectedCoach.description1}</p>
+                                    <p>{selectedCoach.description2}</p>
+                                    <h4>Training Offered</h4>
+                                    <ul>{selectedCoach.services.map(service => {
+                                        return (
+                                            <li>{service}</li>
+                                        )
+                                    })}</ul>
+                                    <p>{selectedCoach.mission}</p>
                                 </div>
                             )}
                         </div>

@@ -8,6 +8,12 @@ import crossfit3 from "../assets/crossfit/crossfit3.jpg"
 import crossfit4 from "../assets/crossfit/crossfit4.jpg"
 import crossfit5 from "../assets/crossfit/crossfit5.jpg"
 import pullupgirl from "../assets/pullupgirl.png"
+import crossfitkids from "../assets/crossfitkids.jpeg"
+import crossfitsquat from "../assets/crossfitsquat.jpeg"
+import grouppic from "../assets/grouppic.jpg"
+import kidsbench from "../assets/kidsbench.jpeg"
+import kbpic from "../assets/kbpic.jpeg"
+import kidspushup from "../assets/kidshspushup.jpeg"
 
 function CarouselCard() {
   let settings = {
@@ -28,16 +34,31 @@ function CarouselCard() {
     <div className = "carousel-div" >
       <Slider {...settings}className = "carousel-slider" >
         <div className="carousel-img" >
-          <img src={crossfit2} alt={"crossfit"} />
+          <img src={grouppic} alt={"crossfit picture2"} />
         </div>
+        {/* <div className="carousel-img" >
+          <img src={crossfit2} alt={"crossfit"} />
+        </div> */}
         <div className="carousel-img" >
           <img src={crossfit3} alt={"crossfit pic"} />
         </div>
-        <div className="carousel-img" >
+        {/* <div className="carousel-img" >
           <img src={crossfit4} alt={"crossfit picture1"} />
+        </div> */}
+        {/* <div className="carousel-img" >
+          <img src={crossfit5} alt={"crossfit picture2"} />
+        </div> */}
+        <div className="carousel-img" >
+          <img src={crossfitkids} alt={"crossfit picture2"} />
         </div>
         <div className="carousel-img" >
-          <img src={crossfit5} alt={"crossfit picture2"} />
+          <img src={kidsbench} alt={"crossfit picture2"} />
+        </div>
+        <div className="carousel-img" >
+          <img src={kbpic} alt={"crossfit picture2"} />
+        </div>
+        <div className="carousel-img" >
+          <img src={crossfitsquat} alt={"crossfit picture2"} />
         </div>
         <div className="carousel-img" >
           <img className = "pullupgirl"src={pullupgirl} alt={"crossfit picture3"} />
