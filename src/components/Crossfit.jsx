@@ -8,6 +8,8 @@ import NewsLetter from './NewsLetter';
 import chainlink from "../assets/chainlink.png"
 import WhyCrossfit from './WhyCrossfit';
 import crossfitlogo from "../assets/crossfit-white-remove-background.com.png"
+import Schedule from './Schedule';
+
 
 function Crossfit() {
     
@@ -23,6 +25,7 @@ function Crossfit() {
 
             <NewsLetter />
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
+            <Schedule />
             <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
             <WhyCrossfit />
             <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
