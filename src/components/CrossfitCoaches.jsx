@@ -11,7 +11,7 @@ import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
 
 
 
-const CrossfitCoaches = () => {
+const CrossfitCoaches = ({targetRef}) => {
 
 
     const { isDarkMode } = useContext(DarkModeContext)
@@ -47,7 +47,7 @@ const CrossfitCoaches = () => {
 
 const coachElements = coaches.map((coach, i) => {
     return (
-        <div className='coach' key={i}>
+        <div className='coach' ref = {targetRef} key={i}>
             <img src={coach.img} alt={coach.name} className='crossfit-coach-img' />
             <h3>{coach.name}</h3>
         </div>

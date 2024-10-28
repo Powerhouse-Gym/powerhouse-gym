@@ -1,4 +1,4 @@
-import React, {useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { APIProvider, Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps';
 import background1 from "../assets/background-1.png";
 import Carousel from './CarouselCard';
@@ -9,11 +9,12 @@ import chainlink from "../assets/chainlink.png"
 import SecondaryBanner from './SecondaryBanner';
 import NewsLetter from './NewsLetter';
 import MobileServiceBanner from './MobileServiceBanner';
-import {DarkModeContext} from '../context/DarkModeProvider';
+import { DarkModeContext } from '../context/DarkModeProvider';
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import darkmodeFacebook from '../assets/darkmode-facebook.svg'
 import darkmodeInstagram from '../assets/darkmode-instagram.svg'
+import CrossfitCoaches from './CrossfitCoaches';
 
 
 
@@ -21,8 +22,9 @@ function Home() {
   // use effect is turned off during development to save views on REVIEWS
   // upgrade will be needed to run efficiently at 100$ year
 
-  const {isDarkMode} = useContext(DarkModeContext)
-  
+  const { isDarkMode } = useContext(DarkModeContext)
+
+
   // useEffect(() => {
   //   // Check if the script is already added
   //   if (!document.querySelector("script[src='https://widget.trustmary.com/fpDyQf-wk']")) {
@@ -35,21 +37,21 @@ function Home() {
 
   return (
     <div id="home">
-         <div className='banner'>
-          <h1>Welcome To</h1>
-                <img src={powerhouse} alt = "powerhouse"/>
-                
-            </div>
-            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}>
+      <div className='banner'>
+        <h1>Welcome To</h1>
+        <img src={powerhouse} alt="powerhouse" />
+
+      </div>
+      <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}>
       </div>
       <SecondaryBanner />
       <NewsLetter />
       <Carousel />
       <ServiceBanner />
       <MobileServiceBanner />
-        <div id='test'>
-          {/* This is where the Trustmary widget script will load */}
-        </div>
+      <div id='test'>
+        {/* This is where the Trustmary widget script will load */}
+      </div>
       <div className="directions-container">
         {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
           Map commented out during testing
@@ -57,7 +59,7 @@ function Home() {
         {/* Google Maps code commented out to save API hits */}
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
-          className = "mapstyles"
+            className="mapstyles"
             defaultCenter={{ lat: 34.94580, lng: -92.00977 }}
             defaultZoom={17}
             gestureHandling={'greedy'}
@@ -76,18 +78,17 @@ function Home() {
           <p>Powerhouse Training Complex, LLC</p>
           {/* <button className = "button-17">CONTACT US</button> */}
           <div className='directions-social-media'>
-          <a id="instagram-directions" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={darkmodeInstagram} alt='Instagram' />
-                    </a>
-                    <a id="facebook-directions" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={darkmodeFacebook} alt="Facebook" />
-                    </a>
+            <a id="instagram-directions" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={darkmodeInstagram} alt='Instagram' />
+            </a>
+            <a id="facebook-directions" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={darkmodeFacebook} alt="Facebook" />
+            </a>
 
           </div>
         </div>
       </div>
-      <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
-
+      <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
     </div>
   );
 }
