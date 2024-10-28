@@ -2003,3 +2003,375 @@ button {
   }
 
 }
+
+/* Mobile landscape devices (phones and tablets) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .banner {
+    margin-top: 0; /* Remove margin for mobile landscape screens */
+    height: 50vh; /* Adjust height if needed */
+  }
+  .banner > img {
+    top: 30px; /* Adjust image position */
+  }
+
+  .inclusive-nav-mobile {
+    display: block;
+  }
+  
+  .inclusive-nav {
+    display: none;
+  }
+
+  .chevron {
+    margin-right: 15px; /* Slightly more space */
+  }
+  
+  .training-tabs {
+    background-color: var(--background-color);
+  }
+
+  .secondary-banner {
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .secondary-banner > .logo {
+    height: auto;
+    width: 30%; /* Adjust logo size */
+    border-radius: 50%;
+  }
+
+  .secondary-banner > .crossfit {
+    height: auto;
+    width: 30%; /* Adjust logo size */
+    border-radius: 50%;
+  }
+
+  .contact-banner > h4 {
+    font-size: 14px; /* Slightly larger font size */
+    text-align: center;
+  }
+
+  .full-coaches-container {
+    display: none; /* Hide full coaches container */
+  }
+
+  .phone-link {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem !important; /* Adjust font size */
+    width: 100%;
+  }
+
+  .newsletter-container {
+    height: 100%;
+    font-size: 10px; /* Increase font size */
+    gap: 15px; /* Increase gap */
+    padding: 10px; /* Increase padding */
+    padding-bottom: 20px;
+  }
+
+  .newsletter-container > input {
+    width: 85%; /* Adjust input width */
+    height: 45px; /* Adjust input height */
+    font-size: 16px; /* Increase font size */
+  }
+
+  .newsletter-container > h1 {
+    width: 85%; /* Adjust width */
+    margin: 10px;
+    font-size: 24px; /* Increase font size */
+    text-align: center;
+  }
+
+  .banner > h1 {
+    font-size: 36px; /* Increase font size */
+    top: 120px; /* Adjust top position */
+  }
+
+  .newsletter-container > button {
+    height: 30px; /* Adjust button height */
+    font-size: 12px; /* Increase font size */
+    width: 80px; /* Adjust button width */
+    border-radius: 10px; /* Adjust border radius */
+  }
+
+  .carousel-img > img {
+    height: 40vh; /* Adjust carousel image height */
+  }
+
+  .carousel-slider {
+    height: 40vh; /* Adjust slider height */
+  }
+
+  .carousel-div {
+    height: 50vh; /* Adjust carousel div height */
+  }
+
+  .column {
+    padding: 10px; /* Increase padding */
+  }
+
+  .one {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+  }
+
+  .service-banner {
+    padding: 10px; /* Increase padding */
+  }
+
+  .one > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; /* Increase font size */
+    width: 120px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .one > h2:hover {
+    font-size: 14px; /* Increase hover font size */
+  }
+
+  .two {
+    height: 60vh; /* Increase height */
+    top: 30px; /* Adjust position */
+    padding: 15px; /* Increase padding */
+    width: 95vw;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .two > h1 {
+    font-size: 28px; /* Increase font size */
+    align-self: center;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 95%;
+  }
+
+  .two > h3 {
+    font-size: 16px; /* Increase font size */
+    height: 35px; /* Adjust height */
+    width: 95%;
+    align-self: center;
+    text-align: center;
+  }
+
+  .two > img {
+    height: 55%; /* Adjust height */
+    width: 40%; /* Adjust width */
+    top: 150px;
+  }
+
+  .two > button {
+    height: 35px; /* Increase button height */
+    width: 80px; /* Adjust button width */
+    font-size: 8px; /* Increase font size */
+    padding: 0;
+    font-weight: 700;
+    position: initial;
+    align-self: center;
+    margin: 15px;
+  }
+
+  .directions-container {
+    height: 35vh; /* Increase height */
+  }
+
+  .mapstyles {
+    height: 100%;
+    width: 95vw; /* Adjust width */
+  }
+
+  .crossfit-banner {
+    width: 90%;
+    margin-top: 1vh;
+  }
+
+  .directions-text > h2 {
+    font-size: 16px; /* Increase font size */
+    padding: 2px;
+  }
+
+  .directions-text > p {
+    font-size: 12px; /* Increase font size */
+  }
+
+  .directions-text > button {
+    height: 35px; /* Increase button height */
+    font-size: 14px; /* Increase font size */
+  }
+
+  .skull-div {
+    height: 2vh; /* Increase height */
+  }
+
+  .footer-div {
+    height: 20vh; /* Increase height */
+    font-size: 14px; /* Increase font size */
+    gap: 5px;
+    background-size: cover;
+  }
+
+  .footer-div > img {
+    display: none;
+  }
+
+  .crossfit-page > .newsletter-container {
+    margin-top: 0;
+  }
+
+  .training-div > .newsletter-container {
+    margin-top: 12vh; /* Increase margin */
+  }
+
+  .youth-page > .newsletter-container {
+    margin-top: 12vh; /* Increase margin */
+  }
+
+  .team-container > .newsletter-container {
+    margin-top: 12vh; /* Increase margin */
+  }
+
+  .service-img {
+    height: 250px; /* Adjust height */
+    width: 95%;
+    align-self: center;
+    margin: 0;
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .header-one {
+    font-size: 20px; /* Increase font size */
+    top: 55px;
+  }
+
+  .crossfit-header > h2 {
+    font-size: 50px; /* Increase font size */
+    top: 55px;
+  }
+
+  .crossfit-header {
+    background-position: center center;
+    height: 55vh; /* Increase height */
+  }
+
+  .training-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 85vw; /* Increase width */
+    padding: 1rem;
+  }
+
+  .training-item {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .css-xov06r {
+    align-items: flex-start !important;
+    width: 30% !important; /* Adjust width */
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .css-19kzrtu {
+    padding: 0 !important;
+  }
+
+  .training-div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .youth-page {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-bottom: 2vh; /* Increase bottom padding */
+  }
+
+  .youth-info {
+    width: 100%;
+    padding-right: 0;
+    background-color: var(--secondary-background-color);
+    padding: 1rem;
+    margin: 1vh;
+    box-shadow: var(--box-shadow);
+  }
+
+  .youth-info > h1 {
+    font-size: 1.8rem; /* Increase font size */
+  }
+
+  .youth-info > h3 {
+    font-size: 1.2rem; /* Increase font size */
+  }
+
+  .youth-info > p {
+    font-size: 1rem; /* Increase font size */
+  }
+
+  .youth-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    margin: 1vh;
+  }
+
+  .youth-img > img {
+    width: 100%;
+  }
+
+  .trainer-list {
+    width: 30%; /* Adjust width */
+  }
+
+  .trainer-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trainer-thumbnail {
+    width: 90%;
+    border-radius: 35%;
+  }
+
+  .trainer-name {
+    font-size: 14px; /* Increase font size */
+  }
+
+  .trainer-bio {
+    font-size: 12px; /* Increase font size */
+  }
+
+  .top-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner > h2 {
+    font-size: 20px; /* Increase font size */
+    margin-top: 5px;
+  }
+}
