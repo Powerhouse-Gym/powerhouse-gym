@@ -25,6 +25,9 @@ body.dark-mode {
   text-shadow: var(--text-shadow)
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .app {
   display: flex;
@@ -1310,6 +1313,10 @@ button {
   width: 20%;
 }
 
+.inclusive-nav-mobile{
+  display: none;
+}
+
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
   .banner {
@@ -1320,6 +1327,14 @@ button {
   }
   .banner > img {
     top: 50px;
+  }
+
+  .inclusive-nav-mobile{
+    display: block;
+  }
+  
+  .inclusive-nav{
+    display: none;
   }
 
   .chevron{
