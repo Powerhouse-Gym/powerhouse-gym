@@ -26,7 +26,12 @@ const CrossfitCoaches = () => {
         },
     {
         name: 'Eric Roland',
-        img: eric
+        img: eric,
+        title: "No Title",
+        description1: "In progress",
+        description2: "In progress2",
+        services: ["1", "2", "3"],
+        mission: "Work in progress"
     },
     {
         name: 'Rebecca Ward',

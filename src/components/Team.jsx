@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react"
+import React, { useState, useContext } from "react"
 import TrainingCoaches from './TrainingCoaches';
 import CrossfitCoaches from './CrossfitCoaches';
 import NewsLetter from './NewsLetter';
@@ -18,25 +18,45 @@ function Team() {
     const coaches = [
         {
             name: 'Nicole Ruiz',
-            img: nicole
+            title: "CrossFit Level 2 Trainer | Burgener Strength Weightlifting Level 1 Coach | CrossFit Gymnastics Trainer",
+            img: nicole,
+            description1: "With extensive certifications and a strong commitment to inclusive fitness, Nicole Ruiz brings a comprehensive approach to training that meets the needs of all athletes. As a CrossFit Level 2 Trainer, Burgener Strength Weightlifting Level 1 Coach, CrossFit Gymnastics Trainer, and certified CrossFit Kids Coach, Nicole has a unique skill set that allows her to provide targeted and effective training across various fitness domains.",
+            description2: " Nicole holds a certification as an Adaptive & Inclusive Trainer(AIT), awarded in March 2024, and specializes in working with athletes with both physiological and intellectual conditions.She currently coaches at Powerhouse Training Complex and Powerhouse CrossFit & Combine in Cabot, where she leads sessions in functional fitness, Olympic weightlifting, bodybuilding, and sport - specific performance.",
+            services: ["Inclusive Group Classes", "Adaptive Group Classes", "One-on-One Training"],
+            mission: "Nicole's mission is to empower athletes of all backgrounds and abilities, creating an inclusive environment that fosters growth, confidence, and peak performance."
         },
         {
             name: 'Eric Roland',
-            img: eric
+            img: eric,
+            title: "No Title",
+            description1: "In progress",
+            description2: "In progress2",
+            services: ["1", "2", "3"],
+            mission: "Work in progress"
         },
         {
             name: 'Rebecca Ward',
-            img: rebecca
+            img: rebecca,
+            title: "CrossFit Level 1 Coach | CrossFit Kids Coach | Competitive CrossFit Athlete | Firefighter",
+            description1: "With over a decade of experience in CrossFit, both as a coach and competitive athlete, Rebecca Ward brings a wealth of knowledge, passion, and dedication to every training session. As a certified CrossFit Level 1 Coach and CrossFit Kids Coach, she is deeply committed to helping individuals of all ages and fitness levels achieve their goals. Rebecca’s background as a firefighter also enhances her focus on functional, real-world fitness that translates to improved strength, resilience, and overall well-being.",
+            description2: "Rebecca’s coaching approach is structured and results-driven, catering to individuals eager to make meaningful improvements in their health and fitness. Her mission is to provide detailed, personalized coaching to inspire and support each client on their fitness journey.",
+            services: ["Group Classes", "Crossfit Kids Classes", "One-on-One Training"],
+            mission: "Rebecca is dedicated to empowering clients of all backgrounds, creating an environment that fosters growth, confidence, and peak performance."
         },
     ]
 
     const [selectedCoach, setSelectedCoach] = useState({
-        name: "Nicole Ruiz",
-        img: nicole
+        name: 'Nicole Ruiz',
+        title: "CrossFit Level 2 Trainer | Burgener Strength Weightlifting Level 1 Coach | CrossFit Gymnastics Trainer",
+        img: nicole,
+        description1: "With extensive certifications and a strong commitment to inclusive fitness, Nicole Ruiz brings a comprehensive approach to training that meets the needs of all athletes. As a CrossFit Level 2 Trainer, Burgener Strength Weightlifting Level 1 Coach, CrossFit Gymnastics Trainer, and certified CrossFit Kids Coach, Nicole has a unique skill set that allows her to provide targeted and effective training across various fitness domains.",
+        description2: " Nicole holds a certification as an Adaptive & Inclusive Trainer(AIT), awarded in March 2024, and specializes in working with athletes with both physiological and intellectual conditions.She currently coaches at Powerhouse Training Complex and Powerhouse CrossFit & Combine in Cabot, where she leads sessions in functional fitness, Olympic weightlifting, bodybuilding, and sport - specific performance.",
+        services: ["Inclusive Group Classes", "Adaptive Group Classes", "One-on-One Training"],
+        mission: "Nicole's mission is to empower athletes of all backgrounds and abilities, creating an inclusive environment that fosters growth, confidence, and peak performance."
     });
 
-    
-    const {isDarkMode} = useContext(DarkModeContext)
+
+    const { isDarkMode } = useContext(DarkModeContext)
 
     const coachElements = coaches.map((coach, i) => {
         return (
@@ -47,7 +67,7 @@ function Team() {
         )
     })
 
-    
+
     const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
 
@@ -113,9 +133,17 @@ function Team() {
                                 <div className="image-container">
                                     <img src={selectedCoach.img} alt={selectedCoach.name} className="coach-image" />
                                 </div>
-
                                 <h2 className="coach-name">{selectedCoach.name}</h2>
-                                <p>Bio under construction!</p>
+                                <p>{selectedCoach.title}</p>
+                                <p>{selectedCoach.description1}</p>
+                                <p>{selectedCoach.description2}</p>
+                                <h4>Training Offered</h4>
+                                <ul>{selectedCoach.services.map(service => {
+                                    return (
+                                        <li>{service}</li>
+                                    )
+                                })}</ul>
+                                <p>{selectedCoach.mission}</p>
                             </>
                         ) : (
                             <p className='select-coach-txt'>Please select a trainer to see their details.</p>
