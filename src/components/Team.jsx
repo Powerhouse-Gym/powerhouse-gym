@@ -72,7 +72,8 @@ function Team() {
     const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
 
-    const toggleCoachDetails = (index) => {
+    const toggleCoachDetails = (coach,index) => {
+        setSelectedCoach(coach)
         setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
     };
 
@@ -95,7 +96,7 @@ function Team() {
                 <div className="mobile-trainer-list">
                     {coaches.map((coach, index) => (
                         <div className="mobile-trainer-item" key={index}>
-                            <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(index)}>
+                            <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(coach,index)}>
                                 {expandedCoachIndex === index ? (
                                     <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
                                 ) : (
@@ -106,8 +107,16 @@ function Team() {
                             </div>
                             {expandedCoachIndex === index && (
                                 <div className="mobile-trainer-details">
-                                    <p>Under Construction</p>
-                                    <p>Future Bio</p>
+                                <p>{selectedCoach.title}</p>
+                                <p>{selectedCoach.description1}</p>
+                                <p>{selectedCoach.description2}</p>
+                                <h4>Training Offered</h4>
+                                <ul>{selectedCoach.services.map(service => {
+                                    return (
+                                        <li>{service}</li>
+                                    )
+                                })}</ul>
+                                <p>{selectedCoach.mission}</p>
                                 </div>
                             )}
                         </div>

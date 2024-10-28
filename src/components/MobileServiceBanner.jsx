@@ -96,7 +96,7 @@ const MobileServiceBanner = () => {
             window.scrollTo(0, 0)
         }
         else if (title === "Personal Training"){
-            navigate("/person-training")
+            navigate("/personal-training")
             window.scrollTo(0, 0)
         }
    }
