@@ -18,7 +18,10 @@ body.dark-mode {
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Syne", sans-serif !important;
+  /* font-family: "Syne", sans-serif !important; */
+  font-family: "Lato", sans-serif !important;
+  /* font-family: "Anek Devanagari", sans-serif !important; */
+  /* font-family: "Mulish", sans-serif !important; */
   text-shadow: var(--text-shadow)
 }
 
