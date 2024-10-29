@@ -2002,7 +2002,7 @@ button {
 
 
   .adaptive-inclusive{
-    background-image: linear-gradient(to left, #791f1fe4, #ec1906);
+    background-color: var(--secondary-background-color);
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -2010,8 +2010,10 @@ button {
     margin-top: 5vh;
     border-top: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color);
-    color: white;
+    color: --text-color;
     width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   .adaptive-inclusive > h1{
