@@ -1,5 +1,6 @@
 import React from 'react';
 import crossfit from "../assets/crossfit-white.jpg"
+import crossfitlogo from "../assets/crossfit-white-remove-background.com.png"
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import { fontSize } from '@mui/system';
