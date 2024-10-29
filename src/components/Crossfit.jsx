@@ -1,5 +1,5 @@
 import React from 'react';
-
+import grouppic from "../assets/grouppic.jpg"
 import crossfit from "../assets/crossfit-white.jpg"
 import bannerImg from "../assets/new-crossfit-banner.png"
 import crossfitJournal from "../assets/crossfit-journal.webp"
@@ -26,6 +26,10 @@ function Crossfit() {
             <NewsLetter />
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             <Schedule />
+            <div className='group-pic-container'>
+                <img className='crossfit-img-logo-group' src= {crossfitlogo} alt="logo" />
+                <img className='crossfit-group-pic' src= {grouppic} alt="group pic" />
+            </div>
             {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div> */}
             <WhyCrossfit />
             {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div> */}
@@ -44,7 +48,7 @@ function Crossfit() {
                     <img src={crossfit} alt='Crossfit Logo' />
                 </div>
             </div>*/}
-            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+            {/* <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div> */}
             <CrossfitCoaches />
             {/* <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div> */}
 

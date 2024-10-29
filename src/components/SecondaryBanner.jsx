@@ -6,7 +6,7 @@ import darkmodeFacebook from '../assets/darkmode-facebook.svg'
 import darkmodeInstagram from '../assets/darkmode-instagram.svg'
 import crossfit from "../assets/crossfit-white.jpg"
 import { DarkModeContext } from '../context/DarkModeProvider';
-
+import crossfitlogonobackground from "../assets/crossfit-white-remove-background.com.png"
 
 function SecondaryBanner() {
 
@@ -14,7 +14,9 @@ function SecondaryBanner() {
 
     return (
         <div className='secondary-banner'>
+            <div className = "logo-div">
             <img src={newlogo} className="logo" alt="logo" />
+            </div>
             <div className="contact-banner">
                 {/* <h2>501-247-1517</h2> */}
                 <a href="tel:+15012471517" className="phone-link">501-247-1517</a>
@@ -28,7 +30,9 @@ function SecondaryBanner() {
                     </a>
                 </div>
             </div>
-            <img className="crossfit" src={newlogo} alt="crossfit lady" />
+            <div className='logo-div'>
+            <img src={newlogo} className="logo" alt="logo" />
+            </div>
         </div>
 
 
