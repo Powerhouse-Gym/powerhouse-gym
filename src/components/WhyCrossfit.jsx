@@ -48,7 +48,7 @@ function WhyCrossfit() {
 
         <div className="middle-grid">
             <h1>Why Crossfit?</h1>
-            <img src={crossfit} alt='Crossfit Logo' />
+            <img src={crossfitlogo} alt='Crossfit Logo' />
         </div>
 
         <div className="right-grid">

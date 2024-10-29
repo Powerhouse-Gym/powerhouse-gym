@@ -225,6 +225,7 @@ html{
 
 .crossfit-img-logo-group {
   width: 25%;
+  display: none;
 }
 
 .crossfit-group-pic {
@@ -281,12 +282,15 @@ html{
   gap: 50px;
 }
 
-.middle-grid>h1 {
+.middle-grid > h1 {
   color: #ed1c26;
   font-family: "Rock Salt", cursive !important;
-  font-size: 36px;
+  font-size: 46px; /* Slightly increased font size */
   padding-bottom: 25px;
+  transform: rotate(-15deg);
+  text-align: center; /* Slightly rotates the heading */
 }
+
 
 .middle-grid>img {
   height: 80%;
@@ -311,6 +315,33 @@ html{
   padding-left: 10%;
 
 }
+
+.drop-in-button, .join-button {
+  background-color: var(--powerhouse-red); /* Red background color */
+  color: white; /* White text */
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s; /* Smooth hover effects */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  margin-top: 25px;
+  
+}
+
+.drop-in-button:hover, .join-button:hover {
+  background-color: #b71c1c; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.drop-in-button:active, .join-button:active {
+  transform: scale(0.95); /* Slightly smaller when clicked */
+}
+
 
 .why-icon-div {
   display: flex;
@@ -1924,7 +1955,7 @@ button {
   .middle-grid>h1 {
     position: relative;
     bottom: 625px;
-    font-size: 30px;
+    font-size: 34px;
 
   }
 
@@ -1937,6 +1968,7 @@ button {
 
   .crossfit-img-logo-group {
     width: 50%;
+    display: block;
   }
 
   .crossfit-group-pic {
