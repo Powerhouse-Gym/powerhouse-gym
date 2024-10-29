@@ -78,7 +78,7 @@ function Home() {
         </APIProvider>
         <div className='directions-text'>
           <h2>Need Directions?!</h2>
-          <p>PowerHouse Crossfit and Training Complex</p>
+          <p>PowerHouse Training Complex and Crossfit</p>
           <p>1804 S. Pine Street, Cabot AR 72023</p>
           <p>501.247.1517</p>
           <p>Powerhouse Training Complex, LLC</p>

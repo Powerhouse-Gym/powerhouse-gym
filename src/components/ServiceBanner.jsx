@@ -14,16 +14,13 @@ import swingaway from "../assets/swingaway.png"
 function ServiceBanner() {
 
     const [activeService, setActiveService] = useState({
-        title: "Powerhouse Crossfit",
-        imgUrl: crossfit,
-        logo: crossfitLogo,
-        listItems: [
-            "Promoting healthier lifestyles for all.",
-            "Family-based atmosphere with like-minded people.",
-            "Physical fitness, nutrition, and positive interactions.",
-            "Fitness for strong minds and bodies.",
-            "Nutritional awareness for healing and recovery."
-          ]
+        title: "Powerhouse Sports Training",
+        logo: logo,
+        imgUrl: swingaway,
+        listItems: [ "Variety of services for team and individual sports goals",
+            "Indoor practice field for soccer, volleyball, and more",
+            "Enclosed cages with or without machines",
+            "Customizable cages for hitting, pitching, throwing, and catching drills"]
     })
 
     const allServices = [
@@ -104,9 +101,9 @@ function ServiceBanner() {
             <div className='service-layout'>
 
             <div className='column one'>
-                <h2 onClick = {()=>handleServiceClick("Powerhouse Crossfit")}>CROSSFIT</h2>
                 <h2 onClick = {() => handleServiceClick("Powerhouse Sports Training")}>SPORTS TRAINING</h2>
                 <h2 onClick = {()=> handleServiceClick("Personal Training")}>PERSONAL TRAINING</h2>
+                <h2 onClick = {()=>handleServiceClick("Powerhouse Crossfit")}>CROSSFIT</h2>
             </div>
             <div className='column two'>
                 <h1>{activeService.title}</h1>

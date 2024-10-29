@@ -19,32 +19,41 @@ const MobileServiceBanner = () => {
 
     const {isDarkMode} = useContext(DarkModeContext)
 
-    const [activeService, setActiveService] = useState({
-        title: "Powerhouse Crossfit",
-        imgUrl: crossfit,
-        logo: crossfitLogo,
-        listItems: [
-            "Promoting healthier lifestyles for all.",
-            "Family-based atmosphere with like-minded people.",
-            "Physical fitness, nutrition, and positive interactions.",
-            "Fitness for strong minds and bodies.",
-            "Nutritional awareness for healing and recovery."
-          ]
-    })
+    const [activeService, setActiveService] = useState(
+        {
+            title: "Personal Training",
+            logo: powerhousegrafiti,
+            imgUrl: highfive,
+            listItems: 
+            [
+                "Coaches ready to help, whether for sports or fitness.",
+                "Years of experience and multiple certifications.",
+                "CF-L2 Programmer.",
+                "Three CF-L1 Trainers.",
+                "USAW & Powerlifting Coach.",
+                "Burgener Strength Weightlifting L1 Coach."
+            ]
+            
+        }
+       )
 
     const allServices = [
         {
-        title: "Powerhouse Crossfit",
-        imgUrl: crossfit,
-        logo: crossfitLogo,
-        listItems: [
-            "Promoting healthier lifestyles for all.",
-            "Family-based atmosphere with like-minded people.",
-            "Physical fitness, nutrition, and positive interactions.",
-            "Fitness for strong minds and bodies.",
-            "Nutritional awareness for healing and recovery."
-          ]
-    },
+            title: "Personal Training",
+            logo: powerhousegrafiti,
+            imgUrl: highfive,
+            listItems: 
+            [
+                "Coaches ready to help, whether for sports or fitness.",
+                "Years of experience and multiple certifications.",
+                "CF-L2 Programmer.",
+                "Three CF-L1 Trainers.",
+                "USAW & Powerlifting Coach.",
+                "Burgener Strength Weightlifting L1 Coach."
+            ]
+            
+        },
+            
     { 
         title: "Sports Training",
         logo: logo,
@@ -54,21 +63,20 @@ const MobileServiceBanner = () => {
             "Enclosed cages with or without machines",
             "Customizable cages for hitting, pitching, throwing, and catching drills"]
 
-    }, {
-        title: "Personal Training",
-        logo: powerhousegrafiti,
-        imgUrl: highfive,
-        listItems: 
-        [
-            "Coaches ready to help, whether for sports or fitness.",
-            "Years of experience and multiple certifications.",
-            "CF-L2 Programmer.",
-            "Three CF-L1 Trainers.",
-            "USAW & Powerlifting Coach.",
-            "Burgener Strength Weightlifting L1 Coach."
-        ]
-        
+    },
+    {
+        title: "Powerhouse Crossfit",
+        imgUrl: crossfit,
+        logo: crossfitLogo,
+        listItems: [
+            "Promoting healthier lifestyles for all.",
+            "Family-based atmosphere with like-minded people.",
+            "Physical fitness, nutrition, and positive interactions.",
+            "Fitness for strong minds and bodies.",
+            "Nutritional awareness for healing and recovery."
+          ]
     }
+   
     ]
 
     const navigate = useNavigate()
@@ -76,13 +84,13 @@ const MobileServiceBanner = () => {
     const toggleCoachDetails = (title, index) => {
         setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
         if (title === "Powerhouse Crossfit"){
-            setActiveService(allServices[0])
+            setActiveService(allServices[2])
         }
         else if (title === "Sports Training"){
             setActiveService(allServices[1])
         }
         else if (title === "Personal Training"){
-            setActiveService(allServices[2])
+            setActiveService(allServices[0])
         }
     };
 
@@ -91,7 +99,7 @@ const MobileServiceBanner = () => {
             navigate("/crossfit")
             window.scrollTo(0, 0)
         }
-        else if (title === "Powerhouse Sports Training"){
+        else if (title === "Sports Training"){
             navigate("/training")
             window.scrollTo(0, 0)
         }

@@ -68,9 +68,8 @@ html{
 }
 
 .logo {
-  height: 100% !important;
   /* border: solid black 1px; */
-  width: auto !important;
+  width: 100% !important;
   border-radius: 50%;
 }
 
@@ -144,7 +143,7 @@ html{
   padding: 20px;
   font-family: Arial, sans-serif;
   color: var(--text-color);
-  background-color: var(--secondary-background-color);
+  /* background-color: var(--secondary-background-color); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +181,7 @@ html{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .schedule-list-item {
@@ -210,6 +209,27 @@ html{
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  /* background-color: var(--secondary-background-color); */
+}
+
+.group-pic-container {
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  overflow: hidden;
+  gap: 100px;
+}
+
+.crossfit-img-logo-group {
+  width: 25%;
+}
+
+.crossfit-group-pic {
+  width: 50%;  
+  border-radius: 14px;
 }
 
 .grid-container {
@@ -520,6 +540,12 @@ html{
   z-index: 2;
 }
 
+.logo-div{
+  background-color: white;
+  width: 10%;
+  border-radius: 50%;
+}
+
 .secondary-banner>.logo {
   height: 150%;
   width: 20%;
@@ -668,6 +694,10 @@ button {
   .ait-list li {
       flex: 1 1 100%;
       text-align: center;
+  }
+
+  .ait-list {
+    gap: 0;
   }
 }
 
@@ -1413,7 +1443,7 @@ button {
 }
 
 .adaptive-inclusive{
-  background-color: var(--secondary-background-color);
+  /* background-color: var(--secondary-background-color); */
   padding: 2vw;
   display: flex;
   flex-direction: column;
@@ -1484,6 +1514,11 @@ button {
   .secondary-banner {
     margin-top: 0;
     justify-content: center;
+    padding: 20px;
+  }
+
+  .logo-div{
+    width: 40%;
   }
 
   .secondary-banner>.logo {
@@ -1893,9 +1928,27 @@ button {
 
   }
 
+  .group-pic-container {
+    flex-direction: column;
+    padding: 0;
+    height: 20vh;
+    gap: 0;
+  }
+
+  .crossfit-img-logo-group {
+    width: 50%;
+  }
+
+  .crossfit-group-pic {
+    width: 70%;
+    height: auto;
+    display: none;
+  }
+
   .whycrossfit-container {
     height: 100%;
     padding-bottom: 50px;
+    padding-top: 20px;
   }
 
   .section-container,
@@ -1991,7 +2044,7 @@ button {
   }
 
   .logo{
-    width: 20% !important;
+    width: 100% !important;
     height: auto !important;
   }
 
@@ -2002,7 +2055,7 @@ button {
 
 
   .adaptive-inclusive{
-    background-color: var(--secondary-background-color);
+    /* background-color: var(--secondary-background-color); */
     padding: 2vw;
     display: flex;
     flex-direction: column;
