@@ -26,9 +26,9 @@ function Crossfit() {
             <NewsLetter />
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             <Schedule />
-            <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
+            {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div> */}
             <WhyCrossfit />
-            <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div>
+            {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div> */}
 
 
             {/* <div className='crossfit-container'>
@@ -44,8 +44,9 @@ function Crossfit() {
                     <img src={crossfit} alt='Crossfit Logo' />
                 </div>
             </div>*/}
-            <CrossfitCoaches />
             <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
+            <CrossfitCoaches />
+            {/* <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div> */}
 
             <div className='crossfit-journal'>
                 <div className='crossfit-journal-text'>
@@ -59,7 +60,6 @@ function Crossfit() {
                 </div>
                 
             </div> 
-            <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div>
 
         </div>
     );
