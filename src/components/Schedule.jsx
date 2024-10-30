@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/crossfit-white-remove-background.com.png"
-
+import DropIn from './DropIn';
+import JoinButton from './JoinButton';
 
 function Schedule() {
   const weekdayClasses = [
@@ -23,7 +24,7 @@ function Schedule() {
     <div className = "schedule-logo-div">
       <img src= {logo} alt="logo" />
     </div>
-    <div>
+    <div className="calendar-div">
 
       <div className="schedule-section">
         <h3 className="schedule-subtitle">Monday - Friday</h3>
@@ -46,6 +47,15 @@ function Schedule() {
           ))}
         </ul>
           </div>
+      <div className = "schedule-btns">
+      <DropIn />
+            <div className = "line-breaks">
+                <hr style={{ height: "2px", width: "100px" }} />
+                <span>or</span>
+                <hr style={{ height: "2px", width: "100px" }} />
+            </div>
+            <JoinButton />
+      </div>
       </div>
     </div>
           </>
