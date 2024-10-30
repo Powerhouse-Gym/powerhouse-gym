@@ -56,20 +56,17 @@ function Navbar(props) {
                 <ListItem button onClick={() => handleNavigate("/")}>
                     <ListItemText primary="Home"  />
                 </ListItem>
-                <ListItem button onClick={() => handleNavigate("/crossfit")}>
-                    <ListItemText primary="Crossfit" />
-                </ListItem>
                 <ListItem button onClick={() => handleNavigate("/training")}>
                     <ListItemText primary="Sports Training" />
                 </ListItem>
                 <ListItem button onClick={() => handleNavigate("/personal-training")}>
                     <ListItemText primary="Personal Training" />
                 </ListItem>
+                <ListItem button onClick={() => handleNavigate("/crossfit")}>
+                    <ListItemText primary="Crossfit" />
+                </ListItem>
                 <ListItem button onClick={() => handleNavigate("/team")}>
                     <ListItemText primary="Meet the Team" />
-                </ListItem>
-                <ListItem button onClick={() => handleNavigate("/contact")}>
-                    <ListItemText primary="CONTACT US" />
                 </ListItem>
             </List>
         </Box>
@@ -90,9 +87,9 @@ function Navbar(props) {
                 </IconButton>
                 <Tabs sx = {{display: {xs: 'none', md: 'flex'}}}className='nav-links' value={window.location.pathname} >
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
-                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Personal Training" value="/personal-training" onClick={() => handleNavigate("/personal-training")} />
+                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
                 </Tabs>
                 <DarkModeToggle />

@@ -3,8 +3,6 @@ import Slider from "react-slick"
 import "../carousel.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import battingcage from "../assets/training/batting-cage.webp"
-import catchinglessons from "../assets/training/catching-lessons.webp"
 import crossfit2 from "../assets/crossfit/crossfit2.jpg"
 import crossfit3 from "../assets/crossfit/crossfit3.jpg"
 import crossfit4 from "../assets/crossfit/crossfit4.jpg"
@@ -16,11 +14,8 @@ import grouppic from "../assets/grouppic.jpg"
 import kidsbench from "../assets/kidsbench.jpeg"
 import kbpic from "../assets/kbpic.jpeg"
 import kidspushup from "../assets/kidshspushup.jpeg"
-import fieldinglessons from "../assets/training/fielding-lessons.webp"
-import hittinglessons from "../assets/training/hitting-lessons.webp"
-import swingaway from "../assets/swingaway.png"
-import softballcatching from "../assets/training/softball-catching-lessons.webp"
-function CarouselCard() {
+
+function CarouselCardCrossfit() {
   let settings = {
     dots: true,
     infinite: true,
@@ -39,42 +34,42 @@ function CarouselCard() {
     <div className = "carousel-div" >
       <Slider {...settings}className = "carousel-slider" >
         <div className="carousel-img" >
-          <img src={battingcage} alt={"batting cage"} />
-        </div>
-        <div className="carousel-img" >
-          <img src={catchinglessons} alt={"catching lessons"} />
-        </div>
-        <div className="carousel-img" >
-          <img src={fieldinglessons} alt={"fieldin lessons"} />
-        </div>
-        <div className="carousel-img" >
-          <img src={hittinglessons} alt={"hittinglessons"} />
-        </div>
-        <div className="carousel-img" >
-          <img src={swingaway} alt={"swingaway"} />
-        </div>
-        <div className="carousel-img" >
-          <img src={softballcatching} alt={"softball catching"} />
+          <img src={grouppic} alt={"crossfit picture2"} />
         </div>
         {/* <div className="carousel-img" >
+          <img src={crossfit2} alt={"crossfit"} />
+        </div> */}
+        <div className="carousel-img" >
+          <img src={crossfit3} alt={"crossfit pic"} />
+        </div>
+        {/* <div className="carousel-img" >
+          <img src={crossfit4} alt={"crossfit picture1"} />
+        </div> */}
+        {/* <div className="carousel-img" >
+          <img src={crossfit5} alt={"crossfit picture2"} />
+        </div> */}
+        <div className="carousel-img" >
+          <img src={crossfitkids} alt={"crossfit picture2"} />
+        </div>
+        <div className="carousel-img" >
           <img src={kidsbench} alt={"crossfit picture2"} />
-        </div> */}
-        {/* <div className="carousel-img" >
+        </div>
+        <div className="carousel-img" >
           <img src={kbpic} alt={"crossfit picture2"} />
-        </div> */}
-        {/* <div className="carousel-img" >
+        </div>
+        <div className="carousel-img" >
           <img src={crossfitsquat} alt={"crossfit picture2"} />
-        </div> */}
-        {/* <div className="carousel-img" >
+        </div>
+        <div className="carousel-img" >
           <img src={kidspushup} alt={"crossfit picture2"} />
-        </div> */}
-        {/* <div className="carousel-img" >
+        </div>
+        <div className="carousel-img" >
           <img className = "pullupgirl"src={pullupgirl} alt={"crossfit picture3"} />
-        </div> */}
+        </div>
       </Slider>
     </div>
 
   )
 }
 
-export default CarouselCard;
+export default CarouselCardCrossfit;

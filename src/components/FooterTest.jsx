@@ -32,7 +32,6 @@ function FooterTest() {
                 <h2>Powerhouse Training Complex and Crossfit</h2>
                 <p>1804 S. Pine Street, Cabot AR 72023</p>
                 <p>501.247.1517</p>
-                <p>Powerhouse Training Complex and Crossfit, LLC</p>
                 <div className='banner-logos-footer'>
                     <a id="facebook-footer" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
                         <img src={darkmodeFacebook} alt="Facebook" />

@@ -38,6 +38,16 @@ const MobileServiceBanner = () => {
        )
 
     const allServices = [
+        { 
+            title: "Sports Training",
+            logo: logo,
+            imgUrl: swingaway,
+            listItems: [ "Variety of services for team and individual sports goals",
+                "Indoor practice field for soccer, volleyball, and more",
+                "Enclosed cages with or without machines",
+                "Customizable cages for hitting, pitching, throwing, and catching drills"]
+    
+        },
         {
             title: "Personal Training",
             logo: powerhousegrafiti,
@@ -54,16 +64,6 @@ const MobileServiceBanner = () => {
             
         },
             
-    { 
-        title: "Sports Training",
-        logo: logo,
-        imgUrl: swingaway,
-        listItems: [ "Variety of services for team and individual sports goals",
-            "Indoor practice field for soccer, volleyball, and more",
-            "Enclosed cages with or without machines",
-            "Customizable cages for hitting, pitching, throwing, and catching drills"]
-
-    },
     {
         title: "Powerhouse Crossfit",
         imgUrl: crossfit,

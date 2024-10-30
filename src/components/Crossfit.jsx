@@ -10,7 +10,7 @@ import WhyCrossfit from './WhyCrossfit';
 import crossfitlogo from "../assets/crossfit-white-remove-background.com.png"
 import Schedule from './Schedule';
 import DropIn from './DropIn';
-import CarouselCard from "../components/CarouselCard"
+import CarouselCardCrossfit from "../components/CarouselCardCrossfit"
 import JoinButton from './JoinButton';
 
 
@@ -21,20 +21,14 @@ function Crossfit() {
         <div className='crossfit-page'>
             <div className="crossfit-header-div"><div className="crossfit-header">
                 <h1 className="header-one">Together We Are</h1>
-                <h2>Stronger !</h2>
+                <h2>Stronger!</h2>
 
                 {/* <div className='crossfit-header-logo'></div> */}
             </div></div>
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             <Schedule />
-            <DropIn />
-            <div style = {{display: "flex", alignItems: "center", gap: "15px"}}>
-                <hr style={{ height: "2px", width: "100px" }} />
-                <span>or</span>
-                <hr style={{ height: "2px", width: "100px" }} />
-            </div>
-            <JoinButton />
-            <CarouselCard />
+      
+            <CarouselCardCrossfit />
             {/* <div className='group-pic-container'>
                 <img className='crossfit-img-logo-group' src= {crossfitlogo} alt="logo" />
                 <img className='crossfit-group-pic' src= {grouppic} alt="group pic" />

@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/crossfit-white-remove-background.com.png"
 
 
 function Schedule() {
@@ -16,8 +17,13 @@ function Schedule() {
   ];
 
   return (
-    <div className="schedule-container">
+    <>
       <h2 className="schedule-title">CrossFit Class Schedule</h2>
+    <div className="schedule-container">
+    <div className = "schedule-logo-div">
+      <img src= {logo} alt="logo" />
+    </div>
+    <div>
 
       <div className="schedule-section">
         <h3 className="schedule-subtitle">Monday - Friday</h3>
@@ -39,8 +45,10 @@ function Schedule() {
             </li>
           ))}
         </ul>
+          </div>
       </div>
     </div>
+          </>
   );
 }
 
