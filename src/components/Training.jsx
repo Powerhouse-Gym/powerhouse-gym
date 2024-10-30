@@ -52,7 +52,6 @@ export default function Training() {
 
   return (
     <div className="training-div">
-      <NewsLetter />
       <Box sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'row', md: 'column' }, alignItems: 'center' }}>
         
         {/* Vertical Tabs for Mobile */}

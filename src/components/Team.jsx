@@ -86,7 +86,6 @@ function Team() {
 
     return (
         <div className='team-container'>
-            <NewsLetter />
             <TrainingCoaches />
             <MobileTrainingCoaches />
             <div className="mobile-coaches-container">
