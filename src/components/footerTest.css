@@ -117,22 +117,26 @@
         height: 20vh;
     }
     .img-container {
-        width: 115px;
+        width: 65px;
     }
 
     .left-div {
-        left: -15px;
-        top: 15px;
+        left: -25px;
+        top: 25px;
         height: 12vh;
     }
    
     .left-div > ul > li {
+        font-size: 8px;
+    }
+
+    .footer-logo-test > h2 {
         font-size: 12px;
     }
     .footer-logo-test {
-        font-size: 10px;
-        width: 40%;
-        right: 0px;
-        top: -10px;
+        font-size: 8px;
+        width: 45%;
+        right: -10px;
+        top: -5px;
     }
 }
