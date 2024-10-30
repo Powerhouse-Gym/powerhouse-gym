@@ -1555,6 +1555,11 @@ background-color: var(--secondary-background-color);
     background-color: var(--background-color);
   }
 
+  .ait-header {
+    font-size: smaller;
+    text-align: center;
+  }
+
   .secondary-banner {
     margin-top: 0;
     justify-content: center;
@@ -1575,6 +1580,10 @@ background-color: var(--secondary-background-color);
     height: auto;
     width: 25%;
     border-radius: 50%;
+  }
+
+  .contact-banner {
+    width: 100%;
   }
 
   .contact-banner > h4 {
@@ -1953,7 +1962,7 @@ background-color: var(--secondary-background-color);
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding-top: 30%;
+    padding-top: 40%;
   }
 
   .right-grid {
@@ -2133,6 +2142,7 @@ background-color: var(--secondary-background-color);
     font-size: .8rem;
     border: none;
     box-shadow: var(--box-shadow);
+    margin-top: 10px;
   }
   
   .adaptive-inclusive > button:hover{
@@ -2158,6 +2168,7 @@ background-color: var(--secondary-background-color);
 
   .inclusive-nav-mobile {
     display: block;
+
   }
   
   .inclusive-nav {

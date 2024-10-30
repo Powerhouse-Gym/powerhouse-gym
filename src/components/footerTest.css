@@ -118,6 +118,7 @@
     }
     .img-container {
         width: 65px;
+        outline: 3px solid #ed1c26;
     }
 
     .left-div {

@@ -12,7 +12,7 @@ const AdaptiveInclusive = () => {
 
     return (
         <div className='adaptive-inclusive'>
-            <div>
+            <div className='ait-header'>
 
             <h1>Now Offering Adaptive & Inclusive Training (AIT)</h1>
 
