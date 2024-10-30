@@ -7,6 +7,7 @@ import Crossfit from './components/Crossfit';
 import AfterSchool from './components/AfterSchool';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import FooterTest from './components/FooterTest';
 import PersonalTraining from './components/PersonalTraining';
 
 
@@ -31,7 +32,7 @@ return (
         <Route path="/team" element={<Team />} />
       </Routes>
 
-      <Footer />
+      <FooterTest />
 
 
     </div>

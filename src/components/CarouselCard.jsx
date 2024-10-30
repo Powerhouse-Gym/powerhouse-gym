@@ -61,6 +61,9 @@ function CarouselCard() {
           <img src={crossfitsquat} alt={"crossfit picture2"} />
         </div>
         <div className="carousel-img" >
+          <img src={kidspushup} alt={"crossfit picture2"} />
+        </div>
+        <div className="carousel-img" >
           <img className = "pullupgirl"src={pullupgirl} alt={"crossfit picture3"} />
         </div>
       </Slider>

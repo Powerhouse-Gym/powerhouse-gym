@@ -11,6 +11,7 @@ import swingaway from "../assets/swingaway.png"
 
 
 
+
 function ServiceBanner() {
 
     const [activeService, setActiveService] = useState({
@@ -99,8 +100,8 @@ function ServiceBanner() {
     return (
         <div className="service-banner">
             <div className='service-layout'>
-
             <div className='column one'>
+                <h1>Services</h1>
                 <h2 onClick = {() => handleServiceClick("Powerhouse Sports Training")}>SPORTS TRAINING</h2>
                 <h2 onClick = {()=> handleServiceClick("Personal Training")}>PERSONAL TRAINING</h2>
                 <h2 onClick = {()=>handleServiceClick("Powerhouse Crossfit")}>CROSSFIT</h2>

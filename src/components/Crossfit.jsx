@@ -25,8 +25,6 @@ function Crossfit() {
 
                 {/* <div className='crossfit-header-logo'></div> */}
             </div></div>
-
-            <NewsLetter />
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             <Schedule />
             <DropIn />

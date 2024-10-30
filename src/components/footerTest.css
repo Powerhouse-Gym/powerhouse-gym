@@ -1,0 +1,138 @@
+
+:root {
+    --background-color: white;
+    --secondary-background-color: #f4f4f4;
+    --text-color: black;
+    --powerhouse-red: #ed1c26;
+    --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  body.dark-mode {
+    --background-color: #1a1a1a;
+    --secondary-background-color: #333;
+    --text-color: white;
+    --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
+    --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
+  }
+
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Syne", sans-serif !important; */
+    /* font-family: "Lato", sans-serif !important; */
+    font-family: "Anek Devanagari", sans-serif !important;
+    /* font-family: "Mulish", sans-serif !important; */
+    text-shadow: var(--text-shadow)
+  }
+  footer {
+    height: 35vh;
+    width: 100vw;
+    background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.img-container {
+    outline: 10px solid #ed1c26 ;
+    height: auto;
+    width: 250px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container > img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+.left-div{
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    width: 25vw;
+    height: 15vh;
+}
+
+.left-div > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.left-div > ul > li{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-logo-test {
+    position: absolute;
+    bottom : 75px;
+    right: 25px;
+    width: 35%;
+    height: 150px;
+    font-size: 14px;
+    text-align: right;
+    padding: 25px;
+    color: white;
+}
+
+
+.banner-logos-footer {
+    display: flex;
+   justify-content: flex-end;
+ 
+}
+
+
+
+.banner-logos-footer > a > img {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#instagram-footer, #facebook-footer {
+    width: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    footer {
+        height: 20vh;
+    }
+    .img-container {
+        width: 115px;
+    }
+
+    .left-div {
+        left: -15px;
+        top: 15px;
+        height: 12vh;
+    }
+   
+    .left-div > ul > li {
+        font-size: 12px;
+    }
+    .footer-logo-test {
+        font-size: 10px;
+        width: 40%;
+        right: 0px;
+        top: -10px;
+    }
+}

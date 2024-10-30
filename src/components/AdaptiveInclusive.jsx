@@ -12,6 +12,8 @@ const AdaptiveInclusive = () => {
 
     return (
         <div className='adaptive-inclusive'>
+            <div>
+
             <h1>Now Offering Adaptive & Inclusive Training (AIT)</h1>
 
             <ul class="ait-list">
@@ -22,11 +24,12 @@ const AdaptiveInclusive = () => {
                 <li><strong style={{ color: "red" }}>Strength & Confidence:</strong> Build strength, confidence, and community.</li>
                 <li><strong style={{ color: "red" }}> Empowerment:</strong> Fitness that includes and empowers.</li>
             </ul>
+            </div>
 
 
 
-            <button className='inclusive-nav' onClick={() => handleClick('inclusive')}>Meet the Trainer</button>
-            <button className='inclusive-nav-mobile' onClick={() => handleClick('inclusive-mobile')}>Meet the Trainer</button>
+            <button className='inclusive-nav' onClick={() => handleClick('inclusive')}>LEARN MORE</button>
+            <button className='inclusive-nav-mobile' onClick={() => handleClick('inclusive-mobile')}>LEARN MORE</button>
         </div>
     );
 }
