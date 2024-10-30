@@ -15,9 +15,9 @@ function SecondaryBanner() {
 
     return (
         <div className='secondary-banner'>
-            {/* <div className = "logo-div">
+            <div className = "logo-div" id ="ptc-logo">
             <img src={newlogo} className="logo" alt="logo" />
-            </div> */}
+            </div>
             <div className="contact-banner">
                 {/* <h2>501-247-1517</h2> */}
                 <a href="tel:+15012471517" className="phone-link">501-247-1517</a>
@@ -30,6 +30,9 @@ function SecondaryBanner() {
                         <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
                     </a>
                 </div>
+            </div>
+            <div className = "logo-div">
+            <img src={crossfit} className="logo" alt="logo" />
             </div>
             <div className="directions-container">
         {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>

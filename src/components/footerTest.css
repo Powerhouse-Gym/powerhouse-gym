@@ -122,13 +122,15 @@
     }
 
     .left-div {
-        left: -25px;
+        left: -30px;
         top: 25px;
         height: 12vh;
+        gap: 5px;
+        width: 130px;
     }
    
     .left-div > ul > li {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .footer-logo-test > h2 {
@@ -137,7 +139,11 @@
     .footer-logo-test {
         font-size: 8px;
         width: 45%;
-        right: -10px;
-        top: -5px;
-    }
+        right: 10px;
+        top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0px;
+        }
 }
