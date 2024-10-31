@@ -1,4 +1,29 @@
-
+:root {
+    --background-color: white;
+    --secondary-background-color: #f4f4f4;
+    --text-color: black;
+    --powerhouse-red: #ed1c26;
+    --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  body.dark-mode {
+    --background-color: #1a1a1a;
+    --secondary-background-color: #333;
+    --text-color: white;
+    --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
+    --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Syne", sans-serif !important; */
+    /* font-family: "Lato", sans-serif !important; */
+    font-family: "Anek Devanagari", sans-serif !important;
+    /* font-family: "Mulish", sans-serif !important; */
+    text-shadow: var(--text-shadow)
+  }
     .banner-container {
         display: none;
     }
@@ -15,13 +40,16 @@
     }
     .service-container > button {
         width: 100px;
+        height: 40px;
         padding: 5px;
         font-size: 18px;
         font-weight: 600;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        color: var(--text-color);
+        background-color: var(--secondary-background-color);
+        z-index: 1500;
     }
     .banner-container {
         position: relative;
@@ -39,7 +67,7 @@
     }
     
     .service-description {
-        height:60vh;
+        height:65vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
