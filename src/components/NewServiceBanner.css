@@ -1,19 +1,25 @@
 :root {
     --background-color: white;
     --secondary-background-color: #f4f4f4;
+    --alternate-background-color: #1a1a1a;
+    --alternate-secondary-background-color: #333;
     --text-color: black;
+    --alternate-text-color: white; /* Added alternate text color for light mode */
     --powerhouse-red: #ed1c26;
     --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  
-  body.dark-mode {
+}
+
+body.dark-mode {
     --background-color: #1a1a1a;
     --secondary-background-color: #333;
+    --alternate-background-color: white;
+    --alternate-secondary-background-color: #f4f4f4;
     --text-color: white;
+    --alternate-text-color: black; /* Alternate text color for dark mode */
     --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
     --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
-  }
+}
   
   * {
     margin: 0;
@@ -50,20 +56,13 @@
         color: var(--text-color);
         background-color: var(--secondary-background-color);
         z-index: 120;
-        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
     
-    .service-container > button:active,
-    .service-container > button:focus {
-        background-color: #333;
-        color: white;
+    .service-container > button.active {
+        background-color: var(--alternate-background-color); /* Uses opposite background color */
+        color: var(--alternate-text-color); /* Uses opposite text color */
     }
-
-
-.service-container > button.active {
-    background-color: #333;
-    color: white;
-}
     
     
     .banner-container {
