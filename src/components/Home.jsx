@@ -16,6 +16,7 @@ import darkmodeFacebook from '../assets/darkmode-facebook.svg'
 import darkmodeInstagram from '../assets/darkmode-instagram.svg'
 import CrossfitCoaches from './CrossfitCoaches';
 import AdaptiveInclusive from './AdaptiveInclusive';
+import NewServiceBanner from './NewServiceBanner';
 
 
 
@@ -53,7 +54,8 @@ function Home() {
       <Carousel />
       <AdaptiveInclusive />
       <ServiceBanner />
-      <MobileServiceBanner />
+      <NewServiceBanner />
+      {/* <MobileServiceBanner /> */}
       <div id='test'>
         {/* This is where the Trustmary widget script will load */}
       </div>
