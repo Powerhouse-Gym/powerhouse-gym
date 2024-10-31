@@ -1135,12 +1135,21 @@ button {
 } */
 
 .two>button {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 7vh;
+  font-size: 28px;
+  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  color: white;
+  /* position: absolute;
+
   right: 11%;
   bottom: 20%;
   cursor: pointer;
   transition: transform 0.3s ease;
-  font-weight: 700;
+  font-weight: 700; */
 }
 
 .two>button:hover {
