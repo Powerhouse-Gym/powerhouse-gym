@@ -4,7 +4,7 @@ import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import darkmodeFacebook from '../assets/darkmode-facebook.svg'
 import darkmodeInstagram from '../assets/darkmode-instagram.svg'
-import crossfit from "../assets/crossfit-white.jpg"
+import crossfit from "../assets/crossfit-white-remove-background.com.png"
 import { DarkModeContext } from '../context/DarkModeProvider';
 import crossfitlogonobackground from "../assets/crossfit-white-remove-background.com.png"
 import { APIProvider, Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps';

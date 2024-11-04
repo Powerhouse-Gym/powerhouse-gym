@@ -17,13 +17,32 @@ const AdaptiveInclusive = () => {
             <h1>Now Offering Adaptive & Inclusive Training (AIT)</h1>
 
             <ul class="ait-list">
-                <li><strong style={{ color: "red" }}>Accessible Fitness:</strong> Fitness for everyone, all abilities welcome.</li>
-                <li><strong style={{ color: "red" }}>Tailored Workouts:</strong> Custom workouts for all needs.</li>
-                <li><strong style={{ color: "red" }}>Supportive Coaching:</strong> Expert guidance to meet your goals.</li>
-                <li><strong style={{ color: "red" }}>Welcoming Environment:</strong> Friendly and adaptive for all.</li>
-                <li><strong style={{ color: "red" }}>Strength & Confidence:</strong> Build strength, confidence, and community.</li>
-                <li><strong style={{ color: "red" }}> Empowerment:</strong> Fitness that includes and empowers.</li>
-            </ul>
+    <li>
+        <strong style={{ color: "red" }}>Accessible Fitness</strong>
+        <p>Fitness for everyone, all abilities welcome.</p>
+    </li>
+    <li>
+        <strong style={{ color: "red" }}>Tailored Workouts</strong>
+        <p>Custom workouts for all needs.</p>
+    </li>
+    <li>
+        <strong style={{ color: "red" }}>Supportive Coaching</strong>
+        <p>Expert guidance to meet your goals.</p>
+    </li>
+    <li>
+        <strong style={{ color: "red" }}>Welcoming Environment</strong>
+        <p>Friendly and adaptive for all.</p>
+    </li>
+    <li>
+        <strong style={{ color: "red" }}>Strength & Confidence</strong>
+        <p>Build strength, confidence, and community.</p>
+    </li>
+    <li>
+        <strong style={{ color: "red" }}>Empowerment</strong>
+        <p>Fitness that includes and empowers.</p>
+    </li>
+</ul>
+
             </div>
 
 
