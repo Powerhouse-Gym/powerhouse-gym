@@ -41,13 +41,56 @@ const TrainingItem = ({ arr }) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <a style={{ color: 'black' }} href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events" target="_blank" rel="noopener noreferrer">
-                        <Button size="small" variant='outlined' color="dark">
-                            Book Now
-                        </Button>
-                    </a>
+                    {
+                        elem.url1 && !elem.urlTitle1 &&
+                        < a style={{ color: 'black' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
+                            <Button size="small" variant='outlined' color="dark">
+                                Book Now
+                            </Button>
+                        </a>
+                    }
+                    {
+                        elem.url1 && elem.urlTitle1 &&
+                        < a style={{ color: 'black' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
+                            <Button size="small" variant='outlined' color="dark">
+                                {elem.urlTitle1}
+                            </Button>
+                        </a>
+                    }
+                    {
+                        elem.url2 && elem.urlTitle2 &&
+                        < a style={{ color: 'black' }} href={elem.url2} target="_blank" rel="noopener noreferrer">
+                            <Button size="small" variant='outlined' color="dark">
+                                {elem.urlTitle2}
+                            </Button>
+                        </a>
+                    }
+                    {
+                        elem.url3 && elem.urlTitle3 &&
+                        < a style={{ color: 'black' }} href={elem.url3} target="_blank" rel="noopener noreferrer">
+                            <Button size="small" variant='outlined' color="dark">
+                                {elem.urlTitle3}
+                            </Button>
+                        </a>
+                    }
+                    {
+                        elem.url4 && elem.urlTitle4 &&
+                        < a style={{ color: 'black' }} href={elem.url4} target="_blank" rel="noopener noreferrer">
+                            <Button size="small" variant='outlined' color="dark">
+                                {elem.urlTitle4}
+                            </Button>
+                        </a>
+                    }
+                    {
+                        !elem.url1 &&
+                        < a style={{ color: 'black' }} href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
+                            <Button size="small" variant='outlined' color="dark">
+                                Call for more information
+                            </Button>
+                        </a>
+                    }
                 </CardActions>
-            </Card>
+            </Card >
         );
     });
 

@@ -1578,6 +1578,44 @@ background-color: var(--secondary-background-color);
   display: none;
 }
 
+.personal-training-container{
+  display: flex;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  gap: 10vw;
+  margin: 0;
+  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.personal-training-section{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+.intro-section{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: var(--secondary-background-color); */
+  font-size: 1.5rem;
+}
+
+.service-section{
+  margin-top: 5vh;
+  /* border: solid 1px var(--text-color); */
+  padding: 5vh;
+  box-shadow: var(--box-shadow);
+  border-radius: 30px;
+  background-color: var(--background-color);
+}
+
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
   .banner {
