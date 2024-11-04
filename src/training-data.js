@@ -29,58 +29,77 @@ const cageAndFieldRentals = [
         title: "Batting Cage Rental",
         price: "$40 an hour",
         description: "14 by 14 by 70 foot hitting tunnels. Click the picture to book your rental.",
-        img: battingCage
+        img: battingCage,
+        urlTitle1: "30 Minutes",
+        urlTitle2: "1 Hour",
+        url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43244-1-2-hour-cage-rental",
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43242-1-hour-cage-rental'
     },
     {
         title: "HitTrax Rental",
         price: "$55 an hour",
         description: "1 hr rental includes use of the HitTrax computer system",
-        img: hitTrax
+        img: hitTrax,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/102824-hit_trax-1-hour-cage-rental'
     },
     {
         title: "HitTrax Monthly Membership",
-        price: "$100/month",
+        price: "$100 / month",
         description: "Membership includes HitTrax use, infield, outdoor field, cages, and pitching machine",
-        img: hitTraxMembership
+        img: hitTraxMembership,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/client-memberships/6706'
     },
     {
         title: "Large Open Area",
         price: "$60 an hour",
         description: "Large open turf area to work on basic fundamentals. Click the picture to book your rental.",
-        img: turfArea
+        img: turfArea,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43245-open-area'
     },
     {
         title: "Cage Rental with Machine",
-        price: "$50/hour cage OR $70/hour infield use",
+        price: "$50 an hour",
         description: "Junior Hack Attack available for rental!",
-        img: cageRental
+        img: cageRental,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/116004-pitching-machine-1-hour-cage-rental'
     },
     {
         title: "Team Rentals",
-        price: "Starting at $150/single use or $400/4 week package",
+        price: "Starting at $180/single use or $400/4 week package",
         description: "Indoor facility for off-season development and practices for baseball or softball teams.",
-        img: teamRental
+        img: teamRental,
+        urlTitle1: 'Baseball',
+        urlTitle2: 'Softball',
+        urlTitle3: 'Volleyball',
+        urlTitle4: 'Basketball',
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89114-baseball-team-training',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89115-softball-team-training',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/87548-volleyball-team-training',
+        url4: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/98749-basketball-team-training'
     },
     {
         title: "All Ages Unlimited Membership",
         price: "$125/month",
         description: "",
-        img: unlimitedMembership
+        img: unlimitedMembership,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/client-memberships/7028'
     }
 ];
 
 const baseball = [
     {
         title: "Private Hitting Lessons",
-        price: "$50 half hour $85 1 hour",
+        price: "$85 / 1 hour",
         description: "1 on 1 hitting lessons with one of our qualified trainers",
-        img: hittingLessons
+        img: hittingLessons,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/41903-1-hour-baseball-pitching-lesson'
     },
     {
         title: "Private Pitching Lessons",
-        price: "$50 half hour",
+        price: "$85 / 1 hour",
         description: "1 on 1 pitching lessons with one of our qualified trainers.",
-        img: pitchingLessons
+        img: pitchingLessons,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/41903-1-hour-baseball-pitching-lesson'
     },
     {
         title: "Fielding",
@@ -90,36 +109,61 @@ const baseball = [
     },
     {
         title: "Catching",
-        price: "$50 half hour $85 1 hour",
+        price: "$85 / 1 hour",
         description: "1 on 1 catching technique with a qualified trainer.",
-        img: catchingLessons
+        img: catchingLessons,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/55306-1-hour-catching-lesson'
     }
 ];
 
 const softball = [
     {
         title: "Private Hitting Lessons",
-        price: "$50 half hour $85 1 hour",
+        price: "$50 half hour / $85 1 hour / $125 1.5 hours",
         description: "1 on 1 hitting lessons with one of our qualified trainers",
-        img: softballHittingLessons
+        img: softballHittingLessons,
+        urlTitle1: "30 Minutes",
+        urlTitle2: "1 Hour",
+        urlTitle3: "1.5 Hours",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/93416-1-2-hour-softball-lesson',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/85956-1-hour-softball-lesson',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117411-90-minute-softball-lesson'
     },
     {
         title: "Private Pitching Lessons",
-        price: "$50 half hour $85 1 hour",
+        price: "$50 half hour / $85 1 hour / $125 1.5 hours",
         description: "1 on 1 pitching lessons with one of our qualified trainers.",
-        img: softballPitchingLessons
+        img: softballPitchingLessons,
+        urlTitle1: "30 Minutes",
+        urlTitle2: "1 Hour",
+        urlTitle3: "1.5 Hours",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/93416-1-2-hour-softball-lesson',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/85956-1-hour-softball-lesson',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117411-90-minute-softball-lesson'
     },
     {
         title: "Fielding",
-        price: "$50 half hour $85 1 hour",
+        price: "$50 half hour / $85 1 hour / $125 1.5 hours",
         description: "1 on 1 glove work and fielding technique with a qualified trainer.",
-        img: softballFieldingLessons
+        img: softballFieldingLessons,
+        urlTitle1: "30 Minutes",
+        urlTitle2: "1 Hour",
+        urlTitle3: "1.5 Hours",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/93416-1-2-hour-softball-lesson',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/85956-1-hour-softball-lesson',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117411-90-minute-softball-lesson'
     },
     {
         title: "Catching",
-        price: "$50 half hour $85 1 hour",
+        price: "$50 half hour / $85 1 hour / $125 1.5 hours",
         description: "1 on 1 catching techniques with a qualified trainer.",
-        img: softballCatchingLessons
+        img: softballCatchingLessons,
+        urlTitle1: "30 Minutes",
+        urlTitle2: "1 Hour",
+        urlTitle3: "1.5 Hours",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/93416-1-2-hour-softball-lesson',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/85956-1-hour-softball-lesson',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117411-90-minute-softball-lesson'
     }
 ];
 
@@ -128,7 +172,13 @@ const soccer = [
         title: "Soccer Training w/Sarah",
         price: "",
         description: "",
-        img: soccerTraining
+        img: soccerTraining,
+        urlTitle1: '1 on 1',
+        urlTitle2: '2 on 2',
+        urlTitle3: '3 on 3',
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61644-soccer-training-1-on-1',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61710-soccer-training-2-on-1',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61712-soccer-training-3-on-1'
     },
     {
         title: 'Indoor Soccer Team Rentals available',
@@ -149,7 +199,13 @@ const volleyball = [
         title: "Volleyball Lessons",
         price: "",
         description: "Schedule today!",
-        img: volleyballLessons
+        img: volleyballLessons,
+        urlTitle1: '1 on 1',
+        urlTitle2: '2 on 2',
+        urlTitle3: '3 on 3',
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43526-volleyball-training',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/75208-volleyball-training-2-on-1',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/73759-volleyball-training-3-on-1'
     },
     {
         title: "Volleyball Team Trainings",
@@ -161,16 +217,20 @@ const volleyball = [
         title: "Indoor or Outdoor Monthly Volleyball Team Rental Discount",
         price: "",
         description: "",
-        img: volleyballTeamDiscount
+        img: volleyballTeamDiscount,
+        urlTitle1: 'Single Use',
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117405-volleyball-indoor-area',
+        urlTitle2: '4 Week Package'
     }
 ];
 
 const otherSportsAndTrainings = [
     {
         title: "Football Lessons",
-        price: "$70 an hour",
+        price: "$50 an hour",
         description: "Football training by a highly qualified trainer. Private or team trainings available.",
-        img: footballLessons
+        img: footballLessons,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/48428-football-training'
     },
     {
         title: "Wrestling",
@@ -179,7 +239,7 @@ const otherSportsAndTrainings = [
         img: wrestlingLessons
     },
     {
-        title: "Strength & Conditioning",
+        title: "Team Strength & Conditioning",
         price: "$10/athlete minimum of 10",
         description: "Seasonal! Contact us for more information.",
         img: strengthConditioning
@@ -188,7 +248,8 @@ const otherSportsAndTrainings = [
         title: "Gymnastics, Tumbling, Cheer",
         price: "$70/hour",
         description: "",
-        img: gymnastics
+        img: gymnastics,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43529-1-hour-private-gymnastics'
     }
 ];
 
