@@ -599,11 +599,11 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: var(--background-color);
 }
  
 #ptc-logo {
-  background-color: white;
+  background-color: var(--background-color);
   text-align: center;
 }
 
@@ -741,7 +741,7 @@ button {
 
 .ait-list li {
   flex: 1 1 300px;
-  font-size: 16px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
@@ -1529,10 +1529,11 @@ background-color: var(--secondary-background-color);
   align-items: center;
   background-color: var(--secondary-background-color);
   padding: 15px;
+  width: 80vw;
 }
 
-.adaptive-inclusive > h1{
-  font-size: 2rem;
+.adaptive-inclusive > div > h1{
+  font-size: 3rem;
   font-style: italic;
 }
 
@@ -1584,6 +1585,29 @@ background-color: var(--secondary-background-color);
     /* Remove margin for mobile screens */
     height: 60vh;
     /* Adjust height if needed */
+  }
+  .ait-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust the space between items as needed */
+    list-style: none;
+    padding: 10px;
+}
+
+.ait-list li {
+    flex: 1 1 calc(50% - 20px); /* Each item takes up 50% of the width minus the gap */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.ait-list strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+  .ait-list > li > p {
+    display: none;
   }
   .banner > img {
     top: 50px;
@@ -2213,8 +2237,8 @@ background-color: var(--secondary-background-color);
     padding-bottom: 20px;
   }
   
-  .adaptive-inclusive > h1{
-    font-size: 1.2rem;
+  .adaptive-inclusive > div > h1{
+    font-size: 1.5rem;
     font-style: italic;
     text-align: center;
   }
@@ -2223,8 +2247,9 @@ background-color: var(--secondary-background-color);
     font-size: 1rem;
   }
   
-  .adaptive-inclusive > ul > li{
+  .ait-list > li{
     margin-top: .5vh;
+    font-size: 1rem;
   }
   
   .adaptive-inclusive > button{
