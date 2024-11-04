@@ -88,7 +88,7 @@ body.dark-mode {
     }
 
     .service-description {
-        height: 50vh;
+        height: 65vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
