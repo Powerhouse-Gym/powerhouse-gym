@@ -9,7 +9,7 @@ function JoinButton() {
         target="_blank" 
         rel="noopener noreferrer" 
         
-    ><button className='join-button' style = {{width: "200px"}}>
+    ><button className='join-button'>
 
         Join Now!
     </button>
