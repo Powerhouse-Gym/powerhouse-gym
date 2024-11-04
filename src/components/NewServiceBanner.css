@@ -4,7 +4,8 @@
     --alternate-background-color: #1a1a1a;
     --alternate-secondary-background-color: #333;
     --text-color: black;
-    --alternate-text-color: white; /* Added alternate text color for light mode */
+    --alternate-text-color: white;
+    /* Added alternate text color for light mode */
     --powerhouse-red: #ed1c26;
     --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -16,12 +17,13 @@ body.dark-mode {
     --alternate-background-color: white;
     --alternate-secondary-background-color: #f4f4f4;
     --text-color: white;
-    --alternate-text-color: black; /* Alternate text color for dark mode */
+    --alternate-text-color: black;
+    /* Alternate text color for dark mode */
     --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
     --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
 }
-  
-  * {
+
+* {
     margin: 0;
     box-sizing: border-box;
     /* font-family: "Syne", sans-serif !important; */
@@ -29,12 +31,15 @@ body.dark-mode {
     font-family: "Anek Devanagari", sans-serif !important;
     /* font-family: "Mulish", sans-serif !important; */
     text-shadow: var(--text-shadow)
-  }
-    .banner-container {
-        display: none;
-    }
+}
 
-@media only screen and (max-width: 600px) {
+.banner-container {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+
 
     .service-container {
         display: flex;
@@ -44,7 +49,8 @@ body.dark-mode {
         /* justify-content: flex-start; Aligns buttons to the left */
         gap: 15px;
     }
-    .service-container > button {
+
+    .service-container>button {
         width: 100px;
         height: 40px;
         padding: 5px;
@@ -58,13 +64,15 @@ body.dark-mode {
         z-index: 120;
         transition: background-color 0.3s ease, color 0.3s ease;
     }
-    
-    .service-container > button.active {
-        background-color: var(--alternate-background-color); /* Uses opposite background color */
-        color: var(--alternate-text-color); /* Uses opposite text color */
+
+    .service-container>button.active {
+        background-color: var(--alternate-background-color);
+        /* Uses opposite background color */
+        color: var(--alternate-text-color);
+        /* Uses opposite text color */
     }
-    
-    
+
+
     .banner-container {
         position: relative;
         margin-top: 25px;
@@ -72,58 +80,63 @@ body.dark-mode {
         flex-direction: column;
         align-items: center;
     }
-    
-    .banner-container > h1 {
+
+    .banner-container>h1 {
         margin-bottom: 10px;
         right: 105px;
         position: relative;
-        
     }
-    
+
     .service-description {
-        height:65vh;
+        height: 50vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 25px;
         margin-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .service-description > button {
-            margin-top: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-            height: 6vh;
-            font-size: 24px;
-            background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
-            color: white;
-            align-self: center;
+    .service-description>button {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 6vh;
+        font-size: 24px;
+        background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+        color: white;
+        align-self: center;
     }
-    
-    
-    
-    .service-description > h2, ul {
+
+
+
+    .service-description>h2,
+    ul {
         margin-right: 20px;
     }
-    
-    .service-description > ul {
+
+    .service-description>ul {
         list-style-type: none;
         padding-left: 0;
         margin-bottom: 15px;
+        text-align: center;
     }
-    
-    .service-description > h2 {
+
+    .service-description>h2 {
         border-bottom: 3px solid #ed1c26;
         margin-bottom: 15px;
     }
-    
-    .service-description > img {
-        width:75%;
+
+    .service-description>img {
+        width: 75%;
         height: 25vh;
-        justify-self: center; 
+        justify-self: center;
         align-self: center;
     }
 }
+
+@media only screen and (max-width: 780px) {}

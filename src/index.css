@@ -1021,9 +1021,11 @@ button {
   gap: 20px;
   z-index: 0;
   color: black;
-
 }
 
+.one >h1 {
+  color: var(--text-color);
+}
 
 
 .one>h2 {
@@ -1094,8 +1096,8 @@ button {
 }
 
 .service-img {
-  height: 55%;
-  width: 35%;
+  height:65%;
+  width: 45%;
   position: absolute;
   right: 0;
   top: 0;
@@ -1153,9 +1155,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  height: 7vh;
-  font-size: 28px;
+  width: 30%;
+  font-size: 18px;
   background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
   color: white;
   /* position: absolute;
@@ -1185,7 +1186,7 @@ button {
 
 .two>h3 {
   height: 100%;
-  width: 55%;
+  width: 45%;
   font-size: 14px;
 }
 
@@ -1459,7 +1460,7 @@ button {
 .carousel-slider {
   height: 55vh;
   width: 75vw;
-  max-width: 1300px;
+  max-width: 1000px;
   border-radius: 10px;
 }
 
@@ -2339,6 +2340,14 @@ background-color: var(--secondary-background-color);
 
 /* Mobile landscape devices (phones and tablets) */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+
+  .service-banner {
+    display: none;
+  }
+  .banner-container {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+  }
   .banner {
     margin-top: 0; /* Remove margin for mobile landscape screens */
     height: 50vh; /* Adjust height if needed */
