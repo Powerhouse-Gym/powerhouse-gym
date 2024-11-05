@@ -43,12 +43,12 @@ const AdaptiveInclusive = () => {
     </li>
 </ul>
 
+            <button className='inclusive-nav' onClick={() => handleClick('inclusive')}>LEARN MORE</button>
+            <button className='inclusive-nav-mobile' onClick={() => handleClick('inclusive-mobile')}>LEARN MORE</button>
             </div>
 
 
 
-            <button className='inclusive-nav' onClick={() => handleClick('inclusive')}>LEARN MORE</button>
-            <button className='inclusive-nav-mobile' onClick={() => handleClick('inclusive-mobile')}>LEARN MORE</button>
         </div>
     );
 }
