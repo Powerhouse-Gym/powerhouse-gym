@@ -1169,7 +1169,7 @@ button {
 }
 
 .two>button:hover {
-  transform: scale(1.25);
+  /* transform: scale(1.25); */
   color: white;
   background-color: #333;
   /* Scale the button on hover */
@@ -1449,7 +1449,7 @@ button {
 }
 
 .carousel-div {
-  background-color: var(--secondary-background-color);
+  background-color: var(background-color);
   height: 65vh;
   width: 100%;
   display: flex;
@@ -1522,6 +1522,17 @@ background-color: var(--secondary-background-color);
   width: 20%;
 }
 
+.inclusive-nav {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  font-size: 24px;
+  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  color: white;
+}
+
 .inclusive-nav-mobile{
   display: none;
 }
@@ -1543,14 +1554,15 @@ background-color: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-background-color);
-  padding: 15px;
+  background-color: var(--background-color);
+  padding: 25px 0px 25px 0px;
   width: 80vw;
 }
 
 .adaptive-inclusive > div > h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: italic;
+  margin-bottom: 15px;
 }
 
 .adaptive-inclusive > ul{
@@ -1631,6 +1643,8 @@ background-color: var(--secondary-background-color);
   border-radius: 30px;
   background-color: var(--background-color);
 }
+
+
 
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
