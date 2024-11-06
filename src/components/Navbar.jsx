@@ -68,6 +68,9 @@ function Navbar(props) {
                 <ListItem button onClick={() => handleNavigate("/team")}>
                     <ListItemText primary="Meet the Team" />
                 </ListItem>
+                <ListItem button onClick={() => handleNavigate("/aboutus")}>
+                    <ListItemText primary="About Us" />
+                </ListItem>
             </List>
         </Box>
     );
@@ -91,6 +94,7 @@ function Navbar(props) {
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Personal Training" value="/personal-training" onClick={() => handleNavigate("/personal-training")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
                     <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
+                    <Tab sx={{ fontSize: '1.3rem' }} className="nav-item" label="About Us" value="/aboutus" onClick={() => handleNavigate("/aboutus")} />
                 </Tabs>
                 <DarkModeToggle />
             </Box>

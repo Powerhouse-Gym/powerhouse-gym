@@ -1,0 +1,131 @@
+:root {
+  --background-color: white;
+  --secondary-background-color: #f4f4f4;
+  --text-color: black;
+  --powerhouse-red: #ed1c26;
+  --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --secondary-background-color: #333;
+  --text-color: white;
+  --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
+  --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Syne", sans-serif !important; */
+  /* font-family: "Lato", sans-serif !important; */
+  font-family: "Anek Devanagari", sans-serif !important;
+  /* font-family: "Mulish", sans-serif !important; */
+  text-shadow: var(--text-shadow);
+}
+
+.main-div {
+  height: 55vh;
+  width: 100vw;
+  top: 10vh;
+  background-image: url("/src/assets/grouppic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 20px;
+}
+
+.main-div > h3 {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  z-index: 2;
+
+  /* position: relative;
+    right: 30%;
+    bottom: 25%; */
+}
+.main-div > h1 {
+  margin-left: 50px;
+  font-size: 80px;
+  color: white;
+  z-index: 2;
+  width: 60%;
+  line-height: 1.25;
+}
+
+.main-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    /* Adjust the 0.5 for the level of darkness */
+    z-index: 1;
+  }
+
+  .about-us-section {
+    margin-top: 10vh;
+    height: 55vh;
+    width: 100vw;
+    background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 50%, #333 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 10%;
+  }
+
+  .left-about-us, .right-about-us {
+    width: 50%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: white;
+
+  }
+
+   .right-about-us > img {
+    max-width: 800px;
+    height: 80%;
+    border-radius: 12px;
+    margin-top: 50px;
+  }
+
+  .left-about-us {
+    align-items: center;
+    width: 50%;
+  }
+
+  .right-about-us {
+    align-items: flex-end;
+    width: 30%;
+  }
+
+  .left-about-us > h1 {
+    font-size: 52px;
+  }
+
+  .left-about-us >p {
+    font-size: 18px;
+  }
+  
+  .nikki-bio {
+    height: 40vh;
+    width: 100vw;
+  }
