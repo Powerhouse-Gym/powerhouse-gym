@@ -7,21 +7,21 @@ import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import darkmodeFacebook from '../assets/darkmode-facebook.svg'
 import darkmodeInstagram from '../assets/darkmode-instagram.svg'
-
+import { useNavigate } from 'react-router-dom';
 
 function FooterTest() {
     const { isDarkMode } = useContext(DarkModeContext);
-
+    const navigate = useNavigate()
 
     return (
         <footer>
             <div className='left-div'>
                 <ul>
-                    <li>Contact Us</li>
-                    <li>About Powerhouse</li>
-                    <li>Shop Merch</li>
-                    <li>Sign Up</li>
-                    <li>Drop In</li>
+                    <li onClick={()=> navigate("/training")}>Sports Training</li>
+                    <li onClick={()=> navigate("/personal-training")}>Personal Training</li>
+                    <li onClick={()=> navigate("/crossfit")}>Crossfit</li>
+                    <li onClick = {()=> navigate("/merch")}>Shop Merch</li>
+                    <li onClick={()=> navigate("/aboutus")}>About Us</li>
 
                 </ul>
             </div>

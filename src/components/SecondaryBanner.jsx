@@ -34,25 +34,7 @@ function SecondaryBanner() {
             <div className = "logo-div">
             <img src={crossfit} className="logo" alt="logo" />
             </div>
-            <div className="directions-container">
-        {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
-          Map commented out during testing
-          </div> */}
-        {/* Google Maps code commented out to save API hits */}
-        {/* <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
-          <Map
-            className="mapstyles"
-            defaultCenter={{ lat: 34.94580, lng: -92.00977 }}
-            defaultZoom={17}
-            gestureHandling={'greedy'}
-            disableDefaultUI={true}
-            mapId={import.meta.env.VITE_MAP_ID}
-          />
-          <AdvancedMarker position={{ lat: 34.94580, lng: -92.00977 }} title="PowerHouse Crossfit and Training">
-            <Pin background={'#ed1c26'} glyphColor={'#000'} borderColor={'#000'} scale={2.0} glyph={"PH"} />
-          </AdvancedMarker>
-        </APIProvider> */}
-        </div>
+          
         </div>
 
 
