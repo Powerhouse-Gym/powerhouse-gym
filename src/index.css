@@ -69,7 +69,7 @@ html{
 
 .logo {
   /* border: solid black 1px; */
-  width: 80% !important;
+  width: 50% !important;
 }
 
 .crossfit {
@@ -609,7 +609,6 @@ html{
 .logo-div{
   width: 30%;
   height: 100%;
-  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1763,7 +1762,10 @@ background-color: var(--secondary-background-color);
   .secondary-banner {
     margin-top: 0;
     justify-content: center;
-    height: 25vh;
+    height: 100%;
+    flex-direction: column;
+    width: 100vw;
+
 
   }
 
@@ -2345,7 +2347,16 @@ background-color: var(--secondary-background-color);
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
+  .adaptive-inclusive > div {
+    background-color: transparent;
+  }
+
+#review-header {
+  font-size: 28px;
+  text-align: center;
+  padding:15px;
+}
+
   .adaptive-inclusive > div > h1{
     font-size: 1.5rem;
     font-style: italic;
@@ -2354,6 +2365,10 @@ background-color: var(--secondary-background-color);
   
   .adaptive-inclusive > ul{
     font-size: 1rem;
+  }
+
+  .ait-list {
+    display: none;
   }
   
   .ait-list > li{
