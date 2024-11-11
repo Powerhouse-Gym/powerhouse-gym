@@ -26,7 +26,7 @@ body.dark-mode {
 }
 
 .main-div {
-  height: 55vh;
+  height: 40vh;
   width: 100vw;
   top: 10vh;
   background-image: url("/src/assets/grouppic.jpg");
@@ -79,13 +79,12 @@ body.dark-mode {
 
   .about-us-section {
     margin-top: 10vh;
-    height: 55vh;
+    height: 40vh;
     width: 100vw;
     background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 50%, #333 100%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
     gap: 10%;
   }
 

@@ -12,7 +12,7 @@ const AdaptiveInclusive = () => {
       <div className="ait-header">
         <h1>Now Offering Adaptive & Inclusive Training (AIT)</h1>
 
-        <ul className="ait-list">
+        {/* <ul className="ait-list">
           <li>
             <strong style={{ color: "red" }}>Accessible Fitness</strong>
             <p>Fitness for everyone, all abilities welcome.</p>
@@ -37,7 +37,7 @@ const AdaptiveInclusive = () => {
             <strong style={{ color: "red" }}>Empowerment</strong>
             <p>Fitness that includes and empowers.</p>
           </li>
-        </ul>
+        </ul> */}
 
         <button
           className="inclusive-nav"

@@ -44,7 +44,6 @@ function Home() {
   return (
     <div id="home">
       <div className='banner'>
-        <h1>Welcome To</h1>
         <img src={powerhouse} alt="powerhouse" />
 
       </div>
@@ -52,7 +51,6 @@ function Home() {
       </div> */}
         <SecondaryBanner />
       <Carousel />
-      <AdaptiveInclusive />
       <ServiceBanner />
       <NewServiceBanner />
       {/* <MobileServiceBanner /> */}

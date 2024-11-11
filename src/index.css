@@ -51,7 +51,7 @@ html{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .MuiTab-textColorPrimary {
@@ -69,7 +69,6 @@ html{
 
 .logo {
   /* border: solid black 1px; */
-  width: 50% !important;
 }
 
 .crossfit {
@@ -79,9 +78,6 @@ html{
   /* border: solid black 1px; */
 }
 
-.crossfit-header {
-  position: relative;
-}
 
 .crossfit-header>h2 {
   font-family: "Rock Salt", cursive !important;
@@ -90,7 +86,7 @@ html{
   font-size: 11em;
   position: relative;
   transform: rotate(-8deg);
-  top: 50px;
+
 }
 
 .crossfit-page>.newsletter-container {
@@ -102,13 +98,14 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 65vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10vh;
 }
 
 .header-one {
@@ -117,7 +114,7 @@ html{
   position: relative;
   font-size: 48px;
   text-transform: uppercase;
-  top: 75px;
+  top: 20px;
 }
 
 .crossfit-header-logo {
@@ -143,12 +140,11 @@ html{
   font-family: Arial, sans-serif;
   color: var(--text-color);
   gap: 50px;
-  /* background-color: var(--secondary-background-color); */
+  background-color: var(--secondary-background-color);
   display: flex;
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  background-color:--secondary-background-color;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -160,11 +156,15 @@ html{
   width: 100%;
 }
 
+.schedule-title-div {
+  background-color: var(--secondary-background-color);
+  width: 100%;
+}
+
 
 .schedule-title {
-  font-size: 36px;
+  font-size: 46px;
   text-align: center;
-  background-color: --secondary-background-color;
   width: 100%;
   height:100%;
   padding: 20px;
@@ -235,9 +235,8 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  /* background-color: var(--secondary-background-color); */
+  padding-top: 150px;
+  background-color: var(--secondary-background-color);
 }
 
 .group-pic-container {
@@ -461,10 +460,14 @@ html{
   align-items: center;
   gap:10px;
   width: 30%;
+  position: relative;
 }
 
+
+
 .contact-banner > h4 {
-  font-size: larger;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .contact-banner>a {
@@ -477,9 +480,9 @@ html{
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  font-size: 2.5rem !important;
+  font-size: 3rem !important;
   width: 100%;
-  }
+}
 
 .rock-salt {
   font-family: "Rock Salt", cursive !important;
@@ -491,7 +494,7 @@ html{
   justify-content: center;
   align-items: center;
   width: 50%;
-
+  
 }
 
 #home {
@@ -513,9 +516,10 @@ html{
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vh;
-  margin-top: 50px;
+  height: 40vh;
+  margin-top: 10vh;
   position: relative;
+  
 }
 
 .banner>h1 {
@@ -553,19 +557,25 @@ html{
 
 
 .banner>img {
-  height: 105%;
-  width: 100%;
-  max-width: 800px;
+  height: 150%;
+  width: 95%;
+  max-width: 1440px;
   z-index: 15;
   position: relative;
   opacity: 0;
   animation: moveAndZoom 3s ease-in-out forwards;
   animation-delay: 1s;
+  top: 50px;
 }
 
 .personal-training-container {
   margin-top: 10vh;
   min-height: 85vh;
+}
+
+.pt-service-header {
+  color: white;
+  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
 }
 
 
@@ -575,13 +585,13 @@ html{
     transform: scale(.25);
     /* Start at 0 degrees rotation */
   }
-
+  
   50% {
     opacity: 0.5;
-    transform: scale(1.25);
+    transform: scale(1.50);
     /* Zoom in and rotate to 180 degrees */
   }
-
+  
   100% {
     opacity: 1;
     transform: scale(1);
@@ -603,22 +613,32 @@ html{
   align-items: center;
   justify-content: center;
   z-index: 2;
-
+  background-color: var(--secondary-background-color);
+  position: relative;
 }
 
 .logo-div{
-  width: 30%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--background-color);
+  background-color: var(--secondary-background-color);
 }
- 
+
 #ptc-logo {
-  background-color: var(--background-color);
   text-align: center;
+  width: 60%;
+  position: relative;
+}
+
+#ptc-logo > img {
+  width: 90%;
+}
+
+#crossfit-logo {
+  width: 60%;
 }
 
 .secondary-banner>.logo {
@@ -767,10 +787,10 @@ button {
 
 @media (max-width: 600px) {
   .ait-list li {
-      flex: 1 1 100%;
-      text-align: center;
+    flex: 1 1 100%;
+    text-align: center;
   }
-
+  
   .ait-list {
     gap: 0;
   }
@@ -823,6 +843,9 @@ button {
   border-radius: 50%;
   object-fit: cover;
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
+}
+#logo-ptc {
+  width: 500px
 }
 
 .trainer-details {
@@ -914,6 +937,9 @@ button {
   max-width: 1200px;
 }
 
+.coaches-container > h1 {
+  font-size: 46px;
+}
 .coach {
   display: flex;
   flex-direction: column;
@@ -940,7 +966,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 12vh;
+  margin-top: 10vh;
+  background-color: var(--secondary-background-color);
 }
 
 .directions-container {
@@ -953,7 +980,7 @@ button {
   padding: 10px;
   position: relative;
   height: 75vh;
-  background-color: var(--background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .directions-container > h1 {
@@ -962,8 +989,17 @@ button {
   z-index: 2;
 }
 
-.review-header {
+#review-header {
   color: var(--text-color);
+  padding-top: 25px;
+  background-color: var(--secondary-background-color);
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+}
+
+#test {
+  background-color: var(--secondary-background-color);
 }
 
 .merch-container {
@@ -1017,6 +1053,7 @@ button {
   color: white;
   position: relative;
   z-index: 1;
+  background-color: var(--secondary-background-color);
 }
 
 .service-layout {
@@ -1049,6 +1086,8 @@ button {
 
 .one >h1 {
   color: var(--text-color);
+  padding-left: 10px;
+  font-size: 46px;
 }
 
 
@@ -1202,7 +1241,7 @@ button {
 .two>h1 {
   margin-bottom: 20px;
   border-bottom: 2px solid;
-  font-size: 24px;
+  font-size: 32px;
   width: 100%;
   max-width: 300px;
   padding-bottom: 15px;
@@ -1211,7 +1250,7 @@ button {
 .two>h3 {
   height: 100%;
   width: 45%;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 
@@ -1323,10 +1362,11 @@ button {
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  background-color: var(--secondary-background-color);
   /* background-image: linear-gradient(to left, #791f1fe4, #ec1906); */
   padding: 2vw;
   padding-top: 15px;
-  margin-top: 25px;
+  border-top: 3px solid #ed1c26;
 }
 
 .crossfit-journal-text {
@@ -1342,7 +1382,7 @@ button {
   margin-bottom: 2vh;
   color: --secondary-background-color;
   font-family: "Rock Salt", cursive !important;
-  font-size: 38px;
+  font-size: 46px;
   padding-top: 25px;
 
 }
@@ -1356,6 +1396,21 @@ button {
 
 .crossfit-journal-img>img {
   width: 100%;
+}
+
+.crossfit-journal-text > a {
+  text-decoration: none;
+}
+
+.crossfit-journal-text > a > button {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 24px;
+  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  color: white;
 }
 
 .youth-page {
@@ -1473,7 +1528,7 @@ button {
 }
 
 .carousel-div {
-  background-color: var(background-color);
+  background-color: var(--secondary-background-color);
   height: 65vh;
   width: 100%;
   display: flex;
@@ -1511,8 +1566,28 @@ button {
 }
 .full-coaches-container {
   display: flex;
-  width: 80vw;
-  margin-top: 5vh;
+  width: 100vw;
+  background-color: var(--secondary-background-color);
+}
+
+.sports-training-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: start;
+}
+
+.sports-training-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+  /* Adjust the 0.5 for the level of darkness */
+  z-index: 0;
 }
 
 #sports-coaches-h1 {
@@ -1554,10 +1629,11 @@ background-color: var(--secondary-background-color);
   font-size: larger;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 20%;
   font-size: 24px;
-  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
-  color: white;
+  /* background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%); */
+  color: black;
+  background-color: white;
 }
 
 .inclusive-nav-mobile{
@@ -1581,9 +1657,9 @@ background-color: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color);
   padding: 25px 0px 25px 0px;
   width: 80vw;
+  color: white;
 }
 
 .adaptive-inclusive > div > h1{
@@ -1644,32 +1720,99 @@ background-color: var(--secondary-background-color);
   padding-top: 5vh;
 }
 
+.pt-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 40vh;
+  position: relative;
+  margin-top: 10vh;
+}
+
+.pt-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  /* Adjust the 0.5 for the level of darkness */
+  z-index: 0;
+}
+
 .personal-training-section{
   display: flex;
   flex-direction: column;
   width: 50%;
-  
+
 }
 
 .intro-section{
+  margin-top: 10vh;
   padding-left: 10vw;
   padding-right: 10vw;
   height: 20vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 26px;
+  align-items: center;
   /* background-color: var(--secondary-background-color); */
   font-size: 1.5rem;
+  z-index: 1;
+  color: white;
 }
 
+
+
+.intro-section-sports {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: end;
+  /* background-color: var(--secondary-background-color); */
+  font-size: 1.5rem;
+  z-index: 1;
+  color: white;
+  position: relative;
+  margin-right: 50px;
+  margin-top:  125px;
+}
+
+.intro-section-sports > p {
+  width: 50%;
+  text-align: end;
+}
+
+.intro-section-sports > h1 {
+  font-size: 62px;
+}
+
+
+
+
+.intro-section > h1 {
+  font-size: 80px;
+}
+
+.intro-section > p {
+  font-size: 26px;
+  width: 75%;
+  text-align: center;
+}
 .service-section{
   margin-top: 5vh;
   /* border: solid 1px var(--text-color); */
   padding: 5vh;
+  border: 1px solid white;
   box-shadow: var(--box-shadow);
   border-radius: 30px;
-  background-color: var(--background-color);
+  background-color: var(--secondary-background-color);
 }
+
+
+
 
 
 
@@ -2322,10 +2465,10 @@ background-color: var(--secondary-background-color);
     z-index: 2;
   }
 
-  .logo{
+  /* .logo{
     width: 100% !important;
     height: auto !important;
-  }
+  } */
 
   .crossfit{
     width: 20% !important;
@@ -2401,7 +2544,7 @@ background-color: var(--secondary-background-color);
   .service-banner {
     display: none;
   }
-  .banner-container {
+  .iew-iner {
     display: flex;
     padding: 10px 0px 10px 0px;
   }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import "../components/NewServiceBanner.css";
 import highfive from "../assets/traininghighfive.jpg";
@@ -22,7 +22,7 @@ function NewServiceBanner() {
     });
 
     const [activeButton, setActiveButton] = useState("Sports Training");
-
+    
     const allServices = [
         {
             title: "Powerhouse Crossfit",
@@ -61,6 +61,7 @@ function NewServiceBanner() {
             ]
         }
     ];
+
 
     const handleServiceClick = (service) => {
         const selectedService = allServices.find(s => s.title === service);

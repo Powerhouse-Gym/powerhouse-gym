@@ -16,7 +16,7 @@ function SecondaryBanner() {
     return (
         <div className='secondary-banner'>
             <div className = "logo-div" id ="ptc-logo">
-            <img src={newlogo} className="logo" alt="logo" />
+            <img src={newlogo} className="logo" alt="logo" style = {{}}/>
             </div>
             <div className="contact-banner">
                 {/* <h2>501-247-1517</h2> */}
@@ -32,7 +32,7 @@ function SecondaryBanner() {
                 </div>
             </div>
             <div className = "logo-div">
-            <img src={crossfit} className="logo" alt="logo" />
+            <img src={crossfit} className="logo" alt="logo" id = "crossfit-logo"/>
             </div>
           
         </div>

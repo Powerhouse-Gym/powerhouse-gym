@@ -1,6 +1,9 @@
 import { Divider } from "@mui/material";
 import { cageAndFieldRentals } from "../training-data";
 import { useNavigate } from "react-router-dom";
+import PTimg from "../assets/crossfit/personaltraining.jpg"
+import baseballimg from "../assets/baseballbackground.jpg"
+
 
 const PersonalTraining = () => {
 
@@ -11,17 +14,14 @@ const PersonalTraining = () => {
 
     return (
         <>
-            <div className="crossfit-header-div">
-                <div className="crossfit-header">
-                    <h1 className="header-one">Together We Are</h1>
-                    <h2>Stronger!</h2>
-                </div>
-            </div>
+            <div className= "pt-wrapper" style = {{backgroundImage: `url(${PTimg})`}}>
             <div className="intro-section">
-                <h1>Personal Training Services</h1>
-                <p>Transform your fitness with tailored programs led by certified trainers. Whether you're new to fitness or training for a specific goal, we have the right fit for you.</p>
+                <h1>Powerhouse PERSONAL Training</h1>
+                <p>Transform your fitness with tailored programs led by certified trainers. Whether you are new to fitness or training for a specific goal, we have the right fit for you.</p>
+            </div>
             </div>
             <Divider sx={{backgroundColor: 'white'}}/>
+                <h1 className= "pt-service-header"style = {{display: "flex" ,fontSize: "46px", height: "8vh", borderTop: "3px solid black", borderBottom: "3px solid black",  paddingLeft: "75px",flexDirection: "column", alignItems: "start", justifyContent: "center"}}>SERVICES</h1>
             <div className="personal-training-container">
                 <div className="personal-training-section pt-right">
 
