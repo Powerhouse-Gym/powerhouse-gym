@@ -46,7 +46,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="directions-container">
-        <h1>Located @ 1804 S. Pine Street</h1>
+        <h1 style ={{textAlign: "center"}}>Located @ 1804 S. Pine Street <br/>Behind The Popcorn Spot</h1>
         
         {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
           Map commented out during testing

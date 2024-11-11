@@ -20,7 +20,7 @@ function Schedule() {
 
   return (
     <>
-      <h2 className="schedule-title">CrossFit Class Schedule</h2>
+      <div className="schedule-title-div"><p className="schedule-title">Powerhouse CrossFit Class Schedule</p></div>
       <div className="schedule-container">
         <div className="schedule-logo-div">
           <img src={logo} alt="logo" />

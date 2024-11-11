@@ -30,7 +30,7 @@
 
   
   footer {
-    height: 35vh;
+    height: 20vh;
     width: 100vw;
     background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
     display: flex;
