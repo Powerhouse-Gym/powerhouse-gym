@@ -111,10 +111,10 @@ html {
 }
 
 .crossfit-header {
-  background-image: url("./assets/kbcalk.jpg");
+  background-image: url("./assets/crossfit/crossfitChalk.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   height: 40vh;
   width: 100vw;
   position: relative;

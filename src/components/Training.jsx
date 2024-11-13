@@ -206,6 +206,7 @@ export default function Training() {
                 {...a11yProps(0)}
                 sx={{ fontSize: "1.2em" }}
               />
+              <Tab label = "Baseball" {...a11yProps(1)} sx = {{fontSize: "1.2em"}} />
               <Tab label="Softball" {...a11yProps(2)}sx={{ fontSize: "1.2em" }} />
               <Tab label="Soccer" {...a11yProps(3)} sx={{ fontSize: "1.2em" }}/>
               <Tab label="Volleyball" {...a11yProps(4)}sx={{ fontSize: "1.2em" }} />
