@@ -81,11 +81,11 @@ body.dark-mode {
     margin-top: 10vh;
     height: 50vh;
     width: 100vw;
-    background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 50%, #333 100%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 10%;
+    background-color: var(--secondary-background-color);
   }
 
   .left-about-us, .right-about-us {
@@ -95,7 +95,7 @@ body.dark-mode {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    color: white;
+    color: var(--text-color);
 
   }
 

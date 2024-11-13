@@ -6,6 +6,7 @@ import {
   AdvancedMarker,
   Pin,
 } from "@vis.gl/react-google-maps";
+import NewsLetter from "./NewsLetter";
 
 function AboutUs() {
   return (
@@ -45,6 +46,7 @@ function AboutUs() {
           </p>
         </div>
       </div>
+      <NewsLetter />
       <div className="directions-container">
         <h1 style ={{textAlign: "center"}}>Located @ 1804 S. Pine Street <br/>Behind The Popcorn Spot</h1>
         

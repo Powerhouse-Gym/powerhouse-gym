@@ -18,7 +18,7 @@ import CrossfitCoaches from './CrossfitCoaches';
 import AdaptiveInclusive from './AdaptiveInclusive';
 import NewServiceBanner from './NewServiceBanner';
 
-
+// https://app.upperhand.io/accounts/new_user?customer_id=1047
 
 
 
@@ -50,6 +50,7 @@ function Home() {
       {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}>
       </div> */}
         <SecondaryBanner />
+      <NewsLetter />
       <Carousel />
       <ServiceBanner />
       <NewServiceBanner />
