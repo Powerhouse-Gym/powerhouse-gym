@@ -63,7 +63,7 @@ export default function Training() {
           backgroundImage: `url(${baseballimg})`,
           height: "40vh",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "bottom",
         }}
       >
         <div className="intro-section-sports">
@@ -76,11 +76,12 @@ export default function Training() {
         </div>
       </div>
       <Box
+        className= "sports-options"
         sx={{
           width: "100%",
           display: "flex",
           flexDirection: { xs: "row", md: "column" },
-          alignItems: "center",
+          alignItems: "center"
         }}
       >
         {/* Vertical Tabs for Mobile */}

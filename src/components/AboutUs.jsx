@@ -19,6 +19,9 @@ function AboutUs() {
         </h3>
       </div>
       <div className="about-us-section">
+        <div className="right-about-us">
+          <img src={nikki} alt="gym pic" />
+        </div>
         <div className="left-about-us">
           <h1>About The Gym</h1>
           <p>
@@ -40,9 +43,6 @@ function AboutUs() {
             the CrossFit difference — transforming not just your body, but your
             confidence and resilience as well.
           </p>
-        </div>
-        <div className="right-about-us">
-          <img src={nikki} alt="gym pic" />
         </div>
       </div>
       <div className="directions-container">

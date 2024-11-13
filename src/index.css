@@ -1,5 +1,5 @@
 :root {
-  --background-color: white;
+  --background-color: #f4f4f4;;
   --secondary-background-color: #f4f4f4;
   --text-color: black;
   --powerhouse-red: #ed1c26;
@@ -9,7 +9,7 @@
 
 body.dark-mode {
   --background-color: #1a1a1a;
-  --secondary-background-color: #333;
+  --secondary-background-color: #1e1e1e;
   --text-color: white;
   --text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.15);
   --box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px;
@@ -22,10 +22,10 @@ body.dark-mode {
   /* font-family: "Lato", sans-serif !important; */
   font-family: "Anek Devanagari", sans-serif !important;
   /* font-family: "Mulish", sans-serif !important; */
-  text-shadow: var(--text-shadow)
+  text-shadow: var(--text-shadow);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -64,7 +64,7 @@ html{
 
 .Mui-selected {
   color: var(--powerhouse-red) !important;
-  font-family: "Rock Salt", cursive !important;
+  /* font-family: "Rock Salt", cursive !important; */
 }
 
 .logo {
@@ -78,18 +78,16 @@ html{
   /* border: solid black 1px; */
 }
 
-
-.crossfit-header>h2 {
+.crossfit-header > h2 {
   font-family: "Rock Salt", cursive !important;
   color: white;
   z-index: 1;
-  font-size: 11em;
+  font-size: 8em;
   position: relative;
   transform: rotate(-8deg);
-
 }
 
-.crossfit-page>.newsletter-container {
+.crossfit-page > .newsletter-container {
   margin-top: 0;
 }
 
@@ -128,7 +126,7 @@ html{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
   /* Adjust the 0.5 for the level of darkness */
   z-index: 1;
 }
@@ -142,14 +140,14 @@ html{
   gap: 50px;
   background-color: var(--secondary-background-color);
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .schedule-logo-div {
-  height:auto;
+  height: auto;
   width: 25vw;
 }
 .schedule-logo-div > img {
@@ -161,12 +159,11 @@ html{
   width: 100%;
 }
 
-
 .schedule-title {
   font-size: 46px;
   text-align: center;
   width: 100%;
-  height:100%;
+  height: 100%;
   padding: 20px;
   color: var(--powerhouse-red);
 }
@@ -195,7 +192,7 @@ html{
 .schedule-subtitle {
   font-size: 28px;
   margin-bottom: 10px;
-  color:--text-color;
+  color: --text-color;
   text-align: center;
 }
 
@@ -225,11 +222,8 @@ html{
   font-weight: bold;
 }
 
-
-
-
 .whycrossfit-container {
-  height: 55vh;
+  height: 75vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -256,7 +250,7 @@ html{
 }
 
 .crossfit-group-pic {
-  width: 50%;  
+  width: 50%;
   border-radius: 14px;
 }
 
@@ -299,7 +293,6 @@ html{
   align-items: center;
 }
 
-
 .right-grid {
   grid-column: 3/4;
 
@@ -316,12 +309,11 @@ html{
   padding-bottom: 25px;
   transform: rotate(-10deg);
   position: relative;
-  bottom: 80px;
+  bottom: 100px;
   text-align: center; /* Slightly rotates the heading */
 }
 
-
-.middle-grid>img {
+.middle-grid > img {
   height: 80%;
   width: auto;
   grid-column: 1/2;
@@ -329,23 +321,23 @@ html{
   border-radius: 50%;
 }
 
-.left-title>h3 {
+.left-title > h3 {
   font-size: 24px;
   color: var(--primary);
 }
 
-.section-container-right>p {
+.section-container-right > p {
   text-align: right;
   padding-right: 10%;
 }
 
-.section-container>p {
+.section-container > p {
   font-size: 14px;
   padding-left: 10%;
-
 }
 
-.drop-in-button, .join-button {
+.drop-in-button,
+.join-button {
   background-color: var(--powerhouse-red); /* Red background color */
   color: white; /* White text */
   font-size: 18px;
@@ -360,18 +352,18 @@ html{
   margin-bottom: 25px;
   margin-top: 25px;
   width: 175px;
-  
 }
 
-.drop-in-button:hover, .join-button:hover {
+.drop-in-button:hover,
+.join-button:hover {
   background-color: #b71c1c; /* Darker red on hover */
   transform: scale(1.05); /* Slightly larger on hover */
 }
 
-.drop-in-button:active, .join-button:active {
+.drop-in-button:active,
+.join-button:active {
   transform: scale(0.95); /* Slightly smaller when clicked */
 }
-
 
 .why-icon-div {
   display: flex;
@@ -407,7 +399,6 @@ html{
   gap: 115px;
   display: flex;
   flex-direction: column;
-
 }
 
 .icon-left {
@@ -421,7 +412,6 @@ html{
   flex-direction: column;
   gap: 100px;
   align-self: flex-end;
-
 }
 
 .icon-description-div {
@@ -435,7 +425,7 @@ html{
   justify-content: space-around;
 }
 
-.icon-title>p {
+.icon-title > p {
   max-width: 250px;
 }
 
@@ -458,22 +448,20 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   width: 30%;
   position: relative;
 }
-
-
 
 .contact-banner > h4 {
   font-size: 1.5rem;
   text-align: center;
 }
 
-.contact-banner>a {
+.contact-banner > a {
   font-size: 62px;
 }
-.phone-link{
+.phone-link {
   /* display: none; */
   display: block;
   color: var(--text-color);
@@ -494,7 +482,6 @@ html{
   justify-content: center;
   align-items: center;
   width: 50%;
-  
 }
 
 #home {
@@ -511,7 +498,7 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/src/assets/brick-wall-blank.png');
+  background-image: url("/src/assets/brick-wall-blank.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -519,10 +506,9 @@ html{
   height: 40vh;
   margin-top: 10vh;
   position: relative;
-  
 }
 
-.banner>h1 {
+.banner > h1 {
   color: white;
   font-family: "Rock Salt", cursive !important;
   position: relative;
@@ -531,7 +517,7 @@ html{
   font-size: 48px;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
-  animation-delay: .0s;
+  animation-delay: 0s;
 }
 
 @keyframes fadeIn {
@@ -554,51 +540,48 @@ html{
   /* Places the overlay on top of the image */
 }
 
-
-
-.banner>img {
-  height: 150%;
+.banner > img {
+  height: 170%;
   width: 95%;
-  max-width: 1440px;
+  max-width: 1050px;
   z-index: 15;
   position: relative;
   opacity: 0;
   animation: moveAndZoom 3s ease-in-out forwards;
-  animation-delay: 1s;
-  top: 50px;
+  top: 30px;
 }
 
 .personal-training-container {
-  margin-top: 10vh;
   min-height: 85vh;
 }
 
 .pt-service-header {
-  color: white;
-  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  color: var(--text-color);
+  background-color: var(--secondary-background-color);
+  text-shadow: var(--box-shadow);
+  text-underline-offset: 0.4em; /* Adjust the value as needed */
+  margin-bottom: 50px;
 }
-
 
 @keyframes moveAndZoom {
   0% {
     opacity: 0;
-    transform: scale(.25);
+    transform: scale(0.25);
     /* Start at 0 degrees rotation */
   }
-  
+
   50% {
     opacity: 0.5;
-    transform: scale(1.50);
+    transform: scale(1.5);
     /* Zoom in and rotate to 180 degrees */
   }
-  
+
   100% {
     opacity: 1;
     transform: scale(1);
     /* Zoom out and complete a full 360-degree rotation */
   }
 }
-
 
 .navbar {
   display: flex;
@@ -617,7 +600,7 @@ html{
   position: relative;
 }
 
-.logo-div{
+.logo-div {
   width: 60%;
   height: 100%;
   display: flex;
@@ -638,16 +621,16 @@ html{
 }
 
 #crossfit-logo {
-  width: 60%;
+  width: 55%;
 }
 
-.secondary-banner>.logo {
+.secondary-banner > .logo {
   height: 150%;
   width: 20%;
   z-index: 0;
 }
 
-.secondary-banner>.crossfit {
+.secondary-banner > .crossfit {
   height: 100%;
   width: 20%;
 }
@@ -664,8 +647,6 @@ html{
   z-index: 2;
 }
 
-
-
 /* CSS */
 .button-17 {
   align-items: center;
@@ -673,7 +654,8 @@ html{
   background-color: #fff;
   border-radius: 14px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
   color: #3c4043;
   cursor: pointer;
@@ -684,7 +666,7 @@ html{
   font-weight: 500;
   height: 48px;
   justify-content: center;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   line-height: normal;
   max-width: 100%;
   overflow: visible;
@@ -692,7 +674,8 @@ html{
   position: relative;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -702,12 +685,13 @@ html{
 }
 
 .button-17:hover {
-  background: #F6F9FE;
+  background: #f6f9fe;
   color: #174ea6;
 }
 
 .button-17:active {
-  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
 
@@ -717,26 +701,31 @@ html{
 }
 
 .button-17:not(:disabled) {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 .button-17:not(:disabled):hover {
-  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
 }
 
 .button-17:not(:disabled):focus {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 .button-17:not(:disabled):active {
-  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+    rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
 }
 
 .button-17:disabled {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
-.newsletter-container>input {
+.newsletter-container > input {
   min-width: 150px;
   max-width: 800px;
   width: 100%;
@@ -746,11 +735,11 @@ html{
   font-size: 160%;
 }
 
-.newsletter-container>h1 {
+.newsletter-container > h1 {
   font-size: 220%;
 }
 
-.newsletter-container>button {
+.newsletter-container > button {
   width: 10%;
   padding: 0;
   height: 30%;
@@ -790,12 +779,11 @@ button {
     flex: 1 1 100%;
     text-align: center;
   }
-  
+
   .ait-list {
     gap: 0;
   }
 }
-
 
 /* Trainers */
 
@@ -845,7 +833,7 @@ button {
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
 #logo-ptc {
-  width: 500px
+  width: 500px;
 }
 
 .trainer-details {
@@ -885,9 +873,7 @@ button {
   width: 65%;
 }
 
-
-
-.career-section>ul {
+.career-section > ul {
   padding-left: 20px;
 }
 
@@ -919,7 +905,7 @@ button {
   padding-bottom: 25px;
 }
 
-.crossfit-coaches-container>h1 {
+.crossfit-coaches-container > h1 {
   color: var(--primary) !important;
   font-family: "Rock Salt", cursive !important;
 }
@@ -939,6 +925,7 @@ button {
 
 .coaches-container > h1 {
   font-size: 46px;
+  align-self: start;
 }
 .coach {
   display: flex;
@@ -955,7 +942,7 @@ button {
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.coach>h3 {
+.coach > h3 {
   width: 250px;
   text-align: center;
 }
@@ -968,6 +955,36 @@ button {
   align-items: center;
   margin-top: 10vh;
   background-color: var(--secondary-background-color);
+}
+
+.team-background {
+  background-image: url("/src/assets/handsin.jpg"); /* Adjust the path as needed */
+  height: 40vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-background > h1 {
+  font-size: 62px;
+  z-index: 3;
+  position: relative;
+  color: white;
+}
+
+.team-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 .directions-container {
@@ -1024,12 +1041,10 @@ button {
   gap: 50px;
   margin-top: 50px;
 }
-#instagram-directions, #facebook-directions {
+#instagram-directions,
+#facebook-directions {
   width: 90%;
 }
-
-
-
 
 .directions-container > h2 {
   padding: 25px;
@@ -1041,9 +1056,8 @@ button {
   width: 20%;
 }
 
-
 .service-banner {
-  height: 55vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1084,14 +1098,13 @@ button {
   color: black;
 }
 
-.one >h1 {
+.one > h1 {
   color: var(--text-color);
   padding-left: 10px;
   font-size: 46px;
 }
 
-
-.one>h2 {
+.one > h2 {
   cursor: pointer;
   height: 75px;
   width: 100%;
@@ -1105,17 +1118,13 @@ button {
   background-color: #f4f4f4;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 20px;
-
 }
 
-.one>h2:hover {
+.one > h2:hover {
   font-size: 22px;
   color: white;
   background-color: #333;
 }
-
-
-
 
 /* CSS */
 .button-42 {
@@ -1123,10 +1132,11 @@ button {
   background-image: linear-gradient(-180deg, #f26c5a, #ed1c26);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
   height: 40px;
   line-height: 40px;
   outline: 0;
@@ -1143,14 +1153,14 @@ button {
   width: 100%;
   z-index: 2;
   border: 0;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
 }
 
 .button-42:hover {
   box-shadow: rgba(249, 249, 250, 0.982) 0 3px 8px;
 }
 
-.one>img {
+.one > img {
   height: 60%;
   width: 95%;
   position: absolute;
@@ -1159,7 +1169,7 @@ button {
 }
 
 .service-img {
-  height:65%;
+  height: 65%;
   width: 45%;
   position: absolute;
   right: 0;
@@ -1172,7 +1182,7 @@ button {
   background-position: center center;
 }
 
-.one>ul {
+.one > ul {
   font-size: larger;
 }
 
@@ -1188,13 +1198,10 @@ button {
   bottom: 85px;
   } */
 
-.one>button {
+.one > button {
   width: 60%;
   font-size: larger;
 }
-
-
-
 
 .two {
   background-color: #f4f4f4;
@@ -1214,13 +1221,20 @@ button {
   right: 15px;
 } */
 
-.two>button {
+.two > button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30%;
   font-size: 18px;
-  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  background: linear-gradient(
+    170deg,
+    #333 0%,
+    #333 50%,
+    #791f1f 50%,
+    #ed1c26 60%,
+    #ed1c26 100%
+  );
   color: white;
   /* position: absolute;
 
@@ -1231,14 +1245,14 @@ button {
   font-weight: 700; */
 }
 
-.two>button:hover {
+.two > button:hover {
   /* transform: scale(1.25); */
   color: white;
   background-color: #333;
   /* Scale the button on hover */
 }
 
-.two>h1 {
+.two > h1 {
   margin-bottom: 20px;
   border-bottom: 2px solid;
   font-size: 32px;
@@ -1247,30 +1261,26 @@ button {
   padding-bottom: 15px;
 }
 
-.two>h3 {
+.two > h3 {
   height: 100%;
   width: 45%;
   font-size: 18px;
 }
 
-
-
-.three>ul {
+.three > ul {
   font-size: larger;
 }
 
-
-
-.three>button {
+.three > button {
   width: 60%;
   font-size: larger;
 }
 
-
 .training-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5vw;
   /* Distribute the cards evenly */
 }
 
@@ -1284,6 +1294,7 @@ button {
   box-sizing: border-box;
   /* Ensures padding/margin doesn't affect width */
   height: auto;
+  
   /* Let the content dictate height */
 }
 
@@ -1296,25 +1307,23 @@ button {
 
 .image-container {
   position: relative;
-  width: 100%;
-  padding-top: 75%;
+  width: 90%;
+  height: auto;
   /* Adjust this for your desired aspect ratio (height/width)*100 */
   overflow: hidden;
   /* Hide anything that exceeds the bounds */
   background-color: var(--secondary-background-color);
+  border-radius: 30px;
 }
 
 .image-container img {
-  position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 30px;
   /* Fit the image within the bounds without cropping */
 }
-
-
 
 .crossfit-container {
   display: flex;
@@ -1327,7 +1336,7 @@ button {
   font-size: 1.3rem;
 }
 
-.crossfit-info>* {
+.crossfit-info > * {
   margin-bottom: 2vh;
 }
 
@@ -1339,7 +1348,7 @@ button {
   justify-content: center;
 }
 
-.crossfit-img-div>img {
+.crossfit-img-div > img {
   width: 40%;
 }
 
@@ -1375,16 +1384,14 @@ button {
   align-items: center;
   width: 50%;
   justify-content: center;
-
 }
 
-.crossfit-journal-text>* {
+.crossfit-journal-text > * {
   margin-bottom: 2vh;
   color: --secondary-background-color;
   font-family: "Rock Salt", cursive !important;
   font-size: 46px;
   padding-top: 25px;
-
 }
 
 .crossfit-journal-img {
@@ -1394,7 +1401,7 @@ button {
   align-items: center;
 }
 
-.crossfit-journal-img>img {
+.crossfit-journal-img > img {
   width: 100%;
 }
 
@@ -1409,7 +1416,14 @@ button {
   justify-content: center;
   width: 100%;
   font-size: 24px;
-  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
+  background: linear-gradient(
+    170deg,
+    #333 0%,
+    #333 50%,
+    #791f1f 50%,
+    #ed1c26 60%,
+    #ed1c26 100%
+  );
   color: white;
 }
 
@@ -1421,26 +1435,25 @@ button {
 .youth-info {
   width: 50%;
   padding-left: 5vw;
-
 }
 
-.youth-info>* {
+.youth-info > * {
   margin-bottom: 2vh;
 }
 
-.youth-info>h1 {
+.youth-info > h1 {
   font-size: 3rem;
 }
 
-.youth-info>h3 {
+.youth-info > h3 {
   font-size: 1.5rem;
 }
 
-.youth-info>p {
+.youth-info > p {
   font-size: 1.2rem;
 }
 
-.youth-info>ul {
+.youth-info > ul {
   font-size: 1.2rem;
 }
 
@@ -1451,7 +1464,7 @@ button {
   align-items: center;
 }
 
-.youth-img>img {
+.youth-img > img {
   width: 50%;
 }
 
@@ -1459,7 +1472,7 @@ button {
   padding: 0;
 }
 
-.dropdown>li {
+.dropdown > li {
   list-style-type: none;
   /* Remove bullet points */
   /* Add padding inside dropdown */
@@ -1476,14 +1489,11 @@ button {
   padding: 10px;
 }
 
-
-
-.carousel-img>.pullupgirl {
+.carousel-img > .pullupgirl {
   width: 100%;
   object-fit: cover;
   object-position: top;
 }
-
 
 .skull-div {
   background-size: contain;
@@ -1513,17 +1523,15 @@ button {
   justify-content: center;
   gap: 25px;
   position: relative;
-  z-index: 0
+  z-index: 0;
 }
 
-
-
-.footer>img {
+.footer > img {
   position: relative;
   z-index: 0;
 }
 
-.footer>p {
+.footer > p {
   z-index: 0;
 }
 
@@ -1551,13 +1559,13 @@ button {
   padding-bottom: 5px;
 }
 
-.training-tabs{
+.training-tabs {
   background-color: var(--secondary-background-color);
 }
 
 .training-div,
 .youth-page,
-.team-container>.newsletter-container {
+.team-container > .newsletter-container {
   margin-top: 10vh;
 }
 
@@ -1578,6 +1586,10 @@ button {
   justify-content: start;
 }
 
+.sports-options {
+  background-color: var(--secondary-background-color);
+}
+
 .sports-training-header::before {
   content: "";
   position: absolute;
@@ -1585,7 +1597,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
   /* Adjust the 0.5 for the level of darkness */
   z-index: 0;
 }
@@ -1594,8 +1606,8 @@ button {
   margin: 25px;
 }
 .mobile-service-container {
-background-color: var(--secondary-background-color); 
- display: none;
+  background-color: var(--secondary-background-color);
+  display: none;
 }
 
 .mobile-service-details {
@@ -1636,11 +1648,11 @@ background-color: var(--secondary-background-color);
   background-color: white;
 }
 
-.inclusive-nav-mobile{
+.inclusive-nav-mobile {
   display: none;
 }
 
-.adaptive-inclusive{
+.adaptive-inclusive {
   /* background-color: var(--secondary-background-color); */
   display: flex;
   flex-direction: column;
@@ -1650,8 +1662,15 @@ background-color: var(--secondary-background-color);
   color: var(--text-color);
   width: 100vw;
   padding: 25px;
-  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
-  }
+  background: linear-gradient(
+    170deg,
+    #333 0%,
+    #333 50%,
+    #791f1f 50%,
+    #ed1c26 60%,
+    #ed1c26 100%
+  );
+}
 
 .adaptive-inclusive > div {
   display: flex;
@@ -1662,21 +1681,21 @@ background-color: var(--secondary-background-color);
   color: white;
 }
 
-.adaptive-inclusive > div > h1{
+.adaptive-inclusive > div > h1 {
   font-size: 2.5rem;
   font-style: italic;
   margin-bottom: 15px;
 }
 
-.adaptive-inclusive > ul{
+.adaptive-inclusive > ul {
   font-size: 1.2rem;
 }
 
-.adaptive-inclusive > ul > li{
-  margin-top: .5vh;
+.adaptive-inclusive > ul > li {
+  margin-top: 0.5vh;
 }
 
-.adaptive-inclusive > button{
+.adaptive-inclusive > button {
   border-radius: 20px;
   font-size: 1rem;
   border: none;
@@ -1684,8 +1703,8 @@ background-color: var(--secondary-background-color);
   background-color: white;
 }
 
-.adaptive-inclusive > button:hover{
-  background: #F6F9FE;
+.adaptive-inclusive > button:hover {
+  background: #f6f9fe;
   color: #174ea6;
 }
 
@@ -1709,24 +1728,51 @@ background-color: var(--secondary-background-color);
   display: none;
 }
 
-.personal-training-container{
+.personal-training-container {
   display: flex;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  gap: 10vw;
-  margin: 0;
-  background: linear-gradient(170deg, #333 0%, #333 50%, #791f1f 50%, #ed1c26 60%, #ed1c26 100%);
-  padding-bottom: 5vh;
-  padding-top: 5vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  background-color: var(--secondary-background-color);
+  width: 100%; /* Ensures the container takes full width */
+
 }
 
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.personal-training-container::-webkit-scrollbar {
+  height: 12px; /* Adjust the height of the scrollbar */
+  width: 8px;
+  background: #D9D9D9; /* Track color */
+}
+
+.personal-training-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.personal-training-container::-webkit-scrollbar-thumb {
+  
+  background-color: var(--powerhouse-red); /* Thumb color */
+  border-radius: 10px;
+}
+
+
+.personal-training-container::-webkit-scrollbar-thumb:hover {
+  background-color: #707070; /* Thumb color on hover */
+}
 .pt-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
+  align-items: start;
+  justify-content: start;
   height: 40vh;
   position: relative;
   margin-top: 10vh;
+  width: 100vw;
 }
 
 .pt-wrapper::before {
@@ -1741,14 +1787,7 @@ background-color: var(--secondary-background-color);
   z-index: 0;
 }
 
-.personal-training-section{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-
-}
-
-.intro-section{
+.intro-section {
   margin-top: 10vh;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -1763,8 +1802,6 @@ background-color: var(--secondary-background-color);
   color: white;
 }
 
-
-
 .intro-section-sports {
   height: 20vh;
   display: flex;
@@ -1777,7 +1814,7 @@ background-color: var(--secondary-background-color);
   color: white;
   position: relative;
   margin-right: 50px;
-  margin-top:  125px;
+  margin-top: 125px;
 }
 
 .intro-section-sports > p {
@@ -1789,11 +1826,8 @@ background-color: var(--secondary-background-color);
   font-size: 62px;
 }
 
-
-
-
 .intro-section > h1 {
-  font-size: 80px;
+  font-size: 62px;
 }
 
 .intro-section > p {
@@ -1801,20 +1835,40 @@ background-color: var(--secondary-background-color);
   width: 75%;
   text-align: center;
 }
-.service-section{
-  margin-top: 5vh;
+.service-section {
+
   /* border: solid 1px var(--text-color); */
-  padding: 5vh;
   border: 1px solid white;
+  padding:10px;
   box-shadow: var(--box-shadow);
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+  width: 25vw;
   background-color: var(--secondary-background-color);
+  
+  /* white-space: normal; */
+  /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
+  /* color: white; */
 }
 
+.service-section > h2 {
+}
 
+.service-section > img {
+  width: 90%;
+  height: 40%;
+  border-radius: 14px;
+}
 
-
-
+.service-section > p {
+  width: 90%;
+  height: auto;
+  white-space: normal;
+}
 
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
@@ -1830,19 +1884,18 @@ background-color: var(--secondary-background-color);
     gap: 5px; /* Adjust the space between items as needed */
     list-style: none;
     padding: 10px;
-}
+  }
 
-.ait-list li {
+  .ait-list li {
     flex: 1 1 calc(50% - 20px); /* Each item takes up 50% of the width minus the gap */
     box-sizing: border-box;
     margin-bottom: 20px;
-}
+  }
 
-.ait-list strong {
+  .ait-list strong {
     display: block;
     margin-bottom: 8px;
-}
-
+  }
 
   .ait-list > li > p {
     display: none;
@@ -1868,9 +1921,9 @@ background-color: var(--secondary-background-color);
   .schedule-subtitle {
     font-size: 35px;
   }
-.carousel-div {
-  margin-bottom: 0;
-}
+  .carousel-div {
+    margin-bottom: 0;
+  }
 
   .schedule-section {
     width: 90vw;
@@ -1882,18 +1935,18 @@ background-color: var(--secondary-background-color);
     width: 95%;
   }
 
-  .inclusive-nav-mobile{
+  .inclusive-nav-mobile {
     display: block;
   }
-  
-  .inclusive-nav{
+
+  .inclusive-nav {
     display: none;
   }
 
-  .chevron{
+  .chevron {
     margin-right: 10px;
   }
-  .training-tabs{
+  .training-tabs {
     background-color: var(--background-color);
   }
 
@@ -1908,25 +1961,23 @@ background-color: var(--secondary-background-color);
     height: 100%;
     flex-direction: column;
     width: 100vw;
-
-
   }
 
-  .logo-div{
+  .logo-div {
     width: 40%;
   }
 
-  #ptc-logo{
+  #ptc-logo {
     width: 60%;
   }
 
-  .secondary-banner>.logo {
+  .secondary-banner > .logo {
     height: auto;
     width: 25%;
     border-radius: 50%;
   }
 
-  .secondary-banner>.crossfit {
+  .secondary-banner > .crossfit {
     height: auto;
     width: 25%;
     border-radius: 50%;
@@ -1937,7 +1988,7 @@ background-color: var(--secondary-background-color);
   }
 
   .contact-banner > h4 {
-    font-size:12px;
+    font-size: 12px;
     text-align: center;
   }
   .full-coaches-container {
@@ -1948,8 +1999,7 @@ background-color: var(--secondary-background-color);
     display: none;
   } */
 
-
-  .phone-link{
+  .phone-link {
     display: block;
     color: var(--text-color);
     text-decoration: none;
@@ -1967,34 +2017,32 @@ background-color: var(--secondary-background-color);
     padding-bottom: 20px;
   }
 
-  .newsletter-container>input {
+  .newsletter-container > input {
     width: 80%;
     height: 40px;
     font-size: 14px;
   }
 
-  .newsletter-container>h1 {
+  .newsletter-container > h1 {
     width: 80%;
     margin: 10px;
     font-size: 22px;
     text-align: center;
   }
 
-  .banner>h1 {
+  .banner > h1 {
     font-size: 32px;
     top: 150px;
   }
 
- 
-
-  .newsletter-container>button {
+  .newsletter-container > button {
     height: 25px;
     font-size: 10px;
     width: 75px;
     border-radius: 8px;
   }
 
-  .carousel-img>img {
+  .carousel-img > img {
     height: 35vh;
   }
 
@@ -2021,7 +2069,7 @@ background-color: var(--secondary-background-color);
     padding: 5px;
   }
 
-  .one>h2 {
+  .one > h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2032,7 +2080,7 @@ background-color: var(--secondary-background-color);
     margin: 10px;
   }
 
-  .one>h2:hover {
+  .one > h2:hover {
     font-size: 12px;
   }
 
@@ -2045,7 +2093,7 @@ background-color: var(--secondary-background-color);
     justify-content: space-around;
   }
 
-  .two>h1 {
+  .two > h1 {
     font-size: 24px;
     align-self: center;
     margin-bottom: 10px;
@@ -2053,7 +2101,7 @@ background-color: var(--secondary-background-color);
     max-width: 95%;
   }
 
-  .two>h3 {
+  .two > h3 {
     font-size: 14px;
     height: 30px;
     width: 95%;
@@ -2061,13 +2109,13 @@ background-color: var(--secondary-background-color);
     text-align: center;
   }
 
-  .two>img {
+  .two > img {
     height: 50%;
     width: 35%;
     top: 150px;
   }
 
-  .two>button {
+  .two > button {
     height: 30px;
     width: 70px;
     font-size: 7px;
@@ -2076,7 +2124,6 @@ background-color: var(--secondary-background-color);
     position: initial;
     align-self: center;
     margin: 15px;
-
   }
 
   .directions-container {
@@ -2088,21 +2135,21 @@ background-color: var(--secondary-background-color);
     width: 90vw;
   }
 
-  .crossfit-banner{
+  .crossfit-banner {
     width: 90%;
     margin-top: 1vh;
   }
 
-  .directions-text>h2 {
+  .directions-text > h2 {
     font-size: 14px;
     padding: 2px;
   }
 
-  .directions-text>p {
+  .directions-text > p {
     font-size: 10px;
   }
 
-  .directions-text>button {
+  .directions-text > button {
     height: 30px;
     font-size: 12px;
   }
@@ -2111,7 +2158,6 @@ background-color: var(--secondary-background-color);
     height: 1vh;
   }
 
-
   .footer-div {
     height: 15vh;
     font-size: 12px;
@@ -2119,23 +2165,23 @@ background-color: var(--secondary-background-color);
     background-size: cover;
   }
 
-  .footer-div>img {
+  .footer-div > img {
     display: none;
   }
 
-  .crossfit-page>.newsletter-container {
+  .crossfit-page > .newsletter-container {
     margin-top: 0;
   }
 
-  .training-div>.newsletter-container {
+  .training-div > .newsletter-container {
     margin-top: 10vh;
   }
 
-  .youth-page>.newsletter-container {
+  .youth-page > .newsletter-container {
     margin-top: 10vh;
   }
 
-  .team-container>.newsletter-container {
+  .team-container > .newsletter-container {
     margin-top: 10vh;
   }
 
@@ -2151,13 +2197,12 @@ background-color: var(--secondary-background-color);
     margin-bottom: 10px;
   }
 
-
   .header-one {
     font-size: 18px;
     top: 55px;
   }
 
-  .crossfit-header>h2 {
+  .crossfit-header > h2 {
     font-size: 46px;
     top: 55px;
   }
@@ -2166,7 +2211,6 @@ background-color: var(--secondary-background-color);
     background-position: center center;
     height: 50vh;
   }
-
 
   .training-container {
     flex-direction: column;
@@ -2215,16 +2259,16 @@ background-color: var(--secondary-background-color);
     box-shadow: var(--box-shadow);
   }
 
-  .youth-info>h1 {
+  .youth-info > h1 {
     font-size: 1.5rem;
   }
 
-  .youth-info>h3 {
+  .youth-info > h3 {
     font-size: 1rem;
   }
 
-  .youth-info>p {
-    font-size: .8rem;
+  .youth-info > p {
+    font-size: 0.8rem;
   }
 
   .youth-img {
@@ -2236,7 +2280,7 @@ background-color: var(--secondary-background-color);
     margin: 1vh;
   }
 
-  .youth-img>img {
+  .youth-img > img {
     width: 100%;
   }
 
@@ -2286,7 +2330,7 @@ background-color: var(--secondary-background-color);
     background-color: var(--background-color);
   }
 
-  .mobile-trainer-header>h3 {
+  .mobile-trainer-header > h3 {
     width: 50%;
   }
 
@@ -2311,13 +2355,11 @@ background-color: var(--secondary-background-color);
     gap: 5px;
   }
 
-  
-
   .career-section {
     width: 100%;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
-  .line-breaks{
+  .line-breaks {
     display: flex;
   }
 
@@ -2338,15 +2380,14 @@ background-color: var(--secondary-background-color);
     bottom: 25px;
   }
 
-  .middle-grid>img {
+  .middle-grid > img {
     display: none;
   }
 
-  .middle-grid>h1 {
+  .middle-grid > h1 {
     position: relative;
     bottom: 625px;
     font-size: 34px;
-
   }
 
   .group-pic-container {
@@ -2385,7 +2426,7 @@ background-color: var(--secondary-background-color);
     background-color: var(--background-color);
   }
 
-  .crossfit-coaches-container>h1 {
+  .crossfit-coaches-container > h1 {
     font-size: 28px;
   }
 
@@ -2399,7 +2440,7 @@ background-color: var(--secondary-background-color);
     width: 90%;
   }
 
-  .crossfit-journal-text>h1 {
+  .crossfit-journal-text > h1 {
     font-size: 22px;
   }
 
@@ -2408,7 +2449,7 @@ background-color: var(--secondary-background-color);
     width: 85%;
   }
 
-  .crossfit-journal-img>img {
+  .crossfit-journal-img > img {
     height: 100%;
     width: 100%;
   }
@@ -2470,13 +2511,12 @@ background-color: var(--secondary-background-color);
     height: auto !important;
   } */
 
-  .crossfit{
+  .crossfit {
     width: 20% !important;
     height: auto !important;
   }
 
-
-  .adaptive-inclusive{
+  .adaptive-inclusive {
     /* background-color: var(--secondary-background-color); */
     padding: 2vw;
     display: flex;
@@ -2494,53 +2534,51 @@ background-color: var(--secondary-background-color);
     background-color: transparent;
   }
 
-#review-header {
-  font-size: 28px;
-  text-align: center;
-  padding:15px;
-}
+  #review-header {
+    font-size: 28px;
+    text-align: center;
+    padding: 15px;
+  }
 
-  .adaptive-inclusive > div > h1{
+  .adaptive-inclusive > div > h1 {
     font-size: 1.5rem;
     font-style: italic;
     text-align: center;
   }
-  
-  .adaptive-inclusive > ul{
+
+  .adaptive-inclusive > ul {
     font-size: 1rem;
   }
 
   .ait-list {
     display: none;
   }
-  
-  .ait-list > li{
-    margin-top: .5vh;
+
+  .ait-list > li {
+    margin-top: 0.5vh;
     font-size: 1rem;
   }
-  
-  .adaptive-inclusive > button{
+
+  .adaptive-inclusive > button {
     border-radius: 20px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     border: none;
     box-shadow: var(--box-shadow);
     margin-top: 10px;
   }
-  
-  .adaptive-inclusive > button:hover{
-    background: #F6F9FE;
+
+  .adaptive-inclusive > button:hover {
+    background: #f6f9fe;
     color: #174ea6;
   }
-  
-  .adaptive-inclusive > * {
-    margin-top: .5vh;
-  }
 
+  .adaptive-inclusive > * {
+    margin-top: 0.5vh;
+  }
 }
 
 /* Mobile landscape devices (phones and tablets) */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-
   .service-banner {
     display: none;
   }
@@ -2558,9 +2596,8 @@ background-color: var(--secondary-background-color);
 
   .inclusive-nav-mobile {
     display: block;
-
   }
-  
+
   .inclusive-nav {
     display: none;
   }
@@ -2568,7 +2605,7 @@ background-color: var(--secondary-background-color);
   .chevron {
     margin-right: 15px; /* Slightly more space */
   }
-  
+
   .training-tabs {
     background-color: var(--background-color);
   }
