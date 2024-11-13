@@ -10,12 +10,16 @@ const TrainingItem = ({ arr }) => {
     const trainingElements = arr.map((elem, i) => {
         return (
             <Card
-                className="training-item"
+                className="service-section"
                 key={i}
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-between',
+                    borderRadius: "30px",
+                    backgroundColor: "var(--secondary-background-color)",
+                    color: "var(--text-color)",
+                    boxShadow: "var(--box-shadow)"
+
                 }}
             >
                 <CardMedia className="image-container">
@@ -24,27 +28,28 @@ const TrainingItem = ({ arr }) => {
                 <CardContent
                     sx={{
                         flexGrow: 1,
-                        alignSelf: 'flex-start',
-                        width: '100%',
-                        backgroundColor: 'black',
-                        color: 'white'
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        width: '95%',
+                        textAlign: "center"
                     }}
                 >
-                    <Typography variant="h5" component="div" >
+                    <Typography variant="h5" component="div" sx = {{textAlign: "center"}} >
                         {elem.title}
                     </Typography>
                     <Typography variant="h6" >
                         {elem.price}
                     </Typography>
-                    <Typography variant="body2" >
+                    <Typography variant="body2" sx = {{textAlign: "center"}} >
                         {elem.description}
                     </Typography>
                 </CardContent>
-                <CardActions>
+                <CardActions sx = {{width: "95%", display: "flex", alignItems: "center" , justifyContent: "center"}}>
                     {
                         elem.url1 && !elem.urlTitle1 &&
                         < a style={{ color: 'black' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark">
+                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 Book Now
                             </Button>
                         </a>
@@ -52,15 +57,15 @@ const TrainingItem = ({ arr }) => {
                     {
                         elem.url1 && elem.urlTitle1 &&
                         < a style={{ color: 'black' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark">
+                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle1}
                             </Button>
                         </a>
                     }
                     {
                         elem.url2 && elem.urlTitle2 &&
-                        < a style={{ color: 'black' }} href={elem.url2} target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark">
+                        < a style={{ color: 'black' }} href={elem.url2} target="_blank" rel="noopener noreferrer" >
+                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle2}
                             </Button>
                         </a>
@@ -68,7 +73,7 @@ const TrainingItem = ({ arr }) => {
                     {
                         elem.url3 && elem.urlTitle3 &&
                         < a style={{ color: 'black' }} href={elem.url3} target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark">
+                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle3}
                             </Button>
                         </a>
@@ -76,7 +81,7 @@ const TrainingItem = ({ arr }) => {
                     {
                         elem.url4 && elem.urlTitle4 &&
                         < a style={{ color: 'black' }} href={elem.url4} target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark">
+                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle4}
                             </Button>
                         </a>
@@ -84,7 +89,7 @@ const TrainingItem = ({ arr }) => {
                     {
                         !elem.url1 &&
                         < a style={{ color: 'black' }} href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark">
+                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 Call for more information
                             </Button>
                         </a>

@@ -30,7 +30,7 @@
 
   
   footer {
-    height: 20vh;
+    height: 25vh;
     width: 100vw;
     background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
     display: flex;
@@ -44,7 +44,7 @@
 .img-container {
     outline: 10px solid #ed1c26 ;
     height: auto;
-    width: 250px;
+    width: 175px;
     border-radius: 50%;
     background-color: white;
     overflow: hidden;

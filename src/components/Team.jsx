@@ -12,6 +12,7 @@ import chevronUp from '../assets/chevron-up.svg';
 import chevronDown from '../assets/chevron-down.svg';
 import darkmodeChevronUp from '../assets/darkmode-chevron-up.svg';
 import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
+import handsin from "../assets/handsin.jpg"
 
 
 
@@ -86,6 +87,9 @@ function Team() {
 
     return (
         <div className='team-container'>
+            <div className = "team-background" >
+                <h1>United in Strength, Built by Community</h1>
+            </div>
             <TrainingCoaches />
             <MobileTrainingCoaches />
             <div className="mobile-coaches-container">
