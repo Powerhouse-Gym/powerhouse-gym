@@ -1586,9 +1586,6 @@ button {
   justify-content: start;
 }
 
-.sports-options {
-  background-color: var(--secondary-background-color);
-}
 
 .sports-training-header::before {
   content: "";
@@ -1598,10 +1595,12 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Adjust the 0.5 for the level of darkness */
   z-index: 0;
 }
 
+.sports-options {
+  background-color: var(--secondary-background-color);
+}
 #sports-coaches-h1 {
   margin: 25px;
 }
@@ -1853,9 +1852,6 @@ button {
   /* white-space: normal; */
   /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
   /* color: white; */
-}
-
-.service-section > h2 {
 }
 
 .service-section > img {
@@ -2575,6 +2571,40 @@ button {
   .adaptive-inclusive > * {
     margin-top: 0.5vh;
   }
+
+  .sports-training-header {
+    padding: 5px;
+  }
+
+
+  .intro-section-sports{
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    margin-top: 0;
+    padding: 2vw
+  }
+
+  .intro-section-sports > p {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .intro-section-sports > h1 {
+    font-size: 26px;;
+  }
+
+  .service-section{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .youth-page{
+    width: 65vw;
+    height: fit-content;
+  }
+
 }
 
 /* Mobile landscape devices (phones and tablets) */
@@ -2608,6 +2638,10 @@ button {
 
   .training-tabs {
     background-color: var(--background-color);
+  }
+
+  .nav-container{
+    height: 20vh;
   }
 
   .secondary-banner {
@@ -2810,10 +2844,6 @@ button {
     margin-top: 0;
   }
 
-  .training-div > .newsletter-container {
-    margin-top: 12vh; /* Increase margin */
-  }
-
   .youth-page > .newsletter-container {
     margin-top: 12vh; /* Increase margin */
   }
@@ -2954,4 +2984,93 @@ button {
     font-size: 20px; /* Increase font size */
     margin-top: 5px;
   }
+
+  .sports-training-header {
+    padding: 5px;
+    height: 50vh !important;
+    margin-top: 20vh;
+  }
+
+
+  .intro-section-sports{
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    margin-top: 0;
+    padding: 2vh;
+  }
+
+  .intro-section-sports > p {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .intro-section-sports > h1 {
+    font-size: 26px;;
+  }
+
+  .service-section{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .training-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .training-service-btns{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: end !important;
+  }
+
+  .training-service-btns > a{
+    width: 100%;
+  }
+
+  .training-service-btns > a > button{
+    width: 100%;
+  }
+
+  footer{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+    border: solid 2px blue;
+  }
+
+  .left-div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    position: static;
+    padding: 25px;
+  }
+
+  .left-div > ul{
+    gap: 10px;
+  }
+
+  .footer-logo-test{
+    height: 100%;
+    position: static;
+    width: 30%;
+  }
+
+  .img-container{
+    position: static;
+    width: 25%;
+  }
+
 }
