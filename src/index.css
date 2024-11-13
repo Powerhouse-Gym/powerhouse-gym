@@ -2608,7 +2608,7 @@ button {
 }
 
 /* Mobile landscape devices (phones and tablets) */
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   .service-banner {
     display: none;
   }
