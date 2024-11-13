@@ -3,7 +3,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
-import chainLink from '../assets/chainlink.png'
 
 const TrainingItem = ({ arr }) => {
 
@@ -45,10 +44,10 @@ const TrainingItem = ({ arr }) => {
                         {elem.description}
                     </Typography>
                 </CardContent>
-                <CardActions sx = {{width: "95%", display: "flex", alignItems: "center" , justifyContent: "center"}}>
+                <CardActions className='training-service-btns' sx = {{maxWidth: "95%", display: "flex", alignItems: "center" , justifyContent: "center", flexWrap: 'wrap'}}>
                     {
                         elem.url1 && !elem.urlTitle1 &&
-                        < a style={{ color: 'black' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
+                        < a style={{ color: 'black', margin: '1px' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 Book Now
                             </Button>
@@ -56,7 +55,7 @@ const TrainingItem = ({ arr }) => {
                     }
                     {
                         elem.url1 && elem.urlTitle1 &&
-                        < a style={{ color: 'black' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
+                        < a style={{ color: 'black', margin: '1px' }} href={elem.url1} target="_blank" rel="noopener noreferrer">
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle1}
                             </Button>
@@ -64,7 +63,7 @@ const TrainingItem = ({ arr }) => {
                     }
                     {
                         elem.url2 && elem.urlTitle2 &&
-                        < a style={{ color: 'black' }} href={elem.url2} target="_blank" rel="noopener noreferrer" >
+                        < a style={{ color: 'black', margin: '1px' }} href={elem.url2} target="_blank" rel="noopener noreferrer" >
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle2}
                             </Button>
@@ -72,7 +71,7 @@ const TrainingItem = ({ arr }) => {
                     }
                     {
                         elem.url3 && elem.urlTitle3 &&
-                        < a style={{ color: 'black' }} href={elem.url3} target="_blank" rel="noopener noreferrer">
+                        < a style={{ color: 'black', margin: '1px' }} href={elem.url3} target="_blank" rel="noopener noreferrer">
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle3}
                             </Button>
@@ -80,7 +79,7 @@ const TrainingItem = ({ arr }) => {
                     }
                     {
                         elem.url4 && elem.urlTitle4 &&
-                        < a style={{ color: 'black' }} href={elem.url4} target="_blank" rel="noopener noreferrer">
+                        < a style={{ color: 'black', margin: '1px' }} href={elem.url4} target="_blank" rel="noopener noreferrer">
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 {elem.urlTitle4}
                             </Button>
@@ -88,7 +87,7 @@ const TrainingItem = ({ arr }) => {
                     }
                     {
                         !elem.url1 &&
-                        < a style={{ color: 'black' }} href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
+                        < a style={{ color: 'black', margin: '1px' }} href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 Call for more information
                             </Button>
