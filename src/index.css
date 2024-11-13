@@ -1877,7 +1877,7 @@ button {
 
 .service-section > img {
   width: 90%;
-  height: 40%;
+ height: auto;
   border-radius: 14px;
 }
 
