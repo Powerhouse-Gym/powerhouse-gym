@@ -46,7 +46,7 @@ const PersonalTraining = () => {
           justifyContent: "center",
         }}
       >
-        Services
+        Personal Training Services
       </h1>
       <div className="personal-training-container">
         <div className="service-section">
@@ -67,7 +67,7 @@ const PersonalTraining = () => {
           </p>
           <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
             <button>
-              <strong>CALL</strong> for more information
+              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
             </button>{" "}
           </a>
         </div>
@@ -80,7 +80,7 @@ const PersonalTraining = () => {
             agility.
           </p>
           <button onClick={() => navigate("/training")}>
-            <strong>CLICK</strong> for more information
+            <strong style = {{color: "#ed1c26"}}>CLICK</strong> for more information
           </button>
         </div>
 
@@ -129,7 +129,7 @@ const PersonalTraining = () => {
           </p>
           <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
             <button>
-              <strong>CALL</strong> for more information
+              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
             </button>
           </a>
         </div>
@@ -146,7 +146,7 @@ const PersonalTraining = () => {
           </p>
           <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
             <button>
-              <strong>CALL</strong> for more information
+              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
             </button>
           </a>
         </div>
@@ -162,7 +162,7 @@ const PersonalTraining = () => {
           </p>
           <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
             <button>
-              <strong>CALL</strong> for more information
+              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
             </button>
           </a>
         </div>

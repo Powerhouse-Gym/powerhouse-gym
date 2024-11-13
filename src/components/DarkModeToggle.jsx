@@ -29,6 +29,8 @@ export default function DarkModeToggle() {
                 justifyContent="center"
                 alignItems="center"
                 height="100vh"
+                position = "absolute"
+                right ="20px"
             >
                 <IconButton onClick={handleToggle}>
                     {isDarkMode ? <DarkMode sx={{ color: '#fff' }} /> : <LightMode sx={{ color: '#fbc02d' }} />}
