@@ -7,6 +7,10 @@ import adaptiveImg from "../assets/adaptive-img.jpg"
 import deadlift from "../assets/deadlift.jpg"
 import teampic from "../assets/teampic.jpg"
 import grouppic from "../assets/groupic2.jpg"
+import oneOnone from "../assets/101.jpg"
+import ptPic from "../assets/pt-pic.jpg"
+import rowerpic from "../assets/rowerpic.jpg"
+
 
 const PersonalTraining = () => {
   const teamTraining = cageAndFieldRentals.find(
@@ -17,7 +21,7 @@ const PersonalTraining = () => {
 
   return (
     <>
-      <div className="pt-wrapper" style={{ backgroundImage: `url(${PTimg})` }}>
+      <div className="pt-wrapper" style={{ backgroundImage: `url(${rowerpic})` }}>
         <div className="intro-section">
           <h1>Powerhouse PERSONAL Training</h1>
           <p>
@@ -33,9 +37,8 @@ const PersonalTraining = () => {
         style={{
             display: "flex",
             fontSize: "46px",
-            textDecoration: "underline",
             height: "8vh",
-            paddingTop: "20px",
+            paddingTop: "50px",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
@@ -47,10 +50,10 @@ const PersonalTraining = () => {
        
         <div className="service-section">
             <img src= {adaptiveImg} alt="adaptive training" />
-          <h1 style={{ textDecoration: "underline", fontStyle: "italic" }}>
+          <h2 style={{ textDecoration: "underline", fontStyle: "italic", textAlign: "center" }}>
             Now Offering!
-          </h1>
-          <h2>Inclusive & Adaptive Training</h2>
+          </h2>
+          <h3>Inclusive & Adaptive Training</h3>
           <p>
             Specialized training designed to be adaptive and inclusive for all
             abilities.
@@ -65,7 +68,7 @@ const PersonalTraining = () => {
         </div>
           <div className="service-section">
           <img src= {deadlift} alt="deadlift training" />
-            <h2>Sports-Specific Strength & Conditioning</h2>
+            <h3>Sports-Specific Strength & Conditioning</h3>
 
             <p>
               Customized training focused on building sport-specific strength
@@ -76,14 +79,14 @@ const PersonalTraining = () => {
 
           <div className="service-section">
             <img src = {teampic} alt = "group" />
-            <h2>Team Strength & Conditioning</h2>
+            <h3>Team Strength & Conditioning</h3>
             <p>
               Strength and conditioning sessions for teams (up to 12 athletes).
             </p>
             <p>
               <strong>$180 per session</strong>
             </p>
-            <div style = {{display: "flex"}}> 
+            <div style = {{paddingBottom: "15px", display: "flex", overflowX: "auto", whiteSpace: "nowrap", width : "100%"}} className="button-scroll"> 
 
             <a href={teamTraining.url1}>
               <button>{teamTraining.urlTitle1}</button>
@@ -102,7 +105,7 @@ const PersonalTraining = () => {
 
           <div className="service-section">
             <img src = {grouppic} alt = "group pic" />
-            <h2>Small Group Training</h2>
+            <h3>Small Group Training</h3>
             <p>
               2-on-1 Training: <strong>$90 per hour</strong>
             </p>
@@ -119,7 +122,8 @@ const PersonalTraining = () => {
           </div>
 
           <div className="service-section">
-            <h2>Crossfit Onboarding</h2>
+            <img src = {oneOnone} alt = "crossfit class"/>
+            <h3>Crossfit Onboarding</h3>
             <p>
               Four-week program, including two sessions per week and one
               CrossFit class each week.
@@ -136,9 +140,10 @@ const PersonalTraining = () => {
             </a>
           </div>
         <div className="service-section">
-          <h1 style={{ textDecoration: "underline", fontStyle: "italic" }}>
+          <img src = {ptPic} alt ="pt picture" />
+          <h3 style={{ textDecoration: "underline", fontStyle: "italic" }}>
             Coming Soon in 2025
-          </h1>
+          </h3>
           <h2>1-on-1 Personal Training</h2>
           <p>Personalized, one-on-one training sessions.</p>
           <p>

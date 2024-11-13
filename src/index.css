@@ -92,7 +92,7 @@ html {
 }
 
 .crossfit-header {
-  background-image: url("./assets/crossfit/crossfitChalk.jpeg");
+  background-image: url("./assets/kbcalk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1846,13 +1846,34 @@ button {
   align-items: center;
   justify-content: space-around;
   height: 50vh;
+  max-width: 400px;
   width: 25vw;
+  min-width: 250px;
   background-color: var(--secondary-background-color);
+  text-align: center;
   
   /* white-space: normal; */
   /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
   /* color: white; */
 }
+/* Style the custom scrollbar */
+.button-scroll::-webkit-scrollbar {
+  height: 8px; /* height of horizontal scrollbar */
+}
+
+.button-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* background of the scrollbar track */
+}
+
+.button-scroll::-webkit-scrollbar-thumb {
+  background-color: #888; /* scrollbar thumb color */
+  border-radius: 10px; /* rounded edges for the scrollbar */
+}
+
+.button-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* darker thumb color when hovered */
+}
+
 
 .service-section > img {
   width: 90%;
