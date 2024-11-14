@@ -53,7 +53,7 @@ export default function Training() {
     setValue(newValue);
   };
 
-  const h1Styles = { textAlign: "center", margin: "15px", fontSize: "46px" };
+  const h1Styles = { textAlign: "center", margin: "15px"};
 
   return (
     <div className="training-div">
