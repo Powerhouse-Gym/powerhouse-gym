@@ -88,7 +88,6 @@ function Navbar(props) {
           <ListItemText primary="About Us" />
         </ListItem>
 
-        <button className="signup-btn">SIGN UP</button>
         <div className='banner-logos'>
                     <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
                         <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
@@ -97,6 +96,7 @@ function Navbar(props) {
                         <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
                     </a>
                 </div>
+        <button className="signup-btn" id = "signup-btn-mobile">SIGN UP</button>
       </List>
     </Box>
   );
