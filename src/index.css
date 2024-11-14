@@ -41,13 +41,13 @@ html {
 }
 
 .signup-btn {
-  background-color: var(--powerhouse-red);
+  background-color: -white;
   border: 1px solid red;
   height: auto;
   padding: 10px;
   width: 100px;
   font-weight:500;
-  color: white;
+  color: red;
   font-size: 1.3rem;
   text-align: center;
   display: flex;
@@ -618,6 +618,7 @@ html {
   z-index: 2;
   background-color: var(--secondary-background-color);
   position: relative;
+  padding-bottom: 25px;
 }
 
 .logo-div {
@@ -1049,7 +1050,6 @@ color: var(--text-color);
 
 #review-header {
   color: var(--text-color);
-  padding-top: 25px;
   background-color: var(--secondary-background-color);
   height: 100%;
   width: 100vw;
@@ -2095,6 +2095,13 @@ color: var(--text-color);
     width: 60%;
   }
 
+  #ptc-logo > img {
+    width: 115%;
+  }
+
+  #crossfit-logo {
+    width: 100%;
+  }
   .secondary-banner > .logo {
     height: auto;
     width: 25%;
@@ -2134,7 +2141,7 @@ color: var(--text-color);
   }
 
   .newsletter-container {
-    height: 100%;
+    height: 25vh;
     font-size: 8px;
     gap: 10px;
     padding: 5px;
@@ -2655,9 +2662,8 @@ color: var(--text-color);
   }
 
   #review-header {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
-    padding: 15px;
   }
 
   .adaptive-inclusive > div > h1 {
