@@ -9,6 +9,11 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
+import darkmodeFacebook from '../assets/darkmode-facebook.svg'
+import darkmodeInstagram from '../assets/darkmode-instagram.svg'
+import facebook from '../assets/facebook.svg'
+import instagram from '../assets/instagram.svg'
+
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
@@ -84,6 +89,14 @@ function Navbar(props) {
         </ListItem>
 
         <button className="signup-btn">SIGN UP</button>
+        <div className='banner-logos'>
+                    <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                        <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                        <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
+                    </a>
+                </div>
       </List>
     </Box>
   );
@@ -110,6 +123,14 @@ function Navbar(props) {
           className="nav-links"
           value={window.location.pathname}
         >
+            <div className='banner-logos'>
+                    <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                        <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                        <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
+                    </a>
+                </div>
           <Tab
             sx={{ fontSize: "1.3rem" }}
             className="nav-item"
@@ -161,6 +182,8 @@ function Navbar(props) {
           >
             <button className="signup-btn">SIGN UP</button>
           </a>
+          
+         
         </Tabs>
         <DarkModeToggle />
       </Box>
