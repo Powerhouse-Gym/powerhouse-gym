@@ -2081,15 +2081,14 @@ color: var(--text-color);
   }
 
   .secondary-banner {
-    margin-top: 0;
     justify-content: center;
     height: 100%;
-    flex-direction: column;
     width: 100vw;
+    padding-top: 15px;
   }
 
   .logo-div {
-    width: 40%;
+    width: 60%;
   }
 
   #ptc-logo {
