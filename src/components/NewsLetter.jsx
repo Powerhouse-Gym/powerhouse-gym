@@ -13,6 +13,7 @@ function NewsLetter() {
             target="_blank"
             rel="noopener noreferrer"
             style = {{textDecoration: "none"}}
+            className='ahref-newsletter'
           >
             <button className = "signup-btn new-signup-btn">SIGN UP</button>
           </a>

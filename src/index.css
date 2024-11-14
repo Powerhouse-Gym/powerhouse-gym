@@ -56,7 +56,7 @@ html {
 }
 
 .new-signup-btn {
-  width: 250%;
+  width: 150%;
 }
 
 .nav-container {
@@ -295,7 +295,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 75px;
+  gap: 50px;
 }
 
 .left-title {
@@ -480,9 +480,6 @@ html {
   text-align: center;
 }
 
-.contact-banner > a {
-  font-size: 62px;
-}
 .phone-link {
   /* display: none; */
   display: block;
@@ -503,7 +500,7 @@ html {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
 
 #home {
@@ -512,7 +509,7 @@ html {
 
 #facebook,
 #instagram {
-  width: 19%;
+  width: 25%;
 }
 
 .banner {
@@ -582,7 +579,8 @@ html {
   background-color: var(--secondary-background-color);
   text-shadow: var(--box-shadow);
   text-underline-offset: 0.4em; /* Adjust the value as needed */
-  margin-bottom: 50px;
+  font-size: 46px;
+  margin-top: 25px;
 }
 
 @keyframes moveAndZoom {
@@ -639,11 +637,11 @@ html {
 }
 
 #ptc-logo > img {
-  width: 90%;
+  width: 65%;
 }
 
 #crossfit-logo {
-  width: 55%;
+  width: 45%;
 }
 
 .secondary-banner > .logo {
@@ -1582,6 +1580,7 @@ color: var(--text-color);
   background-color: var(--secondary-background-color);
   height: 65vh;
   width: 100%;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1824,7 +1823,7 @@ color: var(--text-color);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.50);
   /* Adjust the 0.5 for the level of darkness */
   z-index: 0;
 }
@@ -1880,6 +1879,10 @@ color: var(--text-color);
 .service-section {
 
   /* border: solid 1px var(--text-color); */
+  
+  /* white-space: normal; */
+  /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
+  /* color: white; */
   border: 1px solid white;
   padding:10px;
   box-shadow: var(--box-shadow);
@@ -1894,10 +1897,23 @@ color: var(--text-color);
   min-width: 250px;
   background-color: var(--secondary-background-color);
   text-align: center;
-  
-  /* white-space: normal; */
-  /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
-  /* color: white; */
+}
+
+.personal-service-section {
+  border: 1px solid white;
+  padding:10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  max-width: 400px;
+  width: 25vw;
+  min-width: 250px;
+  background-color: var(--secondary-background-color);
+  text-align: center;
 }
 /* Style the custom scrollbar */
 .button-scroll::-webkit-scrollbar {
@@ -1918,10 +1934,24 @@ color: var(--text-color);
 }
 
 
+.personal-service-section > img {
+  width: 90%;
+}
+
+.personal-service-section > img {
+  width: 90%;
+  height: auto;
+   border-radius: 14px;
+}
 .service-section > img {
   width: 90%;
  height: auto;
   border-radius: 14px;
+}
+.personal-service-section > p {
+  width: 90%;
+  height: auto;
+  white-space: normal;
 }
 
 .service-section > p {
@@ -1934,6 +1964,39 @@ color: var(--text-color);
 
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
+
+  .newsletter-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-btn {
+    position: relative;
+    right: 20px;
+  }
+
+  .newsletter-div > h1 {
+    font-size: 32px;
+  }
+
+  .newsletter-div > p {
+    font-size: 16px;
+  }
+
+
+  .banner-logos {
+    width: 40%;
+  }
+  .team-background > h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .pt-service-header {
+    text-align: center;
+  }
   .banner {
     margin-top: 0;
     /* Remove margin for mobile screens */
@@ -2079,16 +2142,12 @@ color: var(--text-color);
     padding-bottom: 20px;
   }
 
-  .newsletter-container > input {
-    width: 80%;
-    height: 40px;
-    font-size: 14px;
-  }
+ 
 
   .newsletter-container > h1 {
     width: 80%;
     margin: 10px;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -2261,17 +2320,17 @@ color: var(--text-color);
 
   .header-one {
     font-size: 18px;
-    top: 55px;
+    top: 5px;
   }
 
   .crossfit-header > h2 {
     font-size: 46px;
-    top: 55px;
+    top: 5px;
   }
 
   .crossfit-header {
     background-position: center center;
-    height: 50vh;
+    height: 40vh;
   }
 
   .training-container {
@@ -2651,6 +2710,22 @@ color: var(--text-color);
     padding: 2vw
   }
 
+  .intro-section {
+  margin-top: 2vh;
+  text-align: left;
+  align-items: start;
+  }
+
+  .intro-section > h1 {
+    font-size:  26px;
+  }
+
+  .intro-section > p  {
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+  }
+
   .intro-section-sports > p {
     width: 100%;
     text-align: left;
@@ -2658,13 +2733,15 @@ color: var(--text-color);
   }
   
   .intro-section-sports > h1 {
-    font-size: 26px;;
+    font-size: 26px;
   }
 
   .service-section{
     width: 100%;
     height: fit-content;
   }
+
+  
 
   .youth-page{
     width: 65vw;
@@ -2694,6 +2771,10 @@ color: var(--text-color);
     display: block;
   }
 
+  .pt-wrapper {
+    height: 40vh;
+  }
+
   .inclusive-nav {
     display: none;
   }
@@ -2707,7 +2788,7 @@ color: var(--text-color);
   }
 
   .nav-container{
-    height: 20vh;
+    height: 10vh;
   }
 
   .secondary-banner {
@@ -2728,13 +2809,11 @@ color: var(--text-color);
   }
 
   .contact-banner > h4 {
-    font-size: 14px; /* Slightly larger font size */
+    font-size: 18px; /* Slightly larger font size */
     text-align: center;
   }
 
-  .full-coaches-container {
-    display: none; /* Hide full coaches container */
-  }
+
 
   .phone-link {
     display: block;
@@ -2742,14 +2821,14 @@ color: var(--text-color);
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    font-size: 1.5rem !important; /* Adjust font size */
+    font-size: 3rem !important; /* Adjust font size */
     width: 100%;
   }
 
   .newsletter-container {
     height: 100%;
     font-size: 10px; /* Increase font size */
-    gap: 15px; /* Increase gap */
+    gap: 105px; /* Increase gap */
     padding: 10px; /* Increase padding */
     padding-bottom: 20px;
   }
@@ -2780,15 +2859,18 @@ color: var(--text-color);
   }
 
   .carousel-img > img {
-    height: 40vh; /* Adjust carousel image height */
+    height: 50vh;
+    width: 100%; /* Adjust carousel image height */
   }
 
   .carousel-slider {
-    height: 40vh; /* Adjust slider height */
+    height: 55vh;
+    width: 70%; /* Adjust slider height */
   }
 
   .carousel-div {
-    height: 50vh; /* Adjust carousel div height */
+    height: 75vh;
+    width: 70%; /* Adjust carousel div height */
   }
 
   .column {
@@ -2863,6 +2945,25 @@ color: var(--text-color);
     margin: 15px;
   }
 
+  
+  .whycrossfit-container {
+    height: 95vh;
+    padding-top: 0px;
+  }
+
+  .section-container-right > p {
+    width: 100%;
+  font-size: 18px;
+  padding-left: 150px;
+  }
+
+  .section-container > p {
+    width: 100%;
+    font-size: 18px;
+    padding-right: 150px;
+  }
+
+
   .directions-container {
     height: 35vh; /* Increase height */
   }
@@ -2928,18 +3029,18 @@ color: var(--text-color);
   }
 
   .header-one {
-    font-size: 20px; /* Increase font size */
-    top: 55px;
+    font-size: 40px; /* Increase font size */
+    top: 5px;
   }
 
   .crossfit-header > h2 {
-    font-size: 50px; /* Increase font size */
-    top: 55px;
+    font-size: 72px; /* Increase font size */
+    top: 5px;
   }
 
   .crossfit-header {
     background-position: center center;
-    height: 55vh; /* Increase height */
+    height: 40vh; /* Increase height */
   }
 
   .training-container {
@@ -3053,13 +3154,13 @@ color: var(--text-color);
 
   .sports-training-header {
     padding: 5px;
-    height: 50vh !important;
-    margin-top: 20vh;
+    height: 40vh !important;
+    margin-top: 10vh;
   }
 
 
   .intro-section-sports{
-    align-items: start;
+    align-items: end;
     justify-content: start;
     height: 100%;
     margin-top: 0;
@@ -3067,13 +3168,17 @@ color: var(--text-color);
   }
 
   .intro-section-sports > p {
-    width: 100%;
     text-align: left;
-    font-size: 18px;
+  }
+
+  .intro-section > p {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
   }
   
   .intro-section-sports > h1 {
-    font-size: 26px;;
+    font-size: 62px;
   }
 
   .service-section{
@@ -3082,6 +3187,11 @@ color: var(--text-color);
     height: 250px;
     display: flex;
     flex-direction: row !important;
+  }
+
+  .personal-service-section {
+    display: column;
+    height: 65vh;
   }
 
   .image-container {
@@ -3108,12 +3218,11 @@ color: var(--text-color);
   }
 
   footer{
-    height: 80vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     max-width: 100%;
     justify-content: space-between;
-    border: solid 2px blue;
   }
 
   .left-div{
@@ -3137,7 +3246,7 @@ color: var(--text-color);
 
   .img-container{
     position: static;
-    width: 25%;
+    width: 15%;
   }
 
 }

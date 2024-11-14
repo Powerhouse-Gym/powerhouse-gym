@@ -38,9 +38,6 @@ const PersonalTraining = () => {
         className="pt-service-header"
         style={{
           display: "flex",
-          fontSize: "46px",
-          height: "8vh",
-          paddingTop: "50px",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
@@ -49,15 +46,17 @@ const PersonalTraining = () => {
         Personal Training Services
       </h1>
       <div className="personal-training-container">
-        <div className="service-section">
+        <div className="personal-service-section">
           <img src={adaptiveImg} alt="adaptive training" />
+          <div style = {{display: "flex", flexDirection: "column"}}>
+
           <h2
             style={{
               textDecoration: "underline",
               fontStyle: "italic",
               textAlign: "center",
             }}
-          >
+            >
             Now Offering!
           </h2>
           <h3>Inclusive & Adaptive Training</h3>
@@ -65,13 +64,14 @@ const PersonalTraining = () => {
             Specialized training designed to be adaptive and inclusive for all
             abilities.
           </p>
+            </div>
           <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
             <button>
               <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
             </button>{" "}
           </a>
         </div>
-        <div className="service-section">
+        <div className="personal-service-section">
           <img src={deadlift} alt="deadlift training" />
           <h3>Sports-Specific Strength & Conditioning</h3>
 
@@ -84,7 +84,7 @@ const PersonalTraining = () => {
           </button>
         </div>
 
-        <div className="service-section">
+        <div className="personal-service-section">
           <img src={teampic} alt="group" />
           <h3>Team Strength & Conditioning</h3>
           <p>
@@ -118,7 +118,7 @@ const PersonalTraining = () => {
           </div>
         </div>
 
-        <div className="service-section">
+        <div className="personal-service-section">
           <img src={grouppic} alt="group pic" />
           <h3>Small Group Training</h3>
           <p>
@@ -134,7 +134,7 @@ const PersonalTraining = () => {
           </a>
         </div>
 
-        <div className="service-section">
+        <div className="personal-service-section">
           <img src={oneOnone} alt="crossfit class" />
           <h3>Crossfit Onboarding</h3>
           <p>
@@ -150,7 +150,7 @@ const PersonalTraining = () => {
             </button>
           </a>
         </div>
-        <div className="service-section">
+        <div className="personal-service-section">
           <img src={ptPic} alt="pt picture" />
           <h3 style={{ textDecoration: "underline", fontStyle: "italic" }}>
             Coming Soon in 2025
