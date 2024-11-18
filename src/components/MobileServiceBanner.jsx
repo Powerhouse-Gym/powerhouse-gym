@@ -24,15 +24,15 @@ const MobileServiceBanner = () => {
             title: "Personal Training",
             logo: powerhousegrafiti,
             imgUrl: highfive,
-            listItems: 
-            [
-                "Coaches ready to help, whether for sports or fitness.",
-                "Years of experience and multiple certifications.",
-                "CF-L2 Programmer.",
-                "Three CF-L1 Trainers.",
-                "USAW & Powerlifting Coach.",
-                "Burgener Strength Weightlifting L1 Coach."
-            ]
+           
+            listItems: [
+                "Inclusive & Adaptive Training",
+                "Sports-Specific Training",
+                "Individual & Team Strength Training",
+                "Small Group Training",
+                "Crossfit Onboarding",
+                "1-on-1 Personal Training"
+              ]
             
         }
        )
@@ -52,15 +52,15 @@ const MobileServiceBanner = () => {
             title: "Personal Training",
             logo: powerhousegrafiti,
             imgUrl: highfive,
-            listItems: 
-            [
-                "Coaches ready to help, whether for sports or fitness.",
-                "Years of experience and multiple certifications.",
-                "CF-L2 Programmer.",
-                "Three CF-L1 Trainers.",
-                "USAW & Powerlifting Coach.",
-                "Burgener Strength Weightlifting L1 Coach."
-            ]
+       
+            listItems: [
+                "Inclusive & Adaptive Training",
+                "Sports-Specific Training",
+                "Individual & Team Strength Training",
+                "Small Group Training",
+                "Crossfit Onboarding",
+                "1-on-1 Personal Training"
+              ]
             
         },
             
@@ -68,13 +68,13 @@ const MobileServiceBanner = () => {
         title: "Powerhouse Crossfit",
         imgUrl: crossfit,
         logo: crossfitLogo,
-        listItems: [
-            "Promoting healthier lifestyles for all.",
-            "Family-based atmosphere with like-minded people.",
-            "Physical fitness, nutrition, and positive interactions.",
-            "Fitness for strong minds and bodies.",
-            "Nutritional awareness for healing and recovery."
-          ]
+        listItems:  [
+            "Holistic fitness programs for healthier lifestyles.",
+            "Welcoming community fostering shared goals.",
+            "Focus on physical fitness, nutrition, and support.",
+            "Training for strong minds and resilient bodies.",
+            "Nutritional guidance for recovery and performance."
+        ]
     }
    
     ]

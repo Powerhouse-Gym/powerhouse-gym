@@ -5,13 +5,13 @@
 }
 
 .carousel-img {
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .carousel-img > img {
     height: 55vh;
     width: 75vw;
-    max-width: 1000px;
+    max-width: 900px;
     border-radius: 10px;
 }
 

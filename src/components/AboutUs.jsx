@@ -26,7 +26,7 @@ function AboutUs() {
         <div className="left-about-us">
           <h1>About The Gym</h1>
           <p>
-            At our CrossFit gym, we’re passionate about helping you push past
+            At Powerhouse, we’re passionate about helping you push past
             your limits and reach new fitness milestones. Our community-driven
             approach fosters motivation and accountability, creating a space
             where athletes of all levels feel welcome. With carefully crafted
@@ -41,7 +41,7 @@ function AboutUs() {
             master each movement. Whether you’re here to get stronger, boost
             your endurance, or simply enjoy an active lifestyle, we provide a
             supportive environment designed to inspire. Join us and experience
-            the CrossFit difference — transforming not just your body, but your
+            the Powerhouse difference — transforming not just your body, but your
             confidence and resilience as well.
           </p>
         </div>

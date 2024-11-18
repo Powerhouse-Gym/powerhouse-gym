@@ -132,7 +132,7 @@ const CrossfitCoaches = ({ targetRef }) => {
             </div>
             {/* full */}
             <div id="inclusive" className="full-coaches-container coaches-container">
-                <h1 style={{ margin: "25px" }}>Meet Our Crossfit Coaches</h1>
+                <h1 style={{ margin: "25px", marginLeft: "75px" }}>Crossfit Coaches</h1>
                 <div className="trainer-layout">
                     {/* Left Side: List of Trainers */}
                     <div className="trainer-list">

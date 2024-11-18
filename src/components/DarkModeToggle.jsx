@@ -31,6 +31,7 @@ export default function DarkModeToggle() {
                 height="100vh"
                 position = "absolute"
                 right ="20px"
+                sx = {{width: {md: "65px"}, padding: "0px"}}
             >
                 <IconButton onClick={handleToggle}>
                     {isDarkMode ? <DarkMode sx={{ color: '#fff' }} /> : <LightMode sx={{ color: '#fbc02d' }} />}
