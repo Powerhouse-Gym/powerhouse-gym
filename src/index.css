@@ -2846,6 +2846,9 @@ color: var(--text-color);
     text-align: center;
   }
 
+  .nav-container{
+    justify-content: center;
+  }
 
 
   .phone-link {
