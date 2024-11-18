@@ -28,9 +28,6 @@ export default function DarkModeToggle() {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                height="100vh"
-                position = "absolute"
-                right ="20px"
                 sx = {{width: {md: "65px"}, padding: "0px"}}
             >
                 <IconButton onClick={handleToggle}>

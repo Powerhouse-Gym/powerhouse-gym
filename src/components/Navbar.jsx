@@ -89,14 +89,14 @@ function Navbar(props) {
         </ListItem>
 
         <div className='banner-logos'>
-                    <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
-                    </a>
-                    <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
-                    </a>
-                </div>
-        <button className="signup-btn nav-signup" id = "signup-btn-mobile">SIGN UP</button>
+          <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+            <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
+          </a>
+          <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+            <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
+          </a>
+        </div>
+        <button className="signup-btn nav-signup" id="signup-btn-mobile">SIGN UP</button>
       </List>
     </Box>
   );
@@ -119,55 +119,91 @@ function Navbar(props) {
           <MenuIcon sx={{ fontSize: "3rem" }} />
         </IconButton>
         <Tabs
-          sx={{ display: { xs: "none", md: "flex" } }}
+          sx={{ display: { xs: "none", md: "flex" },  justifyContent: "space-between" }}
           className="nav-links"
           value={window.location.pathname}
         >
-            <div className='banner-logos'>
-                    <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
-                    </a>
-                    <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
-                    </a>
-                </div>
+          <div className='banner-logos'>
+            <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
+            </a>
+            <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
+            </a>
+          </div>
           <Tab
-            sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
+            sx={{ fontSize:{
+              xs: '12px', // For extra small screens
+              sm: '14px', // For small screens
+              md: '16px', // For medium screens
+              lg: '18px', // For large screens
+              xl: '20px', // For extra large screens
+            },  }}
             className="nav-item"
             label="Home"
             value="/"
             onClick={() => handleNavigate("/")}
           />
           <Tab
-                          sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
+            sx={{ fontSize:{
+              xs: '12px', // For extra small screens
+              sm: '14px', // For small screens
+              md: '16px', // For medium screens
+              lg: '18px', // For large screens
+              xl: '20px', // For extra large screens
+            },  }}
             className="nav-item"
             label="Sports Training"
             value="/training"
             onClick={() => handleNavigate("/training")}
           />
           <Tab
-                              sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
+            sx={{ fontSize:{
+              xs: '12px', // For extra small screens
+              sm: '14px', // For small screens
+              md: '16px', // For medium screens
+              lg: '18px', // For large screens
+              xl: '20px', // For extra large screens
+            },  }}
             className="nav-item"
             label="Personal Training"
             value="/personal-training"
             onClick={() => handleNavigate("/personal-training")}
           />
           <Tab
-                              sx = {{fontSize: {md: "1rem" , lg: "1.25rem"}  }}
+            sx={{ fontSize:{
+              xs: '12px', // For extra small screens
+              sm: '14px', // For small screens
+              md: '16px', // For medium screens
+              lg: '18px', // For large screens
+              xl: '20px', // For extra large screens
+            },  }}
             className="nav-item"
             label="Crossfit"
             value="/crossfit"
             onClick={() => handleNavigate("/crossfit")}
           />
           <Tab
-                            sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
+            sx={{ fontSize:{
+              xs: '12px', // For extra small screens
+              sm: '14px', // For small screens
+              md: '16px', // For medium screens
+              lg: '18px', // For large screens
+              xl: '20px', // For extra large screens
+            },  }}
             className="nav-item"
             label="Meet the Team"
             value="/team"
             onClick={() => handleNavigate("/team")}
           />
           <Tab
-                              sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
+            sx={{ fontSize:{
+              xs: '12px', // For extra small screens
+              sm: '14px', // For small screens
+              md: '16px', // For medium screens
+              lg: '18px', // For large screens
+              xl: '20px', // For extra large screens
+            },  }}
             className="nav-item"
             label="About Us"
             value="/aboutus"
@@ -178,12 +214,12 @@ function Navbar(props) {
             href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
             target="_blank"
             rel="noopener noreferrer"
-            style = {{textDecoration: "none"}}
+            style={{ textDecoration: "none" }}
           >
-            <button className="signup-btn" id = "signup-btn-mobile">SIGN UP</button>
+            <button className="signup-btn" id="signup-btn-mobile">SIGN UP</button>
           </a>
-          
-         
+
+
         </Tabs>
         <DarkModeToggle />
       </Box>

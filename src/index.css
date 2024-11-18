@@ -49,7 +49,7 @@ html {
   width: 100px;
   font-weight:500;
   color: red;
-  font-size: 1.3rem;
+  font-size: 1.2vw;
   text-align: center;
   display: flex;
   align-items: center;
@@ -72,12 +72,17 @@ html {
   color: white;
 }
 
+.css-llwsmp {
+  width: 65px;
+  margin-left: 50px;
+}
+
 .nav-container {
   height: 10vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 25px;
   z-index: 55;
   position: fixed;
@@ -2809,8 +2814,14 @@ color: var(--text-color);
     background-color: var(--background-color);
   }
 
+  .css-llwsmp {
+    width: 65px;
+    margin-right: 50px;
+}
+
   .nav-container{
     height: 10vh;
+    justify-content: space-between;
   }
 
   .secondary-banner {
@@ -3141,12 +3152,13 @@ color: var(--text-color);
   .trainer-item {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .trainer-thumbnail {
-    width: 90%;
-    border-radius: 35%;
+    height: 95%;
+    object-fit: contain;
+
   }
 
   .trainer-name {

@@ -12,9 +12,7 @@ import {
   volleyball,
   otherSportsAndTrainings,
 } from "../training-data";
-import NewsLetter from "./NewsLetter";
 import Youth from "./Youth";
-import PTimg from "../assets/crossfit/personaltraining.jpg";
 import baseballimg from "../assets/baseballbackground.jpg";
 
 function CustomTabPanel(props) {
@@ -204,14 +202,14 @@ export default function Training() {
               <Tab
                 label="Cage & Field Rentals"
                 {...a11yProps(0)}
-                sx={{ fontSize: "1.2em" }}
+                sx={{ fontSize: "1vw" }}
               />
-              <Tab label = "Baseball" {...a11yProps(1)} sx = {{fontSize: "1.2em"}} />
-              <Tab label="Softball" {...a11yProps(2)}sx={{ fontSize: "1.2em" }} />
-              <Tab label="Soccer" {...a11yProps(3)} sx={{ fontSize: "1.2em" }}/>
-              <Tab label="Volleyball" {...a11yProps(4)}sx={{ fontSize: "1.2em" }} />
-              <Tab label="Other Sports and Training" {...a11yProps(5)}sx={{ fontSize: "1.2em" }} />
-              <Tab label="Summer Youth Training" {...a11yProps(6)}sx={{ fontSize: "1.2em" }} />
+              <Tab label = "Baseball" {...a11yProps(1)} sx = {{fontSize: "1vw"}} />
+              <Tab label="Softball" {...a11yProps(2)}sx={{ fontSize: "1vw" }} />
+              <Tab label="Soccer" {...a11yProps(3)} sx={{ fontSize: "1vw" }}/>
+              <Tab label="Volleyball" {...a11yProps(4)}sx={{ fontSize: "1vw" }} />
+              <Tab label="Other Sports and Training" {...a11yProps(5)}sx={{ fontSize: "1vw" }} />
+              <Tab label="Summer Youth Training" {...a11yProps(6)}sx={{ fontSize: "1vw" }} />
             </Tabs>
           </Box>
         </Box>
