@@ -40,8 +40,9 @@ html {
   max-width: 100vw !important;
 }
 
+
+
 .signup-btn {
-  background-color: -white;
   border: 1px solid red;
   height: auto;
   padding: 10px;
@@ -59,8 +60,14 @@ html {
   width: 150%;
 }
 
+
+
+.nav-signup {
+  background-color: var(--powerhouse-red);
+}
+
 #signup-btn-mobile {
-  margin-left: 35px;
+  margin-left: 20px;
   background-color: var(--powerhouse-red);
   color: white;
 }
@@ -492,7 +499,7 @@ html {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  font-size: 3rem !important;
+  font-size: 3rem;
   width: 100%;
 }
 
@@ -669,7 +676,6 @@ html {
   align-items: center;
   background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
   justify-content: center;
-  gap: 200px;
   color: white;
   /* margin-bottom: 15px; */
   z-index: 2;
@@ -1594,7 +1600,7 @@ color: var(--text-color);
 .carousel-slider {
   height: 55vh;
   width: 75vw;
-  max-width: 1000px;
+  max-width: 900px;
   border-radius: 10px;
 }
 
@@ -1979,7 +1985,6 @@ color: var(--text-color);
 
   .signup-btn {
     position: relative;
-    right: 20px;
   }
 
   .newsletter-div > h1 {
@@ -2143,7 +2148,7 @@ color: var(--text-color);
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
     width: 100%;
   }
 
@@ -2630,6 +2635,7 @@ color: var(--text-color);
 
   .newsletter-mobile {
     flex-direction: column;
+    height: 20vh;
   }
 
   .crossfit-header-logo {
@@ -2837,16 +2843,15 @@ color: var(--text-color);
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    font-size: 3rem !important; /* Adjust font size */
     width: 100%;
   }
 
   .newsletter-container {
-    height: 100%;
     font-size: 10px; /* Increase font size */
-    gap: 105px; /* Increase gap */
+    /* gap: 105px; Increase gap */
     padding: 10px; /* Increase padding */
     padding-bottom: 20px;
+    gap: 10%;
   }
 
   .newsletter-container > input {
@@ -3170,7 +3175,6 @@ color: var(--text-color);
 
   .sports-training-header {
     padding: 5px;
-    height: 40vh !important;
     margin-top: 10vh;
   }
 
@@ -3265,4 +3269,165 @@ color: var(--text-color);
     width: 15%;
   }
 
+}
+ @media screen and (max-width: 1300px){
+
+
+  .phone-link {
+    font-size: 42px;
+  }
+
+  .newsletter-container {
+    gap: 10%;
+  }
+
+ }
+ @media screen and (max-width: 1100px){
+ 
+
+  .secondary-banner {
+    height: 30vh;
+  }
+
+  .phone-link {
+    font-size: 32px;
+  }
+
+  .newsletter-container {
+    gap: 10%;
+  }
+  .signup-btn {
+    width: 125px;
+    height: 45px;
+    font-size: 18px;
+  }
+ }
+
+ @media screen and (max-width: 900px){
+  .phone-link {
+    font-size: 28px;
+  }
+  .secondary-banner {
+    height: 20vh;
+    padding-top: 25px;
+  }
+
+  .newsletter-container {
+    gap: 15%;
+  }
+
+  .newsletter-div > h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+  
+  .signup-btn {
+    width: 125px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+
+  .intro-section-sports {
+    align-items: start;
+    justify-content: start;
+  }
+  .intro-section-sports > h1 {
+    font-size: 42px;
+  }
+
+  .intro-section-sports > p {
+    font-size: 22px;
+    width: 80%;
+  }
+
+  
+ }
+
+ @media screen and (max-width: 780px){
+  .phone-link {
+    font-size: 24px;
+  }
+  
+  .contact-banner > h4 {
+    font-size: 16px;
+  }
+  .secondary-banner {
+    height: 25vh;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    gap: 10px;
+    height: 20vh;
+  }
+  .newsletter-div > h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .intro-section-sports {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .intro-section-sports > h1 {
+    font-size: 36px;
+  }
+  .intro-section-sports > p {
+    font-size: 24px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .phone-link {
+    font-size: 18px;
+  }
+
+  .contact-banner > h4 {
+    font-size: 12px;
+  }
+  .secondary-banner {
+    height: 20vh;
+  }
+
+  .intro-section-sports {
+    align-items: start;
+  }
+  .intro-section-sports > h1 {
+    font-size: 32px;
+  }
+
+  .intro-section-sports > p {
+    font-size: 22px;
+    width: 80%;
+  }
+
+ 
+}
+
+@media screen and (max-width: 500px) {
+  .newsletter-div > h1{
+    font-size: 28px;
+  }
+
+  .intro-section-sports > h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .newsletter-div > h1{
+    font-size: 28px;
+  }
+
+  .intro-section-sports > h1 {
+    font-size: 32px;
+  }
+
+  .intro-section-sports > p {
+    font-size: 18px;
+    width: 100%;
+  }
 }

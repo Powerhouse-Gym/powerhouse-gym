@@ -96,7 +96,7 @@ function Navbar(props) {
                         <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
                     </a>
                 </div>
-        <button className="signup-btn" id = "signup-btn-mobile">SIGN UP</button>
+        <button className="signup-btn nav-signup" id = "signup-btn-mobile">SIGN UP</button>
       </List>
     </Box>
   );
@@ -132,42 +132,42 @@ function Navbar(props) {
                     </a>
                 </div>
           <Tab
-            sx={{ fontSize: "1.3rem" }}
+            sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
             className="nav-item"
             label="Home"
             value="/"
             onClick={() => handleNavigate("/")}
           />
           <Tab
-            sx={{ fontSize: "1.3rem" }}
+                          sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
             className="nav-item"
             label="Sports Training"
             value="/training"
             onClick={() => handleNavigate("/training")}
           />
           <Tab
-            sx={{ fontSize: "1.3rem" }}
+                              sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
             className="nav-item"
             label="Personal Training"
             value="/personal-training"
             onClick={() => handleNavigate("/personal-training")}
           />
           <Tab
-            sx={{ fontSize: "1.3rem" }}
+                              sx = {{fontSize: {md: "1rem" , lg: "1.25rem"}  }}
             className="nav-item"
             label="Crossfit"
             value="/crossfit"
             onClick={() => handleNavigate("/crossfit")}
           />
           <Tab
-            sx={{ fontSize: "1.3rem" }}
+                            sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
             className="nav-item"
             label="Meet the Team"
             value="/team"
             onClick={() => handleNavigate("/team")}
           />
           <Tab
-            sx={{ fontSize: "1.3rem" }}
+                              sx = {{fontSize: {sm: ".75rem", md: "1rem" , lg: "1.25rem"}  }}
             className="nav-item"
             label="About Us"
             value="/aboutus"
@@ -178,9 +178,9 @@ function Navbar(props) {
             href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
             target="_blank"
             rel="noopener noreferrer"
-            style = {{textDecoration: "none", marginLeft: "20px"}}
+            style = {{textDecoration: "none"}}
           >
-            <button className="signup-btn">SIGN UP</button>
+            <button className="signup-btn" id = "signup-btn-mobile">SIGN UP</button>
           </a>
           
          

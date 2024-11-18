@@ -90,7 +90,7 @@ function Team() {
             <div className = "team-background" >
                 <h1>United in Strength, Built by Community</h1>
             </div>
-            <h1 className="schedule-title">Meet The Team</h1>
+            <h1 className="schedule-title">Meet Our Team</h1>
             <TrainingCoaches />
             <MobileTrainingCoaches />
             <div className="mobile-coaches-container">
