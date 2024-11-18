@@ -3000,11 +3000,11 @@ color: var(--text-color);
 
 
   .directions-container {
-    height: 35vh; /* Increase height */
+    height: fit-content; /* Increase height */
   }
 
   .mapstyles {
-    height: 100%;
+    height: 35vh;
     width: 95vw; /* Adjust width */
   }
 
