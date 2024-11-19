@@ -23,3 +23,9 @@
         height: 75vh
     }
 } */
+
+@media only screen and (max-width: 900px) {
+    .carousel-div {
+        height: 60vh;
+    }
+}

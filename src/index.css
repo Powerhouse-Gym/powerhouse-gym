@@ -46,7 +46,8 @@ html {
   border: 1px solid red;
   height: auto;
   padding: 10px;
-  width: 100px;
+  max-width: 150px;
+  width: 70%;
   font-weight:500;
   color: red;
   font-size: 1.2vw;
@@ -54,10 +55,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 25px;
 }
 
 .new-signup-btn {
   width: 150%;
+  background-color: white;
 }
 
 
@@ -684,6 +687,7 @@ html {
   color: white;
   /* margin-bottom: 15px; */
   z-index: 2;
+  gap: 10%;
 }
 
 .newsletter-div {
@@ -1615,6 +1619,7 @@ color: var(--text-color);
   z-index: 0;
   max-width: 800px;
   padding-bottom: 5px;
+  border: 1px solid #ccc;
 }
 
 .training-tabs {
@@ -2779,9 +2784,7 @@ color: var(--text-color);
 
 /* Mobile landscape devices (phones and tablets) */
 @media only screen and (min-width: 480px) and (max-width: 1400px) {
-  .service-banner {
-    display: none;
-  }
+ 
   .iew-iner {
     display: flex;
     padding: 10px 0px 10px 0px;
@@ -2912,73 +2915,6 @@ color: var(--text-color);
     padding: 10px; /* Increase padding */
   }
 
-  .one {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 95vw;
-  }
-
-  .service-banner {
-    padding: 10px; /* Increase padding */
-  }
-
-  .one > h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px; /* Increase font size */
-    width: 120px; /* Adjust width */
-    height: 50px; /* Adjust height */
-    padding: 5px;
-    margin: 10px;
-  }
-
-  .one > h2:hover {
-    font-size: 14px; /* Increase hover font size */
-  }
-
-  .two {
-    height: 60vh; /* Increase height */
-    top: 30px; /* Adjust position */
-    padding: 15px; /* Increase padding */
-    width: 95vw;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .two > h1 {
-    font-size: 28px; /* Increase font size */
-    align-self: center;
-    margin-bottom: 10px;
-    text-align: center;
-    max-width: 95%;
-  }
-
-  .two > h3 {
-    font-size: 16px; /* Increase font size */
-    height: 35px; /* Adjust height */
-    width: 95%;
-    align-self: center;
-    text-align: center;
-  }
-
-  .two > img {
-    height: 55%; /* Adjust height */
-    width: 40%; /* Adjust width */
-    top: 150px;
-  }
-
-  .two > button {
-    height: 35px; /* Increase button height */
-    width: 80px; /* Adjust button width */
-    font-size: 8px; /* Increase font size */
-    padding: 0;
-    font-weight: 700;
-    position: initial;
-    align-self: center;
-    margin: 15px;
-  }
 
   
   .whycrossfit-container {
@@ -3054,14 +2990,14 @@ color: var(--text-color);
     margin-top: 12vh; /* Increase margin */
   }
 
-  .service-img {
-    height: 250px; /* Adjust height */
+  /* .service-img {
+    height: 250px; 
     width: 95%;
     align-self: center;
     margin: 0;
     position: initial;
     margin-bottom: 10px;
-  }
+  } */
 
   .header-one {
     font-size: 40px; /* Increase font size */
@@ -3253,7 +3189,7 @@ color: var(--text-color);
   }
 
   footer{
-    height: 30vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -3266,7 +3202,8 @@ color: var(--text-color);
     height: 100%;
     width: 30%;
     position: static;
-    padding: 25px;
+    padding-top: 20px;
+  
   }
 
   .left-div > ul{
@@ -3277,6 +3214,8 @@ color: var(--text-color);
     height: 100%;
     position: static;
     width: 30%;
+    padding-right: 25px;
+    padding-top: 30px;
   }
 
   .img-container{
@@ -3298,7 +3237,9 @@ color: var(--text-color);
 
  }
  @media screen and (max-width: 1100px){
- 
+ .intro-section > h1 {
+   font-size: 52px;
+ }
 
   .secondary-banner {
     height: 30vh;
@@ -3312,13 +3253,17 @@ color: var(--text-color);
     gap: 10%;
   }
   .signup-btn {
-    width: 125px;
+    width: 100px;
     height: 45px;
     font-size: 18px;
   }
  }
 
  @media screen and (max-width: 900px){
+
+  .intro-section > h1 {
+    font-size: 48px;
+  }
   .phone-link {
     font-size: 28px;
   }
@@ -3356,10 +3301,30 @@ color: var(--text-color);
     width: 80%;
   }
 
+
+
   
- }
+  .service-banner {
+    display: none;
+  }
+}
+
+@media  screen and (min-width: 900px) {
+  
+  .banner-container {
+    display: none;
+  }
+}
+
 
  @media screen and (max-width: 780px){
+.intro-section > h1 {
+  font-size: 38px;
+}
+
+.intro-section >p {
+  font-size: 20px;
+}
   .phone-link {
     font-size: 24px;
   }
@@ -3393,9 +3358,22 @@ color: var(--text-color);
     font-size: 24px;
     width: 100%;
   }
+
+  .left-div > ul >li {
+    font-size: 12px;
+  }
+
+  .footer-logo-test {
+   width: 31%;
+   font-size: 11px;
+  }
 }
 
 @media screen and (max-width: 630px) {
+
+  .intro-section > h1 {
+    font-size: 32px;
+  }
   .phone-link {
     font-size: 18px;
   }
@@ -3419,6 +3397,10 @@ color: var(--text-color);
     width: 80%;
   }
 
+  footer {
+    height: 20vh;
+  }
+
  
 }
 
@@ -3430,6 +3412,7 @@ color: var(--text-color);
   .intro-section-sports > h1 {
     font-size: 32px;
   }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -3445,4 +3428,125 @@ color: var(--text-color);
     font-size: 18px;
     width: 100%;
   }
+}
+
+/* Small Phones: iPhone SE (2020) - 667px */
+@media (max-height: 667px) {
+  /* Styles for small phones (portrait orientation) */
+footer {
+  height: 25vh;
+}
+  .service-banner {
+    height: 100vh;
+  }
+
+  .team-background > h1 {
+    font-size: 45px;
+  }
+
+  .footer-logo-test {
+    font-size: 8px;
+  }
+.left-div > ul > li {
+  font-size: 10px;
+}
+  .newsletter-container {
+    height: 25vh;
+  }
+  .intro-section > h1 {
+    font-size: 34px;
+  }
+  .banner-logos {
+    width: 50%;
+  }
+  #review-header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .intro-section-sports > p {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .middle-grid > img {
+    height: 50%;
+  }
+   .crossfit-journal-text > h1{
+    font-size: 36px;
+   } 
+  .full-coaches-container {
+    margin-top: 10px;
+  }
+  .whycrossfit-container {
+    height: 215vh;
+    padding-top: 10px;
+  }
+  .mapstyles {
+    height: 65vh;
+  }
+}
+
+/* Large Phones: iPhone 12/13/14 - 844px */
+@media (max-height: 844px) {
+  /* Styles for standard smartphones (portrait orientation) */
+  .crossfit-journal-text > h1 {
+    font-size: 36px;
+  }
+  .left-about-us {
+    padding-top: 10vh;
+  }
+}
+
+/* Large Phones: iPhone 14 Pro Max - 926px */
+@media (max-height: 926px) {
+  /* Styles for larger smartphones */
+  .crossfit-journal-text > h1 {
+    font-size: 36px;
+  }
+}
+
+/* Large Phones: Google Pixel 5 - 960px */
+@media (max-height: 960px) {
+  /* Styles for taller devices like Google Pixel 5 */
+}
+
+/* Tablets: iPad Mini (Portrait) - 1024px */
+@media (max-height: 1024px) {
+  /* Styles for tablets in portrait mode */
+}
+
+/* Tablets: iPad Pro 11" (Portrait) - 1194px */
+@media (max-height: 1194px) {
+  /* Styles for larger tablets in portrait mode */
+}
+
+/* Laptops: MacBook Air 13" - 800px */
+@media (max-height: 800px) {
+  /* Styles for laptops like MacBook Air */
+}
+
+/* Laptops: MacBook Pro 14" - 845px */
+@media (max-height: 845px) {
+  /* Styles for larger laptops */
+}
+
+/* Desktops: Standard Desktop Monitors (1080p) */
+@media (max-height: 1080px) {
+  /* Styles for standard desktops */
+}
+
+/* High-Resolution Monitors (1440p) */
+@media (max-height: 1440px) {
+  /* Styles for high-resolution monitors */
+}
+
+/* Ultra HD Monitors (4K) */
+@media (max-height: 2160px) {
+  /* Styles for ultra-HD and 4K monitors */
+}
+
+/* Gaming Monitors (Ultra-Wide): Adjust for unique resolutions */
+@media (min-aspect-ratio: 21/9) and (max-height: 1440px) {
+  /* Styles for ultrawide monitors */
 }

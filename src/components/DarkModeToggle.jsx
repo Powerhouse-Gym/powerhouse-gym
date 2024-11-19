@@ -28,7 +28,7 @@ export default function DarkModeToggle() {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                sx = {{width: {md: "65px"}, padding: "0px"}}
+                sx = {{width: {md: "65px"}, padding: "0px", margin: "0px"}}
             >
                 <IconButton onClick={handleToggle}>
                     {isDarkMode ? <DarkMode sx={{ color: '#fff' }} /> : <LightMode sx={{ color: '#fbc02d' }} />}

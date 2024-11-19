@@ -133,6 +133,7 @@ body.dark-mode {
     }
 
     .service-description>img {
+        max-width: 480px;
         width: 75%;
         height: 25vh;
         justify-self: center;
