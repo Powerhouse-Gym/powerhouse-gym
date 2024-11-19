@@ -3318,6 +3318,10 @@ color: var(--text-color);
 
 
  @media screen and (max-width: 780px){
+
+  .signup-btn {
+    margin-left: 30px;
+  }
 .intro-section > h1 {
   font-size: 38px;
 }
@@ -3441,7 +3445,7 @@ footer {
   }
 
   .team-background > h1 {
-    font-size: 45px;
+    font-size: 37px;
   }
 
   .footer-logo-test {
@@ -3456,6 +3460,10 @@ footer {
   .intro-section > h1 {
     font-size: 34px;
   }
+
+  .intro-section > p {
+    font-size: 14px;
+  }
   .banner-logos {
     width: 50%;
   }
@@ -3465,8 +3473,8 @@ footer {
   }
 
   .intro-section-sports > p {
-    font-size: 18px;
-    width: 60%;
+    font-size: 16px;
+    width: 100%;
   }
 
   .middle-grid > img {
@@ -3479,11 +3487,15 @@ footer {
     margin-top: 10px;
   }
   .whycrossfit-container {
-    height: 215vh;
+    height: 195vh;
     padding-top: 10px;
   }
   .mapstyles {
     height: 65vh;
+  }
+
+  .personal-service-section {
+    height: 60vh;
   }
 }
 
