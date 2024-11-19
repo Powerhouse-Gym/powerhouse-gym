@@ -110,6 +110,7 @@ body.dark-mode {
   .left-about-us {
     align-items: center;
     width: 50%;
+    padding-top: 3vh;
   }
 
   .right-about-us {
@@ -147,11 +148,13 @@ body.dark-mode {
       justify-content: center;
       height: 100%;
       gap: 25px;
+      
     }
 
     .left-about-us {
       width: 90%;
       text-align: center;
+      padding-top: 5vh;
     }
 
     .left-about-us > h1 {

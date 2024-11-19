@@ -221,7 +221,7 @@ function Navbar(props) {
 
 
         </Tabs>
-        <DarkModeToggle />
+            <DarkModeToggle />
       </Box>
       {/* <div className = "skull-div" style = {{height: "2.5vh",width: "100vw", backgroundImage: `url(${chainlink})` ,zIndex: "15", position: "absolute", top: "10vh"}}></div> */}
 
