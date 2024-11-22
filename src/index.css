@@ -1,5 +1,6 @@
 :root {
-  --background-color: #f4f4f4;;
+  --background-color: #f4f4f4;
+  ;
   --secondary-background-color: #f4f4f4;
   --text-color: black;
   --powerhouse-red: #ed1c26;
@@ -47,7 +48,7 @@ html {
   padding: 10px;
   max-width: 150px;
   width: 70%;
-  font-weight:500;
+  font-weight: 500;
   color: red;
   font-size: 1.2vw;
   text-align: center;
@@ -117,7 +118,7 @@ html {
   /* border: solid black 1px; */
 }
 
-.crossfit-header > h2 {
+.crossfit-header>h2 {
   font-family: "Rock Salt", cursive !important;
   color: white;
   z-index: 1;
@@ -126,7 +127,7 @@ html {
   transform: rotate(-8deg);
 }
 
-.crossfit-page > .newsletter-container {
+.crossfit-page>.newsletter-container {
   margin-top: 0;
 }
 
@@ -189,7 +190,8 @@ html {
   height: auto;
   width: 25vw;
 }
-.schedule-logo-div > img {
+
+.schedule-logo-div>img {
   width: 100%;
 }
 
@@ -218,13 +220,13 @@ html {
   justify-content: center;
 }
 
-.schedule-right > div {
+.schedule-right>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.schedule-section > div {
+.schedule-section>div {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -344,17 +346,19 @@ html {
   gap: 50px;
 }
 
-.middle-grid > h1 {
+.middle-grid>h1 {
   color: #ed1c26;
   font-family: "Rock Salt", cursive !important;
-  font-size: 46px; /* Slightly increased font size */
+  font-size: 46px;
+  /* Slightly increased font size */
   padding-bottom: 25px;
   position: relative;
   bottom: 100px;
-  text-align: center; /* Slightly rotates the heading */
+  text-align: center;
+  /* Slightly rotates the heading */
 }
 
-.middle-grid > img {
+.middle-grid>img {
   height: 80%;
   width: auto;
   grid-column: 1/2;
@@ -362,33 +366,37 @@ html {
   border-radius: 50%;
 }
 
-.left-title > h3 {
+.left-title>h3 {
   font-size: 24px;
   color: var(--primary);
 }
 
-.section-container-right > p {
+.section-container-right>p {
   text-align: right;
   padding-right: 10%;
 }
 
-.section-container > p {
+.section-container>p {
   font-size: 14px;
   padding-left: 10%;
 }
 
 .drop-in-button,
 .join-button {
-  background-color: var(--powerhouse-red); /* Red background color */
-  color: white; /* White text */
+  background-color: var(--powerhouse-red);
+  /* Red background color */
+  color: white;
+  /* White text */
   font-size: 18px;
   font-weight: bold;
   font-family: "Arial", sans-serif;
   padding: 12px 24px;
   border: none;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
+  /* Rounded corners */
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s; /* Smooth hover effects */
+  transition: transform 0.2s, background-color 0.2s;
+  /* Smooth hover effects */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
   margin-top: 25px;
@@ -397,13 +405,16 @@ html {
 
 .drop-in-button:hover,
 .join-button:hover {
-  background-color: #b71c1c; /* Darker red on hover */
-  transform: scale(1.05); /* Slightly larger on hover */
+  background-color: #b71c1c;
+  /* Darker red on hover */
+  transform: scale(1.05);
+  /* Slightly larger on hover */
 }
 
 .drop-in-button:active,
 .join-button:active {
-  transform: scale(0.95); /* Slightly smaller when clicked */
+  transform: scale(0.95);
+  /* Slightly smaller when clicked */
 }
 
 .why-icon-div {
@@ -466,11 +477,11 @@ html {
   justify-content: space-around;
 }
 
-.icon-title > p {
+.icon-title>p {
   max-width: 250px;
 }
 
-.icon-title > h3 {
+.icon-title>h3 {
   color: var(--powerhouse-red);
 }
 
@@ -494,7 +505,7 @@ html {
   position: relative;
 }
 
-.contact-banner > h4 {
+.contact-banner>h4 {
   font-size: 1.5rem;
   text-align: center;
 }
@@ -546,7 +557,7 @@ html {
   position: relative;
 }
 
-.banner > h1 {
+.banner>h1 {
   color: white;
   font-family: "Rock Salt", cursive !important;
   position: relative;
@@ -578,7 +589,7 @@ html {
   /* Places the overlay on top of the image */
 }
 
-.banner > img {
+.banner>img {
   height: 170%;
   width: 95%;
   max-width: 1050px;
@@ -597,7 +608,8 @@ html {
   color: var(--text-color);
   background-color: var(--secondary-background-color);
   text-shadow: var(--box-shadow);
-  text-underline-offset: 0.4em; /* Adjust the value as needed */
+  text-underline-offset: 0.4em;
+  /* Adjust the value as needed */
   font-size: 46px;
   margin-top: 25px;
 }
@@ -656,7 +668,7 @@ html {
   position: relative;
 }
 
-#ptc-logo > img {
+#ptc-logo>img {
   width: 65%;
 }
 
@@ -664,20 +676,20 @@ html {
   width: 45%;
 }
 
-.secondary-banner > .logo {
+.secondary-banner>.logo {
   height: 150%;
   width: 20%;
   z-index: 0;
 }
 
-.secondary-banner > .crossfit {
+.secondary-banner>.crossfit {
   height: 100%;
   width: 20%;
 }
 
 .newsletter-container {
   display: flex;
- 
+
   height: 20vh;
   width: 100%;
   align-items: center;
@@ -694,10 +706,11 @@ html {
   flex-direction: column;
 }
 
-.newsletter-div > h1 {
+.newsletter-div>h1 {
   font-size: 62px;
 }
-.newsletter-div > p {
+
+.newsletter-div>p {
   font-size: 24px;
 }
 
@@ -779,7 +792,7 @@ html {
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
-.newsletter-container > input {
+.newsletter-container>input {
   min-width: 150px;
   max-width: 800px;
   width: 100%;
@@ -789,11 +802,11 @@ html {
   font-size: 160%;
 }
 
-.newsletter-container > h1 {
+.newsletter-container>h1 {
   font-size: 220%;
 }
 
-.newsletter-container > button {
+.newsletter-container>button {
   width: 20%;
   height: 35%;
   padding: 0;
@@ -892,6 +905,7 @@ button {
   object-fit: cover;
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
+
 #logo-ptc {
   width: 500px;
 }
@@ -933,7 +947,7 @@ button {
   width: 65%;
 }
 
-.career-section > ul {
+.career-section>ul {
   padding-left: 20px;
 }
 
@@ -965,7 +979,7 @@ button {
   padding-bottom: 25px;
 }
 
-.crossfit-coaches-container > h1 {
+.crossfit-coaches-container>h1 {
   color: var(--primary) !important;
   font-family: "Rock Salt", cursive !important;
 }
@@ -983,10 +997,11 @@ button {
   max-width: 1200px;
 }
 
-.coaches-container > h1 {
+.coaches-container>h1 {
   font-size: 46px;
   align-self: start;
 }
+
 .coach {
   display: flex;
   flex-direction: column;
@@ -1002,7 +1017,7 @@ button {
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.coach > h3 {
+.coach>h3 {
   width: 250px;
   text-align: center;
 }
@@ -1018,7 +1033,8 @@ button {
 }
 
 .team-background {
-  background-image: url("/src/assets/handsin.jpg"); /* Adjust the path as needed */
+  background-image: url("/src/assets/handsin.jpg");
+  /* Adjust the path as needed */
   height: 40vh;
   width: 100vw;
   background-size: cover;
@@ -1029,7 +1045,7 @@ button {
   justify-content: center;
 }
 
-.team-background > h1 {
+.team-background>h1 {
   font-size: 62px;
   z-index: 3;
   position: relative;
@@ -1057,11 +1073,11 @@ button {
   padding: 10px;
   position: relative;
   height: 75vh;
-background-color: var(--secondary-background-color);
-color: var(--text-color);
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
 }
 
-.directions-container > h1 {
+.directions-container>h1 {
   position: relative;
   padding: 10px;
   z-index: 2;
@@ -1087,7 +1103,7 @@ color: var(--text-color);
   justify-content: center;
 }
 
-.merch-container > h1 {
+.merch-container>h1 {
   font-size: 62px;
 }
 
@@ -1101,12 +1117,13 @@ color: var(--text-color);
   gap: 50px;
   margin-top: 50px;
 }
+
 #instagram-directions,
 #facebook-directions {
   width: 90%;
 }
 
-.directions-container > h2 {
+.directions-container>h2 {
   padding: 25px;
   font-size: 38px;
 }
@@ -1158,13 +1175,13 @@ color: var(--text-color);
   color: black;
 }
 
-.one > h1 {
+.one>h1 {
   color: var(--text-color);
   padding-left: 10px;
   font-size: 46px;
 }
 
-.one > h2 {
+.one>h2 {
   cursor: pointer;
   height: 75px;
   width: 100%;
@@ -1180,7 +1197,7 @@ color: var(--text-color);
   font-size: 20px;
 }
 
-.one > h2:hover {
+.one>h2:hover {
   font-size: 22px;
   color: white;
   background-color: #333;
@@ -1220,7 +1237,7 @@ color: var(--text-color);
   box-shadow: rgba(249, 249, 250, 0.982) 0 3px 8px;
 }
 
-.one > img {
+.one>img {
   height: 60%;
   width: 95%;
   position: absolute;
@@ -1242,7 +1259,7 @@ color: var(--text-color);
   background-position: center center;
 }
 
-.one > ul {
+.one>ul {
   font-size: larger;
 }
 
@@ -1258,7 +1275,7 @@ color: var(--text-color);
   bottom: 85px;
   } */
 
-.one > button {
+.one>button {
   width: 60%;
   font-size: larger;
 }
@@ -1281,20 +1298,18 @@ color: var(--text-color);
   right: 15px;
 } */
 
-.two > button {
+.two>button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30%;
   font-size: 18px;
-  background: linear-gradient(
-    170deg,
-    #333 0%,
-    #333 50%,
-    #791f1f 50%,
-    #ed1c26 60%,
-    #ed1c26 100%
-  );
+  background: linear-gradient(170deg,
+      #333 0%,
+      #333 50%,
+      #791f1f 50%,
+      #ed1c26 60%,
+      #ed1c26 100%);
   color: white;
   /* position: absolute;
 
@@ -1305,14 +1320,14 @@ color: var(--text-color);
   font-weight: 700; */
 }
 
-.two > button:hover {
+.two>button:hover {
   /* transform: scale(1.25); */
   color: white;
   background-color: #333;
   /* Scale the button on hover */
 }
 
-.two > h1 {
+.two>h1 {
   margin-bottom: 20px;
   border-bottom: 2px solid;
   font-size: 32px;
@@ -1321,17 +1336,17 @@ color: var(--text-color);
   padding-bottom: 15px;
 }
 
-.two > h3 {
+.two>h3 {
   height: 100%;
   width: 45%;
   font-size: 18px;
 }
 
-.three > ul {
+.three>ul {
   font-size: larger;
 }
 
-.three > button {
+.three>button {
   width: 60%;
   font-size: larger;
 }
@@ -1354,7 +1369,7 @@ color: var(--text-color);
   box-sizing: border-box;
   /* Ensures padding/margin doesn't affect width */
   height: auto;
-  
+
   /* Let the content dictate height */
 }
 
@@ -1396,7 +1411,7 @@ color: var(--text-color);
   font-size: 1.3rem;
 }
 
-.crossfit-info > * {
+.crossfit-info>* {
   margin-bottom: 2vh;
 }
 
@@ -1408,7 +1423,7 @@ color: var(--text-color);
   justify-content: center;
 }
 
-.crossfit-img-div > img {
+.crossfit-img-div>img {
   width: 40%;
 }
 
@@ -1446,7 +1461,7 @@ color: var(--text-color);
   justify-content: center;
 }
 
-.crossfit-journal-text > * {
+.crossfit-journal-text>* {
   margin-bottom: 2vh;
   color: --secondary-background-color;
   font-family: "Rock Salt", cursive !important;
@@ -1461,29 +1476,27 @@ color: var(--text-color);
   align-items: center;
 }
 
-.crossfit-journal-img > img {
+.crossfit-journal-img>img {
   width: 100%;
 }
 
-.crossfit-journal-text > a {
+.crossfit-journal-text>a {
   text-decoration: none;
 }
 
-.crossfit-journal-text > a > button {
+.crossfit-journal-text>a>button {
   display: flex;
   font-size: larger;
   align-items: center;
   justify-content: center;
   width: 100%;
   font-size: 24px;
-  background: linear-gradient(
-    170deg,
-    #333 0%,
-    #333 50%,
-    #791f1f 50%,
-    #ed1c26 60%,
-    #ed1c26 100%
-  );
+  background: linear-gradient(170deg,
+      #333 0%,
+      #333 50%,
+      #791f1f 50%,
+      #ed1c26 60%,
+      #ed1c26 100%);
   color: white;
 }
 
@@ -1497,23 +1510,23 @@ color: var(--text-color);
   padding-left: 5vw;
 }
 
-.youth-info > * {
+.youth-info>* {
   margin-bottom: 2vh;
 }
 
-.youth-info > h1 {
+.youth-info>h1 {
   font-size: 3rem;
 }
 
-.youth-info > h3 {
+.youth-info>h3 {
   font-size: 1.5rem;
 }
 
-.youth-info > p {
+.youth-info>p {
   font-size: 1.2rem;
 }
 
-.youth-info > ul {
+.youth-info>ul {
   font-size: 1.2rem;
 }
 
@@ -1524,7 +1537,7 @@ color: var(--text-color);
   align-items: center;
 }
 
-.youth-img > img {
+.youth-img>img {
   width: 50%;
 }
 
@@ -1532,7 +1545,7 @@ color: var(--text-color);
   padding: 0;
 }
 
-.dropdown > li {
+.dropdown>li {
   list-style-type: none;
   /* Remove bullet points */
   /* Add padding inside dropdown */
@@ -1549,7 +1562,7 @@ color: var(--text-color);
   padding: 10px;
 }
 
-.carousel-img > .pullupgirl {
+.carousel-img>.pullupgirl {
   width: 100%;
   object-fit: cover;
   object-position: top;
@@ -1586,12 +1599,12 @@ color: var(--text-color);
   z-index: 0;
 }
 
-.footer > img {
+.footer>img {
   position: relative;
   z-index: 0;
 }
 
-.footer > p {
+.footer>p {
   z-index: 0;
 }
 
@@ -1627,13 +1640,14 @@ color: var(--text-color);
 
 .training-div,
 .youth-page,
-.team-container > .newsletter-container {
+.team-container>.newsletter-container {
   margin-top: 10vh;
 }
 
 .mobile-coaches-container {
   display: none;
 }
+
 .full-coaches-container {
   display: flex;
   width: 100vw;
@@ -1663,9 +1677,11 @@ color: var(--text-color);
 .sports-options {
   background-color: var(--secondary-background-color);
 }
+
 #sports-coaches-h1 {
   margin: 25px;
 }
+
 .mobile-service-container {
   background-color: var(--secondary-background-color);
   display: none;
@@ -1723,17 +1739,15 @@ color: var(--text-color);
   color: var(--text-color);
   width: 100vw;
   padding: 25px;
-  background: linear-gradient(
-    170deg,
-    #333 0%,
-    #333 50%,
-    #791f1f 50%,
-    #ed1c26 60%,
-    #ed1c26 100%
-  );
+  background: linear-gradient(170deg,
+      #333 0%,
+      #333 50%,
+      #791f1f 50%,
+      #ed1c26 60%,
+      #ed1c26 100%);
 }
 
-.adaptive-inclusive > div {
+.adaptive-inclusive>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1742,21 +1756,21 @@ color: var(--text-color);
   color: white;
 }
 
-.adaptive-inclusive > div > h1 {
+.adaptive-inclusive>div>h1 {
   font-size: 2.5rem;
   font-style: italic;
   margin-bottom: 15px;
 }
 
-.adaptive-inclusive > ul {
+.adaptive-inclusive>ul {
   font-size: 1.2rem;
 }
 
-.adaptive-inclusive > ul > li {
+.adaptive-inclusive>ul>li {
   margin-top: 0.5vh;
 }
 
-.adaptive-inclusive > button {
+.adaptive-inclusive>button {
   border-radius: 20px;
   font-size: 1rem;
   border: none;
@@ -1764,14 +1778,15 @@ color: var(--text-color);
   background-color: white;
 }
 
-.adaptive-inclusive > button:hover {
+.adaptive-inclusive>button:hover {
   background: #f6f9fe;
   color: #174ea6;
 }
 
-.adaptive-inclusive > * {
+.adaptive-inclusive>* {
   margin-top: 1vh;
 }
+
 .schedule-btns {
   display: flex;
   gap: 30px;
@@ -1798,15 +1813,18 @@ color: var(--text-color);
   flex-wrap: wrap;
   margin-bottom: 50px;
   background-color: var(--secondary-background-color);
-  width: 100%; /* Ensures the container takes full width */
+  width: 100%;
+  /* Ensures the container takes full width */
 
 }
 
 /* For WebKit browsers (Chrome, Safari, Edge) */
 .personal-training-container::-webkit-scrollbar {
-  height: 12px; /* Adjust the height of the scrollbar */
+  height: 12px;
+  /* Adjust the height of the scrollbar */
   width: 8px;
-  background: #D9D9D9; /* Track color */
+  background: #D9D9D9;
+  /* Track color */
 }
 
 .personal-training-container::-webkit-scrollbar-track {
@@ -1814,15 +1832,18 @@ color: var(--text-color);
 }
 
 .personal-training-container::-webkit-scrollbar-thumb {
-  
-  background-color: var(--powerhouse-red); /* Thumb color */
+
+  background-color: var(--powerhouse-red);
+  /* Thumb color */
   border-radius: 10px;
 }
 
 
 .personal-training-container::-webkit-scrollbar-thumb:hover {
-  background-color: #707070; /* Thumb color on hover */
+  background-color: #707070;
+  /* Thumb color on hover */
 }
+
 .pt-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1878,33 +1899,34 @@ color: var(--text-color);
   margin-top: 125px;
 }
 
-.intro-section-sports > p {
+.intro-section-sports>p {
   width: 50%;
   text-align: end;
 }
 
-.intro-section-sports > h1 {
+.intro-section-sports>h1 {
   font-size: 62px;
 }
 
-.intro-section > h1 {
+.intro-section>h1 {
   font-size: 62px;
 }
 
-.intro-section > p {
+.intro-section>p {
   font-size: 26px;
   width: 75%;
   text-align: center;
 }
+
 .service-section {
 
   /* border: solid 1px var(--text-color); */
-  
+
   /* white-space: normal; */
   /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
   /* color: white; */
   border: 1px solid white;
-  padding:10px;
+  padding: 10px;
   box-shadow: var(--box-shadow);
   border-radius: 30px;
   display: flex;
@@ -1921,7 +1943,7 @@ color: var(--text-color);
 
 .personal-service-section {
   border: 1px solid white;
-  padding:10px;
+  padding: 10px;
   box-shadow: var(--box-shadow);
   border-radius: 30px;
   display: flex;
@@ -1935,52 +1957,84 @@ color: var(--text-color);
   background-color: var(--secondary-background-color);
   text-align: center;
 }
+
 /* Style the custom scrollbar */
 .button-scroll::-webkit-scrollbar {
-  height: 8px; /* height of horizontal scrollbar */
+  height: 8px;
+  /* height of horizontal scrollbar */
 }
 
 .button-scroll::-webkit-scrollbar-track {
-  background: #f1f1f1; /* background of the scrollbar track */
+  background: #f1f1f1;
+  /* background of the scrollbar track */
 }
 
 .button-scroll::-webkit-scrollbar-thumb {
-  background-color: #888; /* scrollbar thumb color */
-  border-radius: 10px; /* rounded edges for the scrollbar */
+  background-color: #888;
+  /* scrollbar thumb color */
+  border-radius: 10px;
+  /* rounded edges for the scrollbar */
 }
 
 .button-scroll::-webkit-scrollbar-thumb:hover {
-  background: #555; /* darker thumb color when hovered */
+  background: #555;
+  /* darker thumb color when hovered */
 }
 
 
-.personal-service-section > img {
+.personal-service-section>img {
   width: 90%;
 }
 
-.personal-service-section > img {
+.personal-service-section>img {
   width: 90%;
   height: auto;
-   border-radius: 14px;
-}
-.service-section > img {
-  width: 90%;
- height: auto;
   border-radius: 14px;
 }
-.personal-service-section > p {
+
+.service-section>img {
+  width: 90%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.personal-service-section>p {
   width: 90%;
   height: auto;
   white-space: normal;
 }
 
-.service-section > p {
+.service-section>p {
   width: 90%;
   height: auto;
   white-space: normal;
 }
 
+@media screen and (max-width: 400px) {
+  .newsletter-div>h1 {
+    font-size: 28px;
+  }
 
+  .intro-section-sports>h1 {
+    font-size: 32px;
+  }
+
+  .intro-section-sports>p {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .newsletter-div>h1 {
+    font-size: 28px;
+  }
+
+  .intro-section-sports>h1 {
+    font-size: 32px;
+  }
+
+}
 
 /* Mobile devices (smallest screens like phones, portrait mode) */
 @media only screen and (max-width: 600px) {
@@ -1996,11 +2050,11 @@ color: var(--text-color);
     position: relative;
   }
 
-  .newsletter-div > h1 {
+  .newsletter-div>h1 {
     font-size: 32px;
   }
 
-  .newsletter-div > p {
+  .newsletter-div>p {
     font-size: 16px;
   }
 
@@ -2008,7 +2062,8 @@ color: var(--text-color);
   .banner-logos {
     width: 40%;
   }
-  .team-background > h1 {
+
+  .team-background>h1 {
     font-size: 26px;
     text-align: center;
   }
@@ -2018,22 +2073,26 @@ color: var(--text-color);
     font-size: 28px;
     margin-bottom: 20px;
   }
+
   .banner {
     margin-top: 0;
     /* Remove margin for mobile screens */
     height: 60vh;
     /* Adjust height if needed */
   }
+
   .ait-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px; /* Adjust the space between items as needed */
+    gap: 5px;
+    /* Adjust the space between items as needed */
     list-style: none;
     padding: 10px;
   }
 
   .ait-list li {
-    flex: 1 1 calc(50% - 20px); /* Each item takes up 50% of the width minus the gap */
+    flex: 1 1 calc(50% - 20px);
+    /* Each item takes up 50% of the width minus the gap */
     box-sizing: border-box;
     margin-bottom: 20px;
   }
@@ -2043,10 +2102,11 @@ color: var(--text-color);
     margin-bottom: 8px;
   }
 
-  .ait-list > li > p {
+  .ait-list>li>p {
     display: none;
   }
-  .banner > img {
+
+  .banner>img {
     top: 50px;
   }
 
@@ -2067,6 +2127,7 @@ color: var(--text-color);
   .schedule-subtitle {
     font-size: 35px;
   }
+
   .carousel-div {
     margin-bottom: 0;
   }
@@ -2077,7 +2138,7 @@ color: var(--text-color);
     align-items: center;
   }
 
-  .schedule-section > div {
+  .schedule-section>div {
     width: 95%;
   }
 
@@ -2092,6 +2153,7 @@ color: var(--text-color);
   .chevron {
     margin-right: 10px;
   }
+
   .training-tabs {
     background-color: var(--background-color);
   }
@@ -2116,20 +2178,21 @@ color: var(--text-color);
     width: 60%;
   }
 
-  #ptc-logo > img {
+  #ptc-logo>img {
     width: 115%;
   }
 
   #crossfit-logo {
     width: 100%;
   }
-  .secondary-banner > .logo {
+
+  .secondary-banner>.logo {
     height: auto;
     width: 25%;
     border-radius: 50%;
   }
 
-  .secondary-banner > .crossfit {
+  .secondary-banner>.crossfit {
     height: auto;
     width: 25%;
     border-radius: 50%;
@@ -2139,10 +2202,11 @@ color: var(--text-color);
     width: 100%;
   }
 
-  .contact-banner > h4 {
+  .contact-banner>h4 {
     font-size: 12px;
     text-align: center;
   }
+
   .full-coaches-container {
     display: none;
   }
@@ -2169,28 +2233,28 @@ color: var(--text-color);
     padding-bottom: 20px;
   }
 
- 
 
-  .newsletter-container > h1 {
+
+  .newsletter-container>h1 {
     width: 80%;
     margin: 10px;
     font-size: 18px;
     text-align: center;
   }
 
-  .banner > h1 {
+  .banner>h1 {
     font-size: 32px;
     top: 150px;
   }
 
-  .newsletter-container > button {
+  .newsletter-container>button {
     height: 25px;
     font-size: 10px;
     width: 75px;
     border-radius: 8px;
   }
 
-  .carousel-img > img {
+  .carousel-img>img {
     height: 35vh;
   }
 
@@ -2217,7 +2281,7 @@ color: var(--text-color);
     padding: 5px;
   }
 
-  .one > h2 {
+  .one>h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2228,7 +2292,7 @@ color: var(--text-color);
     margin: 10px;
   }
 
-  .one > h2:hover {
+  .one>h2:hover {
     font-size: 12px;
   }
 
@@ -2241,7 +2305,7 @@ color: var(--text-color);
     justify-content: space-around;
   }
 
-  .two > h1 {
+  .two>h1 {
     font-size: 24px;
     align-self: center;
     margin-bottom: 10px;
@@ -2249,7 +2313,7 @@ color: var(--text-color);
     max-width: 95%;
   }
 
-  .two > h3 {
+  .two>h3 {
     font-size: 14px;
     height: 30px;
     width: 95%;
@@ -2257,13 +2321,13 @@ color: var(--text-color);
     text-align: center;
   }
 
-  .two > img {
+  .two>img {
     height: 50%;
     width: 35%;
     top: 150px;
   }
 
-  .two > button {
+  .two>button {
     height: 30px;
     width: 70px;
     font-size: 7px;
@@ -2278,7 +2342,7 @@ color: var(--text-color);
     height: 65vh;
   }
 
-  .directions-container > h1 {
+  .directions-container>h1 {
     font-size: 24px;
   }
 
@@ -2292,16 +2356,16 @@ color: var(--text-color);
     margin-top: 1vh;
   }
 
-  .directions-text > h2 {
+  .directions-text>h2 {
     font-size: 14px;
     padding: 2px;
   }
 
-  .directions-text > p {
+  .directions-text>p {
     font-size: 10px;
   }
 
-  .directions-text > button {
+  .directions-text>button {
     height: 30px;
     font-size: 12px;
   }
@@ -2317,29 +2381,30 @@ color: var(--text-color);
     background-size: cover;
   }
 
-  .footer-div > img {
+  .footer-div>img {
     display: none;
   }
 
-  .crossfit-page > .newsletter-container {
+  .crossfit-page>.newsletter-container {
     margin-top: 0;
   }
 
-  .training-div > .newsletter-container {
+  .training-div>.newsletter-container {
     margin-top: 10vh;
   }
 
-  .youth-page > .newsletter-container {
+  .youth-page>.newsletter-container {
     margin-top: 10vh;
   }
 
-  .team-container > .newsletter-container {
+  .team-container>.newsletter-container {
     margin-top: 10vh;
   }
 
   .team-container {
     margin-top: 12vh;
   }
+
   .service-img {
     height: 230px;
     width: 95%;
@@ -2354,7 +2419,7 @@ color: var(--text-color);
     top: 5px;
   }
 
-  .crossfit-header > h2 {
+  .crossfit-header>h2 {
     font-size: 46px;
     top: 5px;
   }
@@ -2411,15 +2476,15 @@ color: var(--text-color);
     box-shadow: var(--box-shadow);
   }
 
-  .youth-info > h1 {
+  .youth-info>h1 {
     font-size: 1.5rem;
   }
 
-  .youth-info > h3 {
+  .youth-info>h3 {
     font-size: 1rem;
   }
 
-  .youth-info > p {
+  .youth-info>p {
     font-size: 0.8rem;
   }
 
@@ -2432,7 +2497,7 @@ color: var(--text-color);
     margin: 1vh;
   }
 
-  .youth-img > img {
+  .youth-img>img {
     width: 100%;
   }
 
@@ -2482,7 +2547,7 @@ color: var(--text-color);
     background-color: var(--background-color);
   }
 
-  .mobile-trainer-header > h3 {
+  .mobile-trainer-header>h3 {
     width: 50%;
   }
 
@@ -2511,6 +2576,7 @@ color: var(--text-color);
     width: 100%;
     margin-top: 0.5rem;
   }
+
   .line-breaks {
     display: flex;
   }
@@ -2532,11 +2598,11 @@ color: var(--text-color);
     bottom: 25px;
   }
 
-  .middle-grid > img {
+  .middle-grid>img {
     display: none;
   }
 
-  .middle-grid > h1 {
+  .middle-grid>h1 {
     position: relative;
     bottom: 625px;
     font-size: 34px;
@@ -2578,7 +2644,7 @@ color: var(--text-color);
     background-color: var(--background-color);
   }
 
-  .crossfit-coaches-container > h1 {
+  .crossfit-coaches-container>h1 {
     font-size: 28px;
   }
 
@@ -2592,7 +2658,7 @@ color: var(--text-color);
     width: 90%;
   }
 
-  .crossfit-journal-text > h1 {
+  .crossfit-journal-text>h1 {
     font-size: 22px;
   }
 
@@ -2601,7 +2667,7 @@ color: var(--text-color);
     width: 85%;
   }
 
-  .crossfit-journal-img > img {
+  .crossfit-journal-img>img {
     height: 100%;
     width: 100%;
   }
@@ -2683,7 +2749,8 @@ color: var(--text-color);
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .adaptive-inclusive > div {
+
+  .adaptive-inclusive>div {
     background-color: transparent;
   }
 
@@ -2692,13 +2759,13 @@ color: var(--text-color);
     text-align: center;
   }
 
-  .adaptive-inclusive > div > h1 {
+  .adaptive-inclusive>div>h1 {
     font-size: 1.5rem;
     font-style: italic;
     text-align: center;
   }
 
-  .adaptive-inclusive > ul {
+  .adaptive-inclusive>ul {
     font-size: 1rem;
   }
 
@@ -2706,12 +2773,12 @@ color: var(--text-color);
     display: none;
   }
 
-  .ait-list > li {
+  .ait-list>li {
     margin-top: 0.5vh;
     font-size: 1rem;
   }
 
-  .adaptive-inclusive > button {
+  .adaptive-inclusive>button {
     border-radius: 20px;
     font-size: 0.8rem;
     border: none;
@@ -2719,12 +2786,12 @@ color: var(--text-color);
     margin-top: 10px;
   }
 
-  .adaptive-inclusive > button:hover {
+  .adaptive-inclusive>button:hover {
     background: #f6f9fe;
     color: #174ea6;
   }
 
-  .adaptive-inclusive > * {
+  .adaptive-inclusive>* {
     margin-top: 0.5vh;
   }
 
@@ -2733,7 +2800,7 @@ color: var(--text-color);
   }
 
 
-  .intro-section-sports{
+  .intro-section-sports {
     align-items: start;
     justify-content: start;
     height: 100%;
@@ -2742,58 +2809,299 @@ color: var(--text-color);
   }
 
   .intro-section {
-  margin-top: 2vh;
-  text-align: left;
-  align-items: start;
-  }
-
-  .intro-section > h1 {
-    font-size:  26px;
-  }
-
-  .intro-section > p  {
-    font-size: 18px;
+    margin-top: 2vh;
     text-align: left;
-    width: 100%;
+    align-items: start;
   }
 
-  .intro-section-sports > p {
-    width: 100%;
-    text-align: left;
-    font-size: 18px;
-  }
-  
-  .intro-section-sports > h1 {
+  .intro-section>h1 {
     font-size: 26px;
   }
 
-  .service-section{
+  .intro-section>p {
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .intro-section-sports>p {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .intro-section-sports>h1 {
+    font-size: 26px;
+  }
+
+  .service-section {
     width: 100%;
     height: fit-content;
   }
 
-  
 
-  .youth-page{
+
+  .youth-page {
     width: 65vw;
     height: fit-content;
   }
 
 }
 
+@media screen and (max-width: 630px) {
+
+  .intro-section>h1 {
+    font-size: 32px;
+  }
+
+  .phone-link {
+    font-size: 18px;
+  }
+
+  .contact-banner>h4 {
+    font-size: 12px;
+  }
+
+  .secondary-banner {
+    height: 20vh;
+  }
+
+  .intro-section-sports {
+    align-items: start;
+  }
+
+  .intro-section-sports>h1 {
+    font-size: 32px;
+  }
+
+  .intro-section-sports>p {
+    font-size: 22px;
+    width: 80%;
+  }
+
+  footer {
+    height: 20vh;
+  }
+
+
+}
+
+/* Small Phones: iPhone SE (2020) - 667px */
+@media (max-height: 667px) {
+
+  /* Styles for small phones (portrait orientation) */
+  footer {
+    height: 25vh;
+  }
+
+  .service-banner {
+    height: 100vh;
+  }
+
+  .team-background>h1 {
+    font-size: 37px;
+  }
+
+  .footer-logo-test {
+    font-size: 8px;
+  }
+
+  .left-div>ul>li {
+    font-size: 10px;
+  }
+
+  .newsletter-container {
+    height: 25vh;
+  }
+
+  .intro-section>h1 {
+    font-size: 34px;
+  }
+
+  .intro-section>p {
+    font-size: 14px;
+  }
+
+  .banner-logos {
+    width: 50%;
+  }
+
+  #review-header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .intro-section-sports>p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .middle-grid>img {
+    height: 50%;
+  }
+
+  .crossfit-journal-text>h1 {
+    font-size: 36px;
+  }
+
+  .full-coaches-container {
+    margin-top: 10px;
+  }
+
+  .whycrossfit-container {
+    height: 195vh;
+    padding-top: 10px;
+  }
+
+  .mapstyles {
+    height: 65vh;
+  }
+
+  .personal-service-section {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .signup-btn {
+    margin-left: 30px;
+  }
+
+  .intro-section>h1 {
+    font-size: 38px;
+  }
+
+  .intro-section>p {
+    font-size: 20px;
+  }
+
+  .phone-link {
+    font-size: 24px;
+  }
+
+  .contact-banner>h4 {
+    font-size: 16px;
+  }
+
+  .secondary-banner {
+    height: 25vh;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    gap: 10px;
+    height: 20vh;
+  }
+
+  .newsletter-div>h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .intro-section-sports {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .intro-section-sports>h1 {
+    font-size: 36px;
+  }
+
+  .intro-section-sports>p {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .left-div>ul>li {
+    font-size: 12px;
+  }
+
+  .footer-logo-test {
+    width: 31%;
+    font-size: 11px;
+  }
+}
+
+/* Large Phones: iPhone 12/13/14 - 844px */
+@media (max-height: 844px) {
+
+  /* Styles for standard smartphones (portrait orientation) */
+  .crossfit-journal-text>h1 {
+    font-size: 36px;
+  }
+
+  .left-about-us {
+    padding-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .intro-section>h1 {
+    font-size: 48px;
+  }
+
+  .phone-link {
+    font-size: 28px;
+  }
+
+  .secondary-banner {
+    height: 20vh;
+    padding-top: 25px;
+  }
+
+  .newsletter-container {
+    gap: 15%;
+  }
+
+  .newsletter-div>h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .signup-btn {
+    width: 125px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .intro-section-sports {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .intro-section-sports>h1 {
+    font-size: 42px;
+  }
+
+  .intro-section-sports>p {
+    font-size: 22px;
+    width: 80%;
+  }
+  .service-banner {
+    display: none;
+  }
+}
+
 /* Mobile landscape devices (phones and tablets) */
 @media only screen and (min-width: 480px) and (max-width: 1400px) {
- 
+
   .iew-iner {
     display: flex;
     padding: 10px 0px 10px 0px;
   }
+
   .banner {
-    margin-top: 0; /* Remove margin for mobile landscape screens */
-    height: 50vh; /* Adjust height if needed */
+    margin-top: 0;
+    /* Remove margin for mobile landscape screens */
+    height: 50vh;
+    /* Adjust height if needed */
   }
-  .banner > img {
-    top: 30px; /* Adjust image position */
+
+  .banner>img {
+    top: 30px;
+    /* Adjust image position */
   }
 
   .inclusive-nav-mobile {
@@ -2809,7 +3117,8 @@ color: var(--text-color);
   }
 
   .chevron {
-    margin-right: 15px; /* Slightly more space */
+    margin-right: 15px;
+    /* Slightly more space */
   }
 
   .training-tabs {
@@ -2819,9 +3128,9 @@ color: var(--text-color);
   .css-llwsmp {
     width: 65px;
     margin-right: 50px;
-}
+  }
 
-  .nav-container{
+  .nav-container {
     height: 10vh;
     justify-content: space-between;
   }
@@ -2831,24 +3140,27 @@ color: var(--text-color);
     justify-content: center;
   }
 
-  .secondary-banner > .logo {
+  .secondary-banner>.logo {
     height: auto;
-    width: 30%; /* Adjust logo size */
+    width: 30%;
+    /* Adjust logo size */
     border-radius: 50%;
   }
 
-  .secondary-banner > .crossfit {
+  .secondary-banner>.crossfit {
     height: auto;
-    width: 30%; /* Adjust logo size */
+    width: 30%;
+    /* Adjust logo size */
     border-radius: 50%;
   }
 
-  .contact-banner > h4 {
-    font-size: 18px; /* Slightly larger font size */
+  .contact-banner>h4 {
+    font-size: 18px;
+    /* Slightly larger font size */
     text-align: center;
   }
 
-  .nav-container{
+  .nav-container {
     justify-content: center;
   }
 
@@ -2863,71 +3175,88 @@ color: var(--text-color);
   }
 
   .newsletter-container {
-    font-size: 10px; /* Increase font size */
+    font-size: 10px;
+    /* Increase font size */
     /* gap: 105px; Increase gap */
-    padding: 10px; /* Increase padding */
+    padding: 10px;
+    /* Increase padding */
     padding-bottom: 20px;
     gap: 10%;
   }
 
-  .newsletter-container > input {
-    width: 85%; /* Adjust input width */
-    height: 45px; /* Adjust input height */
-    font-size: 16px; /* Increase font size */
+  .newsletter-container>input {
+    width: 85%;
+    /* Adjust input width */
+    height: 45px;
+    /* Adjust input height */
+    font-size: 16px;
+    /* Increase font size */
   }
 
-  .newsletter-container > h1 {
-    width: 85%; /* Adjust width */
+  .newsletter-container>h1 {
+    width: 85%;
+    /* Adjust width */
     margin: 10px;
-    font-size: 24px; /* Increase font size */
+    font-size: 24px;
+    /* Increase font size */
     text-align: center;
   }
 
-  .banner > h1 {
-    font-size: 36px; /* Increase font size */
-    top: 120px; /* Adjust top position */
+  .banner>h1 {
+    font-size: 36px;
+    /* Increase font size */
+    top: 120px;
+    /* Adjust top position */
   }
 
-  .newsletter-container > button {
-    height: 30px; /* Adjust button height */
-    font-size: 12px; /* Increase font size */
-    width: 80px; /* Adjust button width */
-    border-radius: 10px; /* Adjust border radius */
+  .newsletter-container>button {
+    height: 30px;
+    /* Adjust button height */
+    font-size: 12px;
+    /* Increase font size */
+    width: 80px;
+    /* Adjust button width */
+    border-radius: 10px;
+    /* Adjust border radius */
   }
 
-  .carousel-img > img {
+  .carousel-img>img {
     height: 50vh;
-    width: 100%; /* Adjust carousel image height */
+    width: 100%;
+    /* Adjust carousel image height */
   }
 
   .carousel-slider {
     height: 55vh;
-    width: 70%; /* Adjust slider height */
+    width: 70%;
+    /* Adjust slider height */
   }
 
   .carousel-div {
     height: 75vh;
-    width: 70%; /* Adjust carousel div height */
+    width: 70%;
+    /* Adjust carousel div height */
   }
 
   .column {
-    padding: 10px; /* Increase padding */
+    padding: 10px;
+    /* Increase padding */
   }
 
 
-  
+
   .whycrossfit-container {
     height: 95vh;
     padding-top: 0px;
   }
 
-  .section-container-right > p {
+  .section-container-right>p {
     width: 100%;
-  font-size: 18px;
-  padding-left: 150px;
+    font-size: 18px;
+    padding-left: 150px;
   }
 
-  .section-container > p {
+  .section-container>p {
     width: 100%;
     font-size: 18px;
     padding-right: 150px;
@@ -2935,12 +3264,14 @@ color: var(--text-color);
 
 
   .directions-container {
-    height: fit-content; /* Increase height */
+    height: fit-content;
+    /* Increase height */
   }
 
   .mapstyles {
     height: 35vh;
-    width: 95vw; /* Adjust width */
+    width: 95vw;
+    /* Adjust width */
   }
 
   .crossfit-banner {
@@ -2948,45 +3279,54 @@ color: var(--text-color);
     margin-top: 1vh;
   }
 
-  .directions-text > h2 {
-    font-size: 16px; /* Increase font size */
+  .directions-text>h2 {
+    font-size: 16px;
+    /* Increase font size */
     padding: 2px;
   }
 
-  .directions-text > p {
-    font-size: 12px; /* Increase font size */
+  .directions-text>p {
+    font-size: 12px;
+    /* Increase font size */
   }
 
-  .directions-text > button {
-    height: 35px; /* Increase button height */
-    font-size: 14px; /* Increase font size */
+  .directions-text>button {
+    height: 35px;
+    /* Increase button height */
+    font-size: 14px;
+    /* Increase font size */
   }
 
   .skull-div {
-    height: 2vh; /* Increase height */
+    height: 2vh;
+    /* Increase height */
   }
 
   .footer-div {
-    height: 20vh; /* Increase height */
-    font-size: 14px; /* Increase font size */
+    height: 20vh;
+    /* Increase height */
+    font-size: 14px;
+    /* Increase font size */
     gap: 5px;
     background-size: cover;
   }
 
-  .footer-div > img {
+  .footer-div>img {
     display: none;
   }
 
-  .crossfit-page > .newsletter-container {
+  .crossfit-page>.newsletter-container {
     margin-top: 0;
   }
 
-  .youth-page > .newsletter-container {
-    margin-top: 12vh; /* Increase margin */
+  .youth-page>.newsletter-container {
+    margin-top: 12vh;
+    /* Increase margin */
   }
 
-  .team-container > .newsletter-container {
-    margin-top: 12vh; /* Increase margin */
+  .team-container>.newsletter-container {
+    margin-top: 12vh;
+    /* Increase margin */
   }
 
   /* .service-img {
@@ -2999,24 +3339,28 @@ color: var(--text-color);
   } */
 
   .header-one {
-    font-size: 40px; /* Increase font size */
+    font-size: 40px;
+    /* Increase font size */
     top: 5px;
   }
 
-  .crossfit-header > h2 {
-    font-size: 72px; /* Increase font size */
+  .crossfit-header>h2 {
+    font-size: 72px;
+    /* Increase font size */
     top: 5px;
   }
 
   .crossfit-header {
     background-position: center center;
-    height: 40vh; /* Increase height */
+    height: 40vh;
+    /* Increase height */
   }
 
   .training-container {
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 85vw; /* Increase width */
+    width: 85vw;
+    /* Increase width */
     padding: 1rem;
   }
 
@@ -3029,7 +3373,8 @@ color: var(--text-color);
 
   .css-xov06r {
     align-items: flex-start !important;
-    width: 30% !important; /* Adjust width */
+    width: 30% !important;
+    /* Adjust width */
     margin: 0;
     margin-top: 20px;
   }
@@ -3046,7 +3391,8 @@ color: var(--text-color);
   .youth-page {
     flex-direction: column-reverse;
     width: 100%;
-    padding-bottom: 2vh; /* Increase bottom padding */
+    padding-bottom: 2vh;
+    /* Increase bottom padding */
   }
 
   .youth-info {
@@ -3058,16 +3404,19 @@ color: var(--text-color);
     box-shadow: var(--box-shadow);
   }
 
-  .youth-info > h1 {
-    font-size: 1.8rem; /* Increase font size */
+  .youth-info>h1 {
+    font-size: 1.8rem;
+    /* Increase font size */
   }
 
-  .youth-info > h3 {
-    font-size: 1.2rem; /* Increase font size */
+  .youth-info>h3 {
+    font-size: 1.2rem;
+    /* Increase font size */
   }
 
-  .youth-info > p {
-    font-size: 1rem; /* Increase font size */
+  .youth-info>p {
+    font-size: 1rem;
+    /* Increase font size */
   }
 
   .youth-img {
@@ -3079,12 +3428,13 @@ color: var(--text-color);
     margin: 1vh;
   }
 
-  .youth-img > img {
+  .youth-img>img {
     width: 100%;
   }
 
   .trainer-list {
-    width: 30%; /* Adjust width */
+    width: 30%;
+    /* Adjust width */
   }
 
   .trainer-item {
@@ -3100,11 +3450,13 @@ color: var(--text-color);
   }
 
   .trainer-name {
-    font-size: 14px; /* Increase font size */
+    font-size: 14px;
+    /* Increase font size */
   }
 
   .trainer-bio {
-    font-size: 12px; /* Increase font size */
+    font-size: 12px;
+    /* Increase font size */
   }
 
   .top-container {
@@ -3118,8 +3470,9 @@ color: var(--text-color);
     justify-content: center;
   }
 
-  .banner > h2 {
-    font-size: 20px; /* Increase font size */
+  .banner>h2 {
+    font-size: 20px;
+    /* Increase font size */
     margin-top: 5px;
   }
 
@@ -3129,7 +3482,7 @@ color: var(--text-color);
   }
 
 
-  .intro-section-sports{
+  .intro-section-sports {
     align-items: end;
     justify-content: start;
     height: 100%;
@@ -3137,21 +3490,21 @@ color: var(--text-color);
     padding: 2vh;
   }
 
-  .intro-section-sports > p {
+  .intro-section-sports>p {
     text-align: left;
   }
 
-  .intro-section > p {
+  .intro-section>p {
     width: 100%;
     text-align: center;
     font-size: 26px;
   }
-  
-  .intro-section-sports > h1 {
+
+  .intro-section-sports>h1 {
     font-size: 62px;
   }
 
-  .service-section{
+  .service-section {
     width: 100%;
     max-width: 100%;
     height: 250px;
@@ -3168,26 +3521,26 @@ color: var(--text-color);
     width: 100%;
   }
 
-  .training-container{
+  .training-container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .training-service-btns{
+  .training-service-btns {
     display: flex !important;
     flex-direction: column !important;
     align-items: end !important;
   }
 
-  .training-service-btns > a{
+  .training-service-btns>a {
     width: 100%;
   }
 
-  .training-service-btns > a > button{
+  .training-service-btns>a>button {
     width: 100%;
   }
 
-  footer{
+  footer {
     height: 20vh;
     display: flex;
     flex-direction: row;
@@ -3195,21 +3548,21 @@ color: var(--text-color);
     justify-content: space-between;
   }
 
-  .left-div{
+  .left-div {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 30%;
     position: static;
     padding-top: 20px;
-  
+
   }
 
-  .left-div > ul{
+  .left-div>ul {
     gap: 10px;
   }
 
-  .footer-logo-test{
+  .footer-logo-test {
     height: 100%;
     position: static;
     width: 30%;
@@ -3217,28 +3570,17 @@ color: var(--text-color);
     padding-top: 30px;
   }
 
-  .img-container{
+  .img-container {
     position: static;
     width: 15%;
   }
 
 }
- @media screen and (max-width: 1300px){
 
-
-  .phone-link {
-    font-size: 42px;
+@media screen and (max-width: 1100px) {
+  .intro-section>h1 {
+    font-size: 52px;
   }
-
-  .newsletter-container {
-    gap: 10%;
-  }
-
- }
- @media screen and (max-width: 1100px){
- .intro-section > h1 {
-   font-size: 52px;
- }
 
   .secondary-banner {
     height: 30vh;
@@ -3251,268 +3593,86 @@ color: var(--text-color);
   .newsletter-container {
     gap: 10%;
   }
+
   .signup-btn {
     width: 100px;
     height: 45px;
     font-size: 18px;
   }
- }
+}
 
- @media screen and (max-width: 900px){
+@media screen and (max-width: 1300px) {
 
-  .intro-section > h1 {
-    font-size: 48px;
-  }
+
   .phone-link {
-    font-size: 28px;
-  }
-  .secondary-banner {
-    height: 20vh;
-    padding-top: 25px;
-  }
-
-  .newsletter-container {
-    gap: 15%;
-  }
-
-  .newsletter-div > h1 {
-    font-size: 36px;
-    text-align: left;
-  }
-  
-  .signup-btn {
-    width: 125px;
-    height: 45px;
-    font-size: 18px;
-  }
-
-
-  .intro-section-sports {
-    align-items: start;
-    justify-content: start;
-  }
-  .intro-section-sports > h1 {
     font-size: 42px;
   }
 
-  .intro-section-sports > p {
-    font-size: 22px;
-    width: 80%;
+  .newsletter-container {
+    gap: 10%;
   }
 
-
-
-  
-  .service-banner {
-    display: none;
-  }
 }
 
-@media  screen and (min-width: 900px) {
-  
+@media (max-width: 1366px) and (max-height: 768px) {
+
+  /* Your styles for the 11-inch MacBook Air go here */
+  .whycrossfit-container {
+    height: 100vh;
+  }
+
+  .personal-service-section {
+    height: 75vh;
+  }
+
+  footer {
+    height: 35vh;
+  }
+
+  .left-div>ul>li {
+    font-size: 1rem;
+  }
+
+  .footer-logo-test>p {
+    font-size: 1rem;
+  }
+
+  .footer-logo-test>h2 {
+    font-size: 1.1rem;
+  }
+
+  .service-section {
+    height: 45vh;
+  }
+
+  .image-container {
+    height: 40vh;
+  }
+
+  .training-container {
+    width: 80vw;
+  }
+
+  .css-19kzrtu {
+    max-width: 100vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
   .banner-container {
     display: none;
   }
 }
 
-
- @media screen and (max-width: 780px){
-
-  .signup-btn {
-    margin-left: 30px;
-  }
-.intro-section > h1 {
-  font-size: 38px;
-}
-
-.intro-section >p {
-  font-size: 20px;
-}
-  .phone-link {
-    font-size: 24px;
-  }
-  
-  .contact-banner > h4 {
-    font-size: 16px;
-  }
-  .secondary-banner {
-    height: 25vh;
-  }
-
-  .newsletter-container {
-    flex-direction: column;
-    gap: 10px;
-    height: 20vh;
-  }
-  .newsletter-div > h1 {
-    font-size: 42px;
-    text-align: center;
-  }
-
-  .intro-section-sports {
-    align-items: start;
-    justify-content: start;
-  }
-
-  .intro-section-sports > h1 {
-    font-size: 36px;
-  }
-  .intro-section-sports > p {
-    font-size: 24px;
-    width: 100%;
-  }
-
-  .left-div > ul >li {
-    font-size: 12px;
-  }
-
-  .footer-logo-test {
-   width: 31%;
-   font-size: 11px;
-  }
-}
-
-@media screen and (max-width: 630px) {
-
-  .intro-section > h1 {
-    font-size: 32px;
-  }
-  .phone-link {
-    font-size: 18px;
-  }
-
-  .contact-banner > h4 {
-    font-size: 12px;
-  }
-  .secondary-banner {
-    height: 20vh;
-  }
-
-  .intro-section-sports {
-    align-items: start;
-  }
-  .intro-section-sports > h1 {
-    font-size: 32px;
-  }
-
-  .intro-section-sports > p {
-    font-size: 22px;
-    width: 80%;
-  }
-
-  footer {
-    height: 20vh;
-  }
-
- 
-}
-
-@media screen and (max-width: 500px) {
-  .newsletter-div > h1{
-    font-size: 28px;
-  }
-
-  .intro-section-sports > h1 {
-    font-size: 32px;
-  }
-
-}
-
-@media screen and (max-width: 400px) {
-  .newsletter-div > h1{
-    font-size: 28px;
-  }
-
-  .intro-section-sports > h1 {
-    font-size: 32px;
-  }
-
-  .intro-section-sports > p {
-    font-size: 18px;
-    width: 100%;
-  }
-}
-
-/* Small Phones: iPhone SE (2020) - 667px */
-@media (max-height: 667px) {
-  /* Styles for small phones (portrait orientation) */
-footer {
-  height: 25vh;
-}
-  .service-banner {
-    height: 100vh;
-  }
-
-  .team-background > h1 {
-    font-size: 37px;
-  }
-
-  .footer-logo-test {
-    font-size: 8px;
-  }
-.left-div > ul > li {
-  font-size: 10px;
-}
-  .newsletter-container {
-    height: 25vh;
-  }
-  .intro-section > h1 {
-    font-size: 34px;
-  }
-
-  .intro-section > p {
-    font-size: 14px;
-  }
-  .banner-logos {
-    width: 50%;
-  }
-  #review-header {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  .intro-section-sports > p {
-    font-size: 16px;
-    width: 100%;
-  }
-
-  .middle-grid > img {
-    height: 50%;
-  }
-   .crossfit-journal-text > h1{
-    font-size: 36px;
-   } 
-  .full-coaches-container {
-    margin-top: 10px;
-  }
-  .whycrossfit-container {
-    height: 195vh;
-    padding-top: 10px;
-  }
-  .mapstyles {
-    height: 65vh;
-  }
-
-  .personal-service-section {
-    height: 60vh;
-  }
-}
-
-/* Large Phones: iPhone 12/13/14 - 844px */
-@media (max-height: 844px) {
-  /* Styles for standard smartphones (portrait orientation) */
-  .crossfit-journal-text > h1 {
-    font-size: 36px;
-  }
-  .left-about-us {
-    padding-top: 10vh;
-  }
-}
-
-/* Large Phones: iPhone 14 Pro Max - 926px */
 @media (max-height: 926px) {
+
   /* Styles for larger smartphones */
-  .crossfit-journal-text > h1 {
+  .crossfit-journal-text>h1 {
     font-size: 36px;
   }
 }
@@ -3562,49 +3722,3 @@ footer {
   /* Styles for ultrawide monitors */
 }
 
-@media (max-width: 1366px) and (max-height: 768px) {
-  /* Your styles for the 11-inch MacBook Air go here */
-  .whycrossfit-container {
-    height: 100vh;
-  }
-
-  .personal-service-section {
-    height: 75vh;
-  }
-
-  footer{
-    height: 35vh;
-  }
-
-  .left-div > ul > li {
-    font-size: 1rem;
-  }
-
-  .footer-logo-test > p {
-    font-size: 1rem;
-  }
-
-  .footer-logo-test > h2 {
-    font-size: 1.1rem;
-  }
-
-  .service-section{
-    height: 45vh;
-  }
-
-  .image-container{
-    height: 40vh;
-  }
-
-  .training-container{
-    width: 80vw;
-  }
-
-  .css-19kzrtu{
-    max-width: 100vw !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-}
