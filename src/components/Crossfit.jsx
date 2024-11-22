@@ -17,9 +17,6 @@ import facebook from "../assets/darkmode-facebook.svg"
 
 
 function Crossfit() {
-    // https://www.facebook.com/powerhousecombine
-    //https://www.instagram.com/powerhousecombine/
-    // 
 
     return (
         <div className='crossfit-page'>
@@ -30,7 +27,7 @@ function Crossfit() {
                 {/* <div className='crossfit-header-logo'></div> */}
             </div></div>
             <div className='crossfit-socials'>
-                <h1>Follow us to keep up to date</h1>
+                <h1>Follow us to keep up to date!</h1>
                 <div>
                     <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
                         <img src={instagram} alt="instagram" />
