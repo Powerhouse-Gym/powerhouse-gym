@@ -1,4 +1,6 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import {
   Box,
   Tabs,
@@ -27,6 +29,12 @@ function Navbar(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top whenever the path changes
+  }, [location.pathname]);
 
   const navigate = useNavigate();
 
