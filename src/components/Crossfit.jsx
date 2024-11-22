@@ -12,10 +12,14 @@ import Schedule from './Schedule';
 import DropIn from './DropIn';
 import CarouselCardCrossfit from "../components/CarouselCardCrossfit"
 import JoinButton from './JoinButton';
+import instagram from "../assets/darkmode-instagram.svg"
+import facebook from "../assets/darkmode-facebook.svg"
 
 
 function Crossfit() {
-
+    // https://www.facebook.com/powerhousecombine
+    //https://www.instagram.com/powerhousecombine/
+    // 
 
     return (
         <div className='crossfit-page'>
@@ -25,9 +29,20 @@ function Crossfit() {
 
                 {/* <div className='crossfit-header-logo'></div> */}
             </div></div>
+            <div className='crossfit-socials'>
+                <h1>Follow us to keep up to date</h1>
+                <div>
+                    <a href="">
+                        <img src={instagram} alt="instagram" />
+                    </a>
+                    <a href="">
+                        <img src={facebook} alt="facebook" />
+                    </a>
+                </div>
+            </div>
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
             <Schedule />
-      
+
             <CarouselCardCrossfit />
             {/* <div className='group-pic-container'>
                 <img className='crossfit-img-logo-group' src= {crossfitlogo} alt="logo" />

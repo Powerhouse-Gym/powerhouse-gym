@@ -41,6 +41,31 @@ html {
   max-width: 100vw !important;
 }
 
+.crossfit-socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  width: 100%;
+  min-height: 15vh;
+  background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
+  font-size: 1.5vh;
+}
+
+.crossfit-socials > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.crossfit-socials > div > a > img{
+  width: 5vw;
+  color: white;
+}
 
 .signup-btn {
   border: 1px solid red;
