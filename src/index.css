@@ -54,27 +54,6 @@ html {
   font-size: 1.5vh;
 }
 
-
-.footer-socials{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1vw;
-}
-
-.footer-socials > div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  gap: .5vw;
-}
-
-.footer-socials > div > a > img{
-  width: 2vw;
-  color: white;
-}
-
 .crossfit-socials > div{
   display: flex;
   flex-direction: row;
