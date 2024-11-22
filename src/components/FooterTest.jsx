@@ -17,11 +17,11 @@ function FooterTest() {
         <footer>
             <div className='left-div'>
                 <ul>
-                    <li onClick={()=> navigate("/training")}>Sports Training</li>
-                    <li onClick={()=> navigate("/personal-training")}>Personal Training</li>
-                    <li onClick={()=> navigate("/crossfit")}>Crossfit</li>
-                    <li onClick = {()=> navigate("/merch")}>Shop Merch</li>
-                    <li onClick={()=> navigate("/aboutus")}>About Us</li>
+                    <li onClick={() => navigate("/training")}>Sports Training</li>
+                    <li onClick={() => navigate("/personal-training")}>Personal Training</li>
+                    <li onClick={() => navigate("/crossfit")}>Crossfit</li>
+                    <li onClick={() => navigate("/merch")}>Shop Merch</li>
+                    <li onClick={() => navigate("/aboutus")}>About Us</li>
 
                 </ul>
             </div>
@@ -33,12 +33,28 @@ function FooterTest() {
                 <p>1804 S. Pine Street, Cabot AR 72023</p>
                 <p>501.247.1517</p>
                 <div className='banner-logos-footer'>
-                    <a id="facebook-footer" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={darkmodeFacebook} alt="Facebook" />
-                    </a>
-                    <a id="instagram-footer" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                        <img src={darkmodeInstagram} alt='Instagram' />
-                    </a>
+                    <div className='footer-socials'>
+                        <p>Powerhouse Training</p>
+                        <div>
+                            <a id="facebook-footer" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                                <img src={darkmodeFacebook} alt="Facebook" />
+                            </a>
+                            <a id="instagram-footer" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                                <img src={darkmodeInstagram} alt='Instagram' />
+                            </a>
+                        </div>
+                    </div>
+                    <div className='footer-socials'>
+                        <p>Powerhouse Crossfit</p>
+                        <div>
+                            <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
+                                <img src={darkmodeInstagram} alt="instagram" />
+                            </a>
+                            <a href="https://www.facebook.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
+                                <img src={darkmodeFacebook} alt="facebook" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
