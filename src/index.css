@@ -3785,6 +3785,22 @@ button {
     text-decoration: none;
     height: 54px;
   } 
+
+  .directions-container{
+    min-height: fit-content;
+  }
+
+  .newsletter-container {
+    height: 25vh;
+  }
+
+  .whycrossfit-container{
+    height: 200vh;
+  }
+
+  .crossfit-journal-text>a>button {
+    font-size: 14px;
+  }
 }
 
 /* Large Phones: Google Pixel 5 - 960px */
