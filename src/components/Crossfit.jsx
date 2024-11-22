@@ -32,10 +32,10 @@ function Crossfit() {
             <div className='crossfit-socials'>
                 <h1>Follow us to keep up to date</h1>
                 <div>
-                    <a href="">
+                    <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
                         <img src={instagram} alt="instagram" />
                     </a>
-                    <a href="">
+                    <a href="https://www.facebook.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
                         <img src={facebook} alt="facebook" />
                     </a>
                 </div>
