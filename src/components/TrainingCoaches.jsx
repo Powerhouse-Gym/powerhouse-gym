@@ -66,43 +66,7 @@ const TrainingCoaches = () => {
             collegeCareer: "Committed to University of Central Arkansas",
             favoriteQuote: "Do not let your heart be troubled. I am the way, the truth, and the life. — Jesus Christ"
         },
-        {
-            name: "Brooke Brewer",
-            image: Brooke,
-            bio: "My name is Brooke Brewer and I am so excited to start coaching gymnastics prep/tumbling at Powerhouse Training Complex. I have been an Orthodontic Dental Monitoring Specialist for the past 7 years and have always enjoyed working with kids and teens. My everyday job correlates perfectly with gymnastics and tumbling: always progressing! I loved gymnastics, cheer and tumbling as a child and teen. As an adult I have coached rec (ages 5-12) and team kids up to level 5. My favorite part of coaching is seeing the excitement on each kids face as they progress and accomplish their goals. I can’t wait to watch your kids grow, learn, and become more confident all while falling in love with the sport!",
-            gymnasticsCareer: [
-                "Gymnastics 2000-2003 (Altus, OK)",
-                "Tumbling and Competition cheer 2003-2005 (Hanahan, SC)",
-                "YMCA Competition Gymnastics Level 4/5 Coach 2014-2015 (Hinesville, GA)",
-                "YMCA Non Competition Gymnastics/Tumbling coach 2014-2015 (Hinesville, GA)",
-                "Competition Gymnastics Level 4/5 Coach 2022 (Searcy, AR)"
-            ],
-            favoriteQuote: "Perfection is not attainable. But if we chase perfection, we can catch excellence. — Vince Lombardi"
-        },
-        {
-            name: "Tyler Hightower",
-            image: Tyler,
-            bio: "I consider myself a loving husband and father of three children. I have been coaching baseball and softball for seven years. I grew up playing baseball as early as I could walk. I played a couple seasons of college baseball out of Virginia. I am passionate and motivated to help each kid excel as an athlete. I work hard while guiding athletes to achieve both personally and as a team player. I consider myself adept and using powerful instructional techniques to help athletes maximize their performance levels. My goal is to bring forth a commitment to a positive team environment that is conducive to success and overall wellness. I believe in being proficient in player development and effective game plans, consisting of defensive and offensive techniques.",
-            career: [
-                "Coached baseball and softball for seven years",
-                "Played a couple seasons of college baseball out of Virginia"
-            ],
-            favoriteQuote: "The standard is the standard!"
-        },
-        {
-            name: "Holly Allen",
-            image: Holly,
-            bio: "Coach Holly was born and raised in Little Rock, Arkansas, and attended Cabot High School, where she earned All-Conference and All-State tournament team her senior year. After graduating with honors, Coach Holly attended Central Baptist College, where she was a collegiate basketball player all four years.",
-            collegeCareer: [
-                "2017-18 AMC all-freshman team",
-                "2018-19 AMC academic all-conference",
-                "2018-19 All-AMC honorable mention",
-                "2019-20 All-AMC Third team",
-                "2020-21 All-AMC second team",
-                "2020-21 AMC academic All-conference"
-            ],
-            favoriteQuote: "Excellence is not a singular act, but a habit. You are what you repeatedly do."
-        }
+        
     ];
 
     const handleCoachClick = (coach) => {
