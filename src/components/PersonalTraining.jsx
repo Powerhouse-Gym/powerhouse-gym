@@ -65,11 +65,13 @@ const PersonalTraining = () => {
             abilities.
           </p>
             </div>
-          <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
-            <button>
-              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
-            </button>{" "}
-          </a>
+         <a href = "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140947-adaptive-and-inclusive-personal-training">
+
+            <button style = {{cursor: "pointer"}}>
+              <strong>BOOK NOW</strong> 
+            </button>
+         </a>
+          
         </div>
         <div className="personal-service-section">
           <img src={deadlift} alt="deadlift training" />
@@ -79,9 +81,11 @@ const PersonalTraining = () => {
             Customized training focused on building sport-specific strength and
             agility.
           </p>
-          <button onClick={() => navigate("/training")}>
-            <strong style = {{color: "#ed1c26"}}>CLICK</strong> for more information
+          <a href = "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/112727-sports-specific-team-strength-and-conditioning">
+          <button style = {{cursor: "pointer"}}>
+            <strong>BOOK NOW</strong> 
           </button>
+          </a>
         </div>
 
         <div className="personal-service-section">
@@ -124,12 +128,17 @@ const PersonalTraining = () => {
           <p>
             2-on-1 Training: <strong>$90 per hour</strong>
           </p>
+          <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140951-strength-and-conditioning-2-on-1">
+            <button>
+              <strong>BOOK NOW</strong> 
+            </button>
+          </a>
           <p>
             4-on-1 Training: <strong>$150 per hour</strong>
           </p>
-          <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
+          <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140954-strength-and-conditioning-4-on-1">
             <button>
-              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
+              <strong>BOOK NOW</strong> 
             </button>
           </a>
         </div>
@@ -144,25 +153,22 @@ const PersonalTraining = () => {
           <p>
             <strong>$250</strong>
           </p>
-          <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
-            <button>
-              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
+          <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes">
+            <button style = {{cursor: "pointer"}}>
+              <strong>BOOK NOW</strong> 
             </button>
           </a>
         </div>
         <div className="personal-service-section">
           <img src={ptPic} alt="pt picture" />
-          <h3 style={{ textDecoration: "underline", fontStyle: "italic" }}>
-            Coming Soon in 2025
-          </h3>
           <h2>1-on-1 Personal Training</h2>
           <p>Personalized, one-on-one training sessions.</p>
           <p>
             <strong>$70 per hour</strong>
           </p>
-          <a href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
-            <button>
-              <strong style = {{color: "#ed1c26"}}>CALL</strong> for more information
+          <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/46891-personal-training">
+            <button style = {{cursor: "pointer"}}>
+              <strong>BOOK NOW</strong>
             </button>
           </a>
         </div>
