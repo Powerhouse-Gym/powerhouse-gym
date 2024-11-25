@@ -174,8 +174,8 @@ const soccer = [
         description: "",
         img: soccerTraining,
         urlTitle1: '1 on 1',
-        urlTitle2: '2 on 2',
-        urlTitle3: '3 on 3',
+        urlTitle2: '2 on 1',
+        urlTitle3: '3 on 1',
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61644-soccer-training-1-on-1',
         url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61710-soccer-training-2-on-1',
         url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61712-soccer-training-3-on-1'
@@ -201,8 +201,8 @@ const volleyball = [
         description: "Schedule today!",
         img: volleyballLessons,
         urlTitle1: '1 on 1',
-        urlTitle2: '2 on 2',
-        urlTitle3: '3 on 3',
+        urlTitle2: '2 on 1',
+        urlTitle3: '3 on 1',
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43526-volleyball-training',
         url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/75208-volleyball-training-2-on-1',
         url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/73759-volleyball-training-3-on-1'
@@ -234,9 +234,17 @@ const otherSportsAndTrainings = [
     },
     {
         title: "Wrestling",
-        price: "$100 a month",
-        description: "Seasonal! Contact us for more information.",
-        img: wrestlingLessons
+        price: "",
+        description: "Wrestling lessons",
+        img: wrestlingLessons,
+        urlTitle1: '1 on 1',
+        urlTitle2: '2 on 1',
+        urlTitle3: '4 on 1',
+        urlTitle4: 'Membership',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140966-wrestling-4-on-1',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140957-wrestling-2-on-1',
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140959-wrestling-training-1-on-1',
+        url4: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/client-memberships/2748'
     },
     {
         title: "Team Strength & Conditioning",
