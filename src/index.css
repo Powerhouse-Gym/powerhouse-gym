@@ -1113,11 +1113,13 @@ button {
   background-color: var(--secondary-background-color);
   height: 100%;
   width: 100vw;
+  max-width: 100%;
   text-align: center;
 }
 
 #test {
   background-color: var(--secondary-background-color);
+  max-width: 100%;
 }
 
 .merch-container {
@@ -3745,7 +3747,7 @@ button {
   }
 }
 
-@media (max-height: 926px) {
+@media (max-height: 910px) {
 
   /* Styles for larger smartphones */
   .crossfit-journal-text>h1 {
@@ -3756,7 +3758,7 @@ button {
   }
 
   .secondary-banner {
-    height: 45vh;
+    height: 35vh;
   }
 
   .newsletter-container {
