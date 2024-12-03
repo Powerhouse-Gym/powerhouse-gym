@@ -23,6 +23,7 @@ import footballLessons from '/src/assets/training/football-lessons.webp'
 import wrestlingLessons from '/src/assets/training/wrestling-lessons.webp'
 import strengthConditioning from '/src/assets/training/strength-conditioning.webp'
 import gymnastics from '/src/assets/training/gymnastics.webp'
+import coachBriNew from "/src/assets/bri-new.jpg"
 
 const cageAndFieldRentals = [
     {
@@ -118,6 +119,19 @@ const baseball = [
 
 const softball = [
     {
+        title: "Softball w/ Coach Bri",
+        price: "(1:1) $70 / (2:1) $90 / (3:1) $120 (Team) $180 ",
+        img: coachBriNew,
+        urlTitle1: "1 on 1",
+        urlTitle2: "2 on 1",
+        urlTitle3: "3 on 1",
+        urlTitle4: "Team",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/138554-softball-training-w-coach-bri',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/102884-softball-training-2-on-1',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117411-90-minute-softball-lesson',
+        url4: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89115-softball-team-training"
+    },
+    {
         title: "Private Hitting Lessons",
         price: "$50 half hour / $85 1 hour / $125 1.5 hours",
         description: "1 on 1 hitting lessons with one of our qualified trainers",
@@ -164,7 +178,7 @@ const softball = [
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/93416-1-2-hour-softball-lesson',
         url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/85956-1-hour-softball-lesson',
         url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/117411-90-minute-softball-lesson'
-    }
+    },
 ];
 
 const soccer = [
@@ -235,7 +249,7 @@ const otherSportsAndTrainings = [
     {
         title: "Wrestling",
         price: "",
-        description: "Wrestling lessons",
+        description: "Wrestling lessons by a highly specialized traininer.  Private or team sessions available.",
         img: wrestlingLessons,
         urlTitle1: '1 on 1',
         urlTitle2: '2 on 1',
