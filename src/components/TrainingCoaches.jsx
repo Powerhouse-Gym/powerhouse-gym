@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Aden from '../assets/training-coaches/Aden.webp'
 import Bri from '../assets/training-coaches/Bri.webp'
-import Brooke from '../assets/training-coaches/Brooke.webp'
-import Holly from '../assets/training-coaches/Holly.webp'
-import Tyler from '../assets/training-coaches/Tyler.webp'
+import Stephen from "../assets/stephen.jpg"
+import Bryant from "../assets/bryant-laning.jpg"
 
 
 const TrainingCoaches = () => {
@@ -49,6 +48,11 @@ const TrainingCoaches = () => {
             favoriteQuote: "Hard work beats talent when talent doesn't work hard. — Tim Notke"
         },
         {
+            name: "Bryant Laning",
+            image:Bryant,
+            bio : "Bryant brings a wealth of athletic and leadership experience to his coaching role. A multi-sport athlete in high school, he excelled in football, wrestling, cross country, and track. During this time, he also took on the immense responsibility of joining the Army National Guard, where he served with distinction, deploying to Iraq, Afghanistan, and Kuwait. As a remedial PT instructor for his unit, he developed a passion for helping others achieve their physical and mental best. He continues his dedication to sports and youth development. He has coached six successful seasons of flag football and is currently shaping young athletes as a wrestling coach for Panthers Youth Wrestling in Cabot, Arkansas.  A proud husband and father of two sons, Bryant Laning values family and community. His coaching philosophy focuses on building discipline, teamwork, and resilience both on and off the mat.",
+        },
+            {
             name: "Aden Velasquez",
             image: Aden,
             bio: 'Aden loves baseball, and has committed himself to teaching and passing all his baseball knowledge and experiences onto young ball players. “My family for the most part, other than my sister were born up in the north and both my parents were military at one point. Now my mom is a nurse. We are a Christian family, and we all love baseball and my sister plays softball. My parents have done so much for me to be able to accomplish what I have so far.”',
@@ -66,6 +70,11 @@ const TrainingCoaches = () => {
             collegeCareer: "Committed to University of Central Arkansas",
             favoriteQuote: "Do not let your heart be troubled. I am the way, the truth, and the life. — Jesus Christ"
         },
+        {
+            name: "Stephen Swagerty",
+            image: Stephen,
+            bio: "Stephen Swagerty is a highly regarded baseball player and coach hailing from central Arkansas with experience playing 7 seasons of professional baseball in the USA, Australia, and the Czech Republic, Stephen brings a wealth of expertise and a global perspective to the game. As a seasoned pitcher, he takes pride in mentoring young athletes, focusing on mastering mechanics, sports specific strength training, and mental skills. For the past six years, Stephen has been dedicated to coaching youth baseball/showcase baseball, helping players grow both on and off the field. At home, Stephen shares his passion for the sport with his wife, Liv, and their 7-month-old son, Ace, creating a family that truly lives and breathes baseball."
+        }
         
     ];
 
@@ -80,12 +89,17 @@ const TrainingCoaches = () => {
             <div className="trainer-layout">
                 {/* Left Side: List of Trainers */}
                 <div className="trainer-list">
-                    {coaches.map((coach, index) => (
-                        <div className={coach.name === selectedCoach.name ? `trainer-item selected` : `trainer-item`} key={index} onClick={() => handleCoachClick(coach)}>
-                            <img src={coach.image} alt={coach.name} className="trainer-thumbnail" />
+                    {coaches.map((coach, index) => {
+                        console.log(coach.name === "Bryant Laning")
+                            const dynamicStyle = coach.name === "Bryant Laning" ? {objectPosition: "center top"} : {};
+
+                       return  (
+
+                        <div className={coach.name === selectedCoach.name ? `trainer-item selected` : `trainer-item`} key={index} onClick={() => handleCoachClick(coach)} style = {{position: "relative"}}>
+                            <img src={coach.image} alt={coach.name} className="trainer-thumbnail" style = {dynamicStyle}/>
                             <h3>{coach.name}</h3>
                         </div>
-                    ))}
+                    )})}
                 </div>
 
                 {/* Right Side: Trainer Details */}
@@ -93,7 +107,7 @@ const TrainingCoaches = () => {
                     {selectedCoach ? (
                         <>
                             <div className="image-container">
-                                <img src={selectedCoach.image} alt={selectedCoach.name} className="coach-image" />
+                               <img src={selectedCoach.image} alt={selectedCoach.name} className="coach-image"  />
                             </div>
 
                             <h2 className="coach-name">{selectedCoach.name}</h2>
