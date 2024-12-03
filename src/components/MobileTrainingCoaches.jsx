@@ -9,6 +9,8 @@ import chevronDown from '../assets/chevron-down.svg';
 import darkmodeChevronUp from '../assets/darkmode-chevron-up.svg';
 import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
 import { DarkModeContext } from "../context/DarkModeProvider";
+import Stephen from "../assets/stephen.jpg"
+import Bryant from "../assets/bryant-laning.jpg"
 
 const MobileTrainingCoaches = () => {
 
@@ -54,6 +56,16 @@ const MobileTrainingCoaches = () => {
             collegeCareer: "Committed to University of Central Arkansas",
             favoriteQuote: "Do not let your heart be troubled. I am the way, the truth, and the life. — Jesus Christ"
         },
+        {
+            name: "Bryant Laning",
+            image:Bryant,
+            bio : "Bryant brings a wealth of athletic and leadership experience to his coaching role. A multi-sport athlete in high school, he excelled in football, wrestling, cross country, and track. During this time, he also took on the immense responsibility of joining the Army National Guard, where he served with distinction, deploying to Iraq, Afghanistan, and Kuwait. As a remedial PT instructor for his unit, he developed a passion for helping others achieve their physical and mental best. He continues his dedication to sports and youth development. He has coached six successful seasons of flag football and is currently shaping young athletes as a wrestling coach for Panthers Youth Wrestling in Cabot, Arkansas.  A proud husband and father of two sons, Bryant Laning values family and community. His coaching philosophy focuses on building discipline, teamwork, and resilience both on and off the mat.",
+        },
+        {
+            name: "Stephen Swagerty",
+            image: Stephen,
+            bio: "Stephen Swagerty is a highly regarded baseball player and coach hailing from central Arkansas with experience playing 7 seasons of professional baseball in the USA, Australia, and the Czech Republic, Stephen brings a wealth of expertise and a global perspective to the game. As a seasoned pitcher, he takes pride in mentoring young athletes, focusing on mastering mechanics, sports specific strength training, and mental skills. For the past six years, Stephen has been dedicated to coaching youth baseball/showcase baseball, helping players grow both on and off the field. At home, Stephen shares his passion for the sport with his wife, Liv, and their 7-month-old son, Ace, creating a family that truly lives and breathes baseball."
+        }
     ];
 
     const toggleCoachDetails = (index) => {
