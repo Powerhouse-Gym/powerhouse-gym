@@ -68,15 +68,7 @@ const cageAndFieldRentals = [
         title: "Team Rentals",
         price: "Starting at $150/single use or $400/4 week package",
         description: "Indoor facility for off-season development and practices for baseball or softball teams.",
-        img: teamRental,
-        // urlTitle1: 'Baseball',
-        // urlTitle2: 'Softball',
-        // urlTitle3: 'Volleyball',
-        // urlTitle4: 'Basketball',
-        // url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89114-baseball-team-training',
-        // url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89115-softball-team-training',
-        // url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/87548-volleyball-team-training',
-        // url4: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/98749-basketball-team-training'
+        img: teamRental
     },
     {
         title: "All Ages Unlimited Membership",

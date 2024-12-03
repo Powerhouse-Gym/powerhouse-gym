@@ -103,21 +103,20 @@ const PersonalTraining = () => {
               display: "flex",
               overflowX: "auto",
               whiteSpace: "nowrap",
+              justifyContent: "center",
               width: "100%",
+              gap: ".2vw",
             }}
             className="button-scroll"
           >
-            <a href={teamTraining.url1}>
-              <button>{teamTraining.urlTitle1}</button>
+            <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89114-baseball-team-training'}>
+              <button>Baseball</button>
             </a>
-            <a href={teamTraining.url2}>
-              <button>{teamTraining.urlTitle2}</button>
+            <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89115-softball-team-training'}>
+              <button>Softball</button>
             </a>
-            <a href={teamTraining.url3}>
-              <button>{teamTraining.urlTitle3}</button>
-            </a>
-            <a href={teamTraining.url4}>
-              <button>{teamTraining.urlTitle4}</button>
+            <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/87548-volleyball-team-training'}>
+              <button>Volleyball</button>
             </a>
           </div>
         </div>
