@@ -95,7 +95,6 @@ const CrossfitCoaches = ({ targetRef }) => {
 
     return (
         <>
-
             <div className="mobile-coaches-container">
                 <h1>Crossfit Coaches</h1>
 

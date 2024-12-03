@@ -127,7 +127,7 @@ function Team() {
                     ))}
                 </div>
             </div>
-            <div className="full-coaches-container coaches-container">
+            <div className="coaches-container">
                 <h1 style={{ margin: "25px", marginLeft: "15px" }}>Crossfit Coaches</h1>
                 <div className="trainer-layout">
                     {/* Left Side: List of Trainers */}

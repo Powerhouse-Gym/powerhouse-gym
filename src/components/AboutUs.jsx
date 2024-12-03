@@ -48,13 +48,13 @@ function AboutUs() {
       </div>
       <NewsLetter />
       <div className="directions-container">
-        <h1 style ={{textAlign: "center"}}>Located @ 1804 S. Pine Street <br/>Behind The Popcorn Spot</h1>
-        
+        <h1 style={{ textAlign: "center" }}>Located @ 1804 S. Pine Street <br />Behind The Popcorn Spot</h1>
+
         {/* <div style={{ width: '55vw', height: '55vh', border: "4px solid black", borderRadius: "8px" }}>
           Map commented out during testing
           </div> */}
         {/* Google Maps code commented out to save API hits */}
-        <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+        {/* <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
             className="mapstyles"
             defaultCenter={{ lat: 34.94580, lng: -92.00977 }}
@@ -66,8 +66,16 @@ function AboutUs() {
           <AdvancedMarker position={{ lat: 34.94580, lng: -92.00977 }} title="PowerHouse Crossfit and Training">
             <Pin background={'#ed1c26'} glyphColor={'#000'} borderColor={'#000'} scale={2.0} glyph={"PH"} />
           </AdvancedMarker>
-        </APIProvider>
-            <h1>Call us @ 501-247-1517</h1>
+        </APIProvider> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13081.730827796966!2d-92.0100424!3d34.9457619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d2efc28faec307%3A0x3c2e194b6c529cac!2sPowerhouse%20Training%20Complex!5e0!3m2!1sen!2sus!4v1733245603745!5m2!1sen!2sus"
+          width="800"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>        <h1>Call us @ 501-247-1517</h1>
       </div>
     </div>
   );
