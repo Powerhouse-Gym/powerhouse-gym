@@ -165,7 +165,7 @@ export default function Training() {
               }}
             />
             <Tab
-              label="Summer Youth Training"
+              label="Youth Training"
               {...a11yProps(6)}
               sx={{
                 fontSize: {
@@ -209,7 +209,7 @@ export default function Training() {
               <Tab label="Soccer" {...a11yProps(3)} sx={{ fontSize: "1vw" }}/>
               <Tab label="Volleyball" {...a11yProps(4)}sx={{ fontSize: "1vw" }} />
               <Tab label="Other Sports and Training" {...a11yProps(5)}sx={{ fontSize: "1vw" }} />
-              <Tab label="Summer Youth Training" {...a11yProps(6)}sx={{ fontSize: "1vw" }} />
+              <Tab label="Youth Training" {...a11yProps(6)}sx={{ fontSize: "1vw" }} />
             </Tabs>
           </Box>
         </Box>

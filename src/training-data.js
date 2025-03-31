@@ -20,10 +20,12 @@ import volleyballLessons from '/src/assets/training/volleyball-lessons.webp'
 import volleyballTeamTraining from '/src/assets/training/volleyball-team-training.webp'
 import volleyballTeamDiscount from '/src/assets/training/volleyball-team-discount.webp'
 import footballLessons from '/src/assets/training/football-lessons.webp'
-import wrestlingLessons from '/src/assets/training/wrestling-lessons.webp'
+import wrestlingLessons from '/src/assets/training/wrestling-lessons.jpeg'
+import wrestlingMembership from '/src/assets/training/wrestling-membership.jpeg'
 import strengthConditioning from '/src/assets/training/strength-conditioning.webp'
 import gymnastics from '/src/assets/training/gymnastics.webp'
 import coachBriNew from "/src/assets/bri-new.jpg"
+import mma from "/src/assets/mma.jpeg"
 
 const cageAndFieldRentals = [
     {
@@ -239,18 +241,23 @@ const otherSportsAndTrainings = [
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/48428-football-training'
     },
     {
-        title: "Wrestling",
+        title: "Wrestling Lessons",
         price: "",
         description: "Wrestling lessons by a highly specialized traininer.  Private or team sessions available.",
         img: wrestlingLessons,
         urlTitle1: '1 on 1',
         urlTitle2: '2 on 1',
         urlTitle3: '4 on 1',
-        urlTitle4: 'Membership',
         url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140966-wrestling-4-on-1',
         url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140957-wrestling-2-on-1',
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140959-wrestling-training-1-on-1',
-        url4: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/client-memberships/2748'
+    },
+    {
+        title: "Wrestling Memebership",
+        img: wrestlingMembership,
+        description: "Includes regulation size mat, select strength & conditioning equipment, and 2 Powerhouse Crossfit classes/week",
+        urlTitle1: "Membership",
+        url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/client-memberships/2748"
     },
     {
         title: "Team Strength & Conditioning",
@@ -264,6 +271,20 @@ const otherSportsAndTrainings = [
         description: "",
         img: gymnastics,
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43529-1-hour-private-gymnastics'
+    },
+    {
+        title: "These Hands MMA",
+        description: "MMA Classes with Avery Wilson.  Mondays, Wednesdays, Fridays.  Kids 5-13 > 5-6pm.  Adults 14 & up > 6-7pm.",
+        img: mma,
+        urlTitle1: "MMA (kids)",
+        urlTitle2: "MMA (adults)",
+        urlTitle3: "Strength & Conditioning (kids)",
+        urlTitle4: "Strength & Conditioning (adults)",
+        url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146477-these-hands-mma-classes-ages-5-13",
+        url2: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146478-these-hands-mma-classes-ages-14-and-up",
+        url3: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146479-these-hands-mma-stength-and-conditioning-ages-5-13",
+        url4: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146480-these-hands-mma-strength-and-conditioning-ages-14-and-up"
+
     }
 ];
 
