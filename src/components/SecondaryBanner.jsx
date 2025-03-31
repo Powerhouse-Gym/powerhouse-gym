@@ -56,13 +56,12 @@ function SecondaryBanner() {
       {/* Center Section: Contact Info */}
       <div className="contact-banner" style={{ textAlign: 'center' }}>
         <a href="tel:+15012471517" className="phone-link" style={{ 
-          fontSize: '2rem', 
           color: isDarkMode ? '#fff' : '#000', 
           textDecoration: 'none' 
         }}>
           501-247-1517
         </a>
-        <h4 style={{ margin: '0.5rem 0 0', fontSize: '1.5rem' }}>
+        <h4 style={{ margin: '0.5rem 0 0' }}>
           1804 S. Pine Street, Cabot, AR 72023
         </h4>
       </div>

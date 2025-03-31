@@ -31,58 +31,176 @@ function Youth() {
             <div className='youth-cards' style={{ 
                 display: 'flex', 
                 gap: '2rem', 
-                justifyContent: 'center',
-                width: '100%',
-                maxWidth: '1200px'
+                justifyContent: 'center', 
+                width: '100%', 
+                maxWidth: '1200px' 
             }}>
-                {/* Summer Card */}
+                {/* Summer Card with Three Buttons */}
                 <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px' }}>
                     <img 
                         src={youthMemberships} 
                         alt="Summer Youth Memberships" 
                         style={{ width: '100%', maxWidth: '400px', height: 'auto' }} 
                     />
-                    <button 
-                        style={{ 
-                            marginTop: '1rem',
-                            backgroundColor: '#ed1c26', 
-                            color: 'white', 
-                            fontWeight: 'bold', 
-                            border: 'none', 
-                            borderRadius: '5px', 
-                            fontSize: '1rem', 
-                            cursor: 'pointer',
-                            width: "100%"
-                        }}
-                    >
-                        Purchase Now!
-                    </button>
+                    <div style={{ 
+                        display: 'flex', 
+                        flexDirection: 'row', 
+                        gap: '0.5rem', 
+                        marginTop: '1rem', 
+                        justifyContent: 'center',
+                        flexWrap: 'wrap' // Allows buttons to wrap if needed on smaller screens
+                    }}>
+                        <a 
+                            href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/154756-1-day-ptc-summer-membership" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <button 
+                                style={{ 
+                                    padding: '0.5rem 1rem', 
+                                    backgroundColor: '#ed1c26', 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    border: 'none', 
+                                    borderRadius: '5px', 
+                                    fontSize: '0.875rem', 
+                                    cursor: 'pointer', 
+                                    minWidth: '100px' 
+                                }}
+                            >
+                                1 day Summer
+                            </button>
+                        </a>
+                        <a 
+                            href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <button 
+                                style={{ 
+                                    padding: '0.5rem 1rem', 
+                                    backgroundColor: '#ed1c26', 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    border: 'none', 
+                                    borderRadius: '5px', 
+                                    fontSize: '0.875rem', 
+                                    cursor: 'pointer', 
+                                    minWidth: '100px' 
+                                }}
+                            >
+                                3 day Summer
+                            </button>
+                        </a>
+                        <a 
+                            href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <button 
+                                style={{ 
+                                    padding: '0.5rem 1rem', 
+                                    backgroundColor: '#ed1c26', 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    border: 'none', 
+                                    borderRadius: '5px', 
+                                    fontSize: '0.875rem', 
+                                    cursor: 'pointer', 
+                                    minWidth: '100px' 
+                                }}
+                            >
+                                5 day Summer
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
-                {/* Youth Membership Card */}
+                {/* Youth Membership Card with Three Buttons */}
                 <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px' }}>
                     <img 
                         src={youthMembership} 
                         alt="Youth Membership" 
                         style={{ width: '100%', maxWidth: '400px', height: 'auto' }} 
                     />
-                    <button 
-                        style={{ 
-                            marginTop: '1rem', 
-                            padding: '0.75rem 1.5rem', 
-                            backgroundColor: '#ed1c26', 
-                            color: 'white', 
-                            fontWeight: 'bold', 
-                            border: 'none', 
-                            borderRadius: '5px', 
-                            fontSize: '1rem', 
-                            cursor: 'pointer',
-                            width: '100%',
-                            maxWidth: '200px'
-                        }}
-                    >
-                        Purchase Now!
-                    </button>
+                    <div style={{ 
+                        display: 'flex', 
+                        flexDirection: 'row', 
+                        gap: '0.5rem', 
+                        marginTop: '1rem', 
+                        justifyContent: 'center',
+                        flexWrap: 'wrap' // Allows buttons to wrap if needed on smaller screens
+                    }}>
+                        <a 
+                            href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/51512-ptc-membership-1-day" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <button 
+                                style={{ 
+                                    padding: '0.5rem 1rem', 
+                                    backgroundColor: '#ed1c26', 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    border: 'none', 
+                                    borderRadius: '5px', 
+                                    fontSize: '0.875rem', 
+                                    cursor: 'pointer', 
+                                    minWidth: '100px' 
+                                }}
+                            >
+                                1 day Pass
+                            </button>
+                        </a>
+                        <a 
+                            href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <button 
+                                style={{ 
+                                    padding: '0.5rem 1rem', 
+                                    backgroundColor: '#ed1c26', 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    border: 'none', 
+                                    borderRadius: '5px', 
+                                    fontSize: '0.875rem', 
+                                    cursor: 'pointer', 
+                                    minWidth: '100px' 
+                                }}
+                            >
+                                3 day Pass
+                            </button>
+                        </a>
+                        <a 
+                            href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <button 
+                                style={{ 
+                                    padding: '0.5rem 1rem', 
+                                    backgroundColor: '#ed1c26', 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    border: 'none', 
+                                    borderRadius: '5px', 
+                                    fontSize: '0.875rem', 
+                                    cursor: 'pointer', 
+                                    minWidth: '100px' 
+                                }}
+                            >
+                                5 day Pass
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
