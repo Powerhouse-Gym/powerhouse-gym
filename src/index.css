@@ -665,6 +665,16 @@ html {
   max-width: 100vw;
 }
 
+.social-icons-left {
+  position: relative;
+  bottom: 60px;
+}
+
+.social-icons-right {
+  position: relative;
+  bottom: 20px;
+}
+
 .secondary-banner {
   display: flex;
   height: 35vh;
@@ -684,7 +694,8 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-background-color);
+  position: relative;
+  /* background-color: var(--secondary-background-color); */
 }
 
 #ptc-logo {
@@ -1537,11 +1548,12 @@ button {
 
 .youth-page {
   display: flex;
+  flex-direction: column;
   margin-top: 0 !important;
 }
 
 .youth-info {
-  width: 50%;
+  width: 100%;
   padding-left: 5vw;
 }
 
@@ -2497,18 +2509,23 @@ button {
   }
 
   .youth-page {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
     padding-bottom: 1vh;
   }
 
   .youth-info {
-    width: 100%;
+    width: 60vw;
     padding-right: 0;
     background-color: var(--secondary-background-color);
     padding: 1rem;
     margin: 1vh;
     box-shadow: var(--box-shadow);
+  }
+
+  .youth-cards {
+    margin-left: 20px;
+    flex-direction: column;
   }
 
   .youth-info>h1 {
@@ -3709,7 +3726,13 @@ button {
 
 @media (max-height: 768px) and (max-width: 400px){
 
+  .social-icons-left{
+    bottom: 10px;
+  }
 
+  .social-icons-right{
+    bottom: 10px;
+  }
   .whycrossfit-container {
     height: 175vh;
   }

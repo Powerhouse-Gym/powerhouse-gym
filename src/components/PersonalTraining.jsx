@@ -109,14 +109,17 @@ const PersonalTraining = () => {
             }}
             className="button-scroll"
           >
-            <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89114-baseball-team-training'}>
-              <button>Baseball</button>
+            <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89114-baseball-team-training'} >
+              <button style = {{cursor: "pointer"}}>Baseball</button>
             </a>
             <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/89115-softball-team-training'}>
-              <button>Softball</button>
+              <button style = {{cursor: "pointer"}}>Softball</button>
             </a>
             <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/87548-volleyball-team-training'}>
-              <button>Volleyball</button>
+              <button style = {{cursor: "pointer"}}>Volleyball</button>
+            </a>
+            <a href={'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/112727-sports-specific-team-strength-and-conditioning'}>
+              <button style = {{cursor: "pointer"}}>Soccer</button>
             </a>
           </div>
         </div>
