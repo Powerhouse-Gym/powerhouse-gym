@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import {
@@ -11,21 +11,16 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import darkmodeFacebook from '../assets/darkmode-facebook.svg'
-import darkmodeInstagram from '../assets/darkmode-instagram.svg'
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import DarkModeToggle from "./DarkModeToggle";
-import { DarkModeContext } from "../context/DarkModeProvider";
 
 function Navbar(props) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const { isDarkMode } = useContext(DarkModeContext);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -54,11 +49,11 @@ function Navbar(props) {
     <Box
       sx={{
         width: 250,
-        backgroundColor: isDarkMode ? "#1a1a1a" : "white",
+        backgroundColor: "white",
         height: "100%",
-        color: isDarkMode ? "white" : "black", // This changes the font color
+        color: "black",
         "& *": {
-          color: isDarkMode ? "white" : "black", // Ensures all child elements inherit the color
+          color: "black",
         },
       }}
       role="presentation"
@@ -80,14 +75,30 @@ function Navbar(props) {
         <ListItem button onClick={() => handleNavigate("/")}>
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button onClick={() => handleNavigate("/training")}>
+        <ListItem button onClick={() => handleNavigate("/training")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <ListItemText primary="Sports Training" />
+          <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
+            <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+            </a>
+            <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+            </a>
+          </Box>
         </ListItem>
         <ListItem button onClick={() => handleNavigate("/personal-training")}>
           <ListItemText primary="Personal Training" />
         </ListItem>
-        <ListItem button onClick={() => handleNavigate("/crossfit")}>
+        <ListItem button onClick={() => handleNavigate("/crossfit")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <ListItemText primary="Crossfit" />
+          <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
+            <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+            </a>
+            <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+            </a>
+          </Box>
         </ListItem>
         <ListItem button onClick={() => handleNavigate("/team")}>
           <ListItemText primary="Meet the Team" />
@@ -96,15 +107,7 @@ function Navbar(props) {
           <ListItemText primary="About Us" />
         </ListItem>
 
-        <div className='banner-logos'>
-          <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-            <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
-          </a>
-          <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-            <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
-          </a>
-        </div>
-        <button className="signup-btn nav-signup" id="signup-btn-mobile">SIGN UP</button>
+        <button className="signup-btn nav-signup" id="signup-btn-mobile" style={{ marginTop: "16px" }}>SIGN UP</button>
       </List>
     </Box>
   );
@@ -122,6 +125,9 @@ function Navbar(props) {
             position: "absolute",
             top: "10px",
             left: "10px",
+            "@media (max-width: 320px)": {
+              top: "0px",
+            },
           }}
         >
           <MenuIcon sx={{ fontSize: "3rem" }} />
@@ -133,10 +139,10 @@ function Navbar(props) {
         >
           <div className='banner-logos'>
             <a id="facebook" href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-              <img src={isDarkMode ? darkmodeFacebook : facebook} alt="Facebook" />
+              <img src={facebook} alt="Facebook" />
             </a>
             <a id="instagram" href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-              <img src={isDarkMode ? darkmodeInstagram : instagram} alt='Instagram' />
+              <img src={instagram} alt='Instagram' />
             </a>
           </div>
           <Tab
@@ -229,9 +235,7 @@ function Navbar(props) {
 
 
         </Tabs>
-            <DarkModeToggle />
       </Box>
-      {/* <div className = "skull-div" style = {{height: "2.5vh",width: "100vw", backgroundImage: `url(${chainlink})` ,zIndex: "15", position: "absolute", top: "10vh"}}></div> */}
 
       {/* Mobile Drawer for nav menu */}
       <Drawer

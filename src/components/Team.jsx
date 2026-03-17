@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 import TrainingCoaches from './TrainingCoaches';
 import CrossfitCoaches from './CrossfitCoaches';
 import NewsLetter from './NewsLetter';
@@ -7,11 +7,8 @@ import eric from '../assets/crossfit-coaches/eric.webp'
 import nicole from '../assets/crossfit-coaches/nicole.webp'
 import rebecca from '../assets/crossfit-coaches/rebecca.webp'
 import rebecca_2 from '../assets/rebecca_2.jpg'
-import { DarkModeContext } from "../context/DarkModeProvider"
 import chevronUp from '../assets/chevron-up.svg';
 import chevronDown from '../assets/chevron-down.svg';
-import darkmodeChevronUp from '../assets/darkmode-chevron-up.svg';
-import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
 import handsin from "../assets/handsin.jpg"
 
 
@@ -40,8 +37,8 @@ function Team() {
             name: 'Rebecca Ward',
             img: rebecca_2,
             title: "CrossFit Level 1 Coach | CrossFit Kids Coach | Competitive CrossFit Athlete | Firefighter",
-            description1: "With over a decade of experience in CrossFit, both as a coach and competitive athlete, Rebecca Ward brings a wealth of knowledge, passion, and dedication to every training session. As a certified CrossFit Level 1 Coach and CrossFit Kids Coach, she is deeply committed to helping individuals of all ages and fitness levels achieve their goals. Rebecca’s background as a firefighter also enhances her focus on functional, real-world fitness that translates to improved strength, resilience, and overall well-being.",
-            description2: "Rebecca’s coaching approach is structured and results-driven, catering to individuals eager to make meaningful improvements in their health and fitness. Her mission is to provide detailed, personalized coaching to inspire and support each client on their fitness journey.",
+            description1: "With over a decade of experience in CrossFit, both as a coach and competitive athlete, Rebecca Ward brings a wealth of knowledge, passion, and dedication to every training session. As a certified CrossFit Level 1 Coach and CrossFit Kids Coach, she is deeply committed to helping individuals of all ages and fitness levels achieve their goals. Rebecca's background as a firefighter also enhances her focus on functional, real-world fitness that translates to improved strength, resilience, and overall well-being.",
+            description2: "Rebecca's coaching approach is structured and results-driven, catering to individuals eager to make meaningful improvements in their health and fitness. Her mission is to provide detailed, personalized coaching to inspire and support each client on their fitness journey.",
             services: ["Group Classes", "Crossfit Kids Classes", "One-on-One Training"],
             mission: "Rebecca is dedicated to empowering clients of all backgrounds, creating an environment that fosters growth, confidence, and peak performance."
         },
@@ -56,19 +53,6 @@ function Team() {
         services: ["Inclusive Group Classes", "Adaptive Group Classes", "One-on-One Training"],
         mission: "Nicole's mission is to empower athletes of all backgrounds and abilities, creating an inclusive environment that fosters growth, confidence, and peak performance."
     });
-
-
-    const { isDarkMode } = useContext(DarkModeContext)
-
-    const coachElements = coaches.map((coach, i) => {
-        return (
-            <div className='coach' key={i}>
-                <img src={coach.img} alt={coach.name} className='crossfit-coach-img' />
-                <h3>{coach.name}</h3>
-            </div>
-        )
-    })
-
 
     const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
@@ -102,9 +86,9 @@ function Team() {
                         <div className="mobile-trainer-item" key={index}>
                             <div className="mobile-trainer-header" onClick={() => toggleCoachDetails(coach,index)}>
                                 {expandedCoachIndex === index ? (
-                                    <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
+                                    <img src={chevronUp} alt="Chevron Up" className="chevron" />
                                 ) : (
-                                    <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
+                                    <img src={chevronDown} alt="Chevron Down" className="chevron" />
                                 )}
                                 <h3>{coach.name}</h3>
                                 <img src={coach.img} alt={coach.name} className="mobile-trainer-thumbnail" />
