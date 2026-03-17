@@ -13,6 +13,7 @@
     width: 75vw;
     max-width: 900px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 /* .carousel-div {
@@ -27,5 +28,16 @@
 @media only screen and (max-width: 900px) {
     .carousel-div {
         height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 540px) {
+    .carousel-img > img {
+        height: 45vh;
+        width: 90vw;
+    }
+
+    .carousel-div {
+        height: 50vh;
     }
 }

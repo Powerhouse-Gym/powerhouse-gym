@@ -1,36 +1,49 @@
-import React from 'react';
+import "./Footer.css";
+import darkmodeFacebook from "../assets/darkmode-facebook.svg";
+import darkmodeInstagram from "../assets/darkmode-instagram.svg";
+import { useNavigate } from "react-router-dom";
 
-const Footer = () => {
+function Footer() {
+    const navigate = useNavigate();
 
-  const linkStyle = {
-    color: 'white'
-  }
+    return (
+        <footer className="footer">
+            <div className="footer-inner">
 
-  return (
-    <div className="footer-div">
-      {/* <img className="footer-logo" src={logoActual} alt="powerhouse logo" /> */}
-      <p>PowerHouse Training Complex and Crossfit</p>
-      <p>
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=1804+S+Pine+Street,+Cabot+AR+72023"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={linkStyle}
-        >
-          1804 S. Pine Street, Cabot AR 72023
-        </a>
-      </p>
-      <p>
-        <a
-          style={linkStyle}
-          href="tel:5012471517"
-        >501.247.1517</a>
-      </p>
-      <p>Powerhouse Training Complex and Crossfit, LLC</p>
-      <p>Website Created By: B&W Development</p>
-      {/* <img className="footer-logo" src={logo} alt="powerhouse logo" /> */}
-    </div>
-  );
-};
+                <div className="footer-nav">
+                    {/* <h4>Navigate</h4> */}
+                    <ul>
+                        <li onClick={() => navigate("/")}>Home</li>
+                        <li onClick={() => navigate("/training")}>Sports Training</li>
+                        <li onClick={() => navigate("/personal-training")}>Personal Training</li>
+                        <li onClick={() => navigate("/crossfit")}>Crossfit</li>
+                        <li onClick={() => navigate("/team")}>Meet the Team</li>
+                        <li onClick={() => navigate("/aboutus")}>About Us</li>
+                    </ul>
+                </div>
+
+                <div className="footer-contact">
+                    <h4>Contact</h4>
+                    <p>1804 S. Pine Street</p>
+                    <p>Cabot, AR 72023</p>
+                    <a href="tel:+15012471517" className="footer-phone">501.247.1517</a>
+                    <div className="footer-socials">
+                        <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                            <img src={darkmodeFacebook} alt="Facebook" />
+                        </a>
+                        <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                            <img src={darkmodeInstagram} alt="Instagram" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="footer-bottom">
+                <p>&copy; {new Date().getFullYear()} Powerhouse Training Complex. All rights reserved.</p>
+            </div>
+        </footer>
+    );
+}
 
 export default Footer;

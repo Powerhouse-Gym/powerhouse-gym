@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import Aden from '../assets/training-coaches/Aden.webp';
 import Bri from '../assets/training-coaches/Bri.webp';
 import Brooke from '../assets/training-coaches/Brooke.webp';
@@ -6,15 +6,10 @@ import Holly from '../assets/training-coaches/Holly.webp';
 import Tyler from '../assets/training-coaches/Tyler.webp';
 import chevronUp from '../assets/chevron-up.svg';
 import chevronDown from '../assets/chevron-down.svg';
-import darkmodeChevronUp from '../assets/darkmode-chevron-up.svg';
-import darkmodeChevronDown from '../assets/darkmode-chevron-down.svg';
-import { DarkModeContext } from "../context/DarkModeProvider";
 import Stephen from "../assets/stephen.jpg"
 import Bryant from "../assets/bryant-laning.jpg"
 
 const MobileTrainingCoaches = () => {
-
-    const {isDarkMode} = useContext(DarkModeContext)
 
     const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
 
@@ -33,7 +28,7 @@ const MobileTrainingCoaches = () => {
                 "DI scholarship to Bradley University in Peoria, IL",
                 "2014 Missouri Valley Conference (MVC) Champion",
                 "2014 MVC All-Tournament team",
-                "Finished career as one of three players to rank in Bradley’s career top 10 in hits, runs and stolen bases",
+                "Finished career as one of three players to rank in Bradley's career top 10 in hits, runs and stolen bases",
                 "2 years as leadoff hitter and led team in hits as a junior and senior"
             ],
             favoriteQuote: "Hard work beats talent when talent doesn't work hard. — Tim Notke"
@@ -41,7 +36,7 @@ const MobileTrainingCoaches = () => {
         {
             name: "Aden Velasquez",
             image: Aden,
-            bio: 'Aden loves baseball, and has committed himself to teaching and passing all his baseball knowledge and experiences onto young ball players. “My family for the most part, other than my sister were born up in the north and both my parents were military at one point. Now my mom is a nurse. We are a Christian family, and we all love baseball and my sister plays softball. My parents have done so much for me to be able to accomplish what I have so far.”',
+            bio: 'Aden loves baseball, and has committed himself to teaching and passing all his baseball knowledge and experiences onto young ball players. "My family for the most part, other than my sister were born up in the north and both my parents were military at one point. Now my mom is a nurse. We are a Christian family, and we all love baseball and my sister plays softball. My parents have done so much for me to be able to accomplish what I have so far."',
             highSchoolCareer: [
                 "Aden attends Cabot High School in Cabot, AR.",
                 "Aden has been a Varsity starter all 3 years as a pitcher and middle infielder.",
@@ -82,9 +77,9 @@ const MobileTrainingCoaches = () => {
                             <img src={coach.image} alt={coach.name} className="mobile-trainer-thumbnail" />
                             <h3>{coach.name}</h3>
                             {expandedCoachIndex === index ? (
-                                <img src={isDarkMode ? darkmodeChevronUp : chevronUp} alt="Chevron Up" className="chevron" />
+                                <img src={chevronUp} alt="Chevron Up" className="chevron" />
                             ) : (
-                                <img src={isDarkMode ? darkmodeChevronDown : chevronDown} alt="Chevron Down" className="chevron" />
+                                <img src={chevronDown} alt="Chevron Down" className="chevron" />
                             )}
                         </div>
                         {expandedCoachIndex === index && (

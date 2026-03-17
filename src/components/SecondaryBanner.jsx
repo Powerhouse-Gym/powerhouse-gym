@@ -1,101 +1,122 @@
-import React, { useContext } from 'react';
 import newlogo from "../assets/new-logo.png";
 import facebook from '../assets/facebook.svg';
 import instagram from '../assets/instagram.svg';
-import darkmodeFacebook from '../assets/darkmode-facebook.svg';
-import darkmodeInstagram from '../assets/darkmode-instagram.svg';
 import crossfit from "../assets/crossfit-white-remove-background.com.png";
-import { DarkModeContext } from '../context/DarkModeProvider';
 
 function SecondaryBanner() {
-  const { isDarkMode } = useContext(DarkModeContext);
+  const bannerStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    padding: '1.5rem 2rem',
+    backgroundColor: 'white',
+    color: '#333',
+    margin: '0rem 0',
+    flexWrap: 'wrap',
+  };
+
+  const sectionStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    flex: 1,
+    minWidth: '200px',
+    margin: '0.5rem',
+  };
+
+  const logoStyle = {
+    maxWidth: '180px',
+    marginBottom: '0.75rem',
+    transition: 'transform 0.3s ease',
+  };
+
+  const socialIconsStyle = {
+    display: 'flex',
+    gap: '1.2rem',
+    marginTop: '0.5rem',
+  };
+
+  const iconStyle = {
+    width: '28px',
+    height: '28px',
+    transition: 'opacity 0.3s ease',
+  };
+
+  const contactStyle = {
+    fontSize: '1.1rem',
+    fontWeight: 'bold',
+    marginBottom: '0.5rem',
+  };
+
+  const addressStyle = {
+    fontSize: '0.9rem',
+    color: '#666',
+  };
+
+  const phoneLinkStyle = {
+    color: '#000',
+    textDecoration: 'none',
+    transition: 'color 0.3s ease',
+  };
 
   return (
-    <div className="secondary-banner" style={{ 
-      display: 'flex', 
-      justifyContent: 'space-between', 
-      alignItems: 'center', 
-      padding: '1rem', 
-      backgroundColor: isDarkMode ? '#333' : '#fff',
-      color: isDarkMode ? '#fff' : '#000',
-    }}>
-      {/* Left Section: PTC Logo with Social Icons */}
-      <div className="logo-div" id="ptc-logo" style={{ textAlign: 'center' }}>
-        <img 
-          src={newlogo} 
-          className="logo" 
-          alt="PTC Logo" 
-          style={{ maxWidth: '300px', marginBottom: '0.5rem' }} 
+    <div className="secondary-banner" style={bannerStyle}>
+      {/* PTC Section */}
+      <div className="ptc-section" style={sectionStyle}>
+        <img
+          src={newlogo}
+          alt="PTC Logo"
+          className="ptc-logo"
+          style={logoStyle}
         />
-        <div className="social-icons-left" style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <a 
-            href="https://www.facebook.com/powerhousetrainingcomplex/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <img 
-              src={isDarkMode ? darkmodeFacebook : facebook} 
-              alt="Facebook" 
-              style={{ width: '24px', height: '24px' }} 
+        <div style={socialIconsStyle}>
+          <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={facebook}
+              alt="Facebook"
+              style={iconStyle}
             />
           </a>
-          <a 
-            href="https://www.instagram.com/powerhousetrainingcomplex/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <img 
-              src={isDarkMode ? darkmodeInstagram : instagram} 
-              alt="Instagram" 
-              style={{ width: '24px', height: '24px' }} 
+          <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={instagram}
+              alt="Instagram"
+              style={iconStyle}
             />
           </a>
         </div>
       </div>
 
-      {/* Center Section: Contact Info */}
-      <div className="contact-banner" style={{ textAlign: 'center' }}>
-        <a href="tel:+15012471517" className="phone-link" style={{ 
-          color: isDarkMode ? '#fff' : '#000', 
-          textDecoration: 'none' 
-        }}>
-          501-247-1517
+      {/* Contact Section */}
+      <div className="contact-section" style={sectionStyle}>
+        <a href="tel:+15012471517" style={phoneLinkStyle}>
+          <span style={contactStyle}>501-247-1517</span>
         </a>
-        <h4 style={{ margin: '0.5rem 0 0' }}>
-          1804 S. Pine Street, Cabot, AR 72023
-        </h4>
+        <p style={addressStyle}>1804 S. Pine Street, Cabot, AR 72023</p>
       </div>
 
-      {/* Right Section: CrossFit Logo with Social Icons */}
-      <div className="logo-div" style={{ textAlign: 'center' }}>
-        <img 
-          src={crossfit} 
-          className="logo" 
-          alt="CrossFit Logo" 
-          id="crossfit-logo" 
-          style={{ maxWidth: '300px', marginBottom: '0.5rem' }} 
+      {/* CrossFit Section */}
+      <div className="crossfit-section" style={sectionStyle}>
+        <img
+          src={crossfit}
+          alt="CrossFit Logo"
+          style={logoStyle}
         />
-        <div className="social-icons-right" style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <a 
-            href="https://www.facebook.com/powerhousetrainingcomplex/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <img 
-              src={isDarkMode ? darkmodeFacebook : facebook} 
-              alt="Facebook" 
-              style={{ width: '24px', height: '24px' }} 
+        <div style={socialIconsStyle}>
+          <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={facebook}
+              alt="Facebook"
+              style={iconStyle}
             />
           </a>
-          <a 
-            href="https://www.instagram.com/powerhousetrainingcomplex/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <img 
-              src={isDarkMode ? darkmodeInstagram : instagram} 
-              alt="Instagram" 
-              style={{ width: '24px', height: '24px' }} 
+          <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={instagram}
+              alt="Instagram"
+              style={iconStyle}
             />
           </a>
         </div>
