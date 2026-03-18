@@ -110,7 +110,7 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
-  z-index: 55;
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
@@ -681,6 +681,110 @@ html {
   background-color: #f4f4f4;
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .banner > img {
+    height: auto;
+    width: 70%;
+    max-width: 900px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+
+  .contact-phone {
+    font-size: 2.8rem !important;
+  }
+
+  .contact-address {
+    font-size: 2rem !important;
+  }
+
+  .ptc-logo {
+    max-width: 280px !important;
+  }
+
+  .newsletter-container {
+    height: auto !important;
+    padding: 2rem !important;
+    gap: 8% !important;
+  }
+
+  .newsletter-div > h1,
+  .newsletter-mobile-h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .newsletter-div > p {
+    font-size: 1.8rem !important;
+  }
+
+  #review-header {
+    padding-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .contact-phone {
+    font-size: 2rem !important;
+  }
+
+  .contact-address {
+    font-size: 1.4rem !important;
+  }
+
+  .ptc-logo {
+    max-width: 260px !important;
+  }
+
+  #review-header {
+    padding-top: 40px !important;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 900px) {
+  .newsletter-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    height: auto !important;
+    padding: 2rem 1rem !important;
+    gap: 1rem !important;
+  }
+
+  .newsletter-div {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .newsletter-div > h1,
+  .newsletter-mobile-h1 {
+    font-size: 2rem !important;
+    margin: 0 0 0.4rem !important;
+  }
+
+  .newsletter-div > p {
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+  }
+
+  .contact-phone {
+    font-size: 2rem !important;
+  }
+
+  .contact-address {
+    font-size: 1.5rem !important;
+  }
+
+  .ptc-logo {
+    max-width: 260px !important;
+  }
+
+  #review-header {
+    padding-top: 40px !important;
+  }
+}
+
 @media (max-width: 540px) {
   .secondary-banner {
     flex-direction: column !important;
@@ -871,21 +975,24 @@ html {
 
 .newsletter-container {
   display: flex;
-
-  height: 20vh;
+  flex-direction: column;
+  height: auto;
   width: 100%;
   align-items: center;
-  background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
   justify-content: center;
+  text-align: center;
+  background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
   color: white;
-  /* margin-bottom: 15px; */
   z-index: 2;
-  gap: 10%;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
 }
 
 .newsletter-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .newsletter-div>h1 {
@@ -1281,7 +1388,7 @@ button {
   max-width: 100%;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 25px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3260,7 +3367,7 @@ button {
 
   .newsletter-div>h1 {
     font-size: 36px;
-    text-align: left;
+    text-align: center;
   }
 
   .signup-btn {

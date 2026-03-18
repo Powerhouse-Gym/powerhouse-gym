@@ -6,7 +6,6 @@ import {
   Tabs,
   Tab,
   IconButton,
-  Drawer,
   List,
   ListItem,
   ListItemText,
@@ -28,7 +27,7 @@ function Navbar(props) {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top whenever the path changes
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   const navigate = useNavigate();
@@ -40,88 +39,23 @@ function Navbar(props) {
   };
 
   const mobileLinksStyle = {
-    textTransform: "uppercase", // Capitalize menu items
-    fontSize: "1.3rem", // Match the font size used in nav-links
-    fontFamily: "Rock Salt, cursive", // Matching font family
-    color: "black", // Set text color
+    textTransform: "uppercase",
+    fontSize: "1.3rem",
+    fontFamily: "Rock Salt, cursive",
+    color: "black",
   };
-  const drawer = (
-    <Box
-      sx={{
-        width: 250,
-        backgroundColor: "white",
-        height: "100%",
-        color: "black",
-        "& *": {
-          color: "black",
-        },
-      }}
-      role="presentation"
-      onClick={handleDrawerToggle}
-      onKeyDown={handleDrawerToggle}
-    >
-      {/* Close Button */}
-      <IconButton
-        onClick={() => handleDrawerToggle(false)}
-        sx={{
-          marginBottom: "20px",
-          display: "flex",
-          justifyContent: "flex-end",
-        }}
-      >
-        <CloseIcon />
-      </IconButton>
-      <List sx={mobileLinksStyle}>
-        <ListItem button onClick={() => handleNavigate("/")}>
-          <ListItemText primary="Home" />
-        </ListItem>
-        <ListItem button onClick={() => handleNavigate("/training")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <ListItemText primary="Sports Training" />
-          <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
-            <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
-            </a>
-            <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
-            </a>
-          </Box>
-        </ListItem>
-        <ListItem button onClick={() => handleNavigate("/personal-training")}>
-          <ListItemText primary="Personal Training" />
-        </ListItem>
-        <ListItem button onClick={() => handleNavigate("/crossfit")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <ListItemText primary="Crossfit" />
-          <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
-            <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
-            </a>
-            <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
-            </a>
-          </Box>
-        </ListItem>
-        <ListItem button onClick={() => handleNavigate("/team")}>
-          <ListItemText primary="Meet the Team" />
-        </ListItem>
-        <ListItem button onClick={() => handleNavigate("/aboutus")}>
-          <ListItemText primary="About Us" />
-        </ListItem>
-
-        <button className="signup-btn nav-signup" id="signup-btn-mobile" style={{ marginTop: "16px" }}>SIGN UP</button>
-      </List>
-    </Box>
-  );
 
   return (
     <div className="navbar">
       <Box className="nav-container">
+        {/* Hamburger — hidden when menu is open */}
         <IconButton
           edge="start"
           color="inherit"
           aria-label="menu"
           onClick={handleDrawerToggle}
           sx={{
-            display: { xs: "block", md: "none" },
+            display: { xs: mobileOpen ? "none" : "block", md: "none" },
             position: "absolute",
             top: "10px",
             left: "10px",
@@ -132,8 +66,79 @@ function Navbar(props) {
         >
           <MenuIcon sx={{ fontSize: "3rem" }} />
         </IconButton>
+
+        {/* Mobile menu — replaces navbar when open */}
+        {mobileOpen && (
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none" },
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100vh",
+              backgroundColor: "white",
+              flexDirection: "column",
+              zIndex: 10000,
+              overflowY: "auto",
+            }}
+          >
+            <IconButton
+              onClick={handleDrawerToggle}
+              sx={{ alignSelf: "flex-end", margin: "10px 10px 0 0" }}
+            >
+              <CloseIcon sx={{ fontSize: "2rem" }} />
+            </IconButton>
+            <List sx={mobileLinksStyle}>
+              <ListItem button onClick={() => handleNavigate("/")}>
+                <ListItemText primary="Home" />
+              </ListItem>
+              <ListItem button onClick={() => handleNavigate("/training")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <ListItemText primary="Sports Training" />
+                <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
+                  <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                    <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+                  </a>
+                  <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                    <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                  </a>
+                </Box>
+              </ListItem>
+              <ListItem button onClick={() => handleNavigate("/personal-training")}>
+                <ListItemText primary="Personal Training" />
+              </ListItem>
+              <ListItem button onClick={() => handleNavigate("/crossfit")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <ListItemText primary="Crossfit" />
+                <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
+                  <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                    <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+                  </a>
+                  <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
+                    <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                  </a>
+                </Box>
+              </ListItem>
+              <ListItem button onClick={() => handleNavigate("/team")}>
+                <ListItemText primary="Meet the Team" />
+              </ListItem>
+              <ListItem button onClick={() => handleNavigate("/aboutus")}>
+                <ListItemText primary="About Us" />
+              </ListItem>
+              <a
+                href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <button className="signup-btn nav-signup" id="signup-btn-mobile" style={{ marginTop: "16px" }}>SIGN UP</button>
+              </a>
+            </List>
+          </Box>
+        )}
+
+        {/* Desktop nav */}
         <Tabs
-          sx={{ display: { xs: "none", md: "flex" },  justifyContent: "space-between" }}
+          sx={{ display: { xs: "none", md: "flex" }, justifyContent: "space-between" }}
           className="nav-links"
           value={window.location.pathname}
         >
@@ -145,85 +150,12 @@ function Navbar(props) {
               <img src={instagram} alt='Instagram' />
             </a>
           </div>
-          <Tab
-            sx={{ fontSize:{
-              xs: '12px', // For extra small screens
-              sm: '14px', // For small screens
-              md: '16px', // For medium screens
-              lg: '18px', // For large screens
-              xl: '20px', // For extra large screens
-            },  }}
-            className="nav-item"
-            label="Home"
-            value="/"
-            onClick={() => handleNavigate("/")}
-          />
-          <Tab
-            sx={{ fontSize:{
-              xs: '12px', // For extra small screens
-              sm: '14px', // For small screens
-              md: '16px', // For medium screens
-              lg: '18px', // For large screens
-              xl: '20px', // For extra large screens
-            },  }}
-            className="nav-item"
-            label="Sports Training"
-            value="/training"
-            onClick={() => handleNavigate("/training")}
-          />
-          <Tab
-            sx={{ fontSize:{
-              xs: '12px', // For extra small screens
-              sm: '14px', // For small screens
-              md: '16px', // For medium screens
-              lg: '18px', // For large screens
-              xl: '20px', // For extra large screens
-            },  }}
-            className="nav-item"
-            label="Personal Training"
-            value="/personal-training"
-            onClick={() => handleNavigate("/personal-training")}
-          />
-          <Tab
-            sx={{ fontSize:{
-              xs: '12px', // For extra small screens
-              sm: '14px', // For small screens
-              md: '16px', // For medium screens
-              lg: '18px', // For large screens
-              xl: '20px', // For extra large screens
-            },  }}
-            className="nav-item"
-            label="Crossfit"
-            value="/crossfit"
-            onClick={() => handleNavigate("/crossfit")}
-          />
-          <Tab
-            sx={{ fontSize:{
-              xs: '12px', // For extra small screens
-              sm: '14px', // For small screens
-              md: '16px', // For medium screens
-              lg: '18px', // For large screens
-              xl: '20px', // For extra large screens
-            },  }}
-            className="nav-item"
-            label="Meet the Team"
-            value="/team"
-            onClick={() => handleNavigate("/team")}
-          />
-          <Tab
-            sx={{ fontSize:{
-              xs: '12px', // For extra small screens
-              sm: '14px', // For small screens
-              md: '16px', // For medium screens
-              lg: '18px', // For large screens
-              xl: '20px', // For extra large screens
-            },  }}
-            className="nav-item"
-            label="About Us"
-            value="/aboutus"
-            onClick={() => handleNavigate("/aboutus")}
-          />
-
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Personal Training" value="/personal-training" onClick={() => handleNavigate("/personal-training")} />
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="About Us" value="/aboutus" onClick={() => handleNavigate("/aboutus")} />
           <a
             href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
             target="_blank"
@@ -232,20 +164,8 @@ function Navbar(props) {
           >
             <button className="signup-btn" id="signup-btn-mobile">SIGN UP</button>
           </a>
-
-
         </Tabs>
       </Box>
-
-      {/* Mobile Drawer for nav menu */}
-      <Drawer
-        anchor="left"
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
-        sx={{ display: { xs: "block", md: "none" } }} // Only show on mobile
-      >
-        {drawer}
-      </Drawer>
     </div>
   );
 }

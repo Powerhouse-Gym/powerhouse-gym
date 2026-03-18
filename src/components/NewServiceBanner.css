@@ -24,6 +24,8 @@
 
 .banner-container {
     display: none;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.06);
 }
 
 @media only screen and (max-width: 900px) {
@@ -119,19 +121,20 @@
     .service-description>img {
         max-width: 480px;
         width: 75%;
-        height: 25vh;
+        height: 30vh;
         justify-self: center;
         align-self: center;
+        object-fit: cover;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 901px) {
     .banner-container {
         display: flex !important;
         flex-direction: row;
         align-items: stretch;
         margin: 30px 0;
-        padding: 0;
+        padding: 0 4rem;
         gap: 0;
         width: 100%;
     }
@@ -241,15 +244,115 @@
         grid-column: 2;
         grid-row: 1 / 4;
         width: 100%;
-        height: 220px;
+        height: 100%;
+        min-height: 280px;
         object-fit: cover;
+        object-position: center top;
         border-radius: 10px;
-        align-self: start;
-        margin-top: 50px;
+        align-self: stretch;
+        margin-top: 0;
     }
 }
 
 @media only screen and (max-width: 780px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .banner-container {
+        padding: 0 4rem 40px 4rem;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1199px) {
+    .banner-container {
+        padding: 0 3rem 40px 3rem;
+    }
+
+    .service-container > button {
+        font-size: 17px;
+        height: 60px;
+    }
+
+    .service-description {
+        padding: 1.5rem 2rem;
+    }
+
+    .service-description > h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-description > ul li {
+        font-size: 1.1rem;
+    }
+
+    .service-description > button {
+        font-size: 1.1rem;
+        padding: 10px 18px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 900px) {
+    .banner-container {
+        padding: 0 2rem 40px 2rem;
+    }
+
+    .banner-container > h1 {
+        position: static;
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .service-container {
+        gap: 20px;
+    }
+
+    .service-container > button {
+        width: 140px;
+        height: 54px;
+        font-size: 22px;
+    }
+
+    .service-description {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        gap: 16px;
+        height: auto;
+    }
+
+    .service-description > h2 {
+        font-size: 2rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .service-description > ul {
+        width: 85%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .service-description > ul li {
+        font-size: 1.2rem;
+    }
+
+    .service-description > img {
+        width: 85%;
+        height: 38vh;
+    }
+
+    .service-description > h2,
+    .service-description > ul {
+        width: 85%;
+        max-width: none;
+    }
+
+    .service-description > button {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+}
 
 @media only screen and (max-width: 540px) {
     .banner-container > h1 {
@@ -347,14 +450,35 @@
 
     .service-description {
         height: auto;
-        margin-top: 12px;
+        margin-top: 28px;
         margin-bottom: 12px;
         gap: 10px;
     }
 
-    .service-description > button {
+    .service-description > img {
+        width: 90%;
+    }
+
+    .service-description > h2,
+    .service-description > ul {
+        width: 90%;
+        max-width: 480px;
+    }
+
+    .service-description > ul {
+        max-height: 200px;
+        overflow: hidden;
+    }
+
+    .service-description > h2 {
+        text-align: center;
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+
+.service-description > button {
         margin-top: 10px;
-        margin-bottom: 16px;
+        margin-bottom: 0;
         width: 60%;
         height: auto;
         padding: 8px 12px;
@@ -365,6 +489,6 @@
 
     .banner-container {
         margin-top: 12px;
-        padding-bottom: 24px;
+        padding-bottom: 30px;
     }
 }

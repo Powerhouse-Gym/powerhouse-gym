@@ -4,6 +4,12 @@
     background-color: #f4f4f4;
 }
 
+.carousel-div {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08), 0 -4px 18px rgba(0, 0, 0, 0.08);
+}
+
 .carousel-img {
     max-width: 900px;
 }
@@ -14,6 +20,9 @@
     max-width: 900px;
     border-radius: 10px;
     object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 /* .carousel-div {
