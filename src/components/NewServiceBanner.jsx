@@ -1,106 +1,115 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import "../components/NewServiceBanner.css";
-import highfive from "../assets/traininghighfive.jpg";
-import crossfit from "../assets/crossfit.jpg";
+import newWrestle1 from "../assets/newWrestle1.jpeg";
+import crossfitNiki from "../assets/crossfitNiki.jpeg";
 import crossfitLogo from "../assets/crossfit-white.jpg";
 import logo from "../assets/logo-white.webp";
 import powerhousegrafiti from "../assets/powerhouse-grafiti.png";
-import swingaway from "../assets/swingaway.png";
+import newSports1 from "../assets/newSports1.jpeg";
 
-function NewServiceBanner() {
-    const [activeService, setActiveService] = useState({
+// Defined outside component — static data, no stale closure risk
+const allServices = [
+    {
         title: "Sports Training",
         logo: logo,
-        imgUrl: swingaway,
-        listItems:  [
+        imgUrl: newSports1,
+        imgStyle: { objectPosition: "center -20px" },
+        listItems: [
             "Comprehensive Training Services",
             "State-of-the-Art Indoor Practice Field",
             "Advanced Batting and Training Cages",
             "Versatile Training Spaces"
         ]
-    });
+    },
+    {
+        title: "Personal Training",
+        logo: powerhousegrafiti,
+        imgUrl: newWrestle1,
+        imgStyle: { objectPosition: "center 25%" },
+        listItems: [
+            "Inclusive & Adaptive Training",
+            "Sports-Specific Training",
+            "Individual & Team Strength Training",
+            "Small Group Training",
+            "Crossfit Onboarding",
+            "1-on-1 Personal Training"
+        ]
+    },
+    {
+        title: "Powerhouse Crossfit",
+        imgUrl: crossfitNiki,
+        imgStyle: { objectPosition: "center 15%" },
+        logo: crossfitLogo,
+        listItems: [
+            "Holistic fitness programs for healthier lifestyles.",
+            "Welcoming community fostering shared goals.",
+            "Focus on physical fitness, nutrition, and support.",
+            "Training for strong minds and resilient bodies.",
+            "Nutritional guidance for recovery and performance."
+        ]
+    }
+];
 
-    const [activeButton, setActiveButton] = useState("Sports Training");
-    
-    const allServices = [
-        {
-            title: "Powerhouse Crossfit",
-            imgUrl: crossfit,
-            logo: crossfitLogo,
-            listItems:  [
-                "Holistic fitness programs for healthier lifestyles.",
-                "Welcoming community fostering shared goals.",
-                "Focus on physical fitness, nutrition, and support.",
-                "Training for strong minds and resilient bodies.",
-                "Nutritional guidance for recovery and performance."
-            ]
-        },
-        { 
-            title: "Sports Training",
-            logo: logo,
-            imgUrl: swingaway,
-            listItems:  [
-                "Comprehensive Training Services",
-                "State-of-the-Art Indoor Practice Field",
-                "Advanced Batting and Training Cages",
-                "Versatile Training Spaces"
-            ]
-        },
-        {
-            title: "Personal Training",
-            logo: powerhousegrafiti,
-            imgUrl: highfive,
-            listItems: [
-              "Inclusive & Adaptive Training",
-              "Sports-Specific Training",
-              "Individual & Team Strength Training",
-              "Small Group Training",
-              "Crossfit Onboarding",
-              "1-on-1 Personal Training"
-            ]
-        }
-    ];
-
-
-    const handleServiceClick = (service) => {
-        const selectedService = allServices.find(s => s.title === service);
-        setActiveService(selectedService);
-        setActiveButton(service);
-    };
-
+function NewServiceBanner() {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+    const resumeTimer = useRef(null);
     const navigate = useNavigate();
 
+    const activeService = allServices[activeIndex];
+
+    // Auto-cycle every 3.5s, pauses on user interaction
+    useEffect(() => {
+        if (isPaused) return;
+        const interval = setInterval(() => {
+            setActiveIndex(prev => (prev + 1) % allServices.length);
+        }, 3500);
+        return () => clearInterval(interval);
+    }, [isPaused]);
+
+    // Cleanup resume timer on unmount
+    useEffect(() => {
+        return () => clearTimeout(resumeTimer.current);
+    }, []);
+
+    const handleServiceClick = (index) => {
+        setActiveIndex(index);
+        setIsPaused(true);
+        // Resume auto-cycle after 8s of inactivity
+        clearTimeout(resumeTimer.current);
+        resumeTimer.current = setTimeout(() => setIsPaused(false), 8000);
+    };
+
     const handleLearnMore = (title) => {
-        if (title === "Powerhouse Crossfit") {
-            navigate("/crossfit");
-        } else if (title === "Sports Training") {
-            navigate("/training");
-        } else if (title === "Personal Training") {
-            navigate("/personal-training");
-        }
+        if (title === "Powerhouse Crossfit") navigate("/crossfit");
+        else if (title === "Sports Training") navigate("/training");
+        else if (title === "Personal Training") navigate("/personal-training");
         window.scrollTo(0, 0);
     };
 
-    return ( 
+    return (
         <div className='banner-container'>
             <h1>Services</h1>
             <div className="service-container">
-                <button 
-                    className={activeButton === "Sports Training" ? "active" : ""}
-                    onClick={() => handleServiceClick("Sports Training")}
+                <button
+                    type="button"
+                    className={activeIndex === 0 ? "active" : ""}
+                    onClick={() => handleServiceClick(0)}
                 >
                     SPORTS
                 </button>
-                <button 
-                    className={activeButton === "Personal Training" ? "active" : ""}
-                    onClick={() => handleServiceClick("Personal Training")}
+                <button
+                    type="button"
+                    className={activeIndex === 1 ? "active" : ""}
+                    onClick={() => handleServiceClick(1)}
                 >
                     1 : 1
                 </button>
-                <button 
-                    className={activeButton === "Powerhouse Crossfit" ? "active" : ""}
-                    onClick={() => handleServiceClick("Powerhouse Crossfit")}
+                <button
+                    type="button"
+                    className={activeIndex === 2 ? "active" : ""}
+                    onClick={() => handleServiceClick(2)}
                 >
                     CROSSFIT
                 </button>
@@ -108,12 +117,18 @@ function NewServiceBanner() {
             <div className='service-description'>
                 <h2>{activeService.title}</h2>
                 <ul>
-                    {activeService.listItems.map((item, index) => (
-                        <li key={index}>{item}</li>
+                    {activeService.listItems.map((item) => (
+                        <li key={item}>{item}</li>
                     ))}
                 </ul>
-                <img src={activeService.imgUrl} alt="Service" />
-                <button onClick={() => handleLearnMore(activeService.title)}>LEARN MORE</button>
+                <img
+                    src={activeService.imgUrl}
+                    alt={`${activeService.title} service`}
+                    style={activeService.imgStyle}
+                />
+                <button type="button" onClick={() => handleLearnMore(activeService.title)}>
+                    LEARN MORE
+                </button>
             </div>
         </div>
     );

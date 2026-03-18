@@ -45,13 +45,13 @@ function SecondaryBanner() {
   };
 
   const contactStyle = {
-    fontSize: '1.1rem',
+    fontSize: '1.5rem',
     fontWeight: 'bold',
     marginBottom: '0.5rem',
   };
 
   const addressStyle = {
-    fontSize: '0.9rem',
+    fontSize: '1.2rem',
     color: '#666',
   };
 
@@ -92,9 +92,9 @@ function SecondaryBanner() {
       {/* Contact Section */}
       <div className="contact-section" style={sectionStyle}>
         <a href="tel:+15012471517" style={phoneLinkStyle}>
-          <span style={contactStyle}>501-247-1517</span>
+          <span className="contact-phone" style={contactStyle}>501-247-1517</span>
         </a>
-        <p style={addressStyle}>1804 S. Pine Street, Cabot, AR 72023</p>
+        <p className="contact-address" style={addressStyle}>1804 S. Pine Street, Cabot, AR 72023</p>
       </div>
 
       {/* CrossFit Section */}
