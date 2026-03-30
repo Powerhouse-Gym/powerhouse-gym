@@ -130,9 +130,6 @@ html {
   /* font-family: "Rock Salt", cursive !important; */
 }
 
-.logo {
-  /* border: solid black 1px; */
-}
 
 .crossfit {
   height: 100% !important;
@@ -783,6 +780,14 @@ html {
   #review-header {
     padding-top: 40px !important;
   }
+
+  .intro-section-sports > h1 {
+    font-size: 2.8rem !important;
+  }
+
+  .intro-section-sports > p {
+    font-size: 1.2rem !important;
+  }
 }
 
 @media (max-width: 540px) {
@@ -891,6 +896,15 @@ html {
     font-size: 0.85rem !important;
     margin: 0 !important;
   }
+
+  .intro-section-sports > h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .intro-section-sports > p {
+    font-size: 0.95rem !important;
+    width: 90% !important;
+  }
 }
 
 
@@ -934,6 +948,64 @@ html {
   .newsletter-div > p {
     font-size: 0.8rem !important;
     margin: 0 !important;
+  }
+
+  .training-container {
+    width: 100% !important;
+    padding: 0 10px !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+  }
+
+  .css-19kzrtu {
+    padding: 8px 8px 8px 38px !important;
+  }
+
+  .service-section {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 8px !important;
+  }
+
+  .service-section h5 {
+    font-size: 0.95rem !important;
+  }
+
+  .service-section h6 {
+    font-size: 0.8rem !important;
+  }
+
+  .service-section p {
+    font-size: 0.72rem !important;
+  }
+
+  .image-container {
+    width: 100% !important;
+    height: 180px !important;
+    aspect-ratio: unset !important;
+  }
+
+  .intro-section-sports {
+    margin-right: 10px !important;
+    margin-top: 50px !important;
+    gap: 8px !important;
+  }
+
+  .intro-section-sports > h1 {
+    font-size: 1.1rem !important;
+  }
+
+  .intro-section-sports > p {
+    font-size: 0.7rem !important;
+    width: 90% !important;
+  }
+
+  .training-div h1 {
+    font-size: 1.2rem !important;
+    margin: 8px !important;
   }
 }
 
@@ -1659,8 +1731,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 5vw;
-  /* Distribute the cards evenly */
+  margin: 0 auto;
 }
 
 .training-item {
@@ -1686,22 +1759,19 @@ button {
 
 .image-container {
   position: relative;
-  width: 90%;
-  height: auto;
-  /* Adjust this for your desired aspect ratio (height/width)*100 */
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  /* Hide anything that exceeds the bounds */
   background-color: var(--secondary-background-color);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .image-container img {
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 30px;
-  /* Fit the image within the bounds without cropping */
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 20px;
 }
 
 .crossfit-container {
@@ -1979,7 +2049,7 @@ button {
 }
 
 .sports-options {
-  background-color: var(--secondary-background-color);
+  background-color: #ffffff;
 }
 
 #sports-coaches-h1 {
@@ -2223,12 +2293,6 @@ button {
 }
 
 .service-section {
-
-  /* border: solid 1px var(--text-color); */
-
-  /* white-space: normal; */
-  /* background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%); */
-  /* color: white; */
   border: 1px solid white;
   padding: 10px;
   box-shadow: var(--box-shadow);
@@ -2236,11 +2300,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 50vh;
-  max-width: 400px;
+  justify-content: flex-start;
+  gap: 10px;
+  height: auto;
+  max-width: 360px;
   width: 25vw;
-  min-width: 250px;
+  min-width: 260px;
   background-color: var(--secondary-background-color);
   text-align: center;
 }
@@ -3146,7 +3211,8 @@ button {
 
   .service-section {
     width: 100%;
-    height: fit-content;
+    max-width: 400px;
+    height: auto;
   }
 
 
@@ -3691,6 +3757,11 @@ button {
 
   .css-19kzrtu {
     padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 95px !important;
   }
 
   .training-div {
@@ -3815,39 +3886,42 @@ button {
   }
 
   .service-section {
-    width: 100%;
-    max-width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: row !important;
+    width: calc(50% - 2rem);
+    max-width: 360px;
+    height: auto;
+    flex-direction: column;
   }
 
   .personal-service-section {
-    display: column;
-    height: 65vh;
+    height: auto;
   }
 
   .image-container {
     width: 100%;
+    aspect-ratio: 4 / 3;
   }
 
   .training-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .training-service-btns {
     display: flex !important;
-    flex-direction: column !important;
-    align-items: end !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .training-service-btns>a {
-    width: 100%;
+    width: auto;
   }
 
   .training-service-btns>a>button {
-    width: 100%;
+    width: auto;
   }
 
   footer {
@@ -4016,15 +4090,18 @@ button {
   }
 
   .service-section {
-    height: 45vh;
+    height: auto;
+    width: calc(50% - 2rem);
   }
 
   .image-container {
-    height: 40vh;
+    aspect-ratio: 4 / 3;
+    height: auto;
   }
 
   .training-container {
     width: 80vw;
+    margin: 0 auto;
   }
 
   .css-19kzrtu {
@@ -4032,6 +4109,8 @@ button {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center !important;
+    margin-left: 95px !important;
   }
 
 }
