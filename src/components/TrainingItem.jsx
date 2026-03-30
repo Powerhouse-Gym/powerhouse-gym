@@ -86,7 +86,19 @@ const TrainingItem = ({ arr }) => {
                         </a>
                     }
                     {
-                        !elem.url1 &&
+                        elem.disabledTitle1 &&
+                        <Button size="small" variant='outlined' disabled sx={{ margin: '1px' }}>
+                            {elem.disabledTitle1}
+                        </Button>
+                    }
+                    {
+                        elem.disabledTitle2 &&
+                        <Button size="small" variant='outlined' disabled sx={{ margin: '1px' }}>
+                            {elem.disabledTitle2}
+                        </Button>
+                    }
+                    {
+                        !elem.url1 && !elem.disabledTitle1 &&
                         < a style={{ color: 'black', margin: '1px' }} href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
                             <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
                                 Call for more information

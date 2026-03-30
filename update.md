@@ -8,31 +8,35 @@ I've expanded the organized list into a more detailed view, breaking down each t
 
 This roadmap is still grouped by website sections for systematic implementation. Total tasks: ~40. Start with High priorities for quick wins on usability and accuracy. Estimated effort: High (low effort, immediate impact); Medium (moderate effort, visual/content focus); Low (higher effort, new features).
 
-#### 1. Front Page (Mobile View Focus)
-- **Task 1.1: Fix social media links under PTC logo being jumbled on phone view.**  
-  **Description**: Inspect and adjust CSS for mobile responsiveness (e.g., use media queries to stack or reorganize links). Test on multiple devices/browsers to ensure links display cleanly without overlapping.  
-  **Reference**: "Social media Links under PTC logo are jumbled when viewing from phone"  
-  **Priority**: High  
+#### 1. Front Page (Mobile View Focus) ✅
+- ✅ **Task 1.1: Fix social media links under PTC logo being jumbled on phone view.**
+  **Description**: Inspect and adjust CSS for mobile responsiveness (e.g., use media queries to stack or reorganize links). Test on multiple devices/browsers to ensure links display cleanly without overlapping.
+  **Reference**: "Social media Links under PTC logo are jumbled when viewing from phone"
+  **Priority**: High
+  **Status**: COMPLETED
   **Dependencies/Notes**: No new assets needed; focus on dev tools for quick fix. Impacts all mobile users.
 
-- **Task 1.2: Update photos with action photos of athletes hitting, pitching, fielding, catching.**  
-  **Description**: Replace existing front-page images with dynamic action shots. Source high-quality photos from Miguel or coaches, optimize for web (compress, alt text), and ensure they fit mobile/desktop layouts.  
-  **Reference**: "Update photos with action photos of athletes hitting, pitching, fielding, catching (Miguel/coaches)"  
-  **Priority**: Medium  
+- ✅ **Task 1.2: Update photos with action photos of athletes hitting, pitching, fielding, catching.**
+  **Description**: Replace existing front-page images with dynamic action shots. Source high-quality photos from Miguel or coaches, optimize for web (compress, alt text), and ensure they fit mobile/desktop layouts.
+  **Reference**: "Update photos with action photos of athletes hitting, pitching, fielding, catching (Miguel/coaches)"
+  **Priority**: Medium
+  **Status**: COMPLETED — newImage1–10 added to carousel, randomized order
   **Dependencies/Notes**: Coordinate photo collection; overlaps with athlete suggestions for using current gym/member photos.
 
 #### 2. Sports Training Tab
-- **Subsection: Cage and Field Rentals**
-  - **Task 2.1: Update Junior Hack Attack photo.**  
-    **Description**: Replace the current photo with the updated version from the graphic designer. Ensure it loads properly and includes descriptive alt text.  
-    **Reference**: "Update Junior Hack attack photo (request sent to graphic designer)"  
-    **Priority**: Medium  
+- **Subsection: Cage and Field Rentals** ✅
+  - ✅ **Task 2.1: Update Junior Hack Attack photo.**
+    **Description**: Replace the current photo with the updated version from the graphic designer. Ensure it loads properly and includes descriptive alt text.
+    **Reference**: "Update Junior Hack attack photo (request sent to graphic designer)"
+    **Priority**: Medium
+    **Status**: COMPLETED — updated to 26cagerental.jpeg; pricing consolidated to one card with 3 tiers
     **Dependencies/Notes**: Waiting on designer; confirm file format (e.g., JPG/PNG) and resolution.
 
-  - **Task 2.2: Update team rentals photo.**  
-    **Description**: Swap out the existing image with a new one representing team rentals. Optimize for size and add alt text for accessibility.  
-    **Reference**: "Update team rentals photo"  
-    **Priority**: Medium  
+  - ✅ **Task 2.2: Update team rentals photo.**
+    **Description**: Swap out the existing image with a new one representing team rentals. Optimize for size and add alt text for accessibility.
+    **Reference**: "Update team rentals photo"
+    **Priority**: Medium
+    **Status**: COMPLETED — updated to 26teamrentals.jpeg; disabled buttons added for coming-soon pricing
     **Dependencies/Notes**: Source new photo if not provided; align with overall visual refresh.
 
 - **Subsection: Baseball**

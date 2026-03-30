@@ -1,9 +1,8 @@
-import battingCage from '/src/assets/training/batting-cage.webp'
+import cageRentalNew from './assets/26cagerental.jpeg'
 import hitTrax from '/src/assets/training/hit-trax.webp'
 import hitTraxMembership from '/src/assets/training/hit-trax-membership.webp'
-import turfArea from '/src/assets/training/turf-area.webp'
-import cageRental from '/src/assets/training/cage-rental.webp'
-import teamRental from '/src/assets/training/team-rental.webp'
+import turfArea from './assets/26newturf.jpg'
+import teamRental from './assets/26teamrentals.jpeg'
 import unlimitedMembership from '/src/assets/training/unlimited-membership.webp'
 import hittingLessons from '/src/assets/training/hitting-lessons.webp'
 import pitchingLessons from '/src/assets/training/pitching-lessons.webp'
@@ -30,17 +29,19 @@ import mma from "/src/assets/mma.jpeg"
 const cageAndFieldRentals = [
     {
         title: "Batting Cage Rental",
-        price: "$40 an hour",
-        description: "14 by 14 by 70 foot hitting tunnels. Click the picture to book your rental.",
-        img: battingCage,
-        urlTitle1: "30 Minutes",
-        urlTitle2: "1 Hour",
+        price: "30 min $25 · 1 hour $40 · w/ Pitching Machine $50",
+        description: "14 by 14 by 70 foot hitting tunnels.",
+        img: cageRentalNew,
+        urlTitle1: "30 Minutes - $25",
+        urlTitle2: "1 Hour - $40",
+        urlTitle3: "w/ Pitching Machine - $50",
         url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43244-1-2-hour-cage-rental",
-        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43242-1-hour-cage-rental'
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43242-1-hour-cage-rental',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/116004-pitching-machine-1-hour-cage-rental'
     },
     {
         title: "HitTrax Rental",
-        price: "$55 an hour",
+        price: "$55 / 1 hour",
         description: "1 hr rental includes use of the HitTrax computer system",
         img: hitTrax,
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/102824-hit_trax-1-hour-cage-rental'
@@ -60,17 +61,12 @@ const cageAndFieldRentals = [
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43245-open-area'
     },
     {
-        title: "Cage Rental with Machine",
-        price: "$50 an hour",
-        description: "Junior Hack Attack available for rental!",
-        img: cageRental,
-        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/116004-pitching-machine-1-hour-cage-rental'
-    },
-    {
         title: "Team Rentals",
-        price: "Starting at $150/single use or $400/4 week package",
+        price: "1 Hour $60 · w/ Fielding Machine $70",
         description: "Indoor facility for off-season development and practices for baseball or softball teams.",
-        img: teamRental
+        img: teamRental,
+        disabledTitle1: "1 Hour - $60",
+        disabledTitle2: "w/ Fielding Machine - $70"
     },
     {
         title: "All Ages Unlimited Membership",
