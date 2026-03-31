@@ -124,6 +124,9 @@ function Navbar(props) {
               <ListItem button onClick={() => handleNavigate("/aboutus")}>
                 <ListItemText primary="About Us" />
               </ListItem>
+              <ListItem button onClick={() => handleNavigate("/efa")}>
+                <ListItemText primary="EFA Vendor" />
+              </ListItem>
               <a
                 href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
                 target="_blank"

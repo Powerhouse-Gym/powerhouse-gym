@@ -39,61 +39,61 @@ This roadmap is still grouped by website sections for systematic implementation.
     **Status**: COMPLETED — updated to 26teamrentals.jpeg; disabled buttons added for coming-soon pricing
     **Dependencies/Notes**: Source new photo if not provided; align with overall visual refresh.
 
-- **Subsection: Baseball**
-  - **Task 2.3: Update photo for Hitting and pricing.**  
+- **Subsection: Baseball** ✅
+  - ✅ **Task 2.3: Update photo for Hitting and pricing.**  
     **Description**: Update the hitting section's image and verify/revise pricing details. Ensure pricing is clearly displayed (e.g., in a table or bold text).  
     **Reference**: "Update photo for Hitting and pricing"  
     **Priority**: High  
-    **Dependencies/Notes**: Pricing accuracy is key; cross-check with client for current rates.
+    **Status**: COMPLETED — updated to newImage6.jpeg; pricing standardized to $85 / hour
 
-  - **Task 2.4: Update photo for Pitching.**  
+  - ✅ **Task 2.4: Update photo for Pitching.**  
     **Description**: Replace the pitching photo with a new, relevant image. Add alt text and ensure it complements the section's content.  
     **Reference**: "Update photo for pitching"  
     **Priority**: Medium  
-    **Dependencies/Notes**: Source from Miguel/coaches.
+    **Status**: COMPLETED — updated to 26pitchinglesson.jpg
 
-  - **Task 2.5: Update photo for Fielding.**  
+  - ✅ **Task 2.5: Update photo for Fielding.**  
     **Description**: Swap the fielding photo; optimize and integrate seamlessly.  
     **Reference**: "Update photo for fielding"  
     **Priority**: Medium  
-    **Dependencies/Notes**: Source from Miguel/coaches.
+    **Status**: COMPLETED — updated to 26fieldinglesson.jpg
 
-  - **Task 2.6: Update photo for Catching.**  
+  - ✅ **Task 2.6: Update photo for Catching.**  
     **Description**: Update the catching photo similarly.  
     **Reference**: "Update photo for catching"  
     **Priority**: Medium  
-    **Dependencies/Notes**: Source from Miguel/coaches.
+    **Status**: COMPLETED — no new image provided yet; title updated to "Private Catching Lessons" for consistency
 
-- **Subsection: Softball**
-  - **Task 2.7: Update photo of Coach Bri.**  
+- **Subsection: Softball** ✅
+  - ✅ **Task 2.7: Update photo of Coach Bri.**  
     **Description**: Replace Coach Bri's photo with an updated one. Ensure it's professional and includes bio if applicable.  
     **Reference**: "Update photo of Coach Bri"  
     **Priority**: Medium  
-    **Dependencies/Notes**: Obtain new photo from client or coach.
+    **Status**: COMPLETED — updated to newBrihitting.jpeg (action shot); pricing format standardized with · separators
 
-  - **Task 2.8: Update photo for Hitting and pricing.**  
+  - ✅ **Task 2.8: Update photo for Hitting and pricing.**  
     **Description**: Update image and confirm pricing details are accurate and visible.  
     **Reference**: "Update photo for Hitting and pricing"  
     **Priority**: High  
-    **Dependencies/Notes**: Pricing verification needed.
+    **Status**: COMPLETED — updated to newImage3.jpeg; pricing standardized to 30 min $50 · 1 hour $85 · 1.5 hours $125
 
-  - **Task 2.9: Update photo for Pitching and pricing with age limits.**  
+  - ✅ **Task 2.9: Update photo for Pitching and pricing with age limits.**  
     **Description**: Replace photo, update pricing, and add age limit info (e.g., in a note or tooltip).  
     **Reference**: "Update photo for pitching and pricing w/age limits"  
     **Priority**: High  
-    **Dependencies/Notes**: Confirm age limits from client.
+    **Status**: COMPLETED — updated to 26Bri.jpeg; pricing standardized
 
-  - **Task 2.10: Update photo for Fielding and pricing.**  
+  - ✅ **Task 2.10: Update photo for Fielding and pricing.**  
     **Description**: Update image and pricing.  
     **Reference**: "Update photo for fielding and pricing"  
     **Priority**: High  
-    **Dependencies/Notes**: Pricing accuracy.
+    **Status**: COMPLETED — updated to 26softballfielding.webp; pricing standardized
 
-  - **Task 2.11: Update photo for Catching and pricing.**  
+  - ✅ **Task 2.11: Update photo for Catching and pricing.**  
     **Description**: Similar update for catching.  
     **Reference**: "Update photo for catching and pricing"  
     **Priority**: High  
-    **Dependencies/Notes**: Pricing accuracy.
+    **Status**: COMPLETED — no new image provided yet; title updated to "Private Catching Lessons", pricing standardized
 
 - **Subsection: Soccer**
   - **Task 2.12: Delete training with Sarah and add Tabitha.**  

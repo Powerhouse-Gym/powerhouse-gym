@@ -22,7 +22,7 @@ const TrainingItem = ({ arr }) => {
                 }}
             >
                 <CardMedia className="image-container">
-                    <img src={elem.img} alt={elem.title} />
+                    <img src={elem.img} alt={elem.title} style={elem.imgPosition ? { objectPosition: elem.imgPosition } : undefined} />
                 </CardMedia>
                 <CardContent
                     sx={{
