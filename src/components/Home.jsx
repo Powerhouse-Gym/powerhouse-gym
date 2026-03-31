@@ -5,6 +5,7 @@ import powerhouse from "../assets/powerhouse-grafiti.png"
 import SecondaryBanner from './SecondaryBanner';
 import NewsLetter from './NewsLetter';
 import NewServiceBanner from './NewServiceBanner';
+import EfaBanner from './EfaBanner';
 
 // https://app.upperhand.io/accounts/new_user?customer_id=1047
 
@@ -41,13 +42,13 @@ function Home() {
         <img src={powerhouse} alt="powerhouse" />
 
       </div>
-   
+      <EfaBanner />
         <SecondaryBanner />
       <NewsLetter />
       <Carousel />
       <NewServiceBanner />
-        <h1 id="review-header">A local favorite, trusted and loved across the community!</h1>
-      <div id='test'></div>
+        {/* <h1 id="review-header">A local favorite, trusted and loved across the community!</h1>
+      <div id='test'></div> */}
       </div>
 
   );

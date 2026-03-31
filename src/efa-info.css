@@ -1,0 +1,73 @@
+.efa-info-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    color: var(--text-color);
+}
+
+.efa-logo {
+    display: block;
+    margin: 30px auto 20px;
+    max-width: 200px;
+}
+
+.efa-info-page h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.efa-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.efa-section {
+    margin-bottom: 35px;
+}
+
+.efa-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #c62828;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.efa-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.efa-section ul,
+.efa-section ol {
+    padding-left: 24px;
+    margin-top: 10px;
+}
+
+.efa-section li {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.efa-section a {
+    color: #c62828;
+    text-decoration: underline;
+}
+
+.efa-section a:hover {
+    color: #8e0000;
+}
+
+@media (max-width: 480px) {
+    .efa-info-page h1 {
+        font-size: 1.4rem;
+    }
+
+    .efa-section h2 {
+        font-size: 1.2rem;
+    }
+}

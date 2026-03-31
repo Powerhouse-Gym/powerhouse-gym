@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import PersonalTraining from './components/PersonalTraining';
 import AboutUs from './components/AboutUs';
 import Merch from './components/Merch';
+import EfaInfo from './components/EfaInfo';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/merch" element={<Merch />} />
+          <Route path="/efa" element={<EfaInfo />} />
         </Routes>
       </div>
 

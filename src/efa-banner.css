@@ -1,0 +1,73 @@
+.efa-banner {
+    width: 100%;
+    background: linear-gradient(135deg, #8e0000 0%, #c62828 50%, #8e0000 100%);
+    padding: 24px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.efa-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 700px;
+}
+
+.efa-banner-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.efa-banner-text {
+    font-size: 1rem;
+    color: #d4d4d4;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.efa-banner-btn {
+    margin-top: 6px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #ffffff;
+    color: #c62828;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.efa-banner-btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .efa-banner {
+        padding: 18px 16px;
+    }
+
+    .efa-banner-title {
+        font-size: 1rem;
+    }
+
+    .efa-banner-text {
+        font-size: 0.9rem;
+    }
+
+    .efa-banner-btn {
+        padding: 8px 24px;
+        font-size: 0.9rem;
+    }
+}

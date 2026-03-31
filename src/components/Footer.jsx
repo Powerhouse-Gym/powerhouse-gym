@@ -19,6 +19,7 @@ function Footer() {
                         <li onClick={() => navigate("/crossfit")}>Crossfit</li>
                         <li onClick={() => navigate("/team")}>Meet the Team</li>
                         <li onClick={() => navigate("/aboutus")}>About Us</li>
+                        <li onClick={() => navigate("/efa")}>EFA Vendor</li>
                     </ul>
                 </div>
 
