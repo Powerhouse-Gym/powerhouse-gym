@@ -7,6 +7,7 @@ import crossfitLogo from "../assets/crossfit-white.jpg";
 import logo from "../assets/logo-white.webp";
 import powerhousegrafiti from "../assets/powerhouse-grafiti.png";
 import newSports1 from "../assets/newSports1.jpeg";
+import coachAylin from "../assets/26volleyball3.jpeg";
 
 // Defined outside component — static data, no stale closure risk
 const allServices = [
@@ -25,8 +26,8 @@ const allServices = [
     {
         title: "Personal Training",
         logo: powerhousegrafiti,
-        imgUrl: newWrestle1,
-        imgStyle: { objectPosition: "center 25%" },
+        imgUrl: coachAylin,
+        imgStyle: { objectPosition: "center center" },
         listItems: [
             "Inclusive & Adaptive Training",
             "Sports-Specific Training",

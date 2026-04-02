@@ -1,0 +1,156 @@
+.summer-banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    padding: 30px 40px;
+    gap: 80px;
+    box-sizing: border-box;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+.summer-banner-img {
+    flex-shrink: 0;
+    width: 300px;
+    border-radius: 12px;
+    overflow: visible;
+    transform: rotate(-5deg);
+    margin: -45px 0;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+}
+
+.summer-banner-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.summer-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 500px;
+}
+
+.summer-banner-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.summer-banner-subtitle {
+    font-size: 1rem;
+    color: #d4d4d4;
+    margin: 0;
+}
+
+.summer-banner-details {
+    display: flex;
+    gap: 30px;
+    margin: 8px 0;
+}
+
+.summer-banner-info,
+.summer-banner-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.summer-banner-info span {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.summer-banner-pricing span {
+    color: #ed1c26;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.summer-banner-early {
+    color: #ffd54f;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 4px 0 0;
+}
+
+.summer-banner-btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.summer-banner-btn:hover {
+    background-color: #ed1c26;
+    color: #ffffff;
+    border-color: #ed1c26;
+}
+
+@media (max-width: 768px) {
+    .summer-banner {
+        flex-direction: column;
+        padding: 24px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .summer-banner-img {
+        width: 180px;
+        transform: none;
+        margin: 0;
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+    }
+
+    .summer-banner-content {
+        align-items: center;
+    }
+
+    .summer-banner-title {
+        font-size: 1.2rem;
+    }
+
+    .summer-banner-details {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .summer-banner-info,
+    .summer-banner-pricing {
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .summer-banner-title {
+        font-size: 1rem;
+    }
+
+    .summer-banner-img {
+        width: 150px;
+        transform: none;
+        margin: 0;
+    }
+
+    .summer-banner-btn {
+        padding: 8px 24px;
+        font-size: 0.9rem;
+    }
+}

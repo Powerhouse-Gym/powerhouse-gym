@@ -6,6 +6,7 @@ import SecondaryBanner from './SecondaryBanner';
 import NewsLetter from './NewsLetter';
 import NewServiceBanner from './NewServiceBanner';
 import EfaBanner from './EfaBanner';
+import SummerBanner from './SummerBanner';
 
 // https://app.upperhand.io/accounts/new_user?customer_id=1047
 
@@ -42,6 +43,7 @@ function Home() {
         <img src={powerhouse} alt="powerhouse" />
 
       </div>
+      <SummerBanner />
       <EfaBanner />
         <SecondaryBanner />
       <NewsLetter />
