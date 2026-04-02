@@ -12,20 +12,21 @@ import softballCatchingLessons from '/src/assets/training/softball-catching-less
 import softballHittingLessons from './assets/newBrihitting.jpeg'
 import softballPitchingLessons from './assets/26Bri.jpeg'
 import softballFieldingLessons from './assets/26softballfielding.webp'
-import soccerTraining from '/src/assets/training/soccer-training.webp'
+import soccerTraining from './assets/26soccer.jpeg'
 import soccerTeamRental from '/src/assets/training/soccer-team-rental.webp'
 import soccerTeam from '/src/assets/training/soccer-team.webp'
-import volleyballLessons from '/src/assets/training/volleyball-lessons.webp'
-import volleyballTeamTraining from '/src/assets/training/volleyball-team-training.webp'
-import volleyballTeamDiscount from '/src/assets/training/volleyball-team-discount.webp'
+import volleyballLessons from './assets/26volleyball.jpeg'
+import volleyballTeamTraining from './assets/26volleyball2.jpeg'
+import volleyballTeamDiscount from './assets/26volleyball3.jpeg'
 import footballLessons from '/src/assets/training/football-lessons.webp'
 import wrestlingLessons from '/src/assets/training/wrestling-lessons.jpeg'
 import wrestlingMembership from '/src/assets/training/wrestling-membership.jpeg'
-import strengthConditioning from '/src/assets/training/strength-conditioning.webp'
+import strengthConditioning from './assets/newImage2.jpeg'
 import gymnastics from '/src/assets/training/gymnastics.webp'
 import coachBriNew from "./assets/newImage3.jpeg"
 import mma from "/src/assets/mma.jpeg"
 import briSpeed from "./assets/26Brispeed.jpeg"
+import volleyballLessonsImg from "./assets/26volleyball3.jpeg"
 
 const cageAndFieldRentals = [
     {
@@ -182,8 +183,8 @@ const softball = [
 
 const soccer = [
     {
-        title: "Soccer Training w/Sarah",
-        price: "",
+        title: "Soccer Training w/ Tabitha",
+        price: "(1:1) $70 · (2:1) $90 · (3:1) $120",
         description: "",
         img: soccerTraining,
         urlTitle1: '1 on 1',
@@ -194,10 +195,11 @@ const soccer = [
         url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/61712-soccer-training-3-on-1'
     },
     {
-        title: 'Indoor Soccer Team Rentals available',
-        price: "",
-        description: "",
-        img: soccerTeam
+        title: 'Indoor Soccer Team Rentals',
+        price: "$60 / hour",
+        description: "Indoor infield rental for soccer team practices and training.",
+        img: soccerTeam,
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43245-open-area-indoor-infield'
     },
     {
         title: "Indoor or Outdoor Monthly Soccer Team Rental Discount",
@@ -210,8 +212,8 @@ const soccer = [
 const volleyball = [
     {
         title: "Volleyball Lessons",
-        price: "",
-        description: "Schedule today!",
+        price: "(1:1) $70 · (2:1) $90 · (3:1) $120",
+        description: "Private and small group volleyball lessons with Coach Aylin.",
         img: volleyballLessons,
         urlTitle1: '1 on 1',
         urlTitle2: '2 on 1',
@@ -222,9 +224,11 @@ const volleyball = [
     },
     {
         title: "Volleyball Team Trainings",
-        price: "",
-        description: "Contact us regarding Team Trainings",
-        img: volleyballTeamTraining
+        price: "$180",
+        description: "Team volleyball training sessions with Coach Aylin.",
+        img: volleyballTeamTraining,
+        imgPosition: "center 45%",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/87548-volleyball-team-training'
     },
     {
         title: "Indoor or Outdoor Monthly Volleyball Team Rental Discount",
@@ -239,8 +243,32 @@ const volleyball = [
 
 const otherSportsAndTrainings = [
     {
+        title: "Speed & Agility w/ Coach Bri",
+        price: "30 min $45 · 1 hour $70",
+        description: "",
+        img: briSpeed,
+        urlTitle1: "30 Minutes - $45",
+        urlTitle2: "1 Hour - $70",
+        url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/150928-speed-and-agility-30-min",
+        url2: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/45137-speed-and-agility-1-hour"
+    },
+    {
+        title: "Private & Small Group Lessons w/ Coach Aylin",
+        price: "(1:1) $70 · (2:1) $90 · (3:1) $120 · (Team) $180",
+        description: "Private and small group training sessions with Coach Aylin.",
+        img: volleyballLessonsImg,
+        urlTitle1: "1 on 1",
+        urlTitle2: "2 on 1",
+        urlTitle3: "3 on 1",
+        urlTitle4: "Team",
+        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43526-volleyball-training',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/75208-volleyball-training-2-on-1',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/73759-volleyball-training-3-on-1',
+        url4: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/87548-volleyball-team-training'
+    },
+    {
         title: "Football Lessons",
-        price: "$50 / hour",
+        price: "$70 / hour",
         description: "Football training by a highly qualified trainer. Private or team trainings available.",
         img: footballLessons,
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/48428-football-training'
@@ -253,9 +281,9 @@ const otherSportsAndTrainings = [
         urlTitle1: '1 on 1',
         urlTitle2: '2 on 1',
         urlTitle3: '4 on 1',
-        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140966-wrestling-4-on-1',
-        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140957-wrestling-2-on-1',
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140959-wrestling-training-1-on-1',
+        url2: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140957-wrestling-2-on-1',
+        url3: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/140966-wrestling-4-on-1'
     },
     {
         title: "Wrestling Membership",
@@ -268,7 +296,8 @@ const otherSportsAndTrainings = [
         title: "Team Strength & Conditioning",
         price: "$10 / athlete · minimum of 10",
         description: "Seasonal! Contact us for more information.",
-        img: strengthConditioning
+        img: strengthConditioning,
+        imgPosition: "center 30%"
     },
     {
         title: "Gymnastics, Tumbling, Cheer",
@@ -276,30 +305,6 @@ const otherSportsAndTrainings = [
         description: "",
         img: gymnastics,
         url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/43529-1-hour-private-gymnastics'
-    },
-    {
-        title: "Speed & Agility w/ Coach Bri",
-        price: "30 min $45 · 1 hour $70",
-        description: "",
-        img: briSpeed,
-        urlTitle1: "30 Minutes - $45",
-        urlTitle2: "1 Hour - $70",
-        url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/150928-speed-and-agility-30-min",
-        url2: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/45137-speed-and-agility-1-hour"
-    },
-    {
-        title: "These Hands MMA",
-        description: "MMA Classes with Avery Wilson.  Mondays, Wednesdays, Fridays.  Kids 5-13 > 5-6pm.  Adults 14 & up > 6-7pm.",
-        img: mma,
-        urlTitle1: "MMA (kids)",
-        urlTitle2: "MMA (adults)",
-        urlTitle3: "Strength & Conditioning (kids)",
-        urlTitle4: "Strength & Conditioning (adults)",
-        url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146477-these-hands-mma-classes-ages-5-13",
-        url2: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146478-these-hands-mma-classes-ages-14-and-up",
-        url3: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146479-these-hands-mma-stength-and-conditioning-ages-5-13",
-        url4: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/146480-these-hands-mma-strength-and-conditioning-ages-14-and-up"
-
     }
 ];
 

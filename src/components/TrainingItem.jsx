@@ -44,7 +44,7 @@ const TrainingItem = ({ arr }) => {
                         {elem.description}
                     </Typography>
                 </CardContent>
-                <CardActions className='training-service-btns' sx = {{maxWidth: "95%", display: "flex", alignItems: "center" , justifyContent: "center", flexWrap: 'wrap'}}>
+                <CardActions className='training-service-btns' sx = {{maxWidth: "95%", display: "flex", alignItems: "center" , justifyContent: "center", flexWrap: 'wrap', gap: '6px'}}>
                     {
                         elem.url1 && !elem.urlTitle1 &&
                         < a style={{ color: 'black', margin: '1px' }} href={elem.url1} target="_blank" rel="noopener noreferrer">

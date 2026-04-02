@@ -13,10 +13,13 @@ import newImage7 from "../assets/newImage7.jpeg"
 import newImage8 from "../assets/newImage8.jpeg"
 import newImage9 from "../assets/newImage9.jpeg"
 import newImage10 from "../assets/newImage10.jpeg"
+import coachBri from "../assets/newBrihitting.jpeg"
+import wrestle from "../assets/newWrestle1.jpeg"
 
 const images = [
   newImage1, newImage2, newImage3, newImage5,
-  newImage6, newImage7, newImage8, newImage9, newImage10
+  newImage6, newImage7, newImage8, newImage9, newImage10,
+  coachBri, wrestle
 ];
 
 function shuffle(arr) {

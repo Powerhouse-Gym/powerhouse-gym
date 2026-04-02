@@ -26,7 +26,7 @@ function CustomTabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box className="tab-panel-content" sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -79,7 +79,7 @@ export default function Training() {
           width: "100%",
           display: "flex",
           flexDirection: { xs: "row", md: "column" },
-          alignItems: "center"
+          alignItems: { xs: "stretch", md: "stretch" }
         }}
       >
         {/* Vertical Tabs for Mobile */}
@@ -165,7 +165,7 @@ export default function Training() {
               }}
             />
             <Tab
-              label="Youth Training"
+              label="Youth Memberships"
               {...a11yProps(6)}
               sx={{
                 fontSize: {
@@ -209,7 +209,7 @@ export default function Training() {
               <Tab label="Soccer" {...a11yProps(3)} sx={{ fontSize: "1vw" }}/>
               <Tab label="Volleyball" {...a11yProps(4)}sx={{ fontSize: "1vw" }} />
               <Tab label="Other Sports and Training" {...a11yProps(5)}sx={{ fontSize: "1vw" }} />
-              <Tab label="Youth Training" {...a11yProps(6)}sx={{ fontSize: "1vw" }} />
+              <Tab label="Youth Memberships" {...a11yProps(6)}sx={{ fontSize: "1vw" }} />
             </Tabs>
           </Box>
         </Box>

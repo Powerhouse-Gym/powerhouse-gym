@@ -48,7 +48,7 @@ html {
   color: white;
   width: 100%;
   min-height: 15vh;
-  background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   font-size: 1.5vh;
 }
 
@@ -82,8 +82,23 @@ html {
 }
 
 .new-signup-btn {
-  width: 150%;
-  background-color: white;
+  width: auto;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  color: #c62828;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-signup-btn:hover {
+  background-color: #ed1c26;
+  color: #ffffff;
+  border-color: #ed1c26;
 }
 
 
@@ -1053,7 +1068,7 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(170deg, #ed1c26 0%, #ed1c26 40%, #791f1f 50%, #333 10%, #333 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   color: white;
   z-index: 2;
   gap: 0.75rem;
@@ -1725,6 +1740,19 @@ button {
 .three>button {
   width: 60%;
   font-size: larger;
+}
+
+div[role="tabpanel"] {
+  width: 100%;
+}
+
+.tab-panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .training-container {
@@ -4121,8 +4149,86 @@ button {
     display: none;
   }
 
-  .css-19kzrtu {
-    margin-left: 95px !important;
+}
+
+/* ===== DESKTOP TRAINING LAYOUT (900px+) ===== */
+@media screen and (min-width: 900px) {
+
+  .sports-options > div[role="tabpanel"] {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .sports-options > div[role="tabpanel"] > .tab-panel-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 24px 0 !important;
+    margin: 0 !important;
+  }
+
+  .sports-options > div[role="tabpanel"] > .tab-panel-content > h1 {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .sports-options .training-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .sports-options .service-section {
+    width: 300px !important;
+    min-width: unset !important;
+    max-width: 300px !important;
+    height: 480px !important;
+    flex-direction: column !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .sports-options .service-section .MuiCardContent-root {
+    flex-grow: 1 !important;
+    overflow: hidden !important;
+  }
+
+  .sports-options .service-section .MuiCardContent-root .MuiTypography-h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .sports-options .service-section .MuiCardContent-root .MuiTypography-h6 {
+    font-size: 0.85rem !important;
+  }
+
+  .sports-options .service-section .MuiCardContent-root .MuiTypography-body2 {
+    font-size: 0.8rem !important;
+  }
+
+  .sports-options .image-container {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    overflow: hidden !important;
+    border-radius: 20px !important;
+  }
+
+  .sports-options .image-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
 
 }

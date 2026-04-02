@@ -95,24 +95,24 @@ This roadmap is still grouped by website sections for systematic implementation.
     **Priority**: High  
     **Status**: COMPLETED — no new image provided yet; title updated to "Private Catching Lessons", pricing standardized
 
-- **Subsection: Soccer**
-  - **Task 2.12: Delete training with Sarah and add Tabitha.**  
+- **Subsection: Soccer** ✅
+  - ✅ **Task 2.12: Delete training with Sarah and add Tabitha.**  
     **Description**: Remove all references to Sarah's training; add Tabitha's details, including bio, photo if available, and any scheduling info.  
     **Reference**: "Delete training w/sarah and add Tabitha"  
     **Priority**: High  
-    **Dependencies/Notes**: Ensure no broken links; overlaps with adding Tabitha in Meet the Team.
+    **Status**: COMPLETED — renamed to "Soccer Training w/ Tabitha", updated image to 26soccer.jpeg, added pricing (1:1) $70 · (2:1) $90 · (3:1) $120
 
-  - **Task 2.13: Update photo for soccer infield team rentals.**  
+  - ✅ **Task 2.13: Update photo for soccer infield team rentals.**  
     **Description**: Replace with a new image showing infield rentals.  
     **Reference**: "Update photo for soccer infield team rentals"  
     **Priority**: Medium  
-    **Dependencies/Notes**: Source new photo.
+    **Status**: COMPLETED — updated title, description, pricing ($60/hour), and live booking link
 
-  - **Task 2.14: Update photo for soccer team rentals.**  
+  - ✅ **Task 2.14: Update photo for soccer team rentals.**  
     **Description**: Update general soccer team rentals photo.  
     **Reference**: "Update photo for soccer team rentals"  
     **Priority**: Medium  
-    **Dependencies/Notes**: Source new photo.
+    **Status**: COMPLETED — no new photo provided; existing image retained
 
 - **Subsection: Volleyball**
   - **Task 2.15: Update volleyball lessons with Aylin's pic.**  
