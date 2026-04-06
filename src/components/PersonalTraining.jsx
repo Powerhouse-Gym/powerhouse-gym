@@ -3,13 +3,13 @@ import { cageAndFieldRentals } from "../training-data";
 import { useNavigate } from "react-router-dom";
 import PTimg from "../assets/crossfit/personaltraining.jpg";
 import baseballimg from "../assets/baseballbackground.jpg";
-import adaptiveImg from "../assets/adaptive-img.jpg";
+import adaptiveImg from "../assets/26NikiAdaptive.jpeg";
 import deadlift from "../assets/deadlift.jpg";
 import teampic from "../assets/teampic.jpg";
 import grouppic from "../assets/groupic2.jpg";
 import oneOnone from "../assets/101.jpg";
 import ptPic from "../assets/pt-pic.jpg";
-import rowerpic from "../assets/rowerpic.jpg";
+import rowerpic from "../assets/turfpic.webp";
 
 const PersonalTraining = () => {
   const teamTraining = cageAndFieldRentals.find(

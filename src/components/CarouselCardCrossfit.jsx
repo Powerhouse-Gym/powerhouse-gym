@@ -14,6 +14,10 @@ import grouppic from "../assets/grouppic.jpg"
 import kidsbench from "../assets/kidsbench.jpeg"
 import kbpic from "../assets/kbpic.jpeg"
 import kidspushup from "../assets/kidshspushup.jpeg"
+import momstrength from "../assets/26momstrength.jpeg"
+import newImage2 from "../assets/newImage2.jpeg"
+import newImage9 from "../assets/newImage9.jpeg"
+import newImage10 from "../assets/newImage10.jpeg"
 
 function CarouselCardCrossfit() {
   let settings = {
@@ -39,9 +43,6 @@ function CarouselCardCrossfit() {
         {/* <div className="carousel-img" >
           <img src={crossfit2} alt={"crossfit"} />
         </div> */}
-        <div className="carousel-img" >
-          <img src={crossfit3} alt={"crossfit pic"} />
-        </div>
         {/* <div className="carousel-img" >
           <img src={crossfit4} alt={"crossfit picture1"} />
         </div> */}
@@ -64,7 +65,16 @@ function CarouselCardCrossfit() {
           <img src={kidspushup} alt={"crossfit picture2"} />
         </div>
         <div className="carousel-img" >
-          <img className = "pullupgirl"src={pullupgirl} alt={"crossfit picture3"} />
+          <img src={momstrength} alt={"mom strength training"} />
+        </div>
+        <div className="carousel-img" >
+          <img src={newImage2} alt={"crossfit picture"} />
+        </div>
+        <div className="carousel-img" >
+          <img src={newImage9} alt={"crossfit picture"} />
+        </div>
+        <div className="carousel-img" >
+          <img src={newImage10} alt={"crossfit picture"} />
         </div>
       </Slider>
     </div>

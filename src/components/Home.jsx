@@ -41,11 +41,11 @@ function Home() {
     <div id="home" style={{ flex: 1 }}> {/* Allows #home to grow and push footer down */}
       <div className='banner'>
         <img src={powerhouse} alt="powerhouse" />
-
+        <h2 className="banner-subtitle">Training Complex</h2>
       </div>
-      <SummerBanner />
-      <EfaBanner />
         <SecondaryBanner />
+      <EfaBanner />
+      <SummerBanner />
       <NewsLetter />
       <Carousel />
       <NewServiceBanner />

@@ -97,7 +97,7 @@ function Youth() {
                 </div>
 
                 {/* After School Memberships Card */}
-                <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px' }}>
+                <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px', paddingBottom: '1.5rem' }}>
                     <img
                         src={afterSchool}
                         alt="After School Memberships"

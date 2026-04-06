@@ -14,6 +14,8 @@ import CarouselCardCrossfit from "../components/CarouselCardCrossfit"
 import JoinButton from './JoinButton';
 import instagram from "../assets/darkmode-instagram.svg"
 import facebook from "../assets/darkmode-facebook.svg"
+import AfterSchoolBanner from './AfterSchoolBanner'
+import HyroxBanner from './HyroxBanner'
 
 
 function Crossfit() {
@@ -27,7 +29,6 @@ function Crossfit() {
                 {/* <div className='crossfit-header-logo'></div> */}
             </div></div>
             <div className='crossfit-socials'>
-                <h1>Follow us to keep up to date!</h1>
                 <div>
                     <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
                         <img src={instagram} alt="instagram" />
@@ -38,15 +39,14 @@ function Crossfit() {
                 </div>
             </div>
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
-            <Schedule />
-
             <CarouselCardCrossfit />
+            <Schedule />
+            <HyroxBanner />
             {/* <div className='group-pic-container'>
                 <img className='crossfit-img-logo-group' src= {crossfitlogo} alt="logo" />
                 <img className='crossfit-group-pic' src= {grouppic} alt="group pic" />
             </div> */}
             {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div> */}
-            <WhyCrossfit />
             {/* <div className="skull-div" style={{ backgroundImage: `url(${chainlink})` }}></div> */}
 
 
@@ -65,6 +65,8 @@ function Crossfit() {
             </div>*/}
             {/* <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div> */}
             <CrossfitCoaches />
+            <AfterSchoolBanner />
+            <WhyCrossfit />
             {/* <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div> */}
 
             <div className='crossfit-journal'>
