@@ -7,7 +7,7 @@
 .carousel-div {
     background-color: #f4f4f4;
     padding: 2rem 0;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08), 0 -4px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
 }
 
 .carousel-img {

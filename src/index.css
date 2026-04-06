@@ -44,10 +44,12 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 10px;
   color: white;
   width: 100%;
-  min-height: 15vh;
+  min-height: 7vh;
+  padding: 12px 0;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   font-size: 1.5vh;
 }
@@ -58,10 +60,14 @@ html {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  position: relative;
+  top: 15px;
 }
 
 .crossfit-socials > div > a > img{
-  width: 5vw;
+  width: 3.5vw;
+  min-width: 32px;
+  max-width: 48px;
   color: white;
 }
 
@@ -83,13 +89,13 @@ html {
 
 .new-signup-btn {
   width: auto;
-  padding: 10px 30px;
+  padding: 8px 24px;
   background-color: #ffffff;
   color: #c62828;
   border: 2px solid #ffffff;
   border-radius: 4px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -634,6 +640,32 @@ html {
   top: 30px;
 }
 
+.banner-subtitle {
+  color: #ffffff;
+  font-family: "Rock Salt", cursive !important;
+  font-size: 96px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    5px 5px 0 #c8102e,
+    0 0 18px rgba(200, 16, 46, 0.8);
+  position: absolute;
+  z-index: 16;
+  left: 50%;
+  top: 78%;
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
 .personal-training-container {
   min-height: 85vh;
 }
@@ -1068,7 +1100,7 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #8e0000 0%, #c62828 50%, #8e0000 100%);
   color: white;
   z-index: 2;
   gap: 0.75rem;
@@ -1834,6 +1866,7 @@ div[role="tabpanel"] {
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: #f4f4f4;
   /* padding: 15vw; */
 }
 
@@ -1848,8 +1881,7 @@ div[role="tabpanel"] {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  background-color: var(--secondary-background-color);
-  /* background-image: linear-gradient(to left, #791f1fe4, #ec1906); */
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
   padding: 2vw;
   padding-top: 15px;
   border-top: 3px solid #ed1c26;
@@ -1865,7 +1897,7 @@ div[role="tabpanel"] {
 
 .crossfit-journal-text>* {
   margin-bottom: 2vh;
-  color: --secondary-background-color;
+  color: #ffffff;
   font-family: "Rock Salt", cursive !important;
   font-size: 46px;
   padding-top: 25px;
@@ -1892,14 +1924,23 @@ div[role="tabpanel"] {
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size: 24px;
-  background: linear-gradient(170deg,
-      #333 0%,
-      #333 50%,
-      #791f1f 50%,
-      #ed1c26 60%,
-      #ed1c26 100%);
-  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.crossfit-journal-text>a>button:hover {
+  background-color: #ed1c26;
+  color: #ffffff;
+  border-color: #ed1c26;
 }
 
 .youth-page {
@@ -2505,6 +2546,11 @@ div[role="tabpanel"] {
 
   .banner>img {
     top: 50px;
+  }
+
+  .banner-subtitle {
+    font-size: 56px;
+    letter-spacing: 0.15em;
   }
 
   .schedule-title {
@@ -3508,6 +3554,10 @@ div[role="tabpanel"] {
     /* Adjust image position */
   }
 
+  .banner-subtitle {
+    font-size: 70px;
+  }
+
   .inclusive-nav-mobile {
     display: block;
   }
@@ -4001,6 +4051,10 @@ div[role="tabpanel"] {
     top: 35px;
   }
 
+  .banner-subtitle {
+    font-size: 84px;
+  }
+
   .banner::before {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -4426,5 +4480,44 @@ div[role="tabpanel"] {
 /* Gaming Monitors (Ultra-Wide): Adjust for unique resolutions */
 @media (min-aspect-ratio: 21/9) and (max-height: 1440px) {
   /* Styles for ultrawide monitors */
+}
+
+/* Banner "Training Complex" subtitle responsive overrides */
+@media (max-width: 767px) {
+  .banner-subtitle {
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .banner-subtitle {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner-subtitle {
+    font-size: 16px;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-subtitle {
+    top: 83%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-subtitle {
+    font-size: 84px;
+  }
 }
 

@@ -5,7 +5,7 @@
     justify-content: center;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
     padding: 30px 40px;
-    gap: 80px;
+    gap: 120px;
     box-sizing: border-box;
     overflow: visible;
     position: relative;
@@ -14,12 +14,14 @@
 
 .summer-banner-img {
     flex-shrink: 0;
-    width: 300px;
+    width: 290px;
     border-radius: 12px;
     overflow: visible;
     transform: rotate(-5deg);
-    margin: -45px 0;
+    margin: -45px 0 -90px 0;
     filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+    position: relative;
+    z-index: 3;
 }
 
 .summer-banner-img img {
