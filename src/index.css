@@ -136,6 +136,13 @@ html {
   top: 0;
   left: 0;
   background-color: var(--secondary-background-color);
+  border-bottom: 3px solid #ed1c26;
+}
+
+@media (max-width: 899px) {
+  .nav-container {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  }
 }
 
 .MuiTab-textColorPrimary {
@@ -596,6 +603,7 @@ html {
   height: 40vh;
   margin-top: 10vh;
   position: relative;
+  border-bottom: 3px solid #ed1c26;
 }
 
 .banner>h1 {
@@ -2053,7 +2061,7 @@ div[role="tabpanel"] {
 }
 
 .carousel-div {
-  height: 65vh;
+  height: 52vh;
   width: 100%;
   margin-top: 0;
   display: flex;
@@ -2062,9 +2070,9 @@ div[role="tabpanel"] {
 }
 
 .carousel-slider {
-  height: 55vh;
-  width: 75vw;
-  max-width: 900px;
+  height: 44vh;
+  width: 60vw;
+  max-width: 720px;
   border-radius: 10px;
 }
 
@@ -3516,6 +3524,13 @@ div[role="tabpanel"] {
     font-size: 18px;
   }
 
+  .signup-btn.new-signup-btn {
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
+    font-size: 0.7rem;
+  }
+
   .intro-section-sports {
     align-items: start;
     justify-content: start;
@@ -3675,20 +3690,20 @@ div[role="tabpanel"] {
   }
 
   .carousel-img>img {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     /* Adjust carousel image height */
   }
 
   .carousel-slider {
-    height: 55vh;
-    width: 70%;
+    height: 44vh;
+    width: 56%;
     /* Adjust slider height */
   }
 
   .carousel-div {
-    height: 75vh;
-    width: 70%;
+    height: 60vh;
+    width: 56%;
     /* Adjust carousel div height */
   }
 
@@ -4056,7 +4071,7 @@ div[role="tabpanel"] {
   }
 
   .banner::before {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .ptc-section img {
@@ -4104,6 +4119,12 @@ div[role="tabpanel"] {
 
   .banner-container {
     display: flex !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .banner-subtitle {
+    font-size: 28px;
   }
 }
 

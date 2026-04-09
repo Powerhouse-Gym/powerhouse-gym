@@ -12,6 +12,8 @@ import {
 } from "@mui/material";
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
+import darkmodeFacebook from '../assets/darkmode-facebook.svg'
+import darkmodeInstagram from '../assets/darkmode-instagram.svg'
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
@@ -42,7 +44,7 @@ function Navbar(props) {
     textTransform: "uppercase",
     fontSize: "1.3rem",
     fontFamily: "Rock Salt, cursive",
-    color: "black",
+    color: "white",
   };
 
   return (
@@ -51,7 +53,6 @@ function Navbar(props) {
         {/* Hamburger — hidden when menu is open */}
         <IconButton
           edge="start"
-          color="inherit"
           aria-label="menu"
           onClick={handleDrawerToggle}
           sx={{
@@ -59,6 +60,7 @@ function Navbar(props) {
             position: "absolute",
             top: "10px",
             left: "10px",
+            color: "#ffffff",
             "@media (max-width: 320px)": {
               top: "0px",
             },
@@ -77,7 +79,7 @@ function Navbar(props) {
               left: 0,
               width: "100%",
               height: "100vh",
-              backgroundColor: "white",
+              background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)",
               flexDirection: "column",
               zIndex: 10000,
               overflowY: "auto",
@@ -85,7 +87,7 @@ function Navbar(props) {
           >
             <IconButton
               onClick={handleDrawerToggle}
-              sx={{ alignSelf: "flex-end", margin: "10px 10px 0 0" }}
+              sx={{ alignSelf: "flex-end", margin: "10px 10px 0 0", color: "#ffffff" }}
             >
               <CloseIcon sx={{ fontSize: "2rem" }} />
             </IconButton>
@@ -97,10 +99,10 @@ function Navbar(props) {
                 <ListItemText primary="Sports Training" />
                 <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
                   <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+                    <img src={darkmodeFacebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
                   </a>
                   <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                    <img src={darkmodeInstagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
                   </a>
                 </Box>
               </ListItem>
@@ -111,10 +113,10 @@ function Navbar(props) {
                 <ListItemText primary="Crossfit" />
                 <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
                   <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+                    <img src={darkmodeFacebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
                   </a>
                   <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                    <img src={darkmodeInstagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
                   </a>
                 </Box>
               </ListItem>
