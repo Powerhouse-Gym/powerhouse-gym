@@ -1,4 +1,4 @@
-import React, { useMemo } from "react"
+import { useMemo } from "react"
 import Slider from "react-slick"
 import "../carousel.css"
 import "slick-carousel/slick/slick.css";
@@ -34,7 +34,7 @@ function shuffle(arr) {
 function CarouselCard() {
   const shuffled = useMemo(() => shuffle(images), []);
 
-  let settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
