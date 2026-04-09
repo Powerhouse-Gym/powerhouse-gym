@@ -12,8 +12,6 @@ import {
 } from "@mui/material";
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
-import darkmodeFacebook from '../assets/darkmode-facebook.svg'
-import darkmodeInstagram from '../assets/darkmode-instagram.svg'
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
@@ -44,53 +42,97 @@ function Navbar(props) {
     textTransform: "uppercase",
     fontSize: "1.3rem",
     fontFamily: "Rock Salt, cursive",
-    color: "white",
+    color: "black",
   };
 
   return (
     <div className="navbar">
       <Box className="nav-container">
-        {/* Hamburger — hidden when menu is open */}
+        {/* Hamburger / Close toggle — animated swap */}
         <IconButton
           edge="start"
           aria-label="menu"
           onClick={handleDrawerToggle}
           sx={{
-            display: { xs: mobileOpen ? "none" : "block", md: "none" },
-            position: "absolute",
+            display: { xs: "block", md: "none" },
+            position: "fixed",
             top: "10px",
-            left: "10px",
-            color: "#ffffff",
+            left: "20px",
+            zIndex: 10002,
+            width: "3rem",
+            height: "3rem",
+            padding: 0,
             "@media (max-width: 320px)": {
               top: "0px",
+              left: "14px",
             },
           }}
         >
-          <MenuIcon sx={{ fontSize: "3rem" }} />
+          <Box sx={{ position: "relative", width: "3rem", height: "3rem" }}>
+            <MenuIcon
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                fontSize: "3rem",
+                color: "#1a1a1a",
+                transform: mobileOpen ? "rotate(90deg) scale(0.6)" : "rotate(0deg) scale(1)",
+                opacity: mobileOpen ? 0 : 1,
+                transition: "transform 0.3s ease, opacity 0.3s ease",
+              }}
+            />
+            <CloseIcon
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                fontSize: "3rem",
+                color: "#1a1a1a",
+                transform: mobileOpen ? "rotate(0deg) scale(1)" : "rotate(-90deg) scale(0.6)",
+                opacity: mobileOpen ? 1 : 0,
+                transition: "transform 0.3s ease, opacity 0.3s ease",
+              }}
+            />
+          </Box>
         </IconButton>
 
-        {/* Mobile menu — replaces navbar when open */}
-        {mobileOpen && (
-          <Box
-            sx={{
-              display: { xs: "flex", md: "none" },
-              position: "fixed",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100vh",
-              background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)",
-              flexDirection: "column",
-              zIndex: 10000,
-              overflowY: "auto",
-            }}
-          >
-            <IconButton
-              onClick={handleDrawerToggle}
-              sx={{ alignSelf: "flex-end", margin: "10px 10px 0 0", color: "#ffffff" }}
-            >
-              <CloseIcon sx={{ fontSize: "2rem" }} />
-            </IconButton>
+        {/* Backdrop — darkens the area outside the drawer */}
+        <Box
+          onClick={handleDrawerToggle}
+          sx={{
+            display: { xs: "block", md: "none" },
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            zIndex: 9998,
+            opacity: mobileOpen ? 1 : 0,
+            pointerEvents: mobileOpen ? "auto" : "none",
+            transition: "opacity 0.3s ease",
+          }}
+        />
+
+        {/* Mobile drawer — slides in from left, 75vw wide */}
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "75vw",
+            height: "100vh",
+            backgroundColor: "white",
+            flexDirection: "column",
+            zIndex: 10000,
+            overflowY: "auto",
+            transform: mobileOpen ? "translateX(0)" : "translateX(-100%)",
+            transition: "transform 0.3s ease",
+            boxShadow: mobileOpen ? "2px 0 16px rgba(0, 0, 0, 0.2)" : "none",
+            paddingTop: "60px",
+          }}
+        >
             <List sx={mobileLinksStyle}>
               <ListItem button onClick={() => handleNavigate("/")}>
                 <ListItemText primary="Home" />
@@ -99,10 +141,10 @@ function Navbar(props) {
                 <ListItemText primary="Sports Training" />
                 <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
                   <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={darkmodeFacebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+                    <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
                   </a>
                   <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={darkmodeInstagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                    <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
                   </a>
                 </Box>
               </ListItem>
@@ -113,10 +155,10 @@ function Navbar(props) {
                 <ListItemText primary="Crossfit" />
                 <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
                   <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={darkmodeFacebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
+                    <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
                   </a>
                   <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                    <img src={darkmodeInstagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                    <img src={instagram} alt="Instagram" style={{ width: "20px", height: "20px" }} />
                   </a>
                 </Box>
               </ListItem>
@@ -138,8 +180,7 @@ function Navbar(props) {
                 <button className="signup-btn nav-signup" id="signup-btn-mobile" style={{ marginTop: "16px" }}>SIGN UP</button>
               </a>
             </List>
-          </Box>
-        )}
+        </Box>
 
         {/* Desktop nav */}
         <Tabs

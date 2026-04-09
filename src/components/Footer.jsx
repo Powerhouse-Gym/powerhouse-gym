@@ -1,6 +1,6 @@
 import "./Footer.css";
-import darkmodeFacebook from "../assets/darkmode-facebook.svg";
-import darkmodeInstagram from "../assets/darkmode-instagram.svg";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
 import { useNavigate } from "react-router-dom";
 
 function Footer() {
@@ -30,10 +30,10 @@ function Footer() {
                     <a href="tel:+15012471517" className="footer-phone">501.247.1517</a>
                     <div className="footer-socials">
                         <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                            <img src={darkmodeFacebook} alt="Facebook" />
+                            <img src={facebook} alt="Facebook" />
                         </a>
                         <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                            <img src={darkmodeInstagram} alt="Instagram" />
+                            <img src={instagram} alt="Instagram" />
                         </a>
                     </div>
                 </div>
