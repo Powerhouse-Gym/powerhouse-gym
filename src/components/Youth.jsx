@@ -3,22 +3,81 @@ import youthMemberships from '../assets/26summerhours.jpeg';
 import youthMembership from "../assets/youth-membership.jpeg";
 import afterSchool from "../assets/26afterschool.png";
 import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 
-const btnStyle = {
-    color: "var(--text-color)",
+const cardSx = {
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: "30px",
     backgroundColor: "var(--secondary-background-color)",
-    borderColor: "rgba(0, 0, 0, 0.23)"
+    color: "var(--text-color)",
+    boxShadow: "var(--box-shadow)"
 };
+
+const cardContentSx = {
+    flexGrow: 1,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: '95%',
+    textAlign: "center"
+};
+
+const cardActionsSx = {
+    maxWidth: "95%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexWrap: 'wrap',
+    gap: '6px'
+};
+
+const btnSx = {
+    color: "var(--text-color)",
+    backgroundColor: "var(--secondary-background-color)"
+};
+
+const youthCards = [
+    {
+        title: "Summer Membership",
+        description: "Summer hours pass options",
+        img: youthMemberships,
+        actions: [
+            { label: "1 Day Summer", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/154756-1-day-ptc-summer-membership" },
+            { label: "3 Day Summer", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" },
+            { label: "5 Day Summer", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" }
+        ]
+    },
+    {
+        title: "Youth Membership",
+        description: "Year-round day pass options",
+        img: youthMembership,
+        actions: [
+            { label: "1 Day Pass", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/51512-ptc-membership-1-day" },
+            { label: "3 Day Pass", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" },
+            { label: "5 Day Pass", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" }
+        ]
+    },
+    {
+        title: "After School Memberships",
+        description: "Ages K–13",
+        img: afterSchool,
+        actions: [
+            { label: "$150/mo — Pickup by 5pm", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/memberships" },
+            { label: "$300/mo — Pickup by 6pm", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/memberships" },
+            { label: "$350/mo — Before & After School", url: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/memberships" }
+        ]
+    }
+];
 
 function Youth() {
     return (
-        <div className='youth-page' style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-            {/* Header and Description */}
-            <div className='youth-info' style={{
-                textAlign: 'left',
-                maxWidth: '1200px',
-                marginBottom: '2rem'
-            }}>
+        <div className='youth-page'>
+            <div className='youth-info'>
                 <h1 style={{ marginBottom: '1rem' }}>POWERHOUSE YOUTH MEMBERSHIPS</h1>
                 <h3 style={{ marginBottom: '0.5rem' }}>Our Mission</h3>
                 <p style={{ marginBottom: '1rem' }}>
@@ -34,94 +93,37 @@ function Youth() {
                 </ul>
             </div>
 
-            {/* Cards in Flexbox Row */}
-            <div className='youth-cards' style={{
-                display: 'flex',
-                gap: '2rem',
-                justifyContent: 'center',
-                width: '100%',
-                maxWidth: '1200px'
-            }}>
-                {/* Summer Card */}
-                <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px' }}>
-                    <img
-                        src={youthMemberships}
-                        alt="Summer Youth Memberships"
-                        style={{ width: '100%', maxWidth: '400px', height: 'auto' }}
-                    />
-                    <div style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        gap: '6px',
-                        marginTop: '1rem',
-                        justifyContent: 'center',
-                        flexWrap: 'wrap'
-                    }}>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/154756-1-day-ptc-summer-membership" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={btnStyle}>1 day Summer</Button>
-                        </a>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={btnStyle}>3 day Summer</Button>
-                        </a>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={btnStyle}>5 day Summer</Button>
-                        </a>
-                    </div>
-                </div>
-
-                {/* Youth Membership Card */}
-                <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px' }}>
-                    <img
-                        src={youthMembership}
-                        alt="Youth Membership"
-                        style={{ width: '100%', maxWidth: '400px', height: 'auto' }}
-                    />
-                    <div style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        gap: '6px',
-                        marginTop: '1rem',
-                        justifyContent: 'center',
-                        flexWrap: 'wrap'
-                    }}>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/51512-ptc-membership-1-day" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={btnStyle}>1 day Pass</Button>
-                        </a>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={btnStyle}>3 day Pass</Button>
-                        </a>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/credit_passes" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={btnStyle}>5 day Pass</Button>
-                        </a>
-                    </div>
-                </div>
-
-                {/* After School Memberships Card */}
-                <div className='youth-img' style={{ textAlign: 'center', flex: '1', maxWidth: '400px', paddingBottom: '1.5rem' }}>
-                    <img
-                        src={afterSchool}
-                        alt="After School Memberships"
-                        style={{ width: '100%', maxWidth: '400px', height: 'auto' }}
-                    />
-                    <h3 style={{ marginTop: '0.75rem', marginBottom: '0.25rem' }}>After School Memberships</h3>
-                    <p style={{ fontSize: '0.9rem', marginBottom: '0.75rem' }}>Ages K–13</p>
-                    <div style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '6px',
-                        alignItems: 'center'
-                    }}>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/memberships" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={{ ...btnStyle, minWidth: '250px' }}>$150/mo — Pickup by 5pm</Button>
-                        </a>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/memberships" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={{ ...btnStyle, minWidth: '250px' }}>$300/mo — Pickup by 6pm</Button>
-                        </a>
-                        <a href="https://app.upperhand.io/customers/1047-powerhouse-training-complex/memberships" target="_blank" rel="noopener noreferrer" style={{ margin: '1px' }}>
-                            <Button size="small" variant="outlined" color="dark" sx={{ ...btnStyle, minWidth: '250px' }}>$350/mo — Before & After School</Button>
-                        </a>
-                    </div>
-                </div>
+            <div className='training-container youth-cards'>
+                {youthCards.map((card) => (
+                    <Card key={card.title} className="service-section" sx={cardSx}>
+                        <CardMedia className="image-container">
+                            <img src={card.img} alt={card.title} />
+                        </CardMedia>
+                        <CardContent sx={cardContentSx}>
+                            <Typography variant="h5" component="div" sx={{ textAlign: "center" }}>
+                                {card.title}
+                            </Typography>
+                            <Typography variant="body2" sx={{ textAlign: "center" }}>
+                                {card.description}
+                            </Typography>
+                        </CardContent>
+                        <CardActions className='training-service-btns' sx={cardActionsSx}>
+                            {card.actions.map((action) => (
+                                <a
+                                    key={action.label}
+                                    style={{ color: 'black', margin: '1px' }}
+                                    href={action.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Button size="small" variant="outlined" color="dark" sx={btnSx}>
+                                        {action.label}
+                                    </Button>
+                                </a>
+                            ))}
+                        </CardActions>
+                    </Card>
+                ))}
             </div>
         </div>
     );

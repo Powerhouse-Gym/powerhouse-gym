@@ -672,12 +672,25 @@ html {
 
 .pt-service-header {
   color: var(--text-color);
-  background-color: var(--secondary-background-color);
+  background-color: var(--background-color);
   text-shadow: var(--box-shadow);
   text-underline-offset: 0.4em;
   /* Adjust the value as needed */
   font-size: 46px;
   margin-top: 25px;
+}
+
+.pt-card-tag {
+  display: inline-block;
+  background-color: #ed1c26;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-bottom: 6px;
 }
 
 @keyframes moveAndZoom {
@@ -1832,6 +1845,7 @@ div[role="tabpanel"] {
   object-fit: cover;
   object-position: center top;
   border-radius: 20px;
+  image-rendering: high-quality;
 }
 
 .crossfit-container {
@@ -1947,11 +1961,17 @@ div[role="tabpanel"] {
   display: flex;
   flex-direction: column;
   margin-top: 0 !important;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .youth-info {
   width: 100%;
   padding-left: 5vw;
+  border-radius: 30px;
 }
 
 .youth-info>* {
@@ -2255,7 +2275,7 @@ div[role="tabpanel"] {
   gap: 5vw;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  background-color: var(--secondary-background-color);
+  background-color: var(--background-color);
   width: 100%;
   /* Ensures the container takes full width */
 
@@ -2917,11 +2937,18 @@ div[role="tabpanel"] {
     padding: 1rem;
     margin: 1vh;
     box-shadow: var(--box-shadow);
+    align-self: flex-start;
   }
 
   .youth-cards {
-    margin-left: 20px;
+    margin-left: 0;
     flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .youth-cards .service-section {
+    max-width: 275px;
   }
 
   .youth-info>h1 {
@@ -3292,8 +3319,8 @@ div[role="tabpanel"] {
 
 
   .youth-page {
-    width: 65vw;
     height: fit-content;
+    padding: 1.55rem;
   }
 
 }
