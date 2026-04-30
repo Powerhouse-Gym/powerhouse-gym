@@ -2,6 +2,7 @@ import "./Footer.css";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import { useNavigate } from "react-router-dom";
+import PhoneLink from "./PhoneLink";
 
 function Footer() {
     const navigate = useNavigate();
@@ -27,14 +28,30 @@ function Footer() {
                     <h4>Contact</h4>
                     <p>1804 S. Pine Street</p>
                     <p>Cabot, AR 72023</p>
-                    <a href="tel:+15012471517" className="footer-phone">501.247.1517</a>
-                    <div className="footer-socials">
-                        <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                            <img src={facebook} alt="Facebook" />
-                        </a>
-                        <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
-                            <img src={instagram} alt="Instagram" />
-                        </a>
+                    <PhoneLink className="footer-phone">501.247.1517</PhoneLink>
+
+                    <div className="footer-social-group">
+                        <span className="footer-social-label">Training Complex</span>
+                        <div className="footer-socials">
+                            <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer" aria-label="Training Complex Facebook">
+                                <img src={facebook} alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer" aria-label="Training Complex Instagram">
+                                <img src={instagram} alt="Instagram" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="footer-social-group">
+                        <span className="footer-social-label">CrossFit</span>
+                        <div className="footer-socials">
+                            <a href="https://www.facebook.com/powerhousecombine" target="_blank" rel="noopener noreferrer" aria-label="CrossFit Facebook">
+                                <img src={facebook} alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer" aria-label="CrossFit Instagram">
+                                <img src={instagram} alt="Instagram" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 

@@ -1,5 +1,6 @@
 import '../efa-info.css';
 import logo from '../assets/logo-white.webp';
+import PhoneLink from './PhoneLink';
 
 function EfaInfo() {
     return (
@@ -53,7 +54,7 @@ function EfaInfo() {
             <section className="efa-section">
                 <h2>Questions?</h2>
                 <p>
-                    Contact us at <a href="tel:+15012471517">(501) 247-1517</a> for more information about using your
+                    Contact us at <PhoneLink>(501) 247-1517</PhoneLink> for more information about using your
                     EFA funds at Powerhouse Training Complex. We're happy to help you get started!
                 </p>
             </section>

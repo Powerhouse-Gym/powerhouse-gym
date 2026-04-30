@@ -79,7 +79,7 @@ html {
   width: 70%;
   font-weight: 500;
   color: red;
-  font-size: 1.2vw;
+  font-size: clamp(14px, 1.2vw, 20px);
   text-align: center;
   display: flex;
   align-items: center;
@@ -4143,7 +4143,37 @@ div[role="tabpanel"] {
 
 @media (min-width: 1400px) {
   .banner-subtitle {
-    font-size: 28px;
+    font-size: 110px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .banner > img {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .banner-subtitle {
+    font-size: 140px;
+  }
+
+  .banner > img {
+    max-width: 1600px;
+  }
+
+  .banner {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 3000px) {
+  .banner-subtitle {
+    font-size: 170px;
+  }
+
+  .banner > img {
+    max-width: 1900px;
   }
 }
 

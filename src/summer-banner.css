@@ -112,8 +112,14 @@
     border-radius: 50%;
 }
 
-.summer-banner-btn {
+.summer-banner-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-top: 14px;
+}
+
+.summer-banner-btn {
     padding: 14px 36px;
     font-size: 1rem;
     font-weight: 700;
@@ -133,6 +139,76 @@
     color: #ed1c26;
 }
 
+.summer-banner-btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.summer-banner-btn-outline:hover {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border-color: #ffffff;
+}
+
+@media (min-width: 1700px) {
+    .summer-banner-inner {
+        max-width: 1300px;
+        gap: 80px;
+    }
+
+    .summer-banner-img {
+        width: 280px;
+    }
+
+    .summer-banner-content {
+        max-width: 780px;
+    }
+
+    .summer-banner-title {
+        font-size: 2.1rem;
+    }
+
+    .summer-banner-text {
+        font-size: 1.1rem;
+    }
+
+    .summer-banner-perks li {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .summer-banner-inner {
+        max-width: 1600px;
+    }
+
+    .summer-banner-img {
+        width: 340px;
+    }
+
+    .summer-banner-content {
+        max-width: 950px;
+    }
+
+    .summer-banner-title {
+        font-size: 2.6rem;
+    }
+
+    .summer-banner-text {
+        font-size: 1.25rem;
+    }
+
+    .summer-banner-perks li {
+        font-size: 1.1rem;
+    }
+
+    .summer-banner-btn {
+        font-size: 1.15rem;
+        padding: 16px 42px;
+    }
+}
+
 @media (max-width: 900px) {
     .summer-banner {
         padding: 36px 20px;
@@ -143,6 +219,11 @@
         align-items: center;
         text-align: center;
         gap: 24px;
+    }
+
+    .summer-banner-actions {
+        justify-content: center;
+        align-self: center;
     }
 
     .summer-banner-img {

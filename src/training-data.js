@@ -7,8 +7,7 @@ import unlimitedMembership from '/src/assets/training/unlimited-membership.webp'
 import hittingLessons from './assets/newImage6.jpeg'
 import pitchingLessons from './assets/26pitchinglesson.jpg'
 import fieldingLessons from './assets/26fieldinglesson.jpg'
-import catchingLessons from '/src/assets/training/catching-lessons.webp'
-import softballCatchingLessons from '/src/assets/training/softball-catching-lessons.webp'
+import softballCatchingLessons from './assets/newcatcher26.png'
 import softballHittingLessons from './assets/newBrihitting.jpeg'
 import softballPitchingLessons from './assets/26Bri.jpeg'
 import softballFieldingLessons from './assets/26softballfielding.webp'
@@ -85,40 +84,33 @@ const cageAndFieldRentals = [
 const baseball = [
     {
         title: "Private Hitting Lessons",
-        price: "$85 / hour",
         description: "1 on 1 hitting lessons with one of our qualified trainers.",
         img: hittingLessons,
-        imgPosition: "center center",
-        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/41903-1-hour-baseball-pitching-lesson'
+        imgPosition: "center center"
     },
     {
         title: "Private Pitching Lessons",
-        price: "$85 / hour",
         description: "1 on 1 pitching lessons with one of our qualified trainers.",
         img: pitchingLessons,
-        imgPosition: "center center",
-        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/41903-1-hour-baseball-pitching-lesson'
+        imgPosition: "center center"
     },
     {
         title: "Private Fielding Lessons",
-        price: "30 min $50 · 1 hour $85",
         description: "1 on 1 glove work and fielding technique with one of our qualified trainers.",
         img: fieldingLessons,
         imgPosition: "center center"
     },
     {
         title: "Private Catching Lessons",
-        price: "$85 / hour",
         description: "1 on 1 catching technique with one of our qualified trainers.",
-        img: catchingLessons,
-        url1: 'https://app.upperhand.io/customers/1047-powerhouse-training-complex/events/55306-1-hour-catching-lesson'
+        img: softballCatchingLessons,
+        imgPosition: "center 30%"
     }
 ];
 
 const softball = [
     {
         title: "Softball w/ Coach Bri",
-        price: "(1:1) $70 · (2:1) $90 · (3:1) $120 · (Team) $180",
         img: softballHittingLessons,
         imgPosition: "center 10%",
         urlTitle1: "1 on 1",
@@ -132,7 +124,6 @@ const softball = [
     },
     {
         title: "Private Hitting Lessons",
-        price: "30 min $50 · 1 hour $85 · 1.5 hours $125",
         description: "1 on 1 hitting lessons with one of our qualified trainers.",
         img: coachBriNew,
         urlTitle1: "30 Minutes",
@@ -144,7 +135,6 @@ const softball = [
     },
     {
         title: "Private Pitching Lessons",
-        price: "30 min $50 · 1 hour $85 · 1.5 hours $125",
         description: "1 on 1 pitching lessons with one of our qualified trainers.",
         img: softballPitchingLessons,
         imgPosition: "center top",
@@ -157,7 +147,6 @@ const softball = [
     },
     {
         title: "Private Fielding Lessons",
-        price: "30 min $50 · 1 hour $85 · 1.5 hours $125",
         description: "1 on 1 glove work and fielding technique with one of our qualified trainers.",
         img: softballFieldingLessons,
         urlTitle1: "30 Minutes",
@@ -169,9 +158,9 @@ const softball = [
     },
     {
         title: "Private Catching Lessons",
-        price: "30 min $50 · 1 hour $85 · 1.5 hours $125",
         description: "1 on 1 catching techniques with one of our qualified trainers.",
         img: softballCatchingLessons,
+        imgPosition: "center 30%",
         urlTitle1: "30 Minutes",
         urlTitle2: "1 Hour",
         urlTitle3: "1.5 Hours",

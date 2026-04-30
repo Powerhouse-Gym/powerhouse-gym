@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import newlogo from "../assets/new-logo.png";
 import facebook from '../assets/facebook.svg';
 import instagram from '../assets/instagram.svg';
 import crossfit from "../assets/crossfit-white-remove-background.com.png";
+import PhoneLink from './PhoneLink';
 
 function SecondaryBanner() {
   const bannerStyle = {
@@ -28,20 +30,41 @@ function SecondaryBanner() {
 
   const logoStyle = {
     maxWidth: '180px',
-    marginBottom: '0.75rem',
+    marginBottom: '0.25rem',
     transition: 'transform 0.3s ease',
   };
 
   const socialIconsStyle = {
     display: 'flex',
     gap: '1.2rem',
-    marginTop: '0.5rem',
+    marginTop: 0,
   };
 
   const iconStyle = {
     width: '28px',
     height: '28px',
     transition: 'opacity 0.3s ease',
+  };
+
+  const hyroxTagStyle = {
+    display: 'inline-block',
+    backgroundColor: '#f5e042',
+    color: '#0a0a0a',
+    fontWeight: 700,
+    fontSize: '0.8rem',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    padding: '5px 14px',
+    borderRadius: '2px',
+    marginTop: '-1.1rem',
+    marginBottom: '0.6rem',
+    transform: 'rotate(-4deg)',
+    boxShadow: '0 4px 12px rgba(245, 224, 66, 0.35)',
+    textDecoration: 'none',
+    cursor: 'pointer',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+    position: 'relative',
+    zIndex: 2,
   };
 
   const contactStyle = {
@@ -91,9 +114,9 @@ function SecondaryBanner() {
 
       {/* Contact Section */}
       <div className="contact-section" style={sectionStyle}>
-        <a href="tel:+15012471517" style={phoneLinkStyle}>
+        <PhoneLink style={phoneLinkStyle}>
           <span className="contact-phone" style={contactStyle}>501-247-1517</span>
-        </a>
+        </PhoneLink>
         <p className="contact-address" style={addressStyle}>1804 S. Pine Street, Cabot, AR 72023</p>
       </div>
 
@@ -104,6 +127,7 @@ function SecondaryBanner() {
           alt="CrossFit Logo"
           style={logoStyle}
         />
+        <Link to="/crossfit#hyrox" className="hyrox-affiliate-tag" style={hyroxTagStyle}>Hyrox Affiliate</Link>
         <div style={socialIconsStyle}>
           <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
             <img

@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
     position: relative;
     overflow: hidden;
 }
@@ -104,6 +103,47 @@
 .efa-banner-btn:hover {
     background-color: transparent;
     color: #ffffff;
+}
+
+@media (min-width: 1700px) {
+    .efa-banner-inner {
+        max-width: 1200px;
+        gap: 60px;
+    }
+
+    .efa-banner-content {
+        max-width: 720px;
+    }
+
+    .efa-banner-title {
+        font-size: 1.7rem;
+    }
+
+    .efa-banner-text {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .efa-banner-inner {
+        max-width: 1500px;
+    }
+
+    .efa-banner-content {
+        max-width: 900px;
+    }
+
+    .efa-banner-title {
+        font-size: 2rem;
+    }
+
+    .efa-banner-text {
+        font-size: 1.2rem;
+    }
+
+    .efa-banner-tag {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 768px) {
