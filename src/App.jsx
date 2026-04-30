@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './components/Home';
 import Training from './components/Training';
 import Crossfit from './components/Crossfit';
@@ -14,6 +15,7 @@ import EfaInfo from './components/EfaInfo';
 function App() {
   return (
     <div className="app">
+      <ScrollToTop />
       <Navbar />
 
       <div className="app-content">
