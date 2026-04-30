@@ -7,6 +7,7 @@ import {
   Pin,
 } from "@vis.gl/react-google-maps";
 import NewsLetter from "./NewsLetter";
+import PhoneLink from "./PhoneLink";
 
 function AboutUs() {
   return (
@@ -77,7 +78,7 @@ function AboutUs() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <h1>Call us @ 501-247-1517</h1>
+          <h1>Call us @ <PhoneLink as="span" style={{ color: 'inherit', textDecoration: 'underline' }}>501-247-1517</PhoneLink></h1>
         </div>
       </div>
     </div>

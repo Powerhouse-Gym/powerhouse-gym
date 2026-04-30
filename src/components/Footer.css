@@ -80,10 +80,24 @@
 }
 
 /* --- Socials --- */
+.footer-social-group {
+    margin-top: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer-social-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888888;
+}
+
 .footer-socials {
     display: flex;
     gap: 0.6rem;
-    margin-top: 0.85rem;
 }
 
 .footer-socials a {
@@ -162,8 +176,16 @@
     }
 
     .footer-socials {
-        margin-top: 0.55rem;
         gap: 0.45rem;
+    }
+
+    .footer-social-group {
+        margin-top: 0.55rem;
+        gap: 0.2rem;
+    }
+
+    .footer-social-label {
+        font-size: 0.55rem;
     }
 
     .footer-bottom {

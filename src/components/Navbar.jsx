@@ -16,6 +16,7 @@ import instagram from '../assets/instagram.svg'
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
+import PhoneLink from "./PhoneLink";
 
 function Navbar(props) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -171,14 +172,58 @@ function Navbar(props) {
               <ListItem button onClick={() => handleNavigate("/efa")}>
                 <ListItemText primary="EFA Vendor" />
               </ListItem>
-              <a
-                href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <button className="signup-btn nav-signup" id="signup-btn-mobile" style={{ marginTop: "16px" }}>SIGN UP</button>
-              </a>
+              <ListItem>
+                <a
+                  href="https://app.upperhand.io/accounts/new_user?customer_id=1047"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", display: "block", width: "100%" }}
+                >
+                  <button
+                    className="signup-btn nav-signup"
+                    style={{
+                      margin: 0,
+                      width: "100%",
+                      maxWidth: "none",
+                      padding: "10px 16px",
+                      fontSize: "0.85rem",
+                      letterSpacing: "0.05em",
+                      textTransform: "uppercase",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      color: "#ffffff",
+                      fontWeight: 700,
+                      borderColor: "var(--powerhouse-red)",
+                    }}
+                  >
+                    Sign Up Now
+                  </button>
+                </a>
+              </ListItem>
+              <ListItem>
+                <PhoneLink
+                  as="button"
+                  className="nav-call-btn"
+                  onClick={() => setMobileOpen(false)}
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    margin: 0,
+                    padding: "10px 16px",
+                    border: "1px solid #1a1a1a",
+                    background: "#ffffff",
+                    color: "#1a1a1a",
+                    fontWeight: 600,
+                    fontSize: "0.85rem",
+                    letterSpacing: "0.05em",
+                    textTransform: "uppercase",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                  }}
+                >
+                  Call for Info
+                </PhoneLink>
+              </ListItem>
             </List>
         </Box>
 

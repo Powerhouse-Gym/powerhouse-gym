@@ -3,6 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
+import PhoneLink from './PhoneLink';
 
 const TrainingItem = ({ arr }) => {
 
@@ -98,12 +99,27 @@ const TrainingItem = ({ arr }) => {
                         </Button>
                     }
                     {
-                        !elem.url1 && !elem.disabledTitle1 &&
-                        < a style={{ color: 'black', margin: '1px' }} href="tel:+15012471517" target="_blank" rel="noopener noreferrer">
-                            <Button size="small" variant='outlined' color="dark" sx = {{color: "var(--text-color)" , backgroundColor: "var(--secondary-background-color)"}}>
+                        !elem.url1 && !elem.disabledTitle1 && (
+                            <PhoneLink
+                                as="button"
+                                className="training-call-btn"
+                                style={{
+                                    margin: '1px',
+                                    padding: '4px 10px',
+                                    fontSize: '0.8125rem',
+                                    fontWeight: 500,
+                                    textTransform: 'uppercase',
+                                    color: 'var(--text-color)',
+                                    backgroundColor: 'var(--secondary-background-color)',
+                                    border: '1px solid rgba(0, 0, 0, 0.23)',
+                                    borderRadius: '4px',
+                                    cursor: 'pointer',
+                                    letterSpacing: '0.02857em',
+                                }}
+                            >
                                 Call for more information
-                            </Button>
-                        </a>
+                            </PhoneLink>
+                        )
                     }
                 </CardActions>
             </Card >
@@ -120,40 +136,7 @@ const TrainingItem = ({ arr }) => {
                     paddingBottom: '10px',
                 }}
             >
-                {/* Top Chain */}
-                {/* <div
-                    // style={{
-                    //     width: '75vw',
-                    //     height: '10px',
-                    //     backgroundImage: `url(${chainLink})`,
-                    //     backgroundRepeat: 'repeat-x',
-                    //     backgroundSize: 'auto 10px',
-                    //     position: 'absolute',
-                    //     top: 0,
-                    //     left: '50%', // Centering the chain
-                    //     transform: 'translateX(-50%)', // Centering the chain
-                    //     zIndex: 0, // Send it behind other content
-                    // }}
-                /> */}
-
                 {trainingElements}
-
-
-                {/* Bottom Chain */}
-                {/* <div
-                    style={{
-                        width: '75vw',
-                        height: '10px',
-                        backgroundImage: `url(${chainLink})`,
-                        backgroundRepeat: 'repeat-x',
-                        backgroundSize: 'auto 10px',
-                        position: 'absolute',
-                        bottom: 0,
-                        left: '50%', // Centering the chain
-                        transform: 'translateX(-50%)', // Centering the chain
-                        zIndex: 0, // Send it behind other content
-                    }}
-                /> */}
             </div>
         </>
     );

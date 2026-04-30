@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import grouppic from "../assets/grouppic.jpg"
 import crossfit from "../assets/crossfit-white.jpg"
 import bannerImg from "../assets/new-crossfit-banner.png"
@@ -19,6 +20,21 @@ import HyroxBanner from './HyroxBanner'
 
 
 function Crossfit() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '');
+            const tryScroll = () => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            };
+            const t = setTimeout(tryScroll, 100);
+            return () => clearTimeout(t);
+        }
+    }, [location]);
 
     return (
         <div className='crossfit-page'>

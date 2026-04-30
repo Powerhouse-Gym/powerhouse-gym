@@ -3,7 +3,7 @@ import hyroxImg from '../assets/26hyrox.jpeg';
 
 function HyroxBanner() {
     return (
-        <div className="hyrox-banner">
+        <div id="hyrox" className="hyrox-banner">
             <div className="hyrox-banner-img">
                 <img src={hyroxImg} alt="Powerhouse Hyrox Affiliate" />
             </div>
