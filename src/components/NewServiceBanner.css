@@ -37,30 +37,60 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        /* justify-content: flex-start; Aligns buttons to the left */
-        gap: 15px;
+        flex-wrap: nowrap;
+        gap: 4px 10px;
+        padding: 12px 8px 16px;
+        box-sizing: border-box;
     }
 
-    .service-container>button {
-        width: 100px;
-        height: 40px;
-        padding: 5px;
-        font-size: 18px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--text-color);
-        background-color: var(--secondary-background-color);
-        z-index: 120;
-        transition: background-color 0.3s ease, color 0.3s ease;
+    .service-container > button {
+        background: transparent;
+        border: none;
+        padding: 6px 2px;
+        cursor: pointer;
+        position: relative;
+        flex-shrink: 1;
+        min-width: 0;
+        transition: color 0.2s ease;
     }
 
-    .service-container>button.active {
-        background-color: var(--alternate-background-color);
-        /* Uses opposite background color */
-        color: var(--alternate-text-color);
-        /* Uses opposite text color */
+    .service-container > button .service-picker-label {
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #888;
+        line-height: 1;
+        white-space: nowrap;
+        transition: color 0.2s ease;
+    }
+
+    .service-container > button::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: center;
+        width: 80%;
+        height: 3px;
+        background-color: #ed1c26;
+        border-radius: 2px;
+        transition: transform 0.25s ease;
+    }
+
+    .service-container > button.active::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+
+    .service-container > button.active .service-picker-label {
+        color: #ed1c26;
+    }
+
+    .service-container > button:focus-visible {
+        outline: 2px solid #ed1c26;
+        outline-offset: 4px;
+        border-radius: 4px;
     }
 
 
@@ -161,6 +191,17 @@
         flex-shrink: 0;
         border-right: 2px solid #e0e0e0;
         padding: 1rem 0;
+    }
+
+    .service-container > button .service-picker-img-wrap {
+        display: none;
+    }
+
+    .service-container > button .service-picker-label {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
     }
 
     .service-container > button {

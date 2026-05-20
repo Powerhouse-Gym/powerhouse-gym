@@ -17,6 +17,7 @@ import instagram from "../assets/darkmode-instagram.svg"
 import facebook from "../assets/darkmode-facebook.svg"
 import AfterSchoolBanner from './AfterSchoolBanner'
 import HyroxBanner from './HyroxBanner'
+import '../crossfit-journal-banner.css'
 
 
 function Crossfit() {
@@ -38,20 +39,19 @@ function Crossfit() {
 
     return (
         <div className='crossfit-page'>
-            <div className="crossfit-header-div"><div className="crossfit-header">
-                <h1 className="header-one">Together We Are</h1>
-                <h2>Stronger!</h2>
-
-                {/* <div className='crossfit-header-logo'></div> */}
-            </div></div>
-            <div className='crossfit-socials'>
-                <div>
-                    <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
-                        <img src={instagram} alt="instagram" />
-                    </a>
-                    <a href="https://www.facebook.com/powerhousecombine" target="_blank" rel="noopener noreferrer">
-                        <img src={facebook} alt="facebook" />
-                    </a>
+            <div className="crossfit-header-div">
+                <div className="crossfit-header">
+                    <img src={crossfitlogo} alt="Powerhouse Crossfit" className="crossfit-header-brand" />
+                    <h1 className="header-one">Together We Are</h1>
+                    <h2>Stronger!</h2>
+                    <div className="crossfit-header-socials">
+                        <a href="https://www.facebook.com/powerhousecombine" target="_blank" rel="noopener noreferrer" aria-label="Crossfit/Hyrox Facebook">
+                            <img src={facebook} alt="Facebook" />
+                        </a>
+                        <a href="https://www.instagram.com/powerhousecombine" target="_blank" rel="noopener noreferrer" aria-label="Crossfit/Hyrox Instagram">
+                            <img src={instagram} alt="Instagram" />
+                        </a>
+                    </div>
                 </div>
             </div>
             {/* <img src={bannerImg} alt='Crossfit Banner' className='crossfit-banner' /> */}
@@ -68,8 +68,8 @@ function Crossfit() {
 
             {/* <div className='crossfit-container'>
                 <div className='crossfit-info'>
-                    <h1>Powerhouse CrossFit</h1>
-                    <p>At Powerhouse CrossFit our mission is to promote healthier lifestyles within our community and for all walks of life.  We focus on bringing like-minded people into our family based atmosphere and assist them in adopting positive changes through physical fitness, nutrition and daily interactions with one another.  This environment is a social unit, in which we all work together to achieve common goals and in doing so create the strongest of bonds and friendships.  Through physical fitness we forge strong minds and bodies in order to develop our athletic abilities.  With nutritional awareness we fuel our bodies with what it needs to heal, recover and meet our daily demands.  Together we will become stronger than doing it alone! </p>
+                    <h1>Powerhouse Crossfit/Hyrox</h1>
+                    <p>At Powerhouse Crossfit/Hyrox our mission is to promote healthier lifestyles within our community and for all walks of life.  We focus on bringing like-minded people into our family based atmosphere and assist them in adopting positive changes through physical fitness, nutrition and daily interactions with one another.  This environment is a social unit, in which we all work together to achieve common goals and in doing so create the strongest of bonds and friendships.  Through physical fitness we forge strong minds and bodies in order to develop our athletic abilities.  With nutritional awareness we fuel our bodies with what it needs to heal, recover and meet our daily demands.  Together we will become stronger than doing it alone! </p>
                     <p>#athletesofallages</p>
                     <a href="http://crossfit.com" target="_blank" rel="noopener noreferrer">
                         <button>Learn More</button>
@@ -85,18 +85,24 @@ function Crossfit() {
             <WhyCrossfit />
             {/* <div className = "skull-div" style = {{backgroundImage: `url(${chainlink})`}}></div> */}
 
-            <div className='crossfit-journal'>
-                <div className='crossfit-journal-text'>
-                    <h1>The Crossfit Journal</h1>
-                    <div className='crossfit-journal-img'>
+            <section className='crossfit-journal-banner'>
+                <div className='crossfit-journal-banner-inner'>
+                    <div className='crossfit-journal-banner-img'>
                         <img src={crossfitJournal} alt='Crossfit Journal' />
                     </div>
-                    <a href="https://journal.crossfit.com/" target="_blank" rel="noopener noreferrer">
-                        <button>Find out more</button>
-                    </a>
+                    <div className='crossfit-journal-banner-content'>
+                        <h2 className='crossfit-journal-banner-title'>The Crossfit Journal</h2>
+                        <a
+                            href="https://journal.crossfit.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='crossfit-journal-banner-btn'
+                        >
+                            Find out more
+                        </a>
+                    </div>
                 </div>
-
-            </div>
+            </section>
 
         </div>
     );

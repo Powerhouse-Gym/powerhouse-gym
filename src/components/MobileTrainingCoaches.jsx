@@ -9,11 +9,7 @@ import chevronDown from '../assets/chevron-down.svg';
 import Stephen from "../assets/stephen.jpg"
 import Bryant from "../assets/bryant-laning.jpg"
 
-const MobileTrainingCoaches = () => {
-
-    const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
-
-    const coaches = [
+export const mobileTrainingCoaches = [
         {
             name: "Bri Guiste",
             image: Bri,
@@ -62,6 +58,12 @@ const MobileTrainingCoaches = () => {
             bio: "Stephen Swagerty is a highly regarded baseball player and coach hailing from central Arkansas with experience playing 7 seasons of professional baseball in the USA, Australia, and the Czech Republic, Stephen brings a wealth of expertise and a global perspective to the game. As a seasoned pitcher, he takes pride in mentoring young athletes, focusing on mastering mechanics, sports specific strength training, and mental skills. For the past six years, Stephen has been dedicated to coaching youth baseball/showcase baseball, helping players grow both on and off the field. At home, Stephen shares his passion for the sport with his wife, Liv, and their 7-month-old son, Ace, creating a family that truly lives and breathes baseball."
         }
     ];
+
+const MobileTrainingCoaches = () => {
+
+    const [expandedCoachIndex, setExpandedCoachIndex] = useState(null);
+
+    const coaches = mobileTrainingCoaches;
 
     const toggleCoachDetails = (index) => {
         setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach

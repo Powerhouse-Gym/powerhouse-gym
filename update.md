@@ -114,49 +114,56 @@ This roadmap is still grouped by website sections for systematic implementation.
     **Priority**: Medium  
     **Status**: COMPLETED — no new photo provided; existing image retained
 
-- **Subsection: Volleyball**
-  - **Task 2.15: Update volleyball lessons with Aylin's pic.**  
+- **Subsection: Volleyball** ✅
+  - ✅ **Task 2.15: Update volleyball lessons with Aylin's pic.**  
     **Description**: Integrate Aylin's photo into the lessons section; update any associated text.  
     **Reference**: "Update volleyball lessons with Aylin’s pic"  
     **Priority**: Medium  
+    **Status**: COMPLETED — image set to 26volleyball.jpeg; description attributes lessons to Coach Aylin
     **Dependencies/Notes**: Obtain photo; overlaps with adding Aylin in Meet the Team.
 
-  - **Task 2.16: Update photo for volleyball team trainings.**  
+  - ✅ **Task 2.16: Update photo for volleyball team trainings.**  
     **Description**: Replace training photo.  
     **Reference**: "Update photo for volleyball team trainings"  
     **Priority**: Medium  
+    **Status**: COMPLETED — image set to 26volleyball2.jpeg with imgPosition tuned
     **Dependencies/Notes**: Source new photo.
 
-  - **Task 2.17: Update photo for volleyball team rentals.**  
+  - ✅ **Task 2.17: Update photo for volleyball team rentals.**  
     **Description**: Update rentals photo.  
     **Reference**: "Update photo for volleyball team rentals"  
     **Priority**: Medium  
+    **Status**: COMPLETED — image set to 26volleyball3.jpeg
     **Dependencies/Notes**: Source new photo.
 
-- **Subsection: Other Sports and Training**
-  - **Task 2.18: Update football lessons to $70/hour.**  
+- **Subsection: Other Sports and Training** ✅
+  - ✅ **Task 2.18: Update football lessons to $70/hour.**  
     **Description**: Change pricing text to $70/hour; update any related descriptions or booking forms.  
     **Reference**: "Update football lessons to $70/hour"  
     **Priority**: High  
+    **Status**: COMPLETED — Football Lessons price set to "$70 / hour"
     **Dependencies/Notes**: Verify if this affects other sections.
 
-  - **Task 2.19: Update team strength and conditioning photo.**  
+  - ✅ **Task 2.19: Update team strength and conditioning photo.**  
     **Description**: Replace with a new image.  
     **Reference**: "Update team strength and conditioning photo"  
     **Priority**: Medium  
+    **Status**: COMPLETED — strengthConditioning image with imgPosition tuned to "center 30%"
     **Dependencies/Notes**: Source new photo.
 
-  - **Task 2.20: Delete "These Hands MMA" and replace with private and small group lessons with Aylin.**  
+  - ✅ **Task 2.20: Delete "These Hands MMA" and replace with private and small group lessons with Aylin.**  
     **Description**: Remove MMA section; add new content for Aylin's lessons, including details, pricing if provided, and photo.  
     **Reference**: "Delete These Hands MMA to private and small group lessons with Aylin"  
     **Priority**: High  
+    **Status**: COMPLETED — "These Hands MMA" entry removed; replaced with "Private & Small Group Lessons w/ Coach Aylin" (1:1, 2:1, 3:1, Team tiers)
     **Dependencies/Notes**: Ensure smooth transition; overlaps with Aylin additions.
 
 #### 3. Youth Training Tab (Rename to Youth Memberships)
-- **Task 3.1: Rename tab to "Youth Memberships".**  
+- ✅ **Task 3.1: Rename tab to "Youth Memberships".**  
   **Description**: Update navigation menu and any internal links; revise page title and header.  
   **Reference**: "Youth Training tab (change to Youth Memberships)"  
   **Priority**: High  
+  **Status**: COMPLETED — Tab renamed in Training.jsx (label="Youth Memberships")
   **Dependencies/Notes**: Check for SEO impact.
 
 - **Task 3.2: Update meet the coaches names: Nicole, Sarah, Erica, Sav, Jettie.**  
@@ -204,10 +211,11 @@ This roadmap is still grouped by website sections for systematic implementation.
   **Priority**: High  
   **Dependencies/Notes**: Get latest schedule from client.
 
-- **Task 5.2: Add Hyrox affiliate.**  
+- ✅ **Task 5.2: Add Hyrox affiliate.**  
   **Description**: Include Hyrox affiliate info, logo, and link; possibly in a new subsection.  
   **Reference**: "Add Hyrox affiliate"  
   **Priority**: Medium  
+  **Status**: COMPLETED — HyroxBanner component on the Crossfit page (drop-in CTA, branded badge, image); homepage SecondaryBanner has rotated yellow "Hyrox Affiliate" tag under the Crossfit logo that links to `/crossfit#hyrox` and smooth-scrolls to the section.
   **Dependencies/Notes**: Obtain affiliate details/logos.
 
 - **Task 5.3: Update pics of indoor, outdoor, and charity events.**  

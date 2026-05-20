@@ -15,7 +15,7 @@ function AboutUs() {
       <div className="main-div">
         <h1>OUR GOAL IS TO HELP YOU REACH YOURS.</h1>
         <h3>
-          Powerhouse Training Complex & Crossfit
+          Powerhouse Training Complex & Crossfit/Hyrox
           <br />
           Cabot, AR
         </h3>

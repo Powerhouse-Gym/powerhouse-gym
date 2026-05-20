@@ -153,7 +153,7 @@ function Navbar(props) {
                 <ListItemText primary="Personal Training" />
               </ListItem>
               <ListItem button onClick={() => handleNavigate("/crossfit")} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <ListItemText primary="Crossfit" />
+                <ListItemText primary="Crossfit/Hyrox" />
                 <Box sx={{ display: "flex", gap: "6px", alignItems: "center" }} onClick={(e) => e.stopPropagation()}>
                   <a href="https://www.facebook.com/powerhousetrainingcomplex/" target="_blank" rel="noopener noreferrer">
                     <img src={facebook} alt="Facebook" style={{ width: "20px", height: "20px" }} />
@@ -244,7 +244,7 @@ function Navbar(props) {
           <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Home" value="/" onClick={() => handleNavigate("/")} />
           <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Sports Training" value="/training" onClick={() => handleNavigate("/training")} />
           <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Personal Training" value="/personal-training" onClick={() => handleNavigate("/personal-training")} />
-          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Crossfit" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
+          <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Crossfit/Hyrox" value="/crossfit" onClick={() => handleNavigate("/crossfit")} />
           <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="Meet the Team" value="/team" onClick={() => handleNavigate("/team")} />
           <Tab sx={{ fontSize: { xs: '12px', sm: '14px', md: '16px', lg: '18px', xl: '20px' } }} className="nav-item" label="About Us" value="/aboutus" onClick={() => handleNavigate("/aboutus")} />
           <a

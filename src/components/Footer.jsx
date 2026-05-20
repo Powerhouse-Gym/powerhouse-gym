@@ -17,7 +17,7 @@ function Footer() {
                         <li onClick={() => navigate("/")}>Home</li>
                         <li onClick={() => navigate("/training")}>Sports Training</li>
                         <li onClick={() => navigate("/personal-training")}>Personal Training</li>
-                        <li onClick={() => navigate("/crossfit")}>Crossfit</li>
+                        <li onClick={() => navigate("/crossfit")}>Crossfit/Hyrox</li>
                         <li onClick={() => navigate("/team")}>Meet the Team</li>
                         <li onClick={() => navigate("/aboutus")}>About Us</li>
                         <li onClick={() => navigate("/efa")}>EFA Vendor</li>
@@ -43,7 +43,7 @@ function Footer() {
                     </div>
 
                     <div className="footer-social-group">
-                        <span className="footer-social-label">CrossFit</span>
+                        <span className="footer-social-label">Crossfit/Hyrox</span>
                         <div className="footer-socials">
                             <a href="https://www.facebook.com/powerhousecombine" target="_blank" rel="noopener noreferrer" aria-label="CrossFit Facebook">
                                 <img src={facebook} alt="Facebook" />

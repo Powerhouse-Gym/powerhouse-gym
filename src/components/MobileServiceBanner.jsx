@@ -59,7 +59,7 @@ const MobileServiceBanner = () => {
         },
 
     {
-        title: "Powerhouse Crossfit",
+        title: "Powerhouse Crossfit/Hyrox",
         imgUrl: crossfit,
         logo: crossfitLogo,
         listItems:  [
@@ -77,7 +77,7 @@ const MobileServiceBanner = () => {
 
     const toggleCoachDetails = (title, index) => {
         setExpandedCoachIndex(expandedCoachIndex === index ? null : index); // Toggle expanded coach
-        if (title === "Powerhouse Crossfit"){
+        if (title === "Powerhouse Crossfit/Hyrox"){
             setActiveService(allServices[2])
         }
         else if (title === "Sports Training"){
@@ -89,7 +89,7 @@ const MobileServiceBanner = () => {
     };
 
     const handleLearnMore = (title) => {
-        if (title === "Powerhouse Crossfit"){
+        if (title === "Powerhouse Crossfit/Hyrox"){
             navigate("/crossfit")
             window.scrollTo(0, 0)
         }

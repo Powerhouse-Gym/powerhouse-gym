@@ -212,6 +212,72 @@ html {
   z-index: 1;
 }
 
+.crossfit-header-brand {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  width: 128px;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.crossfit-header-socials {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 18px;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.crossfit-header-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.crossfit-header-socials a:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.crossfit-header-socials img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .crossfit-header-brand {
+    width: 104px;
+    top: 14px;
+    left: auto;
+    right: 16px;
+    transform: none;
+  }
+
+  .crossfit-header-socials {
+    bottom: 12px;
+    gap: 14px;
+    padding: 6px 14px;
+  }
+
+  .crossfit-header-socials img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 .schedule-container {
   width: 100vw;
   margin: 0 auto;
@@ -3065,13 +3131,21 @@ div[role="tabpanel"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    padding-top: 50%;
+    height: auto;
+    padding-top: 12px;
+    gap: 20px;
+  }
+
+  .middle-grid {
+    order: -1;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   .right-grid {
-    position: relative;
-    bottom: 25px;
+    position: static;
+    bottom: auto;
   }
 
   .middle-grid>img {
@@ -3079,9 +3153,12 @@ div[role="tabpanel"] {
   }
 
   .middle-grid>h1 {
-    position: relative;
-    bottom: 625px;
+    position: static;
+    bottom: auto;
     font-size: 34px;
+    margin: 0 0 28px;
+    padding-bottom: 0;
+    text-align: center;
   }
 
   .group-pic-container {
