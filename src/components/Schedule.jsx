@@ -1,75 +1,166 @@
-import React from "react";
-import logo from "../assets/crossfit-white-remove-background.com.png"
+import { useState } from 'react';
 import DropIn from './DropIn';
 import JoinButton from './JoinButton';
+import '../schedule.css';
+
+const schedule = [
+    {
+        day: "Monday",
+        classes: [
+            { time: "5:00 AM", name: "Hyrox", type: "hyrox" },
+            { time: "8:30 AM", name: "Hyrox", type: "hyrox" },
+            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "5:00 PM", name: "CrossFit Class", type: "crossfit" }
+        ]
+    },
+    {
+        day: "Tuesday",
+        classes: [
+            { time: "5:00 AM", name: "CrossFit Class", type: "crossfit" },
+            { time: "8:30 AM", name: "CrossFit Class", type: "crossfit" },
+            { time: "10:00 AM", name: "Homeschool Group", type: "crossfit" },
+            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "5:00 PM", name: "Olympic Weight Lifting", type: "crossfit" },
+            { time: "6:00 PM", name: "Hyrox", type: "hyrox" }
+        ]
+    },
+    {
+        day: "Wednesday",
+        classes: [
+            { time: "5:00 AM", name: "Hyrox", type: "hyrox" },
+            { time: "8:30 AM", name: "CrossFit Class", type: "crossfit" },
+            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "5:00 PM", name: "CrossFit Class", type: "crossfit" }
+        ]
+    },
+    {
+        day: "Thursday",
+        classes: [
+            { time: "5:00 AM", name: "CrossFit Class", type: "crossfit" },
+            { time: "8:30 AM", name: "Hyrox", type: "hyrox" },
+            { time: "10:00 AM", name: "Homeschool Group", type: "crossfit" },
+            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "5:00 PM", name: "Strength Training", type: "crossfit" },
+            { time: "6:00 PM", name: "Hyrox", type: "hyrox" }
+        ]
+    },
+    {
+        day: "Friday",
+        classes: [
+            { time: "5:00 AM", name: "CrossFit Class", type: "crossfit" },
+            { time: "8:30 AM", name: "CrossFit Class", type: "crossfit" },
+            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "5:00 PM", name: "CrossFit Class", type: "crossfit" }
+        ]
+    },
+    {
+        day: "Saturday",
+        weekend: true,
+        classes: [
+            { time: "All Day", name: "Open Gym & Barbell Club", type: "open" }
+        ]
+    },
+    {
+        day: "Sunday",
+        weekend: true,
+        classes: [
+            { time: "3:30 PM", name: "Hyrox", type: "hyrox" },
+            { time: "All Day", name: "Open Gym & Barbell Club", type: "open" }
+        ]
+    }
+];
+
+const dayIndexMap = {
+    Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3,
+    Thursday: 4, Friday: 5, Saturday: 6
+};
 
 function Schedule() {
-  const weekdayClasses = [
-    { time: "5:00 AM", type: "CrossFit Class" },
-    { time: "8:30 AM", type: "CrossFit Class" },
-    { time: "1:00 PM", type: "Homeschool Group (Tue/Th)" },
-    { time: "4:00 PM", type: "Kids CrossFit Class" },
-    { time: "5:00 PM", type: "CrossFit Class" },
-    { time: "6:00 PM", type: "CrossFit Class" }
-  ];
+    const today = new Date().getDay();
+    const todayName = schedule.find(d => dayIndexMap[d.day] === today)?.day;
 
-  const weekendClasses = [
-    { day: "Saturday", type: "Open Gym & Barbell Club" },
-    { day: "Sunday", type: "Open Gym & Barbell Club" },
-  ];
+    const [openDays, setOpenDays] = useState(() => new Set(todayName ? [todayName] : []));
 
-  return (
-    <>
-      <div className="schedule-title-div"><p className="schedule-title">Powerhouse CrossFit Class Schedule</p></div>
-      <div className="schedule-container">
-        <div className="schedule-logo-div">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="calendar-div">
+    const toggleDay = (day) => {
+        setOpenDays(prev => {
+            const next = new Set(prev);
+            if (next.has(day)) next.delete(day);
+            else next.add(day);
+            return next;
+        });
+    };
 
-          <div className="schedule-section">
-            <div>
-
-              <h3 className="schedule-subtitle">Monday - Friday</h3>
-              <ul className="schedule-list horizontal-list">
-                {weekdayClasses.map((classItem, index) => (
-                  <li key={index} className="schedule-list-item">
-                    <span className="schedule-time">{classItem.time}</span> - {classItem.type}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-
-
-
-            <div className="schedule-section schedule-right">
-              <div>
-                <h3 className="schedule-subtitle">Saturday & Sunday</h3>
-                <ul className="schedule-list horizontal-list">
-                  {weekendClasses.map((classItem, index) => (
-                    <li key={index} className="schedule-list-item">
-                      <span className="schedule-time">{classItem.day}</span> - {classItem.type}
-                    </li>
-                  ))}
-                </ul>
-                <div className="schedule-btns">
-                  <DropIn />
-                  <div className="line-breaks">
-                    <hr style={{ height: "2px", width: "100px" }} />
-                    <span>or</span>
-                    <hr style={{ height: "2px", width: "100px" }} />
-                  </div>
-                  <JoinButton />
+    return (
+        <section className="schedule-board">
+            <header className="schedule-board-header">
+                <h2 className="schedule-board-title">Powerhouse Crossfit/Hyrox Class Schedule</h2>
+                <div className="schedule-board-legend">
+                    <span className="legend-crossfit">CrossFit</span>
+                    <span className="legend-hyrox">Hyrox</span>
+                    <span className="legend-open">Open Gym</span>
                 </div>
-              </div>
+            </header>
+
+            <div className="schedule-day-list">
+                {schedule.map((day) => {
+                    const isOpen = openDays.has(day.day);
+                    const isToday = day.day === todayName;
+                    return (
+                        <div
+                            key={day.day}
+                            className={`schedule-day-card ${day.weekend ? 'is-weekend' : ''} ${isOpen ? 'is-open' : ''} ${isToday ? 'is-today' : ''}`}
+                        >
+                            <button
+                                type="button"
+                                className="schedule-day-toggle"
+                                onClick={() => toggleDay(day.day)}
+                                aria-expanded={isOpen}
+                                aria-controls={`schedule-${day.day}`}
+                            >
+                                <span className="schedule-day-name">
+                                    {day.day}
+                                    {isToday && <span className="schedule-today-badge">Today</span>}
+                                </span>
+                                <span className="schedule-day-meta">
+                                    {day.classes.length} {day.classes.length === 1 ? 'class' : 'classes'}
+                                </span>
+                                <span className="schedule-day-chevron" aria-hidden="true">▾</span>
+                            </button>
+                            <div
+                                id={`schedule-${day.day}`}
+                                className="schedule-day-body"
+                                role="region"
+                                aria-label={`${day.day} schedule`}
+                            >
+                                <div className="schedule-day-body-inner">
+                                    {day.classes.map((cls, i) => (
+                                        <div
+                                            key={i}
+                                            className="schedule-class-row"
+                                            data-type={cls.type}
+                                        >
+                                            <span className="schedule-class-time">{cls.time}</span>
+                                            <span className="schedule-class-name">{cls.name}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
 
-          </div>
-        </div>
-      </div>
-    </>
-  );
+            <div className="schedule-board-actions">
+                <DropIn />
+                <div className="line-breaks">
+                    <hr />
+                    <span className="schedule-board-or">or</span>
+                    <hr />
+                </div>
+                <JoinButton />
+            </div>
+        </section>
+    );
 }
 
 export default Schedule;

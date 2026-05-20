@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import "../components/NewServiceBanner.css";
-import newWrestle1 from "../assets/newWrestle1.jpeg";
 import crossfitNiki from "../assets/crossfitNiki.jpeg";
 import crossfitLogo from "../assets/crossfit-white.jpg";
 import logo from "../assets/logo-white.webp";
@@ -9,10 +8,11 @@ import powerhousegrafiti from "../assets/powerhouse-grafiti.png";
 import newSports1 from "../assets/newSports1.jpeg";
 import coachAylin from "../assets/26volleyball3.jpeg";
 
-// Defined outside component — static data, no stale closure risk
 const allServices = [
     {
         title: "Sports Training",
+        shortLabel: "Sports",
+        route: "/training",
         logo: logo,
         imgUrl: newSports1,
         imgStyle: { objectPosition: "center -20px" },
@@ -25,6 +25,8 @@ const allServices = [
     },
     {
         title: "Personal Training",
+        shortLabel: "1 on 1",
+        route: "/personal-training",
         logo: powerhousegrafiti,
         imgUrl: coachAylin,
         imgStyle: { objectPosition: "center center" },
@@ -38,7 +40,9 @@ const allServices = [
         ]
     },
     {
-        title: "Powerhouse Crossfit",
+        title: "Powerhouse Crossfit/Hyrox",
+        shortLabel: "Crossfit/Hyrox",
+        route: "/crossfit",
         imgUrl: crossfitNiki,
         imgStyle: { objectPosition: "center 15%" },
         logo: crossfitLogo,
@@ -60,7 +64,6 @@ function NewServiceBanner() {
 
     const activeService = allServices[activeIndex];
 
-    // Auto-cycle every 3.5s, pauses on user interaction
     useEffect(() => {
         if (isPaused) return;
         const interval = setInterval(() => {
@@ -69,51 +72,37 @@ function NewServiceBanner() {
         return () => clearInterval(interval);
     }, [isPaused]);
 
-    // Cleanup resume timer on unmount
     useEffect(() => {
         return () => clearTimeout(resumeTimer.current);
     }, []);
 
-    const handleServiceClick = (index) => {
+    const handlePickerClick = (index) => {
         setActiveIndex(index);
         setIsPaused(true);
-        // Resume auto-cycle after 8s of inactivity
         clearTimeout(resumeTimer.current);
         resumeTimer.current = setTimeout(() => setIsPaused(false), 8000);
-    };
-
-    const handleLearnMore = (title) => {
-        if (title === "Powerhouse Crossfit") navigate("/crossfit");
-        else if (title === "Sports Training") navigate("/training");
-        else if (title === "Personal Training") navigate("/personal-training");
-        window.scrollTo(0, 0);
     };
 
     return (
         <div className='banner-container'>
             <h1>Services</h1>
             <div className="service-container">
-                <button
-                    type="button"
-                    className={activeIndex === 0 ? "active" : ""}
-                    onClick={() => handleServiceClick(0)}
-                >
-                    SPORTS
-                </button>
-                <button
-                    type="button"
-                    className={activeIndex === 1 ? "active" : ""}
-                    onClick={() => handleServiceClick(1)}
-                >
-                    1 : 1
-                </button>
-                <button
-                    type="button"
-                    className={activeIndex === 2 ? "active" : ""}
-                    onClick={() => handleServiceClick(2)}
-                >
-                    CROSSFIT
-                </button>
+                {allServices.map((service, index) => {
+                    const isActive = index === activeIndex;
+                    return (
+                        <button
+                            key={service.title}
+                            type="button"
+                            className={isActive ? "active" : ""}
+                            onClick={() => handlePickerClick(index)}
+                            aria-pressed={isActive}
+                        >
+                            <span className="service-picker-label">
+                                {service.shortLabel}
+                            </span>
+                        </button>
+                    );
+                })}
             </div>
             <div className='service-description'>
                 <h2>{activeService.title}</h2>
@@ -127,7 +116,7 @@ function NewServiceBanner() {
                     alt={`${activeService.title} service`}
                     style={activeService.imgStyle}
                 />
-                <button type="button" onClick={() => handleLearnMore(activeService.title)}>
+                <button type="button" onClick={() => navigate(activeService.route)}>
                     LEARN MORE
                 </button>
             </div>

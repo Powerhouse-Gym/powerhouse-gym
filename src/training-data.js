@@ -277,7 +277,7 @@ const otherSportsAndTrainings = [
     {
         title: "Wrestling Membership",
         img: wrestlingMembership,
-        description: "Includes regulation size mat, select strength & conditioning equipment, and 2 Powerhouse Crossfit classes/week.",
+        description: "Includes regulation size mat, select strength & conditioning equipment, and 2 Powerhouse Crossfit/Hyrox classes/week.",
         urlTitle1: "Membership",
         url1: "https://app.upperhand.io/customers/1047-powerhouse-training-complex/client-memberships/2748"
     },

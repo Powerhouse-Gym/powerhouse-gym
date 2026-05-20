@@ -1,0 +1,207 @@
+.crossfit-journal-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    padding: 48px 32px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-top: 3px solid #ed1c26;
+    border-bottom: 3px solid #ed1c26;
+}
+
+.crossfit-journal-banner::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -10%;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(237, 28, 38, 0.18) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.crossfit-journal-banner-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1000px;
+    width: 100%;
+    z-index: 1;
+}
+
+.crossfit-journal-banner-img {
+    flex-shrink: 0;
+    width: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6));
+}
+
+.crossfit-journal-banner-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.crossfit-journal-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 620px;
+}
+
+.crossfit-journal-banner-tag {
+    display: inline-block;
+    background-color: #ed1c26;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
+
+.crossfit-journal-banner-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.crossfit-journal-banner-text {
+    font-size: 1rem;
+    color: #d4d4d4;
+    margin: 0;
+    line-height: 1.55;
+}
+
+.crossfit-journal-banner-btn {
+    margin-top: 6px;
+    flex-shrink: 0;
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #ed1c26;
+    border: 2px solid #ed1c26;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.crossfit-journal-banner-btn:hover {
+    background-color: transparent;
+    color: #ed1c26;
+}
+
+@media (min-width: 1700px) {
+    .crossfit-journal-banner-inner {
+        max-width: 1300px;
+        gap: 80px;
+    }
+
+    .crossfit-journal-banner-img {
+        width: 300px;
+    }
+
+    .crossfit-journal-banner-content {
+        max-width: 780px;
+    }
+
+    .crossfit-journal-banner-title {
+        font-size: 2.1rem;
+    }
+
+    .crossfit-journal-banner-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .crossfit-journal-banner-inner {
+        max-width: 1600px;
+    }
+
+    .crossfit-journal-banner-img {
+        width: 360px;
+    }
+
+    .crossfit-journal-banner-content {
+        max-width: 950px;
+    }
+
+    .crossfit-journal-banner-title {
+        font-size: 2.6rem;
+    }
+
+    .crossfit-journal-banner-text {
+        font-size: 1.25rem;
+    }
+
+    .crossfit-journal-banner-btn {
+        font-size: 1.15rem;
+        padding: 16px 42px;
+    }
+}
+
+@media (max-width: 900px) {
+    .crossfit-journal-banner {
+        padding: 36px 20px;
+    }
+
+    .crossfit-journal-banner-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .crossfit-journal-banner-img {
+        width: 200px;
+    }
+
+    .crossfit-journal-banner-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .crossfit-journal-banner-title {
+        font-size: 1.4rem;
+    }
+
+    .crossfit-journal-banner-text {
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .crossfit-journal-banner-img {
+        width: 170px;
+    }
+
+    .crossfit-journal-banner-title {
+        font-size: 1.15rem;
+    }
+
+    .crossfit-journal-banner-text {
+        font-size: 0.85rem;
+    }
+
+    .crossfit-journal-banner-btn {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+}

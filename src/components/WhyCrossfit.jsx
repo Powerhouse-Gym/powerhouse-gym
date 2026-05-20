@@ -47,7 +47,7 @@ function WhyCrossfit() {
         </div>
 
         <div className="middle-grid">
-            <h1>Why Crossfit?</h1>
+            <h1>Why Crossfit/Hyrox?</h1>
             <img src={crossfitlogo} alt='Crossfit Logo' />
         </div>
 

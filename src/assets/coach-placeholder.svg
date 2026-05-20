@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#1f1f1f"/>
+  <circle cx="200" cy="160" r="62" fill="#4a4a4a"/>
+  <path d="M 92 388 Q 92 262 200 262 Q 308 262 308 388 Z" fill="#4a4a4a"/>
+  <text x="200" y="60" font-family="'Anek Devanagari', sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#ed1c26" text-anchor="middle">COMING SOON</text>
+</svg>
