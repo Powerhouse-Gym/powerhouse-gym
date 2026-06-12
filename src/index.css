@@ -27,6 +27,10 @@ html {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--background-color);
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: clip;
 }
 
 .app-content {
@@ -4665,6 +4669,41 @@ div[role="tabpanel"] {
 @media (min-width: 768px) and (max-width: 1199px) {
   .banner-subtitle {
     font-size: 84px;
+  }
+}
+
+/* Personal Training intro section — narrow viewport overrides
+   Placed at the end of the file so they win against the broader
+   max-width: 1100 / 900 / 780 / 630 rules that appear earlier. */
+@media (max-width: 540px) {
+  .intro-section > h1 {
+    font-size: 30px;
+  }
+
+  .intro-section > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .intro-section > h1 {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .intro-section > p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro-section > h1 {
+    font-size: 22px;
+  }
+
+  .intro-section > p {
+    font-size: 14px;
   }
 }
 

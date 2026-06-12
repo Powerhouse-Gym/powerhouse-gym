@@ -1,6 +1,7 @@
 import '../summer-banner.css';
-import summerImg from '../assets/26summerhours.jpeg';
+import summerImg from '../assets/26summerhoursupdated.png';
 import PhoneLink from './PhoneLink';
+import ImageLightbox from './ImageLightbox';
 
 function SummerBanner() {
     const handleSignUp = () => {
@@ -10,9 +11,11 @@ function SummerBanner() {
     return (
         <section className="summer-banner">
             <div className="summer-banner-inner">
-                <div className="summer-banner-img">
-                    <img src={summerImg} alt="Summer Membership Hours" />
-                </div>
+                <ImageLightbox
+                    src={summerImg}
+                    alt="Summer Membership Hours"
+                    className="summer-banner-img"
+                />
                 <div className="summer-banner-content">
                     <span className="summer-banner-tag">Summer Hours</span>
                     <h2 className="summer-banner-title">Summer Membership Hours</h2>
@@ -21,8 +24,8 @@ function SummerBanner() {
                     </p>
                     <ul className="summer-banner-perks">
                         <li>Jun 1 – Aug 11 · Monday – Friday · 7 AM – 6 PM</li>
-                        <li>1 Day — $40 · 3 Day — $90 · 5 Day — $125</li>
-                        <li>Early Bird SIBLING Discount Registration: Apr 1 – May 30</li>
+                        <li>1 Day — $50 · 3 Day — $115 · 5 Day — $150</li>
+                        <li>Athletes bring a lunch, snacks, and water bottle each day</li>
                     </ul>
                     <div className="summer-banner-actions">
                         <button className="summer-banner-btn" onClick={handleSignUp}>

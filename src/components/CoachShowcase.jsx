@@ -46,8 +46,13 @@ const defaultRenderDetails = (coach) => (
 function CoachShowcase({ title, coaches, renderDetails = defaultRenderDetails, thumbnailKey = 'image' }) {
     const [activeIndex, setActiveIndex] = useState(0);
     const stripRef = useRef(null);
+    const isInitialMount = useRef(true);
 
     useEffect(() => {
+        if (isInitialMount.current) {
+            isInitialMount.current = false;
+            return;
+        }
         if (!stripRef.current) return;
         const activeBtn = stripRef.current.querySelector(`[data-coach-index="${activeIndex}"]`);
         if (activeBtn) {
@@ -76,7 +81,7 @@ function CoachShowcase({ title, coaches, renderDetails = defaultRenderDetails, t
                             aria-pressed={isActive}
                         >
                             <span className="coach-showcase-thumb-img-wrap">
-                                <img src={imgSrc} alt={coach.name} />
+                                <img src={imgSrc} alt={coach.name} style={coach.imageStyle} />
                             </span>
                             <span className="coach-showcase-thumb-name">
                                 {coach.name.split(' ')[0]}
@@ -88,7 +93,7 @@ function CoachShowcase({ title, coaches, renderDetails = defaultRenderDetails, t
 
             <div className="coach-showcase-card" key={activeIndex}>
                 <div className="coach-showcase-card-image">
-                    <img src={activeImg} alt={activeCoach.name} />
+                    <img src={activeImg} alt={activeCoach.name} style={activeCoach.imageStyle} />
                 </div>
                 <div className="coach-showcase-card-content">
                     {renderDetails(activeCoach)}
