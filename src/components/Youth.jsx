@@ -1,5 +1,5 @@
 import React from 'react';
-import youthMemberships from '../assets/26summerhours.jpeg';
+import youthMemberships from '../assets/26summerhoursupdated.png';
 import youthMembership from "../assets/youth-membership.jpeg";
 import afterSchool from "../assets/26afterschool.png";
 import Button from '@mui/material/Button';

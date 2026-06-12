@@ -1,12 +1,15 @@
 import '../after-school-banner.css';
 import afterSchoolImg from '../assets/26afterschool.png';
+import ImageLightbox from './ImageLightbox';
 
 function AfterSchoolBanner() {
     return (
         <div className="after-school-banner">
-            <div className="after-school-banner-img">
-                <img src={afterSchoolImg} alt="After School Membership" />
-            </div>
+            <ImageLightbox
+                src={afterSchoolImg}
+                alt="After School Membership"
+                className="after-school-banner-img"
+            />
             <div className="after-school-banner-content">
                 <h2 className="after-school-banner-title">After School Memberships</h2>
                 <p className="after-school-banner-subtitle">Ages K – 13 Years Old</p>

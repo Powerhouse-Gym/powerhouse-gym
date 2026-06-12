@@ -9,18 +9,19 @@ const schedule = [
         classes: [
             { time: "5:00 AM", name: "Hyrox", type: "hyrox" },
             { time: "8:30 AM", name: "Hyrox", type: "hyrox" },
-            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "3:30 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "4:15 PM", name: "Kids CrossFit", type: "crossfit" },
             { time: "5:00 PM", name: "CrossFit Class", type: "crossfit" }
         ]
     },
     {
         day: "Tuesday",
         classes: [
-            { time: "5:00 AM", name: "CrossFit Class", type: "crossfit" },
-            { time: "8:30 AM", name: "CrossFit Class", type: "crossfit" },
-            { time: "10:00 AM", name: "Homeschool Group", type: "crossfit" },
-            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
-            { time: "5:00 PM", name: "Olympic Weight Lifting", type: "crossfit" },
+            { time: "5:00 AM", name: "Olympic Weightlifting", type: "crossfit" },
+            { time: "8:30 AM", name: "Olympic Weightlifting", type: "crossfit" },
+            { time: "3:30 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "4:15 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "5:00 PM", name: "Olympic Weightlifting", type: "crossfit" },
             { time: "6:00 PM", name: "Hyrox", type: "hyrox" }
         ]
     },
@@ -28,28 +29,28 @@ const schedule = [
         day: "Wednesday",
         classes: [
             { time: "5:00 AM", name: "Hyrox", type: "hyrox" },
-            { time: "8:30 AM", name: "CrossFit Class", type: "crossfit" },
-            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "8:30 AM", name: "Hyrox", type: "hyrox" },
+            { time: "3:30 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "4:15 PM", name: "Kids CrossFit", type: "crossfit" },
             { time: "5:00 PM", name: "CrossFit Class", type: "crossfit" }
         ]
     },
     {
         day: "Thursday",
         classes: [
-            { time: "5:00 AM", name: "CrossFit Class", type: "crossfit" },
-            { time: "8:30 AM", name: "Hyrox", type: "hyrox" },
-            { time: "10:00 AM", name: "Homeschool Group", type: "crossfit" },
-            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
-            { time: "5:00 PM", name: "Strength Training", type: "crossfit" },
+            { time: "5:00 AM", name: "Barbell / Strength Training", type: "crossfit" },
+            { time: "8:30 AM", name: "Barbell / Strength Training", type: "crossfit" },
+            { time: "3:30 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "4:15 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "5:00 PM", name: "Barbell / Strength Training", type: "crossfit" },
             { time: "6:00 PM", name: "Hyrox", type: "hyrox" }
         ]
     },
     {
         day: "Friday",
         classes: [
-            { time: "5:00 AM", name: "CrossFit Class", type: "crossfit" },
-            { time: "8:30 AM", name: "CrossFit Class", type: "crossfit" },
-            { time: "4:00 PM", name: "Kids CrossFit Class", type: "crossfit" },
+            { time: "3:30 PM", name: "Kids CrossFit", type: "crossfit" },
+            { time: "4:15 PM", name: "Kids CrossFit", type: "crossfit" },
             { time: "5:00 PM", name: "CrossFit Class", type: "crossfit" }
         ]
     },
@@ -99,6 +100,7 @@ function Schedule() {
                     <span className="legend-hyrox">Hyrox</span>
                     <span className="legend-open">Open Gym</span>
                 </div>
+                <p className="schedule-board-note">All classes for ages 14 and up</p>
             </header>
 
             <div className="schedule-day-list">

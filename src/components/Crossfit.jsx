@@ -17,6 +17,7 @@ import instagram from "../assets/darkmode-instagram.svg"
 import facebook from "../assets/darkmode-facebook.svg"
 import AfterSchoolBanner from './AfterSchoolBanner'
 import HyroxBanner from './HyroxBanner'
+import ImageLightbox from './ImageLightbox'
 import '../crossfit-journal-banner.css'
 
 
@@ -87,9 +88,11 @@ function Crossfit() {
 
             <section className='crossfit-journal-banner'>
                 <div className='crossfit-journal-banner-inner'>
-                    <div className='crossfit-journal-banner-img'>
-                        <img src={crossfitJournal} alt='Crossfit Journal' />
-                    </div>
+                    <ImageLightbox
+                        src={crossfitJournal}
+                        alt='Crossfit Journal'
+                        className='crossfit-journal-banner-img'
+                    />
                     <div className='crossfit-journal-banner-content'>
                         <h2 className='crossfit-journal-banner-title'>The Crossfit Journal</h2>
                         <a

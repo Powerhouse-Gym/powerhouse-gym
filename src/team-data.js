@@ -3,6 +3,10 @@ import bryantNew from './assets/26BryantNew.jpeg';
 import aylinImg from './assets/26volleyball2.jpeg';
 import nicole from './assets/crossfit-coaches/nicole.webp';
 import eric from './assets/crossfit-coaches/eric.webp';
+import sarah from './assets/Sarah.jpeg';
+import nicoleBrown from './assets/nicolebrown.jpg';
+import tabitha from './assets/tabitaupdated.jpg';
+import miguel from './assets/miguelupdated.jpg';
 import coachPlaceholder from './assets/coach-placeholder.svg';
 
 const PLACEHOLDER_BACKGROUND = [
@@ -74,14 +78,32 @@ export const sportsCoaches = [
     },
     {
         name: "Tabitha Gossett",
-        image: coachPlaceholder,
-        title: "Soccer Coach",
-        background: PLACEHOLDER_BACKGROUND,
-        highlights: PLACEHOLDER_HIGHLIGHTS,
-        services: [
-            "Private soccer training (1-on-1, 2-on-1, 3-on-1)"
+        image: tabitha,
+        title: "Soccer Coach | 16 Years of Coaching Experience",
+        background: [
+            "Wife and mom to Apollo and LouAnn",
+            "Former semi-professional player for the Wolves (career through 2021)",
+            "Former coach for Central Arkansas Alliance and The Rangers",
+            "Now fully focused on training and developing the next generation of athletes",
+            "Loves spending time with her family traveling, hiking, biking, and cheering on big brother at the baseball field"
         ],
-        quote: "The more difficult the victory, the greater the happiness in winning. — Pelé"
+        highlights: [
+            "16 years of coaching experience",
+            "Club coach, small group trainer, and private skills coach",
+            "Former coach for Central Arkansas Alliance and The Rangers",
+            "Former semi-pro player for the Wolves",
+            "Trained athletes ages 6–18",
+            "Focused on technical development and confidence on the ball",
+            "Builds discipline, confidence, communication, resilience, and work ethic that athletes carry for life",
+            "Known for her energy, competitiveness, and ability to connect with players"
+        ],
+        services: [
+            "Private soccer lessons (1-on-1, 2-on-1, 3-on-1)",
+            "Small group training",
+            "Team coaching",
+            "Technical & ball skills development"
+        ],
+        quote: "Soccer is the classroom — discipline, confidence, and resilience are the lessons you take with you."
     },
     {
         name: "Aylin Villalobos",
@@ -98,12 +120,31 @@ export const sportsCoaches = [
     },
     {
         name: "Miguel Homscher",
-        image: coachPlaceholder,
-        title: "Sports Coach",
-        background: PLACEHOLDER_BACKGROUND,
-        highlights: PLACEHOLDER_HIGHLIGHTS,
-        services: PLACEHOLDER_SERVICES,
-        quote: "Champions keep playing until they get it right. — Billie Jean King"
+        image: miguel,
+        title: "Youth Baseball Trainer | Baseball & Strength Specialist",
+        background: [
+            "Senior at Cabot High School",
+            "Playing baseball since age 4",
+            "Competing in travel baseball since age 8",
+            "Competed in football, wrestling, and track & field through his freshman year",
+            "Pursuing his goal of playing college baseball",
+            "Known for his big heart and love for family, friends, and athletes"
+        ],
+        highlights: [
+            "Senior at Cabot High School",
+            "Youth Baseball Trainer at Powerhouse Training Complex",
+            "Multi-sport athlete turned baseball & strength specialist",
+            "Multi-sport background built toughness, discipline, and work ethic",
+            "Passionate about helping young athletes grow on and off the field",
+            "Brings energy, encouragement, and a strong passion for athlete development to every session"
+        ],
+        services: [
+            "Youth Baseball Training",
+            "Strength & Conditioning",
+            "One-on-One Sessions",
+            "Small Group Training"
+        ],
+        quote: "Hard work and heart build great athletes — on the field and off."
     }
 ];
 
@@ -140,20 +181,58 @@ export const crossfitCoaches = [
     },
     {
         name: "Sarah Turner",
-        image: coachPlaceholder,
-        title: "Crossfit/Hyrox Coach",
-        background: PLACEHOLDER_BACKGROUND,
-        highlights: PLACEHOLDER_HIGHLIGHTS,
-        services: PLACEHOLDER_SERVICES,
-        quote: "The only bad workout is the one that didn't happen."
+        image: sarah,
+        imageStyle: { objectPosition: "center 18%" },
+        title: "Hyrox Coach | Veteran Coach & Educator",
+        background: [
+            "Married",
+            "6 years of coaching and teaching experience",
+            "4th year leading PTC's Summer Membership program",
+            "Collegiate athlete — Soccer & Volleyball",
+            "B.S. Middle Level Math & Science",
+            "M.S. School Counseling",
+            "Ed.S. School Leadership"
+        ],
+        highlights: [
+            "Brings experience, energy, and a passion for helping kids grow on and off the field",
+            "Returning leader in PTC's summer program",
+            "Dedicated to keeping athletes active and building confidence",
+            "Creates a fun, supportive environment where every child can thrive",
+            "Connects with athletes of all ages through her athletics and education background",
+            "Develops teamwork, resilience, and a love for learning"
+        ],
+        services: [
+            "Hyrox Coaching",
+            "Summer Membership Program",
+            "Youth & Group Coaching"
+        ],
+        quote: "Strong athletes are built with grit, grace, and a great support system."
     },
     {
         name: "Nicole Brown",
-        image: coachPlaceholder,
-        title: "Crossfit/Hyrox Coach",
-        background: PLACEHOLDER_BACKGROUND,
-        highlights: PLACEHOLDER_HIGHLIGHTS,
-        services: PLACEHOLDER_SERVICES,
-        quote: "Sweat is just fat crying."
+        image: nicoleBrown,
+        title: "Hyrox Coach | Therapist & Functional Fitness Athlete",
+        background: [
+            "Wife and mom to two active boys",
+            "Licensed therapist focused on the mind–body connection",
+            "Passionate Hyrox and functional fitness coach",
+            "Began her personal fitness journey 1.5 years ago",
+            "Built a family lifestyle around movement, discipline, and resilience",
+            "Fell in love with Hyrox for the way it challenges both physical endurance and mental grit"
+        ],
+        highlights: [
+            "Hyrox Coach with a passion for functional fitness and performance training",
+            "Transformed a personal fitness journey into a coaching career",
+            "Therapist with a unique focus on the connection between mindset and physical performance",
+            "Brings a real-life perspective to balancing fitness, family, and goals",
+            "Passionate about helping athletes build confidence, strength, endurance, and resilience"
+        ],
+        services: [
+            "Hyrox Coaching",
+            "Functional Fitness Training",
+            "Mindset & Performance Coaching",
+            "Group & One-on-One Training"
+        ],
+        quote: "True wellness goes beyond physical strength — mindset, discipline, and self-belief are what build real resilience."
     }
 ];
