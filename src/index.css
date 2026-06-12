@@ -4673,8 +4673,8 @@ div[role="tabpanel"] {
 }
 
 /* Personal Training intro section — narrow viewport overrides
-   Placed at the end of the file so they win against the broader
-   max-width: 1100 / 900 / 780 / 630 rules that appear earlier. */
+   These come last so they override the cascade where broader max-width
+   rules (e.g. max-width: 1100px) appear later in source than narrower ones. */
 @media (max-width: 540px) {
   .intro-section > h1 {
     font-size: 30px;
